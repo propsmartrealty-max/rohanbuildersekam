@@ -1,6 +1,6 @@
 import React from 'react';
 import { OFFICIAL_PROJECT_DETAILS } from '../data/projectData';
-import { ShieldCheck, Phone, Mail, MapPin, ExternalLink, ArrowUp, Download } from 'lucide-react';
+import { ShieldCheck, MapPin, ExternalLink, ArrowUp, Download, Clock } from 'lucide-react';
 import RohanEkamLogo from './RohanEkamLogo';
 
 export default function Footer() {
@@ -108,17 +108,9 @@ export default function Footer() {
                 <MapPin className="w-4 h-4 text-amber-700 shrink-0 mt-0.5" />
                 <span>Rohan Ekam, Behind Balewadi High Street, On Mula Riverfront, Balewadi, Pune - 411045</span>
               </div>
-              <div className="flex items-center gap-2">
-                <Phone className="w-4 h-4 text-amber-700 shrink-0" />
-                <a href="tel:+912071178899" className="hover:text-stone-950 transition-colors font-mono font-medium">
-                  +91 20 7117 8899
-                </a>
-              </div>
-              <div className="flex items-center gap-2">
-                <Mail className="w-4 h-4 text-amber-700 shrink-0" />
-                <a href="mailto:ekam.concierge@rohanbuilders.com" className="hover:text-stone-950 transition-colors">
-                  ekam.concierge@rohanbuilders.com
-                </a>
+              <div className="flex items-center gap-2 text-stone-500">
+                <Clock className="w-4 h-4 text-amber-700 shrink-0" />
+                <span>Mon – Sun: 9:30 AM – 7:00 PM</span>
               </div>
             </div>
           </div>

@@ -9,7 +9,7 @@ export default function OfficialWhatsAppBar() {
     e.preventDefault();
     if (mobileNumber.length >= 10) {
       window.open(
-        `https://wa.me/912071178899?text=Hello%20Rohan%20Builders,%20my%20number%20is%20${mobileNumber}.%20Please%20send%20me%20details%20for%20Rohan%20Ekam%20Balewadi.`,
+        `https://api.whatsapp.com/send?text=Hello%20Rohan%20Builders,%20my%20number%20is%20${mobileNumber}.%20Please%20send%20me%20details%20for%20Rohan%20Ekam%20Balewadi.`,
         '_blank'
       );
       setSubmitted(true);

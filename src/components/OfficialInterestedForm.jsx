@@ -36,12 +36,12 @@ export default function OfficialInterestedForm() {
             {/* Right Content Area */}
             <div className="lg:col-span-9">
               <p className="text-sm text-stone-600 mb-6">
-                Share your phone number or email, our sales representative will contact you with floor plans and price sheets.
+                Share your mobile number, our sales representative will contact you with floor plans and price sheets.
               </p>
 
               {!submitted ? (
                 <form onSubmit={handleSubmit} className="space-y-4">
-                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
                     <div>
                       <input
                         type="text"
@@ -61,17 +61,6 @@ export default function OfficialInterestedForm() {
                         placeholder="Mobile Number"
                         value={formData.mobile}
                         onChange={(e) => setFormData({ ...formData, mobile: e.target.value.replace(/\D/g, '') })}
-                        className="w-full glass-panel border border-white/90 rounded-2xl px-4 py-3 text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-stone-900/10 focus:border-stone-800 shadow-xs transition-all"
-                      />
-                    </div>
-
-                    <div>
-                      <input
-                        type="email"
-                        required
-                        placeholder="Email Address"
-                        value={formData.email}
-                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                         className="w-full glass-panel border border-white/90 rounded-2xl px-4 py-3 text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-stone-900/10 focus:border-stone-800 shadow-xs transition-all"
                       />
                     </div>

@@ -75,28 +75,16 @@ export default function VIPExperienceModal({ isOpen, onClose, initialConfig = '3
                 />
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                <div>
-                  <label className="block text-stone-700 font-semibold mb-1">Phone Number (WhatsApp) *</label>
-                  <input
-                    type="tel"
-                    required
-                    placeholder="+91 98220 XXXXX"
-                    value={formData.phone}
-                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="w-full glass-panel border border-white/90 rounded-2xl px-4 py-2.5 text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-stone-900/10 focus:border-stone-800 shadow-xs transition-all"
-                  />
-                </div>
-                <div>
-                  <label className="block text-stone-700 font-semibold mb-1">Email Address</label>
-                  <input
-                    type="email"
-                    placeholder="name@executive.com"
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full glass-panel border border-white/90 rounded-2xl px-4 py-2.5 text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-stone-900/10 focus:border-stone-800 shadow-xs transition-all"
-                  />
-                </div>
+              <div>
+                <label className="block text-stone-700 font-semibold mb-1">Phone Number (WhatsApp) *</label>
+                <input
+                  type="tel"
+                  required
+                  placeholder="+91 98220 XXXXX"
+                  value={formData.phone}
+                  onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                  className="w-full glass-panel border border-white/90 rounded-2xl px-4 py-2.5 text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-stone-900/10 focus:border-stone-800 shadow-xs transition-all"
+                />
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -172,7 +160,7 @@ export default function VIPExperienceModal({ isOpen, onClose, initialConfig = '3
 
               <div className="pt-2 text-center">
                 <a
-                  href="https://wa.me/912071178899?text=Hello%20Rohan%20Builders,%20I%20would%20like%20to%20schedule%20a%20VIP%20visit%20for%20Rohan%20Ekam%20Balewadi."
+                  href="https://api.whatsapp.com/send?text=Hello%20Rohan%20Builders,%20I%20would%20like%20to%20schedule%20a%20VIP%20visit%20for%20Rohan%20Ekam%20Balewadi."
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center gap-1.5 text-xs text-emerald-700 font-medium hover:underline"
@@ -211,8 +199,8 @@ export default function VIPExperienceModal({ isOpen, onClose, initialConfig = '3
                 <span className="text-stone-900 font-semibold">{formData.config.toUpperCase()}</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-stone-500">Desk Support:</span>
-                <span className="text-emerald-800 font-bold">+91 20 7117 8899</span>
+                <span className="text-stone-500">VIP Concierge:</span>
+                <span className="text-emerald-800 font-bold">Confirmed & Assigned</span>
               </div>
             </div>
 
