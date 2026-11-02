@@ -47,8 +47,11 @@ export default function Hero({ onOpenVipModal }) {
           <RohanEkamLogo variant="stacked" />
         </div>
 
-        {/* Monumental Headline in Deep Charcoal / Espresso */}
+        {/* Monumental Headline in Deep Charcoal / Espresso with Semantic SEO Anchoring */}
         <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-normal tracking-tight text-stone-900 max-w-5xl leading-[1.08] mb-5">
+          <span className="block text-xs sm:text-sm font-sans font-bold tracking-[0.25em] text-amber-900/80 uppercase mb-3">
+            Rohan Ekam Balewadi, Pune • 2, 3 &amp; 4 BHK Luxury Residences
+          </span>
           Where the <span className="italic font-serif font-medium text-amber-800">River</span> Meets the <span className="italic font-serif font-medium text-stone-700">Sky</span>
         </h1>
 

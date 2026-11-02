@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Fast Indexing & Crawl Directives
+User-agent: Googlebot
+Allow: /
+User-agent: Googlebot-Image
+Allow: /
+User-agent: Bingbot
+Allow: /
+User-agent: Applebot
+Allow: /
+
+Sitemap: https://rohanbuildersekam.com/sitemap.xml
+Sitemap: https://rohanbuildersekam.pages.dev/sitemap.xml
