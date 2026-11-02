@@ -1,15 +1,61 @@
+# Complete Robots Directives for Rohan Ekam Balewadi
+# Optimized for Googlebot, Google-InspectionTool, Bingbot & Social Crawlers
+
 User-agent: *
 Allow: /
 
-# Fast Indexing & Crawl Directives
+# Google Search & Inspection Crawlers
 User-agent: Googlebot
 Allow: /
+
 User-agent: Googlebot-Image
 Allow: /
+
+User-agent: Googlebot-Mobile
+Allow: /
+
+User-agent: Google-InspectionTool
+Allow: /
+
+User-agent: AdsBot-Google
+Allow: /
+
+# Microsoft Bing & IndexNow Crawlers
 User-agent: Bingbot
 Allow: /
+
+User-agent: msnbot
+Allow: /
+
+# Apple Spotlight & Siri Crawler
 User-agent: Applebot
 Allow: /
 
+# Privacy & International Search Engines
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# Social Share Preview Crawlers
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+# Sitemap Index Declaration
 Sitemap: https://rohanbuildersekam.com/sitemap.xml
-Sitemap: https://rohanbuildersekam.pages.dev/sitemap.xml
