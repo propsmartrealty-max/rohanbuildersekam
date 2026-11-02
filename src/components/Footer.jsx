@@ -1,6 +1,7 @@
 import React from 'react';
 import { OFFICIAL_PROJECT_DETAILS } from '../data/projectData';
 import { ShieldCheck, Phone, Mail, MapPin, ExternalLink, ArrowUp, Download } from 'lucide-react';
+import RohanEkamLogo from './RohanEkamLogo';
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -54,20 +55,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
           {/* Brand */}
           <div className="lg:col-span-2 space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="w-9 h-9 rounded-full bg-stone-900 p-[1.5px] shadow-sm">
-                <div className="w-full h-full bg-[#F5F2EB] rounded-full flex items-center justify-center">
-                  <span className="font-serif font-black text-lg text-stone-900">E</span>
-                </div>
-              </div>
-              <div>
-                <span className="font-serif text-lg font-bold tracking-widest text-stone-900">
-                  ROHAN EKAM
-                </span>
-                <span className="block text-[10px] text-stone-500 uppercase tracking-widest font-mono">
-                  Mula Riverfront • Balewadi, Pune
-                </span>
-              </div>
+            <div className="mb-2">
+              <RohanEkamLogo variant="lockup" />
             </div>
 
             <p className="text-xs text-stone-600 leading-relaxed max-w-sm">

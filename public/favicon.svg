@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Multi-stop vibrant spectrum gradient -->
+    <linearGradient id="vibrantGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EC4899" />
+      <stop offset="25%" stop-color="#F43F5E" />
+      <stop offset="50%" stop-color="#F59E0B" />
+      <stop offset="75%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#06B6D4" />
+    </linearGradient>
+
+    <!-- Warm golden ambient glow -->
+    <radialGradient id="innerGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.35" />
+      <stop offset="60%" stop-color="#EC4899" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#181614" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Deep obsidian backdrop gradient -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#231E19" />
+      <stop offset="50%" stop-color="#181614" />
+      <stop offset="100%" stop-color="#0D0C0A" />
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Squircle Base with Deep Obsidian Fill -->
+  <rect x="20" y="20" width="472" height="472" rx="110" fill="url(#bgGradient)" />
+
+  <!-- Ambient Radiant Backlight -->
+  <circle cx="256" cy="256" r="180" fill="url(#innerGlow)" />
+
+  <!-- Luminous Gradient Border Rim -->
+  <rect x="20" y="20" width="472" height="472" rx="110" fill="none" stroke="url(#vibrantGradient)" stroke-width="12" />
+
+  <!-- Inner subtle glass bevel -->
+  <rect x="28" y="28" width="456" height="456" rx="102" fill="none" stroke="rgba(255, 255, 255, 0.15)" stroke-width="2" />
+
+  <!-- Central Typography Lockup -->
+  <!-- 1. ROHAN -->
+  <text 
+    x="256" 
+    y="160" 
+    text-anchor="middle" 
+    fill="url(#vibrantGradient)" 
+    font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif" 
+    font-size="44" 
+    font-weight="800" 
+    letter-spacing="0.38em"
+    style="text-transform: uppercase;"
+  >
+    ROHAN
+  </text>
+
+  <!-- 2. EKAM (Grand Didone Serif) -->
+  <text 
+    x="256" 
+    y="305" 
+    text-anchor="middle" 
+    fill="url(#vibrantGradient)" 
+    font-family="'Cormorant Garamond', 'Cinzel', 'Playfair Display', Georgia, serif" 
+    font-size="124" 
+    font-weight="600" 
+    letter-spacing="0.22em"
+    filter="url(#glow)"
+  >
+    EKAM
+  </text>
+
+  <!-- 3. Decorative subtle divider pips -->
+  <circle cx="160" cy="358" r="3" fill="#F59E0B" opacity="0.8" />
+  <line x1="175" y1="358" x2="337" y2="358" stroke="url(#vibrantGradient)" stroke-width="1.5" stroke-opacity="0.4" />
+  <circle cx="352" cy="358" r="3" fill="#06B6D4" opacity="0.8" />
+
+  <!-- 4. BALEWADI -->
+  <text 
+    x="256" 
+    y="405" 
+    text-anchor="middle" 
+    fill="url(#vibrantGradient)" 
+    font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif" 
+    font-size="28" 
+    font-weight="700" 
+    letter-spacing="0.52em"
+    style="text-transform: uppercase;"
+  >
+    BALEWADI
+  </text>
+</svg>

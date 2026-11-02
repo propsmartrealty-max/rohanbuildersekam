@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Volume2, VolumeX, Menu, X, Sparkles, Compass } from 'lucide-react';
 import { ambientSound } from '../utils/audioGenerator';
+import RohanEkamLogo from './RohanEkamLogo';
 
 export default function Navbar({ onOpenVipModal }) {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -40,26 +41,9 @@ export default function Navbar({ onOpenVipModal }) {
               : 'bg-white/80'
           }`}
         >
-          {/* Brand Monogram */}
-          <a href="#" className="flex items-center gap-3 group">
-            <div className="relative w-9 h-9 rounded-full bg-stone-900 p-[1.5px] shadow-sm">
-              <div className="w-full h-full bg-[#F5F2EB] rounded-full flex items-center justify-center group-hover:bg-white transition-colors">
-                <span className="font-serif font-black text-lg text-stone-900 tracking-wider">E</span>
-              </div>
-            </div>
-            <div className="flex flex-col">
-              <div className="flex items-center gap-2">
-                <span className="font-serif text-base sm:text-lg font-bold tracking-widest text-stone-900 group-hover:text-amber-800 transition-colors">
-                  ROHAN EKAM
-                </span>
-                <span className="hidden sm:inline-block text-[10px] px-2.5 py-0.5 rounded-full border border-stone-300 text-stone-700 font-mono tracking-wider glass-panel">
-                  BALEWADI
-                </span>
-              </div>
-              <span className="text-[10px] text-stone-500 uppercase tracking-widest font-mono">
-                Mula Riverfront • Pune
-              </span>
-            </div>
+          {/* Brand Monogram & Colorful Logo */}
+          <a href="#" className="flex items-center group transition-transform active:scale-98">
+            <RohanEkamLogo variant="lockup" />
           </a>
 
           {/* Desktop Navigation Links */}

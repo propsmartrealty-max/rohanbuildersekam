@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { X, Sparkles, Calendar, Clock, Car, CheckCircle2, MessageSquare, PhoneCall, Download, Printer } from 'lucide-react';
 import { OFFICIAL_PROJECT_DETAILS, OFFICIAL_FLOOR_PLANS } from '../data/projectData';
+import RohanEkamLogo from './RohanEkamLogo';
 
 export default function VIPExperienceModal({ isOpen, onClose, initialConfig = '3bhk-type1' }) {
   const [formData, setFormData] = useState({
@@ -46,9 +47,12 @@ export default function VIPExperienceModal({ isOpen, onClose, initialConfig = '3
         {!submitted ? (
           <div className="relative z-10">
             <div className="mb-6">
-              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full glass-panel text-stone-800 text-xs font-mono uppercase tracking-widest mb-2 shadow-xs">
-                <Sparkles className="w-3.5 h-3.5 text-amber-600 animate-pulse" />
-                <span>Rohan Ekam Experience Center</span>
+              <div className="flex items-center justify-between gap-2 mb-3">
+                <RohanEkamLogo variant="lockup" />
+                <div className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1 rounded-full glass-panel text-stone-800 text-[10px] font-mono uppercase tracking-widest shadow-xs">
+                  <Sparkles className="w-3 h-3 text-amber-600 animate-pulse" />
+                  <span>VIP Lounge</span>
+                </div>
               </div>
               <h3 className="font-serif text-2xl sm:text-3xl font-bold text-stone-900">
                 Schedule Your VIP Site Tour

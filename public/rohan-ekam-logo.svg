@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 320" width="100%" height="100%">
+  <defs>
+    <!-- Multi-stop vibrant spectrum gradient -->
+    <linearGradient id="logoVibrantGrad" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#E11D48" />
+      <stop offset="22%" stop-color="#F43F5E" />
+      <stop offset="48%" stop-color="#F59E0B" />
+      <stop offset="72%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+
+    <!-- Specular linear gradient for shimmer -->
+    <linearGradient id="shimmerOverlay" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0)" />
+      <stop offset="50%" stop-color="rgba(255,255,255,0.4)" />
+      <stop offset="100%" stop-color="rgba(255,255,255,0)" />
+    </linearGradient>
+
+    <filter id="subtleGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Typography matching exact user-uploaded branding -->
+  <!-- 1. ROHAN -->
+  <text 
+    x="300" 
+    y="72" 
+    text-anchor="middle" 
+    fill="url(#logoVibrantGrad)" 
+    font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif" 
+    font-size="44" 
+    font-weight="800" 
+    letter-spacing="0.4em"
+    style="text-transform: uppercase;"
+  >
+    ROHAN
+  </text>
+
+  <!-- 2. EKAM (High-Contrast Roman Serif with Wide Tracking) -->
+  <text 
+    x="300" 
+    y="200" 
+    text-anchor="middle" 
+    fill="url(#logoVibrantGrad)" 
+    font-family="'Cormorant Garamond', 'Cinzel', Georgia, serif" 
+    font-size="135" 
+    font-weight="500" 
+    letter-spacing="0.28em"
+    filter="url(#subtleGlow)"
+  >
+    EKAM
+  </text>
+
+  <!-- 3. BALEWADI -->
+  <text 
+    x="300" 
+    y="280" 
+    text-anchor="middle" 
+    fill="url(#logoVibrantGrad)" 
+    font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif" 
+    font-size="28" 
+    font-weight="700" 
+    letter-spacing="0.6em"
+    style="text-transform: uppercase;"
+  >
+    BALEWADI
+  </text>
+</svg>

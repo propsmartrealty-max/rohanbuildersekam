@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ArrowRight, Sparkles, Download, Layers, ShieldCheck, FileText, ChevronRight, Waves } from 'lucide-react';
 import { OFFICIAL_PROJECT_DETAILS } from '../data/projectData';
+import RohanEkamLogo from './RohanEkamLogo';
 
 export default function Hero({ onOpenVipModal }) {
   const [activeBannerIdx, setActiveBannerIdx] = useState(0);
@@ -36,9 +37,14 @@ export default function Hero({ onOpenVipModal }) {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex flex-col items-center text-center">
         {/* Curated Eyebrow Badge in Frosted Glass */}
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-panel text-stone-800 text-xs sm:text-sm font-semibold tracking-widest uppercase mb-5 shadow-xs glass-shimmer">
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-panel text-stone-800 text-xs sm:text-sm font-semibold tracking-widest uppercase mb-4 shadow-xs glass-shimmer">
           <Sparkles className="w-4 h-4 text-amber-700 animate-pulse" />
           <span>Official Showcase • Rohan Builders & Ar. Sanjay Mohe</span>
+        </div>
+
+        {/* Colorful Brand Insignia (Exact User Typography) */}
+        <div className="mb-5 p-3 rounded-3xl glass-panel-glow border border-white/90 shadow-lg shadow-stone-900/5 transition-all duration-300 hover:scale-105 glass-shimmer">
+          <RohanEkamLogo variant="stacked" />
         </div>
 
         {/* Monumental Headline in Deep Charcoal / Espresso */}
