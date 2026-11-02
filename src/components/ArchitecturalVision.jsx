@@ -6,14 +6,18 @@ export default function ArchitecturalVision() {
   const [isMasterPlanOpen, setIsMasterPlanOpen] = useState(false);
 
   return (
-    <section id="vision" className="py-20 relative overflow-hidden bg-[#EFECE6] border-t border-b border-stone-200">
-      <div className="absolute inset-0 arch-grid-pattern opacity-40 pointer-events-none" />
+    <section id="vision" className="py-20 relative overflow-hidden bg-[#F5F2EB] border-t border-b border-stone-300/80">
+      {/* Drifting Glass Ambient Gradient Orbs */}
+      <div className="glass-orb w-80 h-80 bg-[#E8D5C4] -top-16 -left-16 animate-blob" />
+      <div className="glass-orb w-96 h-96 bg-[#DDD4C4] -bottom-20 right-10 animate-blob [animation-delay:5s]" />
+
+      <div className="absolute inset-0 arch-grid-pattern opacity-30 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-stone-300 text-stone-700 text-xs font-mono tracking-widest uppercase mb-3 shadow-xs">
-            <Compass className="w-3.5 h-3.5 text-amber-700" />
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-panel text-stone-700 text-xs font-mono tracking-widest uppercase mb-3 shadow-xs glass-shimmer">
+            <Compass className="w-3.5 h-3.5 text-amber-700 animate-spin [animation-duration:12s]" />
             <span>Architectural Concept</span>
           </div>
           <h2 className="font-serif text-3xl sm:text-5xl font-normal text-stone-900 tracking-tight mb-3">
@@ -28,17 +32,17 @@ export default function ArchitecturalVision() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center mb-10">
           {/* Left Column: Official Architect Portrait & Quote */}
           <div className="lg:col-span-7 space-y-6">
-            <div className="relative pl-6 border-l-2 border-stone-800 py-2">
-              <Quote className="w-8 h-8 text-stone-300 absolute -top-3 -left-3" />
+            <div className="relative pl-6 py-6 pr-6 rounded-3xl glass-panel-glow border-l-4 border-l-stone-900 border border-white/90 shadow-lg shadow-stone-900/5 glass-shimmer">
+              <Quote className="w-8 h-8 text-stone-300 absolute top-4 right-4" />
               <p className="font-serif text-lg sm:text-2xl text-stone-900 italic leading-snug">
                 "{OFFICIAL_PROJECT_DETAILS.architectNote}"
               </p>
               
-              <div className="mt-5 flex items-center gap-4">
+              <div className="mt-6 flex items-center gap-4 pt-4 border-t border-stone-200/80">
                 <img
                   src={OFFICIAL_PROJECT_DETAILS.architectImage}
                   alt="Ar. Sanjay Mohe"
-                  className="w-14 h-14 rounded-full object-cover border-2 border-stone-400 p-0.5 bg-white shadow-sm"
+                  className="w-14 h-14 rounded-full object-cover border-2 border-stone-400 p-0.5 bg-white shadow-sm ring-2 ring-white"
                 />
                 <div>
                   <div className="text-sm font-bold text-stone-900">Ar. Sanjay Mohe</div>
@@ -49,15 +53,15 @@ export default function ArchitecturalVision() {
             </div>
 
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2">
-              <div className="glass-panel p-4 rounded-2xl border border-stone-200 shadow-xs">
+              <div className="glass-panel glass-card-hover glass-shimmer p-4 rounded-2xl border border-white/90 shadow-xs">
                 <div className="text-xl sm:text-2xl font-serif font-bold text-stone-900">13 Acres</div>
                 <div className="text-xs text-stone-600 mt-0.5">Riverside Land Parcel</div>
               </div>
-              <div className="glass-panel p-4 rounded-2xl border border-stone-200 shadow-xs">
+              <div className="glass-panel glass-card-hover glass-shimmer p-4 rounded-2xl border border-white/90 shadow-xs">
                 <div className="text-xl sm:text-2xl font-serif font-bold text-stone-900">Level 14</div>
                 <div className="text-xs text-stone-600 mt-0.5">Sky Ground in the Air</div>
               </div>
-              <div className="glass-panel p-4 rounded-2xl border border-stone-200 shadow-xs col-span-2 sm:col-span-1">
+              <div className="glass-panel glass-card-hover glass-shimmer p-4 rounded-2xl border border-white/90 shadow-xs col-span-2 sm:col-span-1">
                 <div className="text-xl sm:text-2xl font-serif font-bold text-stone-900">PMC</div>
                 <div className="text-xs text-stone-600 mt-0.5">Pune Municipal Limits</div>
               </div>
@@ -66,13 +70,13 @@ export default function ArchitecturalVision() {
 
           {/* Right Column: Master Plan Card */}
           <div className="lg:col-span-5">
-            <div className="relative rounded-3xl overflow-hidden border border-stone-300 glass-panel-glow p-5 group shadow-sm">
+            <div className="relative rounded-3xl overflow-hidden glass-panel-glow border border-white/90 p-5 group shadow-xl shadow-stone-900/5 glass-card-hover">
               <div className="flex items-center justify-between pb-3 border-b border-stone-200 mb-3">
                 <div className="flex items-center gap-2">
                   <Ruler className="w-4 h-4 text-amber-800" />
                   <span className="text-xs font-mono text-stone-900 uppercase tracking-wider font-semibold">Official Master Plan</span>
                 </div>
-                <span className="text-[10px] px-2.5 py-0.5 rounded-full bg-stone-100 text-stone-800 font-mono font-semibold border border-stone-300">
+                <span className="text-[10px] px-2.5 py-0.5 rounded-full bg-white text-stone-800 font-mono font-semibold border border-stone-300/80 shadow-xs">
                   13-ACRE PARCEL
                 </span>
               </div>
@@ -80,7 +84,7 @@ export default function ArchitecturalVision() {
               {/* Master Plan Thumbnail */}
               <div 
                 onClick={() => setIsMasterPlanOpen(true)}
-                className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-white border border-stone-200 cursor-pointer group/img"
+                className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-white border border-stone-200 cursor-pointer group/img glass-shimmer"
               >
                 <img
                   src={OFFICIAL_PROJECT_DETAILS.masterPlanImage}
@@ -89,7 +93,7 @@ export default function ArchitecturalVision() {
                 />
                 
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover/img:opacity-100 transition-opacity bg-stone-950/40 backdrop-blur-xs">
-                  <span className="px-5 py-2.5 rounded-full bg-stone-900 text-white font-bold text-xs uppercase tracking-wider flex items-center gap-2 shadow-2xl">
+                  <span className="px-5 py-2.5 rounded-full bg-stone-900 text-white font-bold text-xs uppercase tracking-wider flex items-center gap-2 shadow-2xl glass-shimmer">
                     <Maximize2 className="w-4 h-4 text-amber-400" />
                     <span>View High-Res Master Plan</span>
                   </span>

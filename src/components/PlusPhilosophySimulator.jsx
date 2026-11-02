@@ -81,14 +81,18 @@ export default function PlusPhilosophySimulator() {
   };
 
   return (
-    <section id="plus-philosophy" className="py-20 relative overflow-hidden bg-[#EFECE6] border-t border-b border-stone-200">
+    <section id="plus-philosophy" className="py-20 relative overflow-hidden bg-[#F5F2EB] border-t border-b border-stone-300/80">
+      {/* Drifting Glass Ambient Gradient Orbs */}
+      <div className="glass-orb w-96 h-96 bg-[#E8D5C4] -top-20 -left-20 animate-blob" />
+      <div className="glass-orb w-[400px] h-[400px] bg-[#C8DECE] -bottom-20 -right-20 animate-blob [animation-delay:4s]" />
+
       <div className="absolute inset-0 arch-dots-pattern opacity-30 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-stone-300 text-stone-700 text-xs font-mono tracking-widest uppercase mb-3 shadow-xs">
-            <Activity className="w-3.5 h-3.5 text-amber-700" />
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-panel text-stone-700 text-xs font-mono tracking-widest uppercase mb-3 shadow-xs glass-shimmer">
+            <Activity className="w-3.5 h-3.5 text-amber-700 animate-pulse" />
             <span>Architectural Science Lab</span>
           </div>
           <h2 className="font-serif text-3xl sm:text-5xl font-normal text-stone-900 tracking-tight mb-3">
@@ -112,17 +116,17 @@ export default function PlusPhilosophySimulator() {
               <button
                 key={pillar.id}
                 onClick={() => setActivePillar(pillar.id)}
-                className={`p-4 rounded-2xl border text-left transition-all duration-300 shadow-xs ${
+                className={`p-4 rounded-2xl border text-left transition-all duration-300 shadow-sm glass-card-hover glass-shimmer ${
                   isSelected
-                    ? 'bg-white border-stone-800 shadow-sm'
-                    : 'bg-[#FAF8F5] border-stone-200 hover:border-stone-400'
+                    ? 'glass-panel-glow border-stone-900 ring-2 ring-stone-900/10 scale-102'
+                    : 'glass-panel border-white/80 hover:border-stone-400'
                 }`}
               >
                 <div className="flex items-center justify-between mb-2">
                   <span className={`text-2xl font-serif font-black ${isSelected ? 'text-amber-800' : 'text-stone-400'}`}>
                     {pillar.letter}
                   </span>
-                  <Icon className={`w-5 h-5 ${isSelected ? 'text-stone-900' : 'text-stone-400'}`} />
+                  <Icon className={`w-5 h-5 ${isSelected ? 'text-stone-900 animate-bounce' : 'text-stone-400'}`} />
                 </div>
                 <div className={`text-sm font-bold ${isSelected ? 'text-stone-900' : 'text-stone-700'}`}>
                   {pillar.name}
@@ -136,9 +140,9 @@ export default function PlusPhilosophySimulator() {
         </div>
 
         {/* Simulation Canvas Stage */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center glass-panel-glow rounded-3xl p-6 sm:p-10 border border-stone-300">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center glass-panel-glow rounded-3xl p-6 sm:p-10 border border-white/90 shadow-xl shadow-stone-900/5">
           {/* Left: Simulation Canvas */}
-          <div className="lg:col-span-7 bg-white rounded-2xl p-6 border border-stone-200 relative overflow-hidden min-h-[380px] flex flex-col justify-between shadow-xs">
+          <div className="lg:col-span-7 glass-panel rounded-2xl p-6 border border-white/90 relative overflow-hidden min-h-[380px] flex flex-col justify-between shadow-xs">
             <div className="flex items-center justify-between pb-3 border-b border-stone-200 z-10">
               <div className="flex items-center gap-2">
                 <span className="w-2.5 h-2.5 rounded-full bg-emerald-600 animate-ping"></span>

@@ -12,7 +12,7 @@ export default {
           100: '#F7F4EE',
           150: '#F5F2EB', // Signature Warm Architectural Beige
           200: '#ECE6DC',
-          250: '#E6DFC',
+          250: '#E6DFD4',
           300: '#DDD4C4',
           400: '#C8BCA7',
           500: '#AD9D84',
@@ -32,21 +32,46 @@ export default {
           500: '#996515',
           600: '#7B4E0A',
           700: '#5C3806',
-        },
-        river: {
-          500: '#155E75',
-          600: '#0E7490',
-          700: '#164E63',
-          800: '#083344',
         }
       },
       fontFamily: {
         serif: ['Cormorant Garamond', 'Cinzel', 'Playfair Display', 'serif'],
         sans: ['Plus Jakarta Sans', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
       },
-      backgroundImage: {
-        'warm-shimmer': 'linear-gradient(135deg, #F5F2EB 0%, #FAF8F5 50%, #ECE6DC 100%)',
-        'espresso-gradient': 'linear-gradient(135deg, #1C1917 0%, #292524 100%)',
+      keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-8px)' },
+        },
+        floatSlow: {
+          '0%, 100%': { transform: 'translateY(0px) rotate(0deg)' },
+          '50%': { transform: 'translateY(-12px) rotate(1deg)' },
+        },
+        blobDrift: {
+          '0%, 100%': { transform: 'translate(0px, 0px) scale(1)' },
+          '33%': { transform: 'translate(30px, -40px) scale(1.08)' },
+          '66%': { transform: 'translate(-25px, 25px) scale(0.95)' },
+        },
+        glassShimmer: {
+          '0%': { transform: 'translateX(-150%)' },
+          '100%': { transform: 'translateX(200%)' },
+        },
+        pulseGlow: {
+          '0%, 100%': { opacity: '0.5', transform: 'scale(1)' },
+          '50%': { opacity: '0.85', transform: 'scale(1.03)' },
+        },
+        flowWind: {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(200%)' },
+        }
+      },
+      animation: {
+        float: 'float 4s ease-in-out infinite',
+        floatSlow: 'floatSlow 7s ease-in-out infinite',
+        blob: 'blobDrift 14s ease-in-out infinite',
+        shimmer: 'glassShimmer 3.5s ease-in-out infinite',
+        pulseGlow: 'pulseGlow 3s ease-in-out infinite',
+        flowWind: 'flowWind 2.5s linear infinite',
       }
     },
   },

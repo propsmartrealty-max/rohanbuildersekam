@@ -37,12 +37,20 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#F5F2EB] text-stone-900 flex flex-col relative selection:bg-stone-900 selection:text-white pb-14">
+    <div className="min-h-screen bg-[#F5F2EB] text-stone-900 flex flex-col relative selection:bg-stone-900 selection:text-white pb-14 overflow-x-hidden">
+      {/* Global Ambient Glass Refraction Orbs (Living, breathing atmosphere behind frosted surfaces) */}
+      <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
+        <div className="glass-orb w-[650px] h-[650px] bg-[#E8D5C4]/40 -top-40 -left-40 animate-blob" />
+        <div className="glass-orb w-[600px] h-[600px] bg-[#C8DECE]/35 top-[30%] -right-48 animate-blob [animation-delay:4s]" />
+        <div className="glass-orb w-[550px] h-[550px] bg-[#DDD4C4]/40 top-[60%] -left-40 animate-blob [animation-delay:8s]" />
+        <div className="glass-orb w-[600px] h-[600px] bg-[#E8D5C4]/35 top-[85%] -right-40 animate-blob [animation-delay:12s]" />
+      </div>
+
       {/* Top Floating Navbar */}
       <Navbar onOpenVipModal={() => openVipModalWithConfig('3bhk-type1')} />
 
       {/* Main Container */}
-      <main className="flex-1 bg-[#F5F2EB]">
+      <main className="flex-1 bg-transparent relative z-10">
         {/* 1. Official 4K Hero Carousel */}
         <Hero onOpenVipModal={() => openVipModalWithConfig('3bhk-type1')} />
 

@@ -108,12 +108,16 @@ export default function SkyGroundExplorer({ onOpenVipModal }) {
 
   return (
     <section id="sky-ground" className="py-20 relative overflow-hidden bg-[#F5F2EB]">
+      {/* Drifting Glass Ambient Gradient Orbs */}
+      <div className="glass-orb w-96 h-96 bg-[#C8DECE] -top-24 left-1/4 animate-blob" />
+      <div className="glass-orb w-80 h-80 bg-[#E8D5C4] bottom-10 -right-20 animate-blob [animation-delay:6s]" />
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
           <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-stone-300 text-stone-700 text-xs font-mono uppercase tracking-widest mb-3 shadow-xs">
-              <Layers className="w-3.5 h-3.5 text-amber-700" />
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-panel text-stone-700 text-xs font-mono uppercase tracking-widest mb-3 shadow-xs glass-shimmer">
+              <Layers className="w-3.5 h-3.5 text-amber-700 animate-pulse" />
               <span>Multi-Tier Architecture</span>
             </div>
             <h2 className="font-serif text-3xl sm:text-5xl font-normal text-stone-900 tracking-tight">
@@ -124,8 +128,8 @@ export default function SkyGroundExplorer({ onOpenVipModal }) {
             </p>
           </div>
 
-          {/* Level Switcher */}
-          <div className="flex bg-[#EFECE6] p-1.5 rounded-2xl border border-stone-300 self-start shadow-xs">
+          {/* Level Switcher in Frosted Glass */}
+          <div className="flex glass-panel p-1.5 rounded-2xl border border-white/90 self-start shadow-sm">
             {officialRealms.map((realm, idx) => (
               <button
                 key={realm.id}
@@ -135,13 +139,13 @@ export default function SkyGroundExplorer({ onOpenVipModal }) {
                 }}
                 className={`relative px-4 py-2 rounded-xl text-xs font-semibold transition-all duration-300 flex items-center gap-2 ${
                   activeRealmIndex === idx
-                    ? 'bg-stone-900 text-white shadow-sm'
-                    : 'text-stone-600 hover:text-stone-900 hover:bg-white/50'
+                    ? 'bg-stone-900 text-white shadow-md shadow-stone-900/10 scale-102'
+                    : 'text-stone-700 hover:text-stone-950 hover:bg-white/70'
                 }`}
               >
                 <span>{realm.level}</span>
                 {idx === 0 && (
-                  <span className="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
                 )}
               </button>
             ))}
@@ -152,7 +156,7 @@ export default function SkyGroundExplorer({ onOpenVipModal }) {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           {/* Left Column: Official 4K Rendering */}
           <div className="lg:col-span-7">
-            <div className="relative rounded-3xl overflow-hidden border border-stone-300 glass-panel-glow shadow-md group">
+            <div className="relative rounded-3xl overflow-hidden border border-white/90 glass-panel-glow shadow-xl shadow-stone-900/5 group glass-card-hover">
               <div className="relative aspect-[16/10] w-full overflow-hidden bg-stone-100">
                 <img
                   src={currentRealm.image}
@@ -161,13 +165,13 @@ export default function SkyGroundExplorer({ onOpenVipModal }) {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-stone-950/70 via-transparent to-transparent" />
 
-                {/* Altitude Tag */}
+                {/* Altitude Tag in Frosted Glass */}
                 <div className="absolute top-4 left-4 z-20 flex items-center gap-2">
-                  <div className="px-3 py-1.5 rounded-full bg-white/90 backdrop-blur-md border border-stone-300 text-stone-900 text-xs font-mono font-semibold flex items-center gap-1.5 shadow-sm">
+                  <div className="px-3.5 py-1.5 rounded-full glass-panel text-stone-900 text-xs font-mono font-semibold flex items-center gap-1.5 shadow-md shadow-stone-900/10">
                     <Compass className="w-3.5 h-3.5 text-amber-700" />
                     <span>{currentRealm.altitude}</span>
                   </div>
-                  <span className="px-2.5 py-1 rounded-full bg-stone-900 text-white text-[11px] font-medium shadow-sm">
+                  <span className="px-3 py-1 rounded-full bg-stone-900/90 backdrop-blur-md text-white text-[11px] font-medium shadow-md">
                     {currentRealm.badge}
                   </span>
                 </div>
@@ -197,10 +201,10 @@ export default function SkyGroundExplorer({ onOpenVipModal }) {
                           <span className={`absolute -inset-2 rounded-full opacity-75 animate-ping ${
                             isSelected ? 'bg-amber-400' : 'bg-white'
                           }`} />
-                          <div className={`w-7 h-7 rounded-full flex items-center justify-center font-bold text-xs shadow-xl transition-all ${
+                          <div className={`w-8 h-8 rounded-full flex items-center justify-center font-bold text-xs shadow-2xl transition-all ${
                             isSelected
-                              ? 'bg-amber-400 text-stone-950 ring-4 ring-amber-400/30'
-                              : 'bg-stone-900 text-white hover:bg-amber-400 hover:text-stone-950'
+                              ? 'bg-amber-400 text-stone-950 ring-4 ring-amber-400/40 scale-110'
+                              : 'glass-panel text-stone-900 hover:bg-stone-900 hover:text-white'
                           }`}>
                             {fIdx + 1}
                           </div>
@@ -210,9 +214,9 @@ export default function SkyGroundExplorer({ onOpenVipModal }) {
                   })}
                 </div>
 
-                <div className="absolute bottom-4 left-4 right-4 z-20 flex items-center justify-between p-3 rounded-2xl bg-white/90 backdrop-blur-md border border-stone-200 text-xs shadow-sm">
+                <div className="absolute bottom-4 left-4 right-4 z-20 flex items-center justify-between p-3.5 rounded-2xl glass-panel text-xs shadow-lg">
                   <div className="flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-emerald-600"></span>
+                    <span className="w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span>
                     <span className="text-stone-800 font-medium">Click numbered hotspots to preview features</span>
                   </div>
                   <span className="text-amber-800 font-mono font-bold text-[11px]">{currentRealm.level}</span>
@@ -220,7 +224,7 @@ export default function SkyGroundExplorer({ onOpenVipModal }) {
               </div>
 
               {/* Realm Descriptive Strip */}
-              <div className="p-6 bg-white border-t border-stone-200">
+              <div className="p-6 bg-white/80 backdrop-blur-md border-t border-stone-200/80">
                 <div className="flex items-center justify-between mb-2">
                   <h3 className="font-serif text-2xl font-bold text-stone-900">
                     {currentRealm.name}
@@ -239,9 +243,9 @@ export default function SkyGroundExplorer({ onOpenVipModal }) {
           {/* Right Column: Active Zone Spotlight */}
           <div className="lg:col-span-5 space-y-4">
             {currentRealm.features[selectedHotspot] && (
-              <div className="glass-panel-glow p-6 rounded-3xl border border-stone-300 relative overflow-hidden shadow-sm">
+              <div className="glass-panel-glow p-6 rounded-3xl border border-white/90 relative overflow-hidden shadow-xl shadow-stone-900/5 glass-card-hover glass-shimmer">
                 <div className="flex items-center justify-between mb-3">
-                  <span className="px-2.5 py-1 rounded-full bg-[#EFECE6] text-stone-800 font-mono text-[11px] font-semibold border border-stone-300">
+                  <span className="px-3 py-1 rounded-full glass-panel text-stone-800 font-mono text-[11px] font-semibold border border-white">
                     FEATURE {selectedHotspot + 1} OF {currentRealm.features.length}
                   </span>
                   <span className="text-xs text-stone-500 font-medium">
@@ -257,12 +261,12 @@ export default function SkyGroundExplorer({ onOpenVipModal }) {
                   {currentRealm.features[selectedHotspot].description}
                 </p>
 
-                <div className="grid grid-cols-2 gap-3 pt-3 border-t border-stone-200 text-xs">
-                  <div className="p-3 rounded-xl bg-[#FAF8F5] border border-stone-200">
+                <div className="grid grid-cols-2 gap-3 pt-3 border-t border-stone-200/80 text-xs">
+                  <div className="p-3.5 rounded-2xl glass-panel border border-white/80">
                     <span className="text-stone-500 block text-[10px] uppercase font-mono">Access</span>
                     <strong className="text-stone-900">All Residents</strong>
                   </div>
-                  <div className="p-3 rounded-xl bg-[#FAF8F5] border border-stone-200">
+                  <div className="p-3.5 rounded-2xl glass-panel border border-white/80">
                     <span className="text-stone-500 block text-[10px] uppercase font-mono">Ambiance</span>
                     <strong className="text-amber-800">Open-Air River Breeze</strong>
                   </div>
@@ -271,13 +275,13 @@ export default function SkyGroundExplorer({ onOpenVipModal }) {
                 <div className="mt-5 flex items-center justify-between">
                   <button
                     onClick={onOpenVipModal}
-                    className="text-xs font-bold uppercase tracking-wider text-white bg-stone-900 hover:bg-stone-800 px-4 py-2 rounded-xl transition-all flex items-center gap-1.5 shadow-sm"
+                    className="text-xs font-bold uppercase tracking-wider text-white bg-stone-900 hover:bg-stone-800 px-5 py-2.5 rounded-xl transition-all flex items-center gap-1.5 shadow-md shadow-stone-900/10 glass-shimmer"
                   >
                     <span>Tour this realm</span>
                     <ArrowUpRight className="w-3.5 h-3.5" />
                   </button>
                   <span className="text-[11px] text-stone-500 flex items-center gap-1">
-                    <Volume2 className="w-3.5 h-3.5 text-emerald-700" />
+                    <Volume2 className="w-3.5 h-3.5 text-emerald-700 animate-pulse" />
                     <span>River breeze audible</span>
                   </span>
                 </div>
@@ -285,7 +289,7 @@ export default function SkyGroundExplorer({ onOpenVipModal }) {
             )}
 
             {/* Complete Realm Feature List */}
-            <div className="glass-panel p-5 rounded-3xl border border-stone-200 space-y-2 shadow-xs">
+            <div className="glass-panel p-5 rounded-3xl border border-white/90 space-y-2 shadow-sm">
               <div className="text-xs font-mono uppercase tracking-wider text-stone-600 px-2 pb-2 border-b border-stone-200 flex justify-between font-semibold">
                 <span>Features in {currentRealm.level}</span>
                 <span className="text-amber-800">{currentRealm.features.length} Designed Zones</span>
@@ -297,18 +301,18 @@ export default function SkyGroundExplorer({ onOpenVipModal }) {
                     onClick={() => setSelectedHotspot(idx)}
                     className={`w-full text-left p-3 rounded-2xl text-xs transition-all flex items-start justify-between gap-3 ${
                       selectedHotspot === idx
-                        ? 'bg-white border border-stone-400 text-stone-950 font-medium shadow-xs'
+                        ? 'glass-panel-glow border border-amber-600/40 text-stone-950 font-medium shadow-sm'
                         : 'hover:bg-white/60 text-stone-700 border border-transparent'
                     }`}
                   >
                     <div>
                       <div className="font-semibold text-stone-900 flex items-center gap-2">
-                        <span className={`w-1.5 h-1.5 rounded-full ${selectedHotspot === idx ? 'bg-amber-600' : 'bg-stone-400'}`} />
+                        <span className={`w-1.5 h-1.5 rounded-full ${selectedHotspot === idx ? 'bg-amber-600 animate-pulse' : 'bg-stone-400'}`} />
                         <span>{feat.title}</span>
                       </div>
                       <div className="text-[11px] text-stone-500 mt-0.5 line-clamp-1">{feat.description}</div>
                     </div>
-                    <span className="text-[10px] px-2 py-0.5 rounded bg-[#FAF8F5] text-stone-600 border border-stone-200 whitespace-nowrap">
+                    <span className="text-[10px] px-2.5 py-0.5 rounded-full glass-panel text-stone-600 border border-stone-200/60 whitespace-nowrap">
                       {feat.tag}
                     </span>
                   </button>

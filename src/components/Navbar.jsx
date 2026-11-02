@@ -21,22 +21,23 @@ export default function Navbar({ onOpenVipModal }) {
   };
 
   const navLinks = [
-    { name: 'Sky Ground', href: '#sky-ground' },
-    { name: 'Rohan PLUS', href: '#plus-philosophy' },
-    { name: 'Residences', href: '#residences' },
+    { name: 'Sky Ground', href: '#skyGround' },
+    { name: 'Rohan PLUS', href: '#plusPhilosophy' },
+    { name: 'Floor Plans', href: '#floorPlan' },
     { name: 'Amenities', href: '#amenities' },
-    { name: 'Balewadi Radar', href: '#location' },
-    { name: 'Cost Planner', href: '#financial-suite' },
+    { name: 'Location', href: '#location' },
+    { name: 'Gallery', href: '#gallery' },
+    { name: 'Cost Planner', href: '#financialSuite' },
   ];
 
   return (
     <>
       <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-3 sm:py-4 px-4 sm:px-6">
         <div
-          className={`max-w-7xl mx-auto rounded-full transition-all duration-500 px-4 sm:px-6 py-2.5 flex items-center justify-between ${
+          className={`max-w-7xl mx-auto rounded-full transition-all duration-500 px-4 sm:px-6 py-2.5 flex items-center justify-between glass-panel-glow border border-white/95 shadow-xl shadow-stone-900/5 ${
             isScrolled
-              ? 'bg-[#FAF8F5]/90 backdrop-blur-2xl border border-stone-300/80 shadow-lg shadow-stone-900/5'
-              : 'bg-[#FAF8F5]/70 backdrop-blur-xl border border-stone-200/80'
+              ? 'bg-white/90 shadow-2xl scale-[0.99]'
+              : 'bg-white/80'
           }`}
         >
           {/* Brand Monogram */}
@@ -51,7 +52,7 @@ export default function Navbar({ onOpenVipModal }) {
                 <span className="font-serif text-base sm:text-lg font-bold tracking-widest text-stone-900 group-hover:text-amber-800 transition-colors">
                   ROHAN EKAM
                 </span>
-                <span className="hidden sm:inline-block text-[10px] px-2 py-0.5 rounded-full border border-stone-300 text-stone-600 font-mono tracking-wider bg-white/60">
+                <span className="hidden sm:inline-block text-[10px] px-2.5 py-0.5 rounded-full border border-stone-300 text-stone-700 font-mono tracking-wider glass-panel">
                   BALEWADI
                 </span>
               </div>
@@ -62,7 +63,7 @@ export default function Navbar({ onOpenVipModal }) {
           </a>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden lg:flex items-center gap-6">
+          <nav className="hidden lg:flex items-center gap-5">
             {navLinks.map((link) => (
               <a
                 key={link.name}
@@ -83,7 +84,7 @@ export default function Navbar({ onOpenVipModal }) {
               className={`hidden md:flex items-center gap-2 text-xs px-3.5 py-1.5 rounded-full border transition-all duration-300 ${
                 isPlayingAudio
                   ? 'border-emerald-600 bg-emerald-50 text-emerald-800 shadow-sm'
-                  : 'border-stone-300 bg-white/60 text-stone-600 hover:text-stone-900 hover:border-stone-400'
+                  : 'border-white/90 glass-panel text-stone-600 hover:text-stone-900 hover:border-stone-400'
               }`}
             >
               {isPlayingAudio ? (
@@ -105,15 +106,15 @@ export default function Navbar({ onOpenVipModal }) {
             </button>
 
             {/* MahaRERA Badge */}
-            <div className="hidden xl:flex items-center gap-1.5 text-[11px] text-stone-600 border border-stone-300 px-3 py-1 rounded-full bg-white/70">
-              <span className="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
-              <span className="font-mono text-stone-700 font-medium">P52100052298</span>
+            <div className="hidden xl:flex items-center gap-1.5 text-[11px] text-stone-700 border border-white/90 px-3 py-1 rounded-full glass-panel">
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-600 animate-pulse"></span>
+              <span className="font-mono text-stone-800 font-medium">P52100052298</span>
             </div>
 
             {/* VIP Site Visit Button */}
             <button
               onClick={onOpenVipModal}
-              className="relative group overflow-hidden px-4 sm:px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider text-white bg-stone-900 hover:bg-stone-800 transition-all duration-300 shadow-md shadow-stone-900/10 active:scale-95"
+              className="relative group overflow-hidden px-4 sm:px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider text-white bg-stone-900 hover:bg-stone-800 transition-all duration-300 shadow-md shadow-stone-900/10 active:scale-95 glass-shimmer"
             >
               <span className="relative z-10 flex items-center gap-1.5">
                 <Sparkles className="w-3.5 h-3.5 text-amber-400" />
@@ -132,9 +133,9 @@ export default function Navbar({ onOpenVipModal }) {
           </div>
         </div>
 
-        {/* Mobile Dropdown Menu */}
+        {/* Mobile Dropdown Menu in Frosted Glass */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden mt-2 max-w-7xl mx-auto rounded-3xl bg-[#FAF8F5]/98 backdrop-blur-2xl border border-stone-300 p-5 space-y-4 shadow-xl">
+          <div className="lg:hidden mt-2 max-w-7xl mx-auto rounded-3xl glass-panel-glow border border-white/95 p-5 space-y-4 shadow-2xl backdrop-blur-3xl animate-fadeIn">
             <div className="flex items-center justify-between pb-3 border-b border-stone-200">
               <span className="text-xs font-mono text-stone-800 font-bold">MAHARERA: P52100052298</span>
               <button

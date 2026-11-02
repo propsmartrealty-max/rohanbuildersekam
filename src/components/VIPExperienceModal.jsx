@@ -27,23 +27,27 @@ export default function VIPExperienceModal({ isOpen, onClose, initialConfig = '3
   };
 
   return (
-    <div className="fixed inset-0 z-50 overflow-y-auto bg-stone-950/70 backdrop-blur-md flex items-center justify-center p-4">
+    <div className="fixed inset-0 z-50 overflow-y-auto bg-stone-950/70 backdrop-blur-xl flex items-center justify-center p-4">
       <div 
-        className="relative max-w-xl w-full bg-[#FAF8F5] rounded-3xl border border-stone-300 p-6 sm:p-8 shadow-2xl overflow-hidden"
+        className="relative max-w-xl w-full glass-panel-glow rounded-3xl border border-white/95 p-6 sm:p-8 shadow-2xl overflow-hidden glass-shimmer"
         onClick={(e) => e.stopPropagation()}
       >
+        {/* Drifting Glass Ambient Gradient Orbs inside modal */}
+        <div className="glass-orb w-64 h-64 bg-[#E8D5C4] -top-16 -left-16 animate-blob" />
+        <div className="glass-orb w-64 h-64 bg-[#C8DECE] -bottom-16 -right-16 animate-blob [animation-delay:4s]" />
+
         <button
           onClick={onClose}
-          className="absolute top-6 right-6 w-9 h-9 rounded-full bg-white border border-stone-300 text-stone-500 hover:text-stone-900 flex items-center justify-center transition-colors z-20 shadow-xs"
+          className="absolute top-6 right-6 w-9 h-9 rounded-full glass-panel border border-stone-300 text-stone-700 hover:text-stone-900 flex items-center justify-center transition-all duration-300 z-20 shadow-xs hover:scale-105"
         >
           <X className="w-5 h-5" />
         </button>
 
         {!submitted ? (
-          <div>
+          <div className="relative z-10">
             <div className="mb-6">
-              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-stone-300 text-stone-800 text-xs font-mono uppercase tracking-widest mb-2 shadow-xs">
-                <Sparkles className="w-3.5 h-3.5 text-amber-600" />
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full glass-panel text-stone-800 text-xs font-mono uppercase tracking-widest mb-2 shadow-xs">
+                <Sparkles className="w-3.5 h-3.5 text-amber-600 animate-pulse" />
                 <span>Rohan Ekam Experience Center</span>
               </div>
               <h3 className="font-serif text-2xl sm:text-3xl font-bold text-stone-900">
@@ -63,7 +67,7 @@ export default function VIPExperienceModal({ isOpen, onClose, initialConfig = '3
                   placeholder="e.g. Vikramaditya Singhania"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="w-full bg-white border border-stone-300 rounded-xl px-4 py-2.5 text-stone-900 placeholder-stone-400 focus:outline-none focus:border-stone-800 shadow-xs"
+                  className="w-full glass-panel border border-white/90 rounded-2xl px-4 py-2.5 text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-stone-900/10 focus:border-stone-800 shadow-xs transition-all"
                 />
               </div>
 
@@ -76,7 +80,7 @@ export default function VIPExperienceModal({ isOpen, onClose, initialConfig = '3
                     placeholder="+91 98220 XXXXX"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="w-full bg-white border border-stone-300 rounded-xl px-4 py-2.5 text-stone-900 placeholder-stone-400 focus:outline-none focus:border-stone-800 shadow-xs"
+                    className="w-full glass-panel border border-white/90 rounded-2xl px-4 py-2.5 text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-stone-900/10 focus:border-stone-800 shadow-xs transition-all"
                   />
                 </div>
                 <div>
@@ -86,7 +90,7 @@ export default function VIPExperienceModal({ isOpen, onClose, initialConfig = '3
                     placeholder="name@executive.com"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full bg-white border border-stone-300 rounded-xl px-4 py-2.5 text-stone-900 placeholder-stone-400 focus:outline-none focus:border-stone-800 shadow-xs"
+                    className="w-full glass-panel border border-white/90 rounded-2xl px-4 py-2.5 text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-stone-900/10 focus:border-stone-800 shadow-xs transition-all"
                   />
                 </div>
               </div>
@@ -97,7 +101,7 @@ export default function VIPExperienceModal({ isOpen, onClose, initialConfig = '3
                   <select
                     value={formData.config}
                     onChange={(e) => setFormData({ ...formData, config: e.target.value })}
-                    className="w-full bg-white border border-stone-300 rounded-xl px-4 py-2.5 text-stone-900 focus:outline-none focus:border-stone-800 shadow-xs font-medium"
+                    className="w-full glass-panel border border-white/90 rounded-2xl px-4 py-2.5 text-stone-900 focus:outline-none focus:border-stone-800 shadow-xs font-medium"
                   >
                     {OFFICIAL_FLOOR_PLANS.map((plan) => (
                       <option key={plan.id} value={plan.id}>
@@ -112,7 +116,7 @@ export default function VIPExperienceModal({ isOpen, onClose, initialConfig = '3
                     type="date"
                     value={formData.date}
                     onChange={(e) => setFormData({ ...formData, date: e.target.value })}
-                    className="w-full bg-white border border-stone-300 rounded-xl px-4 py-2.5 text-stone-900 focus:outline-none focus:border-stone-800 shadow-xs font-medium"
+                    className="w-full glass-panel border border-white/90 rounded-2xl px-4 py-2.5 text-stone-900 focus:outline-none focus:border-stone-800 shadow-xs font-medium"
                   />
                 </div>
               </div>
@@ -122,7 +126,7 @@ export default function VIPExperienceModal({ isOpen, onClose, initialConfig = '3
                 <select
                   value={formData.slot}
                   onChange={(e) => setFormData({ ...formData, slot: e.target.value })}
-                  className="w-full bg-white border border-stone-300 rounded-xl px-4 py-2.5 text-stone-900 focus:outline-none focus:border-stone-800 shadow-xs font-medium"
+                  className="w-full glass-panel border border-white/90 rounded-2xl px-4 py-2.5 text-stone-900 focus:outline-none focus:border-stone-800 shadow-xs font-medium"
                 >
                   <option>10:00 AM (Morning River Breeze Tour)</option>
                   <option>1:30 PM (Midday Solar & Light Test)</option>
@@ -131,7 +135,7 @@ export default function VIPExperienceModal({ isOpen, onClose, initialConfig = '3
                 </select>
               </div>
 
-              <div className="p-3.5 rounded-2xl bg-white border border-stone-300 space-y-2 shadow-xs">
+              <div className="p-4 rounded-2xl glass-panel border border-white/90 space-y-2 shadow-xs">
                 <label className="flex items-center gap-2 cursor-pointer">
                   <input
                     type="checkbox"
@@ -150,14 +154,14 @@ export default function VIPExperienceModal({ isOpen, onClose, initialConfig = '3
                     placeholder="Enter pickup address"
                     value={formData.pickupLocation}
                     onChange={(e) => setFormData({ ...formData, pickupLocation: e.target.value })}
-                    className="w-full bg-[#FAF8F5] border border-stone-300 rounded-xl px-3 py-2 text-stone-900 text-xs mt-2"
+                    className="w-full glass-panel border border-stone-300 rounded-xl px-3 py-2 text-stone-900 text-xs mt-2"
                   />
                 )}
               </div>
 
               <button
                 type="submit"
-                className="w-full py-3.5 rounded-xl bg-stone-900 hover:bg-stone-800 text-white font-bold text-xs uppercase tracking-wider transition-all duration-300 shadow-lg shadow-stone-900/10 active:scale-98"
+                className="w-full py-3.5 rounded-2xl bg-stone-900 hover:bg-stone-800 text-white font-bold text-xs uppercase tracking-wider transition-all duration-300 shadow-lg shadow-stone-900/10 active:scale-98 glass-shimmer"
               >
                 Confirm VIP Reservation
               </button>
@@ -176,8 +180,8 @@ export default function VIPExperienceModal({ isOpen, onClose, initialConfig = '3
             </form>
           </div>
         ) : (
-          <div className="text-center py-6 space-y-5">
-            <div className="w-16 h-16 rounded-full bg-emerald-100 border border-emerald-300 flex items-center justify-center mx-auto text-emerald-700">
+          <div className="text-center py-6 space-y-5 relative z-10">
+            <div className="w-16 h-16 rounded-full glass-panel border border-emerald-400 flex items-center justify-center mx-auto text-emerald-700 shadow-lg">
               <CheckCircle2 className="w-9 h-9" />
             </div>
 
@@ -193,7 +197,7 @@ export default function VIPExperienceModal({ isOpen, onClose, initialConfig = '3
               </p>
             </div>
 
-            <div className="bg-white border border-stone-300 rounded-2xl p-4 text-xs max-w-sm mx-auto text-left space-y-1.5 font-mono shadow-xs">
+            <div className="glass-panel border border-white/90 rounded-2xl p-4 text-xs max-w-sm mx-auto text-left space-y-1.5 font-mono shadow-md">
               <div className="flex justify-between">
                 <span className="text-stone-500">Booking Pass:</span>
                 <strong className="text-stone-900">{bookingRef}</strong>
