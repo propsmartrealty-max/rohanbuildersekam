@@ -1,98 +1,119 @@
 import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import OfficialTilesBar from './components/OfficialTilesBar';
 import ArchitecturalVision from './components/ArchitecturalVision';
 import SkyGroundExplorer from './components/SkyGroundExplorer';
 import PlusPhilosophySimulator from './components/PlusPhilosophySimulator';
 import ResidencesFloorPlans from './components/ResidencesFloorPlans';
 import AmenitiesShowcase from './components/AmenitiesShowcase';
 import LocationCompass from './components/LocationCompass';
+import OfficialGallerySection from './components/OfficialGallerySection';
+import OfficialInterestedForm from './components/OfficialInterestedForm';
+import OfficialBrochureStrip from './components/OfficialBrochureStrip';
 import OfficialDocuments from './components/OfficialDocuments';
 import OfficialFAQ from './components/OfficialFAQ';
 import FinancialSuite from './components/FinancialSuite';
-import SpecificationsGallery from './components/SpecificationsGallery';
 import Footer from './components/Footer';
+import OfficialWhatsAppBar from './components/OfficialWhatsAppBar';
 import VIPExperienceModal from './components/VIPExperienceModal';
-import { MessageSquare, Sparkles } from 'lucide-react';
+import { OFFICIAL_PROJECT_DETAILS } from './data/projectData';
 
 export default function App() {
   const [isVipModalOpen, setIsVipModalOpen] = useState(false);
   const [modalConfig, setModalConfig] = useState('3bhk-type1');
+  const [isMasterPlanModalOpen, setIsMasterPlanModalOpen] = useState(false);
 
   const openVipModalWithConfig = (config = '3bhk-type1') => {
     setModalConfig(config);
     setIsVipModalOpen(true);
   };
 
+  const scrollToSection = (id) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-    <div className="min-h-screen bg-[#F5F2EB] text-stone-900 flex flex-col relative selection:bg-stone-900 selection:text-white">
+    <div className="min-h-screen bg-[#F5F2EB] text-stone-900 flex flex-col relative selection:bg-stone-900 selection:text-white pb-14">
       {/* Top Floating Navbar */}
       <Navbar onOpenVipModal={() => openVipModalWithConfig('3bhk-type1')} />
 
-      {/* Main Showcase Sections on Warm Beige Canvas */}
+      {/* Main Container */}
       <main className="flex-1 bg-[#F5F2EB]">
-        {/* 4K Hero with Background Carousel */}
+        {/* 1. Official 4K Hero Carousel */}
         <Hero onOpenVipModal={() => openVipModalWithConfig('3bhk-type1')} />
 
-        {/* Architect Ar. Sanjay Mohe Vision & Master Plan */}
-        <ArchitecturalVision />
+        {/* 2. Signature 7 Hover Tiles Bar (Directly beneath Hero) */}
+        <OfficialTilesBar 
+          onOpenMasterPlan={() => scrollToSection('vision')}
+          onOpenBuyingGuide={() => scrollToSection('faq')}
+        />
 
-        {/* The 3-Realm Vertical Explorer (Ground Floor in the Sky) */}
-        <SkyGroundExplorer onOpenVipModal={() => openVipModalWithConfig('3bhk-type1')} />
+        {/* 3. Official Architect's Note (Ar. Sanjay Mohe) & Master Plan */}
+        <div id="architectNote">
+          <ArchitecturalVision />
+        </div>
 
-        {/* Rohan PLUS Physics Lab (Ventilation, Light, Privacy, Space) */}
-        <PlusPhilosophySimulator />
+        {/* 4. The 3-Realm Living & 14th Floor Ground in the Sky */}
+        <div id="skyGround">
+          <SkyGroundExplorer onOpenVipModal={() => openVipModalWithConfig('3bhk-type1')} />
+        </div>
 
-        {/* Official Scraped Floor Plans & Room Specs */}
-        <ResidencesFloorPlans onOpenVipModal={() => openVipModalWithConfig('3bhk-type1')} />
+        {/* 5. Rohan PLUS Science & Physics Lab */}
+        <div id="plusPhilosophy">
+          <PlusPhilosophySimulator />
+        </div>
 
-        {/* 36 Official Amenity Icons from rohanbuilders.com */}
-        <AmenitiesShowcase onOpenVipModal={() => openVipModalWithConfig('3bhk-type1')} />
+        {/* 6. Official Floor Plans (Typical 2, 3 & 4 BHK with 6 Tabs) */}
+        <div id="floorPlan">
+          <ResidencesFloorPlans onOpenVipModal={() => openVipModalWithConfig('3bhk-type1')} />
+        </div>
 
-        {/* Official Balewadi Location Network */}
-        <LocationCompass />
+        {/* 7. Official 36 Amenities with Real Scraped Icons */}
+        <div id="amenities">
+          <AmenitiesShowcase onOpenVipModal={() => openVipModalWithConfig('3bhk-type1')} />
+        </div>
 
-        {/* Official Legal Documents, EC Copy & MahaRERA QR Codes */}
-        <OfficialDocuments />
+        {/* 8. Official Location (Schools, Colleges, Hospitals, Malls) */}
+        <div id="location">
+          <LocationCompass />
+        </div>
 
-        {/* Official FAQ Accordion from Rohan Builders */}
-        <OfficialFAQ />
+        {/* 9. Official Gallery (Sub-Tabs: IMAGES & VIDEOS/360 Walkthroughs) */}
+        <div id="gallery">
+          <OfficialGallerySection />
+        </div>
 
-        {/* Cost Sheet & Mortgage Financial Suite */}
-        <FinancialSuite onOpenVipModal={() => openVipModalWithConfig('3bhk-type1')} />
+        {/* 10. Official "Interested?" Lead Capture Form */}
+        <OfficialInterestedForm />
 
-        {/* 4K Architectural Gallery */}
-        <SpecificationsGallery />
+        {/* 11. Official Detailed Brochure Download Strip */}
+        <OfficialBrochureStrip />
+
+        {/* 12. Legal Documents (EC Copy, Compliance & MahaRERA Phase QR Codes) */}
+        <div id="documents">
+          <OfficialDocuments />
+        </div>
+
+        {/* 13. Official FAQ Accordion (8 Categories, 55 Questions) */}
+        <div id="faq">
+          <OfficialFAQ />
+        </div>
+
+        {/* 14. Financial & Mortgage Planner Suite */}
+        <div id="financialSuite">
+          <FinancialSuite onOpenVipModal={() => openVipModalWithConfig('3bhk-type1')} />
+        </div>
       </main>
 
-      {/* Official Footer with PMC Jurisdiction & Phase Details */}
+      {/* Official Footer */}
       <Footer />
 
-      {/* Floating Concierge Action Buttons (Bottom Right) */}
-      <div className="fixed bottom-6 right-6 z-40 flex flex-col items-end gap-3 pointer-events-auto">
-        {/* WhatsApp Direct Chat */}
-        <a
-          href="https://wa.me/912071178899?text=Hello%20Rohan%20Builders,%20I%20am%20interested%20in%20Rohan%20Ekam%20Balewadi."
-          target="_blank"
-          rel="noreferrer"
-          title="Chat with Rohan Ekam Concierge on WhatsApp"
-          className="w-12 h-12 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white flex items-center justify-center shadow-xl shadow-stone-900/10 hover:scale-105 transition-all duration-300 group relative"
-        >
-          <MessageSquare className="w-5 h-5" />
-          <span className="absolute right-full mr-3 hidden group-hover:block whitespace-nowrap bg-stone-900 text-white text-xs px-2.5 py-1 rounded-lg border border-stone-700 shadow-xl">
-            WhatsApp Concierge
-          </span>
-        </a>
-
-        {/* VIP Tour Pill */}
-        <button
-          onClick={() => openVipModalWithConfig('3bhk-type1')}
-          className="px-4 py-2.5 rounded-full bg-stone-900 hover:bg-stone-800 text-white font-bold text-xs uppercase tracking-wider shadow-xl shadow-stone-900/15 flex items-center gap-2 group hover:scale-105 transition-all duration-300"
-        >
-          <Sparkles className="w-4 h-4 text-amber-400" />
-          <span className="hidden sm:inline">Book VIP Tour</span>
-        </button>
-      </div>
+      {/* Official Sticky WhatsApp Bar (Bottom of Screen) */}
+      <OfficialWhatsAppBar />
 
       {/* VIP Tour Booking Modal */}
       <VIPExperienceModal

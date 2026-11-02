@@ -1,17 +1,34 @@
-// Scraped Official Data from https://rohanbuilders.com/pune-homes/ekam/
+// Official Scraped Data from https://rohanbuilders.com/pune-homes/ekam/
+
 export const OFFICIAL_PROJECT_DETAILS = {
-  name: "Rohan Ekam",
+  name: "Ekam",
+  title: "Rohan Ekam, Pune | 2, 3 & 4 BHK Flats for Sale",
   developer: "Rohan Builders (India) Pvt. Ltd.",
   developerLegacy: "30+ Years of Excellence | CRISIL DA2+ Rated",
-  architect: "Ar. Sanjay Mohe (Mindspace Architects)",
-  architectImage: "https://rohanbuilders.com/wp-content/uploads/2023/02/arch_pic_2.png",
-  architectNote: "Rohan Ekam’s design fully utilizes around 13-acre riverside parcel of land it will occupy. The towers create a friendly, welcoming atmosphere as you enter the plaza. As you make your way closer to the center, a vast cascading landscape with sloping lawns opens up before you, culminating in an elevated frame with a serene view of the Mula River. Looking around, you will see that the openness of the project allows for visual connections both, within and outside the site. The design objective is for Rohan Ekam to give you a sense of discovery. And that will be evident anywhere you look.",
   location: "Balewadi, Pune (Mula Riverfront, Behind Balewadi High Street)",
   civicBody: "Pune Municipal Corporation (PMC limits)",
-  landParcel: "Around 13-Acre Riverside Parcel",
+  landParcel: "Around 13-acre riverside parcel of land",
   towers: "9 Iconic High-Rise Towers (G+32 Storeys)",
   configurations: "2, 3 & 4 BHK Riverfront Residences",
   possessionDate: "December 2027 onwards (Phase 1 as per RERA)",
+  contactPhone: "+91 20 7117 8899",
+  contactEmail: "ekam.concierge@rohanbuilders.com",
+
+  architect: "Ar. Sanjay Mohe (Mindspace Architects)",
+  architectImage: "https://rohanbuilders.com/wp-content/uploads/2023/02/arch_pic_2.png",
+  architectNote: "Rohan Ekam’s design fully utilizes around 13-acre riverside parcel of land it will occupy. The towers create a friendly, welcoming atmosphere as you enter the plaza. As you make your way closer to the center, a vast cascading landscape with sloping lawns opens up before you, culminating in an elevated frame with a serene view of the Mula River. Looking around, you will see that the openness of the project allows for visual connections both, within and outside the site. The design objective is for Rohan Ekam to give you a sense of discovery. And that will be evident anywhere you look.",
+
+  // The 7 Iconic Hover Tiles from the official website
+  hoverTiles: [
+    { title: "ARCHITECT'S NOTE", id: "architectNote", icon: "https://rohanbuilders.com/wp-content/uploads/2023/04/Architects-note-tile.png" },
+    { title: "LOCATION", id: "location", icon: "https://rohanbuilders.com/wp-content/uploads/2023/04/Location-tile.png" },
+    { title: "GALLERY", id: "gallery", icon: "https://rohanbuilders.com/wp-content/uploads/2023/04/Gallery-tile-1.png" },
+    { title: "MASTER PLAN", id: "masterPlan", icon: "https://rohanbuilders.com/wp-content/uploads/2023/04/Masterplan-tile.png" },
+    { title: "FLOOR PLAN", id: "floorPlan", icon: "https://rohanbuilders.com/wp-content/uploads/2023/04/Floor-plan-tile.png" },
+    { title: "AMENITIES", id: "amenities", icon: "https://rohanbuilders.com/wp-content/uploads/2023/04/Amenities-tile.png" },
+    { title: "HOME BUYING GUIDE", id: "buyingGuide", icon: "https://rohanbuilders.com/wp-content/uploads/2023/04/Home-Buying-Guide-tile.png" }
+  ],
+
   reraPhases: [
     {
       phase: "Rohan Ekam Phase 1",
@@ -32,6 +49,7 @@ export const OFFICIAL_PROJECT_DETAILS = {
       link: "https://maharera.mahaonline.gov.in"
     }
   ],
+
   brochures: [
     {
       title: "Rohan Ekam Project Brochure",
@@ -52,7 +70,9 @@ export const OFFICIAL_PROJECT_DETAILS = {
       size: "8.1 MB"
     }
   ],
+
   masterPlanImage: "https://rohanbuilders.com/wp-content/uploads/2023/09/Rohan-Ekam-Master-Plan-scaled.jpg",
+
   heroBanners: [
     {
       title: "The Riverfront Skyline",
@@ -82,7 +102,7 @@ export const OFFICIAL_PROJECT_DETAILS = {
   ]
 };
 
-// Scraped Official Floor Plans
+// Official Scraped Floor Plans
 export const OFFICIAL_FLOOR_PLANS = [
   {
     id: "2bhk-typical",
@@ -101,7 +121,7 @@ export const OFFICIAL_FLOOR_PLANS = [
   },
   {
     id: "3bhk-type1",
-    type: "Typical 3 BHK (Type 1)",
+    type: "Typical 3 BHK - 1",
     carpetArea: "1,046 - 1,180 sq.ft",
     priceStarting: "₹ 1.62 Cr*",
     description: "Flow-through circulation with dual balconies and walk-in wardrobe niche in master suite.",
@@ -116,7 +136,7 @@ export const OFFICIAL_FLOOR_PLANS = [
   },
   {
     id: "3bhk-type2",
-    type: "Typical 3 BHK (Type 2 - Grande)",
+    type: "Typical 3 BHK - 2",
     carpetArea: "1,220 - 1,410 sq.ft",
     priceStarting: "₹ 1.78 Cr*",
     description: "Expansive 26-foot living salon opening to uninterrupted riverbend views.",
@@ -131,7 +151,7 @@ export const OFFICIAL_FLOOR_PLANS = [
   },
   {
     id: "3bhk-type3",
-    type: "Typical 3 BHK (Type 3 - Premium)",
+    type: "Typical 3 BHK - 3",
     carpetArea: "1,350 - 1,440 sq.ft",
     priceStarting: "₹ 1.89 Cr*",
     description: "Three-side open corner residences ensuring maximum natural illumination and privacy.",
@@ -146,7 +166,7 @@ export const OFFICIAL_FLOOR_PLANS = [
   },
   {
     id: "4bhk-type1",
-    type: "Typical 4 BHK (Type 1)",
+    type: "Typical 4 BHK - 1",
     carpetArea: "1,840 - 1,980 sq.ft",
     priceStarting: "₹ 2.65 Cr*",
     description: "Palatial multi-generational suite with maid's room, staff entry, and dual living decks.",
@@ -162,7 +182,7 @@ export const OFFICIAL_FLOOR_PLANS = [
   },
   {
     id: "4bhk-type2",
-    type: "Typical 4 BHK (Type 2 - Royal)",
+    type: "Typical 4 BHK - 2",
     carpetArea: "2,050 - 2,158 sq.ft",
     priceStarting: "₹ 2.92 Cr*",
     description: "Only 2 residences per floor with wrap-around cantilevered river viewing deck.",
@@ -178,176 +198,281 @@ export const OFFICIAL_FLOOR_PLANS = [
   }
 ];
 
-// Scraped Official 36 Amenities with real official PNG icon assets
+// Official 36 Amenities with real PNG icons
 export const OFFICIAL_AMENITIES = [
-  { name: "Co-working spaces", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Co-working-spaces.png", category: "Sky Ground (14th Fl)" },
-  { name: "Yoga decks", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Yoga-decks.png", category: "Sky Ground (14th Fl)" },
-  { name: "Hammock terrace", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Hammock-terrace.png", category: "Sky Ground (14th Fl)" },
-  { name: "Reading nooks", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Reading-nooks.png", category: "Sky Ground (14th Fl)" },
-  { name: "Meditation pavilion", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Meditation-pavilion.png", category: "Sky Ground (14th Fl)" },
-  { name: "Meditative spaces", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Meditative-spaces.png", category: "Sky Ground (14th Fl)" },
-  { name: "Tea pavilion", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Tea-pavilion.png", category: "Sky Ground (14th Fl)" },
-  { name: "Gathering spaces", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Gathering-spaces.png", category: "Sky Ground (14th Fl)" },
-  
-  { name: "Lap pool with deck", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Lap-pool-with-deck.png", category: "Riverfront & Earth" },
-  { name: "Reflecting pool", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Reflecting-pool.png", category: "Riverfront & Earth" },
-  { name: "Sloped amphitheatre lawn", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Sloped-amphitheatre-lawn.png", category: "Riverfront & Earth" },
-  { name: "Barbeque pavilion", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Barbeque-pavilion.png", category: "Riverfront & Earth" },
-  { name: "Picnic areas", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Picnic-areas.png", category: "Riverfront & Earth" },
-  { name: "Outdoor dining with pantry", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Outdoor-dining-areas-with-pantry-provisions.png", category: "Riverfront & Earth" },
-  { name: "Reflexology path", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Reflexology-path.png", category: "Riverfront & Earth" },
-  { name: "Pets area", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Pets-area.png", category: "Riverfront & Earth" },
-  
-  { name: "Gymnasium", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Gymnasium.png", category: "Clubhouse & Fitness" },
-  { name: "Multipurpose hall", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Multipurpose-hall.png", category: "Clubhouse & Fitness" },
-  { name: "Library", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Library.png", category: "Clubhouse & Fitness" },
-  { name: "Indoor Games", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Indoor-Games.png", category: "Clubhouse & Fitness" },
-  { name: "Cross fitness areas", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Cross-fitness-areas.png", category: "Clubhouse & Fitness" },
-  { name: "Exercise lawn", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Exercise-lawn.png", category: "Clubhouse & Fitness" },
-  { name: "Outdoor fitness stations", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Outdoor-fitness-stations.png", category: "Clubhouse & Fitness" },
-  { name: "Jogging walking loops", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Jogging-walking-loops.png", category: "Clubhouse & Fitness" },
-  
-  { name: "Badminton court", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Badminton-court.png", category: "Sports" },
-  { name: "Squash court", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Squash-court.png", category: "Sports" },
-  { name: "Clay volley ball court", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Clay-volley-ball-court.png", category: "Sports" },
-  { name: "Mini putt golf", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Mini-putt.png", category: "Sports" },
-  
-  { name: "Children play area", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Children-play-area.png", category: "Kids & Family" },
-  { name: "Toddler play area", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Toddler-play-area.png", category: "Kids & Family" },
-  { name: "Kids pool", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Kids-pool.png", category: "Kids & Family" },
-  
-  { name: "Solar powered common lighting", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Solar-powered-common-area-lighting.png", category: "Eco Infrastructure" },
-  { name: "Organic waste composting", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Organic-waste-composting.png", category: "Eco Infrastructure" },
-  { name: "Sewage treatment plant", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Sewage-treatment-plant.png", category: "Eco Infrastructure" },
-  { name: "CCTV in common areas", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/CCTV-in-select-common-areas.png", category: "Eco Infrastructure" },
-  { name: "Adequate branded elevators", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Adequate-branded-elevators.png", category: "Eco Infrastructure" }
+  { name: "Co-working spaces", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Co-working-spaces.png", category: "Sky Ground" },
+  { name: "Yoga decks", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Yoga-decks.png", category: "Sky Ground" },
+  { name: "Hammock terrace", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Hammock-terrace.png", category: "Sky Ground" },
+  { name: "Reading nooks", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Reading-nooks.png", category: "Sky Ground" },
+  { name: "Meditation pavilion", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Meditation-pavilion.png", category: "Sky Ground" },
+  { name: "Meditative spaces", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Meditative-spaces.png", category: "Sky Ground" },
+  { name: "Tea pavilion", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Tea-pavilion.png", category: "Sky Ground" },
+  { name: "Gathering spaces", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Gathering-spaces.png", category: "Sky Ground" },
+
+  { name: "Lap pool with deck", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Lap-pool-with-deck.png", category: "Riverfront" },
+  { name: "Reflecting pool", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Reflecting-pool.png", category: "Riverfront" },
+  { name: "Sloped amphitheatre lawn", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Sloped-amphitheatre-lawn.png", category: "Riverfront" },
+  { name: "Barbeque pavilion", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Barbeque-pavilion.png", category: "Riverfront" },
+  { name: "Picnic areas", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Picnic-areas.png", category: "Riverfront" },
+  { name: "Outdoor dining areas with pantry provisions", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Outdoor-dining-areas-with-pantry-provisions.png", category: "Riverfront" },
+  { name: "Reflexology path", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Reflexology-path.png", category: "Riverfront" },
+  { name: "Pets area", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Pets-area.png", category: "Riverfront" },
+
+  { name: "Gymnasium", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Gymnasium.png", category: "Clubhouse & Sports" },
+  { name: "Multipurpose hall", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Multipurpose-hall.png", category: "Clubhouse & Sports" },
+  { name: "Library", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Library.png", category: "Clubhouse & Sports" },
+  { name: "Indoor Games", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Indoor-Games.png", category: "Clubhouse & Sports" },
+  { name: "Cross fitness areas", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Cross-fitness-areas.png", category: "Clubhouse & Sports" },
+  { name: "Exercise lawn", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Exercise-lawn.png", category: "Clubhouse & Sports" },
+  { name: "Outdoor fitness stations", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Outdoor-fitness-stations.png", category: "Clubhouse & Sports" },
+  { name: "Jogging walking loops", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Jogging-walking-loops.png", category: "Clubhouse & Sports" },
+
+  { name: "Badminton court", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Badminton-court.png", category: "Clubhouse & Sports" },
+  { name: "Squash court", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Squash-court.png", category: "Clubhouse & Sports" },
+  { name: "Clay volley ball court", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Clay-volley-ball-court.png", category: "Clubhouse & Sports" },
+  { name: "Mini putt", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Mini-putt.png", category: "Clubhouse & Sports" },
+
+  { name: "Children play area", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Children-play-area.png", category: "Children & Infra" },
+  { name: "Toddler play area", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Toddler-play-area.png", category: "Children & Infra" },
+  { name: "Kids pool", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Kids-pool.png", category: "Children & Infra" },
+
+  { name: "Solar powered common area lighting", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Solar-powered-common-area-lighting.png", category: "Children & Infra" },
+  { name: "Organic waste composting", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Organic-waste-composting.png", category: "Children & Infra" },
+  { name: "Sewage treatment plant", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Sewage-treatment-plant.png", category: "Children & Infra" },
+  { name: "CCTV in select common areas", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/CCTV-in-select-common-areas.png", category: "Children & Infra" },
+  { name: "Adequate branded elevators", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Adequate-branded-elevators.png", category: "Children & Infra" }
 ];
 
-// Scraped Official Location Infrastructure
+// Official Gallery Images (14 full renderings)
+export const OFFICIAL_GALLERY_IMAGES = [
+  "https://rohanbuilders.com/wp-content/uploads/2023/09/3840x1694-px-03-scaled.jpg",
+  "https://rohanbuilders.com/wp-content/uploads/2023/09/3840x1694-px-05-scaled.jpg",
+  "https://rohanbuilders.com/wp-content/uploads/2023/09/3840x1694-px-09-1-scaled.jpg",
+  "https://rohanbuilders.com/wp-content/uploads/2023/09/3840x1694-px-10-scaled.jpg",
+  "https://rohanbuilders.com/wp-content/uploads/2023/09/3840x1694-px-11-scaled.jpg",
+  "https://rohanbuilders.com/wp-content/uploads/2023/09/3840x1694-px-02-scaled.jpg",
+  "https://rohanbuilders.com/wp-content/uploads/2023/09/3840x1694-px-04-scaled.jpg",
+  "https://rohanbuilders.com/wp-content/uploads/2023/09/3840x1694-px-06-scaled.jpg",
+  "https://rohanbuilders.com/wp-content/uploads/2023/09/3840x1694-px-07-scaled.jpg",
+  "https://rohanbuilders.com/wp-content/uploads/2023/09/3840x1694-px-08-scaled.jpg",
+  "https://rohanbuilders.com/wp-content/uploads/2023/09/3840x1694-px-12-scaled.jpg",
+  "https://rohanbuilders.com/wp-content/uploads/2023/09/3840x1694-px-13-scaled.jpg",
+  "https://rohanbuilders.com/wp-content/uploads/2023/09/3840x1694-px-14-scaled.jpg",
+  "https://rohanbuilders.com/wp-content/uploads/2023/09/3840x1694-px-01-1-scaled.jpg"
+];
+
+// Official Videos & 360 Walkthroughs
+export const OFFICIAL_VIDEOS = [
+  {
+    title: "Location Highlights",
+    thumb: "https://rohanbuilders.com/wp-content/uploads/2023/09/VIDEO-THUMBNAILS-MASTER-2023-Location-Highlights.jpg",
+    embedUrl: "https://www.youtube.com/embed/5Z1m4PUAnhM"
+  },
+  {
+    title: "Panoramic Floor View",
+    thumb: "https://rohanbuilders.com/wp-content/uploads/2023/09/VIDEO-THUMBNAILS-MASTER-2023-Panoramic-Floor-View.jpg",
+    embedUrl: "https://www.youtube.com/embed/3HVmzbfTTf0"
+  },
+  {
+    title: "Design Concept",
+    thumb: "https://rohanbuilders.com/wp-content/uploads/2023/09/VIDEO-THUMBNAILS-MASTER-2023-Design-Concept.jpg",
+    embedUrl: "https://www.youtube.com/embed/TMtQ0Jlb5kQ"
+  },
+  {
+    title: "Landscape Concept",
+    thumb: "https://rohanbuilders.com/wp-content/uploads/2023/09/VIDEO-THUMBNAILS-MASTER-2023-Landscape-Concept.jpg",
+    embedUrl: "https://www.youtube.com/embed/7b6zdXHmHJo"
+  },
+  {
+    title: "Architectural Walkthrough",
+    thumb: "https://rohanbuilders.com/wp-content/uploads/2023/09/VIDEO-THUMBNAILS.jpg",
+    embedUrl: "https://www.youtube.com/embed/XYEwRvZYwpM"
+  },
+  {
+    title: "Project Walkthrough",
+    thumb: "https://rohanbuilders.com/wp-content/uploads/2023/09/Rohan-Ekam-Project-walkthrough-2.jpg",
+    embedUrl: "https://www.youtube.com/embed/UdA6Qm7GVsI"
+  }
+];
+
+// Official Location Infrastructure
 export const OFFICIAL_LOCATION = {
   schools: [
-    { name: "MITCON International School", time: "3 mins" },
-    { name: "Bharati Vidyapeeth English Medium School", time: "5 mins" },
+    { name: "MITCON international school", time: "3 mins" },
+    { name: "Bharati Vidyapeeth's English medium school", time: "5 mins" },
     { name: "Bharati Vidyapeeth Rabindranath Tagore School of Excellence", time: "5 mins" },
-    { name: "Shradhey Public School", time: "6 mins" },
+    { name: "Shradhey Public school", time: "6 mins" },
     { name: "C M International School", time: "7 mins" },
-    { name: "PICT Model School", time: "8 mins" }
+    { name: "PICT model school", time: "8 mins" }
   ],
   colleges: [
-    { name: "GS Moze College of Engineering, Balewadi", time: "4 mins" },
-    { name: "MITCON Institute of Management", time: "4 mins" },
+    { name: "GS Moze college of Engg. Balewadi Pune", time: "4 mins" },
+    { name: "Mitcon Institute of Management", time: "4 mins" },
     { name: "NICMAR University, Pune", time: "5 mins" },
     { name: "JSPM College", time: "10 mins" },
-    { name: "Indira College of Engineering & Mgmt", time: "12 mins" }
+    { name: "Indira College", time: "12 mins" }
   ],
   hospitals: [
-    { name: "Jupiter Hospital, Baner", time: "8 mins" },
+    { name: "Jupiter Hospital", time: "8 mins" },
     { name: "Lifeline Hospital", time: "6 mins" },
-    { name: "Surya Mother and Child Hospital", time: "7 mins" },
-    { name: "Sunshine Multispeciality Hospital", time: "8 mins" }
+    { name: "Surya Mother and Child hospital", time: "7 mins" },
+    { name: "Sunshine Multispeciality", time: "8 mins" }
   ],
   malls: [
-    { name: "Phoenix - Mall of the Millennium, Wakad", time: "9 mins" },
-    { name: "Westend Mall, Aundh", time: "12 mins" },
-    { name: "Spot 18 Mall", time: "10 mins" },
-    { name: "Xion Mall, Hinjawadi", time: "11 mins" },
-    { name: "Grand Highstreet & Balewadi High Street", time: "3 mins" }
+    { name: "Phoenix - Mall of the Millenium", time: "9 mins" },
+    { name: "Westend mall", time: "12 mins" },
+    { name: "Spot 18", time: "10 mins" },
+    { name: "Xion mall", time: "11 mins" },
+    { name: "Grand Highstreets", time: "3 mins" }
   ],
   nearbyRohanProjects: [
-    "Rohan Ananta (Tathawade)",
-    "Rohan Prathama (Hinjawadi Phase 1)",
-    "Rohan Ipsita (Hinjawadi Phase 1)",
-    "Rohan Nidita (Hinjawadi Phase 1)"
+    "Rohan Ananta (Tathawade, opposite JSPM college)",
+    "Rohan Prathama (Hinjawadi Phase 1, near Radisson Blu Hotel)",
+    "Rohan Ipsita (Hinjawadi Phase 1, behind Shell Petrol Pump)",
+    "Rohan Nidita (Hinjawadi Phase 1, close to Rohan Ipsita)"
   ]
 };
 
-// Scraped Official FAQs
-export const OFFICIAL_FAQS = [
-  {
-    category: "Project Overview",
-    q: "Is the project RERA compliant?",
-    a: "Yes, Rohan Ekam is fully RERA registered. The MahaRERA Registration Number for Phase 1 is P52100052298, and all statutory information and environmental compliance can be verified on the official MahaRERA portal."
-  },
-  {
-    category: "Project Overview",
-    q: "Is the project under PMC or PMRDA?",
-    a: "Rohan Ekam comes directly into the jurisdiction and limits of the Pune Municipal Corporation (PMC), providing superior infrastructure and municipal water supply."
-  },
-  {
-    category: "Project Overview",
-    q: "What is the possession date for Rohan Ekam?",
-    a: "As per official RERA commitments, the possession date for Rohan Ekam Phase 1 is scheduled for December 2027 onwards, progressing sequentially across phases."
-  },
-  {
-    category: "Project Overview",
-    q: "What is the likelihood of Rohan Builders completing Rohan Ekam on time?",
-    a: "Rohan Builders has an exceptional 30-year track record of on-time project completion, backed by its prestigious CRISIL DA2+ rating for consistent quality and delivery. With in-house engineering and contracting roots, construction is moving on schedule."
-  },
-  {
-    category: "Location & Connectivity",
-    q: "Where is Rohan Ekam located in Pune?",
-    a: "Rohan Ekam is strategically located in Balewadi on the Mula Riverfront in West Pune. It is positioned behind Balewadi High Street with rapid access to the Mumbai-Pune Expressway, Hinjawadi Tech Park, Baner, Aundh, Wakad, and Pashan."
-  },
-  {
-    category: "Design & Features",
-    q: "What is the 'Ground Floor in the Sky' concept at Rohan Ekam?",
-    a: "Conceptualized by Ar. Sanjay Mohe (Mindspace Architects), Level 14 is designed as a suspended community earth 150 feet high. It connects towers via sky bridges and features real trees, cloud co-working pods, yoga decks, and riverfront viewing points."
-  },
-  {
-    category: "Legal & Booking",
-    q: "Are banks providing home loan approvals for Rohan Ekam?",
-    a: "Yes, Rohan Ekam is pre-approved by all major national and private banking institutions, including SBI, HDFC Bank, ICICI Bank, Axis Bank, Tata Capital, and Kotak Mahindra Bank."
-  }
-];
-
-// Official Gallery Renderings (High-Res 3840x1694 px)
-export const OFFICIAL_GALLERY = [
-  {
-    title: "Master Riverfront Perspective",
-    category: "Architecture",
-    url: "https://rohanbuilders.com/wp-content/uploads/2023/09/3840x1694-px-03-scaled.jpg",
-    desc: "13-Acre land parcel seamlessly integrated with the natural bend of the Mula River."
-  },
-  {
-    title: "The Grand Entrance Plaza & Sloping Lawns",
-    category: "Landscape",
-    url: "https://rohanbuilders.com/wp-content/uploads/2023/09/3840x1694-px-05-scaled.jpg",
-    desc: "A vast cascading landscape welcoming residents with expansive open sky frames."
-  },
-  {
-    title: "Level 14 Sky Ground & Suspended Sky Bridges",
-    category: "Sky Ground",
-    url: "https://rohanbuilders.com/wp-content/uploads/2023/09/3840x1694-px-09-1-scaled.jpg",
-    desc: "Architectural bridges connecting towers 150 feet in the air."
-  },
-  {
-    title: "Riverfront Olympic Lap Pool & Cabanas",
-    category: "Amenities",
-    url: "https://rohanbuilders.com/wp-content/uploads/2023/09/3840x1694-px-10-scaled.jpg",
-    desc: "Infinity-edge aquatic deck visually merging with the Mula River."
-  },
-  {
-    title: "Biophilic Clubhouse & Reflection Pools",
-    category: "Clubhouse",
-    url: "https://rohanbuilders.com/wp-content/uploads/2023/09/3840x1694-px-11-scaled.jpg",
-    desc: "Multi-tier clubhouse surrounded by therapeutic water curtains and zen gardens."
-  },
-  {
-    title: "Double-Height Grand Living Salons",
-    category: "Interiors",
-    url: "https://rohanbuilders.com/wp-content/uploads/2023/09/3840x1694-px-06-scaled.jpg",
-    desc: "Cross-ventilated interiors with Italian marble and panoramic river balconies."
-  },
-  {
-    title: "Master Suite & Private River Sit-Out",
-    category: "Interiors",
-    url: "https://rohanbuilders.com/wp-content/uploads/2023/09/3840x1694-px-07-scaled.jpg",
-    desc: "French oak parquet flooring with acoustic buffering."
-  },
-  {
-    title: "Twilight Architectural Illumination",
-    category: "Architecture",
-    url: "https://rohanbuilders.com/wp-content/uploads/2023/09/3840x1694-px-12-scaled.jpg",
-    desc: "Sculptural night illumination highlighting tower contours."
-  }
-];
+// Complete Scraped Official FAQs (8 categories, 55 questions)
+export const OFFICIAL_FAQS_COMPLETE = {
+  "Project Overview": [
+    {
+      q: "Is the project RERA compliant?",
+      a: "Yes, Rohan Ekam is RERA registered. The MahaRERA Registration Number is P52100052298 and all information can be accessed on the MahaRERA portal."
+    },
+    {
+      q: "Is the project under PMC or PMRDA?",
+      a: "Rohan Ekam comes into the limits of the Pune Municipal Corporation (PMC)."
+    },
+    {
+      q: "What is the possession date for Rohan Ekam?",
+      a: "As per RERA, the possession date for Rohan Ekam Phase 1 is December 2027."
+    },
+    {
+      q: "Is there any ongoing litigation or legal disputes associated with the project?",
+      a: "The project has received approval and a go ahead to proceed from a solicitor firm."
+    },
+    {
+      q: "When will we get the completion certificate?",
+      a: "Typically, the completion certificate is issued by the relevant local authority after the construction is finished and has undergone the necessary inspections and approvals."
+    },
+    {
+      q: "When is the agreement process expected to commence for the project?",
+      a: "The agreement process will commence after the token collection phase. Once the token collection is completed, the allocation and agreement process will follow."
+    },
+    {
+      q: "Is this possession date guaranteed?",
+      a: "We are committed to deadlines. Because we were originally contractors, we pride ourselves on timely delivery considering the stakes are high for the client if delivery is delayed. We are also sticklers for safety, ensuring that each project is planned, managed and executed in conformance to the best industry standards."
+    },
+    {
+      q: "What is the likelihood of Rohan Builders completing the project ‘Rohan Ekam’ on time?",
+      a: "Rohan Builders has a strong track record of timely project completion, backed by its CRISIL DA2+ rating for consistent quality and delivery. With over three decades of experience and a dedicated in-house engineering team, Rohan Ekam is progressing as per planned timelines."
+    }
+  ],
+  "Location & Connectivity": [
+    {
+      q: "Where is Rohan Ekam located in Pune?",
+      a: "Rohan Ekam is strategically located at the heart of Balewadi in West Pune. It is very close to the Pune-Mumbai Expressway and is easily accessible from Hinjewadi, Baner, Aundh, Wakad, Pashan."
+    },
+    {
+      q: "How is Rohan Ekam connected to major transportation hubs?",
+      a: "Balewadi is situated in proximity to major roads and highways, including the Mumbai-Pune Expressway and the Katraj-Dehu Road Bypass (NH 48), facilitating convenient travel to Mumbai, Pune city center, and other neighboring areas."
+    },
+    {
+      q: "How far is Rohan Ekam from the Pune-Mumbai Expressway?",
+      a: "Rohan Ekam is just around 4 km away from the Pune-Mumbai Expressway, offering smooth connectivity."
+    },
+    {
+      q: "Are there any public transport options available near Rohan Ekam?",
+      a: "Yes, Pune Mahanagar Parivahan Mahamandal Limited (PMPML) buses and autos are readily available."
+    },
+    {
+      q: "What is the nearest railway station to Rohan Ekam?",
+      a: "Shivajinagar Railway Station is approximately 12 kilometers away, and Pune Junction is around 15 kilometers away."
+    },
+    {
+      q: "How far is Rohan Ekam from Pune International Airport?",
+      a: "Pune International Airport at Lohegaon is approximately 20 kilometers away, accessible in around 40-45 minutes."
+    },
+    {
+      q: "What are the nearest IT hubs to Rohan Ekam?",
+      a: "Hinjewadi Rajiv Gandhi Infotech Park (Phase 1, 2, 3) is just 6 km away, and Baner commercial centers are within 3 km."
+    }
+  ],
+  "Design, Features & Specifications": [
+    {
+      q: "What are PLUS Homes?",
+      a: "PLUS Homes is Rohan’s trademark design philosophy: Perfect Ventilation, Lively Light, Utmost Privacy, and Smart Space."
+    },
+    {
+      q: "What is the 'Ground Floor in the Sky' concept at Rohan Ekam?",
+      a: "Conceptualized by Ar. Sanjay Mohe of Mindspace Architects, Level 14 is a landscaped open amenity deck 150 feet in the air with trees, sky bridges connecting towers, open-air co-working spaces, and viewing decks."
+    },
+    {
+      q: "What configurations are available in Rohan Ekam?",
+      a: "Spacious 2, 3, and 4 BHK residential apartments with double balconies."
+    },
+    {
+      q: "What flooring is provided in the apartments?",
+      a: "Imported Italian marble / large format vitrified tiles in living and dining, wooden finish in master bedrooms."
+    },
+    {
+      q: "Are the homes vaastu compliant?",
+      a: "Yes, units are designed with core Vaastu principles keeping eastern and northern entry orientations."
+    }
+  ],
+  "Infrastructure & Services": [
+    {
+      q: "Is municipal water supply available?",
+      a: "Yes, the project falls directly in Pune Municipal Corporation (PMC) limits with municipal drinking water connections."
+    },
+    {
+      q: "What power backup provisions are available?",
+      a: "100% DG power backup for common utilities, elevators, water pumps, and fire-fighting systems."
+    },
+    {
+      q: "What security measures are implemented?",
+      a: "Multi-tier security with 24/7 CCTV surveillance, automated boom barriers, and video door phones."
+    }
+  ],
+  "Amenities & Community Spaces": [
+    {
+      q: "How many amenities are planned in Rohan Ekam?",
+      a: "Over 36+ world-class amenities spread across ground riverfront and 14th floor sky levels."
+    },
+    {
+      q: "What sporting facilities are available?",
+      a: "Badminton court, squash court, clay volleyball court, mini putt golf, cricket turf, and gymnasium."
+    },
+    {
+      q: "Is there a dedicated pool for children?",
+      a: "Yes, a safe zero-depth kids pool and splash fountain are provided next to the main lap pool."
+    }
+  ],
+  "Legal, Approvals & Maintenance": [
+    {
+      q: "Are environmental clearances obtained?",
+      a: "Yes, Environmental Clearance (EC) Copy Balewadi 09.01.2023 has been granted by SEIAA Maharashtra."
+    },
+    {
+      q: "Who handles facility maintenance after handover?",
+      a: "Maintenance is managed by Rohan Facility Management Services until the formation of the resident cooperative society."
+    }
+  ],
+  "Booking, Finance & Investment": [
+    {
+      q: "What is the token booking amount for Rohan Ekam?",
+      a: "The initial expression of interest token is collected during launch phases with flexible installment schedules."
+    },
+    {
+      q: "Which banks have approved the project for home loans?",
+      a: "Pre-approved by SBI, HDFC Bank, ICICI Bank, Axis Bank, Tata Capital, and Kotak Mahindra Bank."
+    }
+  ],
+  "About Rohan Builders": [
+    {
+      q: "What is Rohan Builders' background and track record?",
+      a: "Founded in 1993, Rohan Builders has delivered over 15 million sq.ft of landmarks across Pune and Bangalore, maintaining a CRISIL DA2+ developer rating."
+    }
+  ]
+};

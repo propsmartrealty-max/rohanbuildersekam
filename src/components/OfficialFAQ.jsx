@@ -1,69 +1,95 @@
 import React, { useState } from 'react';
-import { OFFICIAL_FAQS } from '../data/projectData';
-import { HelpCircle, ChevronDown, ChevronUp, Sparkles } from 'lucide-react';
+import { OFFICIAL_FAQS_COMPLETE } from '../data/projectData';
+import { HelpCircle, ChevronDown, Plus, Minus } from 'lucide-react';
 
 export default function OfficialFAQ() {
-  const [openIndex, setOpenIndex] = useState(0);
+  const categories = Object.keys(OFFICIAL_FAQS_COMPLETE);
+  const [activeCategory, setActiveCategory] = useState(categories[0]);
+  const [openQuestionIdx, setOpenQuestionIdx] = useState(0);
 
-  const toggleFaq = (idx) => {
-    setOpenIndex(openIndex === idx ? -1 : idx);
+  const currentQuestions = OFFICIAL_FAQS_COMPLETE[activeCategory] || [];
+
+  const toggleQuestion = (idx) => {
+    setOpenQuestionIdx(openQuestionIdx === idx ? -1 : idx);
   };
 
   return (
-    <section id="faq" className="py-20 relative overflow-hidden bg-[#F5F2EB]">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        {/* Section Header */}
-        <div className="text-center mb-10">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-stone-300 text-stone-700 text-xs font-mono uppercase tracking-widest mb-3 shadow-xs">
-            <HelpCircle className="w-3.5 h-3.5 text-amber-700" />
-            <span>Buyer Due Diligence</span>
-          </div>
-          <h2 className="font-serif text-3xl sm:text-5xl font-normal text-stone-900 tracking-tight mb-3">
-            Official <span className="italic font-serif font-medium text-amber-800">Frequently Asked Questions</span>
-          </h2>
-          <p className="text-stone-600 text-sm leading-relaxed">
-            Verified answers on PMC municipal limits, possession timelines, and RERA registration directly from Rohan Builders.
-          </p>
-        </div>
+    <section id="faq" className="py-20 bg-[#FAF8F5] border-t border-b border-stone-200">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          {/* Left Title Column (Width ~250px pattern) */}
+          <div className="lg:col-span-3">
+            <h2 className="font-serif text-3xl sm:text-4xl font-bold text-stone-900 uppercase tracking-tight">
+              FAQ
+            </h2>
+            <div className="w-12 h-0.5 bg-amber-800 mt-2 mb-6"></div>
 
-        {/* Accordion FAQ Items */}
-        <div className="space-y-3">
-          {OFFICIAL_FAQS.map((faq, idx) => {
-            const isOpen = openIndex === idx;
-
-            return (
-              <div
-                key={idx}
-                className="glass-panel rounded-2xl border border-stone-200 overflow-hidden transition-all duration-300 shadow-xs"
-              >
+            {/* 8 Official Category Tabs */}
+            <div className="flex flex-col gap-1.5">
+              {categories.map((cat) => (
                 <button
-                  onClick={() => toggleFaq(idx)}
-                  className="w-full p-5 text-left flex items-center justify-between gap-4 hover:bg-white/50 transition-colors"
+                  key={cat}
+                  onClick={() => {
+                    setActiveCategory(cat);
+                    setOpenQuestionIdx(0);
+                  }}
+                  className={`p-2.5 rounded-xl text-left text-xs font-semibold transition-all flex items-center justify-between ${
+                    activeCategory === cat
+                      ? 'bg-stone-900 text-white shadow-xs'
+                      : 'text-stone-700 hover:text-stone-950 hover:bg-stone-200/60'
+                  }`}
                 >
-                  <div className="flex items-center gap-3">
-                    <span className="text-xs font-mono text-amber-800 font-bold">
-                      0{idx + 1}
-                    </span>
-                    <span className="text-sm sm:text-base font-semibold text-stone-900">
-                      {faq.q}
-                    </span>
-                  </div>
-                  <div className={`w-8 h-8 rounded-full bg-[#FAF8F5] border border-stone-200 flex items-center justify-center text-stone-700 transition-transform ${isOpen ? 'rotate-180 bg-stone-900 text-white' : ''}`}>
-                    <ChevronDown className="w-4 h-4" />
-                  </div>
+                  <span>{cat}</span>
+                  <span className={`text-[10px] font-mono px-1.5 py-0.2 rounded ${activeCategory === cat ? 'bg-white/20 text-white' : 'text-stone-500'}`}>
+                    {OFFICIAL_FAQS_COMPLETE[cat].length}
+                  </span>
                 </button>
+              ))}
+            </div>
+          </div>
 
-                {isOpen && (
-                  <div className="px-5 pb-5 pt-1 text-xs sm:text-sm text-stone-700 leading-relaxed border-t border-stone-100 bg-[#FAF8F5]/60">
-                    <p>{faq.a}</p>
-                    <div className="mt-3 text-[10px] font-mono text-amber-800 uppercase tracking-wider font-semibold">
-                      Verified by Rohan Builders Customer Support
-                    </div>
+          {/* Right Content Area: Nested Child Questions */}
+          <div className="lg:col-span-9">
+            <div className="flex items-center justify-between pb-3 border-b border-stone-200 mb-4">
+              <h3 className="font-serif text-xl font-bold text-stone-900">
+                {activeCategory}
+              </h3>
+              <span className="text-xs font-mono text-stone-500">
+                {currentQuestions.length} Questions Answered
+              </span>
+            </div>
+
+            <div className="space-y-2.5">
+              {currentQuestions.map((item, idx) => {
+                const isOpen = openQuestionIdx === idx;
+
+                return (
+                  <div
+                    key={idx}
+                    className="bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-xs transition-all"
+                  >
+                    <button
+                      onClick={() => toggleQuestion(idx)}
+                      className="w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 hover:bg-stone-50 transition-colors"
+                    >
+                      <span className="text-xs sm:text-sm font-bold text-stone-900 leading-snug">
+                        {item.q}
+                      </span>
+                      <div className={`w-7 h-7 rounded-full flex items-center justify-center shrink-0 transition-colors ${isOpen ? 'bg-stone-900 text-white' : 'bg-stone-100 text-stone-700'}`}>
+                        {isOpen ? <Minus className="w-3.5 h-3.5" /> : <Plus className="w-3.5 h-3.5" />}
+                      </div>
+                    </button>
+
+                    {isOpen && (
+                      <div className="px-5 pb-5 pt-1 text-xs sm:text-sm text-stone-700 leading-relaxed border-t border-stone-100 bg-[#FCFAF7]">
+                        <p>{item.a}</p>
+                      </div>
+                    )}
                   </div>
-                )}
-              </div>
-            );
-          })}
+                );
+              })}
+            </div>
+          </div>
         </div>
       </div>
     </section>
