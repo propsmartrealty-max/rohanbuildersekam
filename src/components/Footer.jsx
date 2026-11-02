@@ -129,6 +129,123 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* Search Engine Ecosystem & Knowledge Directory (Engineered for Google Rank #1) */}
+        <div className="mt-12 pt-10 border-t border-stone-300/80">
+          <div className="mb-6">
+            <span className="text-[11px] font-mono uppercase tracking-widest text-amber-800 font-bold block mb-1">
+              Rohan Builders Ekam Ecosystem &amp; Pune Real Estate Knowledge Directory
+            </span>
+            <h3 className="font-serif text-lg sm:text-xl font-bold text-stone-900">
+              Rohan Ekam, Balewadi • Official Project Overview &amp; Specifications
+            </h3>
+            <p className="text-xs text-stone-600 mt-1 max-w-4xl leading-relaxed">
+              Rohan Ekam is a landmark 13-acre riverfront luxury residential enclave conceptualized by <strong>Rohan Builders (India) Pvt. Ltd.</strong> and master-architect <strong>Ar. Sanjay Mohe</strong> (Mindspace Architects). Situated directly along the serene Mula River in Balewadi, Pune (PIN 411045), this development introduces India’s first <em>Ground Floor in the Sky</em> at Level 14, seamlessly connecting 14-storey towers with elevated lawns, sky walkways, co-working lounges, and 50+ curated lifestyle amenities. Engineered with Rohan's proprietary <strong>PLUS Homes</strong> philosophy (Perfect Ventilation, Lively Light, Utmost Privacy, Smart Space), Rohan Ekam offers zero-corridor wastage 2, 3 &amp; 4 BHK residences starting ₹1.45 Cr*. Registered under MahaRERA: <strong>P52100052298</strong> (Phase 1) &amp; <strong>PR1261012502532</strong> (Phase 2).
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-xs pt-4 border-t border-stone-200">
+            {/* Cluster 1: Configurations & Commercials */}
+            <div>
+              <h4 className="font-serif font-bold text-stone-900 text-xs uppercase tracking-wider mb-2.5">
+                Residences &amp; Configurations
+              </h4>
+              <ul className="space-y-1.5 text-[11px] text-stone-600">
+                <li><a href="#residences" className="hover:text-stone-900 transition-colors">Rohan Ekam 2 BHK Luxury Flats (₹1.45 Cr*)</a></li>
+                <li><a href="#residences" className="hover:text-stone-900 transition-colors">Rohan Ekam 3 BHK Residences - Type 1 (₹1.95 Cr*)</a></li>
+                <li><a href="#residences" className="hover:text-stone-900 transition-colors">Rohan Ekam 3 BHK Grand Layout - Type 2 (₹2.15 Cr*)</a></li>
+                <li><a href="#residences" className="hover:text-stone-900 transition-colors">Rohan Ekam 4 BHK Sky Suite Penthouses (₹2.75 Cr*)</a></li>
+                <li><a href="#residences" className="hover:text-stone-900 transition-colors">Official Rohan Ekam Floor Plans PDF Download</a></li>
+                <li><a href="#financialSuite" className="hover:text-stone-900 transition-colors">Rohan Ekam Cost Sheet &amp; Stamp Duty Calculator</a></li>
+                <li><a href="#financialSuite" className="hover:text-stone-900 transition-colors">SBI, HDFC, ICICI Bank Approved Home Loans</a></li>
+              </ul>
+            </div>
+
+            {/* Cluster 2: Architectural Innovations & PLUS Science */}
+            <div>
+              <h4 className="font-serif font-bold text-stone-900 text-xs uppercase tracking-wider mb-2.5">
+                Rohan PLUS Science &amp; Architecture
+              </h4>
+              <ul className="space-y-1.5 text-[11px] text-stone-600">
+                <li><a href="#architectNote" className="hover:text-stone-900 transition-colors">Ar. Sanjay Mohe (Mindspace Architects) Design</a></li>
+                <li><a href="#skyGround" className="hover:text-stone-900 transition-colors">Level 14 Ground Floor in the Sky Concept</a></li>
+                <li><a href="#plusPhilosophy" className="hover:text-stone-900 transition-colors">Rohan PLUS Science (Ventilation, Light, Privacy, Space)</a></li>
+                <li><a href="#plusPhilosophy" className="hover:text-stone-900 transition-colors">Zero Corridor Wastage &amp; Usable Carpet Area</a></li>
+                <li><a href="#skyGround" className="hover:text-stone-900 transition-colors">Cascading Sloping Lawns &amp; Sky Walkways</a></li>
+                <li><a href="#amenities" className="hover:text-stone-900 transition-colors">1.2 km Mula Riverfront Boardwalk Promenade</a></li>
+                <li><a href="#amenities" className="hover:text-stone-900 transition-colors">50m Olympic-Length Swimming Lap Pool</a></li>
+              </ul>
+            </div>
+
+            {/* Cluster 3: Balewadi & Pune Micro-Market */}
+            <div>
+              <h4 className="font-serif font-bold text-stone-900 text-xs uppercase tracking-wider mb-2.5">
+                Location &amp; Connectivity (Pune 411045)
+              </h4>
+              <ul className="space-y-1.5 text-[11px] text-stone-600">
+                <li><a href="#location" className="hover:text-stone-900 transition-colors">Behind Balewadi High Street (5 mins)</a></li>
+                <li><a href="#location" className="hover:text-stone-900 transition-colors">Baner &amp; Baner-Pashan Link Road (7 mins)</a></li>
+                <li><a href="#location" className="hover:text-stone-900 transition-colors">Hinjawadi IT Park Phase 1 &amp; 2 (12-15 mins)</a></li>
+                <li><a href="#location" className="hover:text-stone-900 transition-colors">Mumbai-Pune Expressway Connectivity (5 mins)</a></li>
+                <li><a href="#location" className="hover:text-stone-900 transition-colors">Upcoming Balewadi Metro Station Line 3</a></li>
+                <li><a href="#location" className="hover:text-stone-900 transition-colors">Shree Shiv Chhatrapati Sports Complex</a></li>
+                <li><a href="#location" className="hover:text-stone-900 transition-colors">Near The Orchid School, Jupiter &amp; Manipal Hospital</a></li>
+              </ul>
+            </div>
+
+            {/* Cluster 4: MahaRERA & Approvals */}
+            <div>
+              <h4 className="font-serif font-bold text-stone-900 text-xs uppercase tracking-wider mb-2.5">
+                MahaRERA &amp; Approvals Compliance
+              </h4>
+              <ul className="space-y-1.5 text-[11px] text-stone-600">
+                <li><a href="#documents" className="hover:text-stone-900 transition-colors">MahaRERA Registration No: P52100052298</a></li>
+                <li><a href="#documents" className="hover:text-stone-900 transition-colors">MahaRERA Phase 2: PR1261012502532</a></li>
+                <li><a href="#faq" className="hover:text-stone-900 transition-colors">Official Possession Date: Dec 2027 – Dec 2028</a></li>
+                <li><a href="#documents" className="hover:text-stone-900 transition-colors">SEIAA State Environmental Clearance (EC)</a></li>
+                <li><a href="#documents" className="hover:text-stone-900 transition-colors">PMC Sanctioned Layout &amp; Commencement Certificate</a></li>
+                <li><a href="#interested" className="hover:text-stone-900 transition-colors">Authorized Advisory Desk: Propsmart Realty</a></li>
+                <li><a href="https://wa.me/91774409295" className="hover:text-emerald-800 font-semibold transition-colors">WhatsApp Enquiry Desk: +91 774409295</a></li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Quick-Hop Keyword Pills for Instant Anchor Traversal */}
+          <div className="mt-8 pt-6 border-t border-stone-200">
+            <span className="text-[10px] font-mono uppercase tracking-wider text-stone-500 block mb-2.5">
+              Popular Search Topics for Rohan Ekam Balewadi
+            </span>
+            <div className="flex flex-wrap gap-1.5">
+              {[
+                { label: 'Rohan Ekam', href: '#' },
+                { label: 'Rohan Builders Ekam Balewadi', href: '#architectNote' },
+                { label: 'Rohan Ekam Price', href: '#residences' },
+                { label: 'Rohan Ekam Floor Plans', href: '#residences' },
+                { label: 'Rohan Ekam 2 BHK', href: '#residences' },
+                { label: 'Rohan Ekam 3 BHK', href: '#residences' },
+                { label: 'Rohan Ekam 4 BHK Sky Suite', href: '#residences' },
+                { label: 'Ground Floor in the Sky L14', href: '#skyGround' },
+                { label: 'Rohan PLUS Homes', href: '#plusPhilosophy' },
+                { label: 'Rohan Ekam Brochure PDF', href: OFFICIAL_PROJECT_DETAILS.brochures[0].url },
+                { label: 'MahaRERA P52100052298', href: '#documents' },
+                { label: 'Rohan Ekam Possession Date', href: '#faq' },
+                { label: 'Flats near Balewadi High Street', href: '#location' },
+                { label: 'Apartments along Mula River', href: '#location' },
+                { label: 'Rohan Ekam Cost Sheet', href: '#financialSuite' },
+                { label: 'Propsmart Realty Advisory', href: '#interested' },
+                { label: 'Rohan Ekam WhatsApp Desk +91 774409295', href: 'https://wa.me/91774409295' }
+              ].map((tag, i) => (
+                <a
+                  key={i}
+                  href={tag.href}
+                  className="px-2.5 py-1 rounded-lg bg-white/80 hover:bg-white text-stone-700 hover:text-stone-900 border border-stone-300 text-[10px] font-medium transition-all shadow-2xs hover:shadow-xs"
+                >
+                  {tag.label}
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+
         {/* Disclaimer */}
         <div className="mt-10 pt-6 border-t border-stone-300 text-[10px] leading-relaxed text-stone-500 space-y-1.5">
           <p>
