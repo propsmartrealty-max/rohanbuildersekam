@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import { X, Sparkles, Calendar, Clock, Car, CheckCircle2, MessageSquare, PhoneCall, Download, Printer } from 'lucide-react';
+import { X, Sparkles, Calendar, Clock, Car, CheckCircle2, MessageSquare, PhoneCall, Download, Printer, Loader2 } from 'lucide-react';
 import { OFFICIAL_PROJECT_DETAILS, OFFICIAL_FLOOR_PLANS } from '../data/projectData';
 import RohanEkamLogo from './RohanEkamLogo';
+import { sendLeadToRealtor } from '../utils/leadService';
 
 export default function VIPExperienceModal({ isOpen, onClose, initialConfig = '3bhk-type1' }) {
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
-    email: '',
     config: initialConfig,
     date: new Date(Date.now() + 86400000 * 2).toISOString().split('T')[0],
     slot: '5:00 PM (Golden Hour River Sunset Tour)',
@@ -16,14 +16,32 @@ export default function VIPExperienceModal({ isOpen, onClose, initialConfig = '3
   });
 
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [bookingRef, setBookingRef] = useState('');
 
   if (!isOpen) return null;
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!formData.name.trim() || formData.phone.length < 10) return;
+
+    setIsSubmitting(true);
     const ref = `EKAM-VIP-${Math.floor(100000 + Math.random() * 900000)}`;
     setBookingRef(ref);
+
+    await sendLeadToRealtor({
+      name: formData.name.trim(),
+      phone: formData.phone.trim(),
+      config: formData.config,
+      date: formData.date,
+      slot: formData.slot,
+      chauffeurPickup: formData.chauffeurPickup,
+      pickupLocation: formData.chauffeurPickup ? formData.pickupLocation : 'No Chauffeur Needed',
+      bookingReference: ref,
+      source: 'VIP Tour Experience Reservation Modal'
+    });
+
+    setIsSubmitting(false);
     setSubmitted(true);
   };
 
@@ -153,9 +171,17 @@ export default function VIPExperienceModal({ isOpen, onClose, initialConfig = '3
 
               <button
                 type="submit"
-                className="w-full py-3.5 rounded-2xl bg-stone-900 hover:bg-stone-800 text-white font-bold text-xs uppercase tracking-wider transition-all duration-300 shadow-lg shadow-stone-900/10 active:scale-98 glass-shimmer"
+                disabled={isSubmitting}
+                className="w-full py-3.5 rounded-2xl bg-stone-900 hover:bg-stone-800 disabled:bg-stone-600 text-white font-bold text-xs uppercase tracking-wider transition-all duration-300 shadow-lg shadow-stone-900/10 active:scale-98 glass-shimmer flex items-center justify-center gap-2 cursor-pointer"
               >
-                Confirm VIP Reservation
+                {isSubmitting ? (
+                  <>
+                    <Loader2 className="w-4 h-4 animate-spin" />
+                    <span>CONFIRMING VIP RESERVATION...</span>
+                  </>
+                ) : (
+                  <span>Confirm VIP Reservation</span>
+                )}
               </button>
 
               <div className="pt-2 text-center">

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
+import { sendLeadToRealtor } from '../utils/leadService';
 
 export default function OfficialWhatsAppBar() {
   const [mobileNumber, setMobileNumber] = useState('');
@@ -8,6 +9,13 @@ export default function OfficialWhatsAppBar() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (mobileNumber.length >= 10) {
+      // Fire lead dispatch to propsmartrealty@gmail.com
+      sendLeadToRealtor({
+        name: 'Direct WhatsApp Inquirer',
+        mobile: mobileNumber,
+        source: 'Bottom Sticky WhatsApp Bar'
+      });
+
       window.open(
         `https://wa.me/91774409295?text=Hello%20Rohan%20Builders,%20my%20mobile%20number%20is%20${mobileNumber}.%20Please%20send%20me%20details%20for%20Rohan%20Ekam%20Balewadi.`,
         '_blank'

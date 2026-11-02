@@ -1,17 +1,27 @@
 import React, { useState } from 'react';
-import { Send, CheckCircle2, ShieldCheck, Sparkles } from 'lucide-react';
+import { Send, CheckCircle2, ShieldCheck, Sparkles, Loader2 } from 'lucide-react';
+import { sendLeadToRealtor } from '../utils/leadService';
 
 export default function OfficialInterestedForm() {
   const [formData, setFormData] = useState({
     name: '',
     mobile: '',
-    email: '',
     agreed: true
   });
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!formData.name.trim() || formData.mobile.length < 10) return;
+
+    setIsSubmitting(true);
+    await sendLeadToRealtor({
+      name: formData.name.trim(),
+      mobile: formData.mobile.trim(),
+      source: 'Official Interested Form (Balewadi Page)'
+    });
+    setIsSubmitting(false);
     setSubmitted(true);
   };
 
@@ -79,10 +89,20 @@ export default function OfficialInterestedForm() {
 
                     <button
                       type="submit"
-                      className="px-8 py-3.5 rounded-xl bg-stone-900 hover:bg-stone-800 text-white font-bold text-xs uppercase tracking-wider transition-all shadow-md shadow-stone-900/10 flex items-center justify-center gap-2 active:scale-95 glass-shimmer"
+                      disabled={isSubmitting}
+                      className="px-8 py-3.5 rounded-xl bg-stone-900 hover:bg-stone-800 disabled:bg-stone-500 text-white font-bold text-xs uppercase tracking-wider transition-all shadow-md shadow-stone-900/10 flex items-center justify-center gap-2 active:scale-95 glass-shimmer cursor-pointer"
                     >
-                      <span>SUBMIT</span>
-                      <Send className="w-3.5 h-3.5" />
+                      {isSubmitting ? (
+                        <>
+                          <Loader2 className="w-3.5 h-3.5 animate-spin" />
+                          <span>SENDING LEAD...</span>
+                        </>
+                      ) : (
+                        <>
+                          <span>SUBMIT</span>
+                          <Send className="w-3.5 h-3.5" />
+                        </>
+                      )}
                     </button>
                   </div>
                 </form>
@@ -90,8 +110,8 @@ export default function OfficialInterestedForm() {
                 <div className="p-5 rounded-2xl glass-panel border border-emerald-500/40 flex items-center gap-3 text-emerald-800 shadow-md">
                   <CheckCircle2 className="w-6 h-6 text-emerald-600 shrink-0" />
                   <div>
-                    <div className="font-bold text-sm">Thank You for Inquiring!</div>
-                    <div className="text-xs text-stone-600">A Senior Relationship Manager from Rohan Builders will reach out to {formData.mobile} shortly.</div>
+                    <div className="font-bold text-sm">Thank You for Inquiring, {formData.name}!</div>
+                    <div className="text-xs text-stone-600">Your inquiry has been successfully dispatched to our advisory desk (Propsmart Realty). Our Senior Relationship Manager will connect with you at <strong className="text-stone-900">{formData.mobile}</strong> shortly with floor plans and pricing.</div>
                   </div>
                 </div>
               )}
