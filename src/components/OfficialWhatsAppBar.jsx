@@ -9,7 +9,7 @@ export default function OfficialWhatsAppBar() {
     e.preventDefault();
     if (mobileNumber.length >= 10) {
       window.open(
-        `https://api.whatsapp.com/send?text=Hello%20Rohan%20Builders,%20my%20number%20is%20${mobileNumber}.%20Please%20send%20me%20details%20for%20Rohan%20Ekam%20Balewadi.`,
+        `https://wa.me/91774409295?text=Hello%20Rohan%20Builders,%20my%20mobile%20number%20is%20${mobileNumber}.%20Please%20send%20me%20details%20for%20Rohan%20Ekam%20Balewadi.`,
         '_blank'
       );
       setSubmitted(true);
@@ -20,7 +20,12 @@ export default function OfficialWhatsAppBar() {
     <div className="fixed bottom-3 left-4 right-4 sm:left-auto sm:right-6 sm:bottom-4 z-40 max-w-xl glass-panel-glow border border-white/95 rounded-3xl sm:rounded-full px-5 py-3 shadow-2xl backdrop-blur-2xl glass-shimmer">
       <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
         {/* Left message & official WhatsApp icon */}
-        <div className="flex items-center gap-3">
+        <a 
+          href="https://wa.me/91774409295?text=Hello%20Rohan%20Builders,%20I%20would%20like%20to%20enquire%20about%20Rohan%20Ekam%20Balewadi."
+          target="_blank"
+          rel="noreferrer"
+          className="flex items-center gap-3 group/link hover:opacity-95 transition-opacity"
+        >
           <div className="relative">
             <span className="absolute -inset-1 rounded-full bg-[#25D366] opacity-60 animate-ping" />
             <div className="relative w-8 h-8 rounded-full bg-[#25D366] flex items-center justify-center p-1.5 shadow-md shrink-0">
@@ -29,10 +34,13 @@ export default function OfficialWhatsAppBar() {
               </svg>
             </div>
           </div>
-          <span className="text-xs font-semibold text-stone-900 leading-tight">
-            Direct Concierge on WhatsApp
-          </span>
-        </div>
+          <div>
+            <span className="text-xs font-semibold text-stone-900 leading-tight block">
+              WhatsApp Enquiry: <strong className="font-mono text-emerald-800">+91 774409295</strong>
+            </span>
+            <span className="text-[10px] text-stone-500 block">Click to chat or enter your number</span>
+          </div>
+        </a>
 
         {/* Right input form */}
         {!submitted ? (

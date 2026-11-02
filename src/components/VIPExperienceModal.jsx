@@ -160,13 +160,13 @@ export default function VIPExperienceModal({ isOpen, onClose, initialConfig = '3
 
               <div className="pt-2 text-center">
                 <a
-                  href="https://api.whatsapp.com/send?text=Hello%20Rohan%20Builders,%20I%20would%20like%20to%20schedule%20a%20VIP%20visit%20for%20Rohan%20Ekam%20Balewadi."
+                  href="https://wa.me/91774409295?text=Hello%20Rohan%20Builders,%20I%20would%20like%20to%20schedule%20a%20VIP%20visit%20for%20Rohan%20Ekam%20Balewadi."
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center gap-1.5 text-xs text-emerald-700 font-medium hover:underline"
                 >
                   <MessageSquare className="w-3.5 h-3.5" />
-                  <span>Prefer WhatsApp? Chat directly with Rohan Relationship Manager</span>
+                  <span>WhatsApp Enquiry (+91 774409295): Chat directly with Relationship Manager</span>
                 </a>
               </div>
             </form>
@@ -199,8 +199,10 @@ export default function VIPExperienceModal({ isOpen, onClose, initialConfig = '3
                 <span className="text-stone-900 font-semibold">{formData.config.toUpperCase()}</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-stone-500">VIP Concierge:</span>
-                <span className="text-emerald-800 font-bold">Confirmed & Assigned</span>
+                <span className="text-stone-500">WhatsApp Desk:</span>
+                <a href="https://wa.me/91774409295" target="_blank" rel="noreferrer" className="text-emerald-800 font-bold hover:underline">
+                  +91 774409295
+                </a>
               </div>
             </div>
 

@@ -11,6 +11,9 @@ export const OFFICIAL_PROJECT_DETAILS = {
   towers: "9 Iconic High-Rise Towers (G+32 Storeys)",
   configurations: "2, 3 & 4 BHK Riverfront Residences",
   possessionDate: "December 2027 onwards (Phase 1 as per RERA)",
+  whatsappNumber: "774409295",
+  whatsappFormatted: "+91 774409295",
+  whatsappLink: "https://wa.me/91774409295",
 
   architect: "Ar. Sanjay Mohe (Mindspace Architects)",
   architectImage: "https://rohanbuilders.com/wp-content/uploads/2023/02/arch_pic_2.png",
