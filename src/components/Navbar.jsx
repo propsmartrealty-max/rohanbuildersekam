@@ -35,27 +35,27 @@ export default function Navbar({ onOpenVipModal }) {
         <div
           className={`max-w-7xl mx-auto rounded-full transition-all duration-500 px-4 sm:px-6 py-2.5 flex items-center justify-between ${
             isScrolled
-              ? 'bg-dark-900/85 backdrop-blur-2xl border border-cyan-500/20 shadow-2xl shadow-cyan-950/40'
-              : 'bg-dark-950/60 backdrop-blur-xl border border-white/10'
+              ? 'bg-[#FAF8F5]/90 backdrop-blur-2xl border border-stone-300/80 shadow-lg shadow-stone-900/5'
+              : 'bg-[#FAF8F5]/70 backdrop-blur-xl border border-stone-200/80'
           }`}
         >
           {/* Brand Monogram */}
           <a href="#" className="flex items-center gap-3 group">
-            <div className="relative w-9 h-9 rounded-full bg-gradient-to-tr from-cyan-500 via-teal-400 to-cyan-300 p-[1.5px] shadow-lg shadow-cyan-500/20">
-              <div className="w-full h-full bg-dark-950 rounded-full flex items-center justify-center group-hover:bg-dark-900 transition-colors">
-                <span className="font-serif font-black text-lg text-cyan-400 tracking-wider">E</span>
+            <div className="relative w-9 h-9 rounded-full bg-stone-900 p-[1.5px] shadow-sm">
+              <div className="w-full h-full bg-[#F5F2EB] rounded-full flex items-center justify-center group-hover:bg-white transition-colors">
+                <span className="font-serif font-black text-lg text-stone-900 tracking-wider">E</span>
               </div>
             </div>
             <div className="flex flex-col">
               <div className="flex items-center gap-2">
-                <span className="font-serif text-base sm:text-lg font-bold tracking-widest text-white group-hover:text-cyan-400 transition-colors">
+                <span className="font-serif text-base sm:text-lg font-bold tracking-widest text-stone-900 group-hover:text-amber-800 transition-colors">
                   ROHAN EKAM
                 </span>
-                <span className="hidden sm:inline-block text-[10px] px-2 py-0.5 rounded-full border border-cyan-500/30 text-cyan-300/90 font-mono tracking-wider">
+                <span className="hidden sm:inline-block text-[10px] px-2 py-0.5 rounded-full border border-stone-300 text-stone-600 font-mono tracking-wider bg-white/60">
                   BALEWADI
                 </span>
               </div>
-              <span className="text-[10px] text-gray-400 uppercase tracking-widest font-mono">
+              <span className="text-[10px] text-stone-500 uppercase tracking-widest font-mono">
                 Mula Riverfront • Pune
               </span>
             </div>
@@ -67,7 +67,7 @@ export default function Navbar({ onOpenVipModal }) {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-xs uppercase tracking-widest text-gray-300 hover:text-cyan-400 transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1.5px] after:bg-cyan-400 hover:after:w-full after:transition-all"
+                className="text-xs uppercase tracking-widest text-stone-700 hover:text-stone-950 font-medium transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1.5px] after:bg-stone-900 hover:after:w-full after:transition-all"
               >
                 {link.name}
               </a>
@@ -76,24 +76,24 @@ export default function Navbar({ onOpenVipModal }) {
 
           {/* Action Hub */}
           <div className="flex items-center gap-2.5">
-            {/* Ambient River Breeze Generator */}
+            {/* Ambient River Breeze Button */}
             <button
               onClick={handleAudioToggle}
               title={isPlayingAudio ? 'Mute river soundscape' : 'Play procedural river breeze & birds'}
               className={`hidden md:flex items-center gap-2 text-xs px-3.5 py-1.5 rounded-full border transition-all duration-300 ${
                 isPlayingAudio
-                  ? 'border-cyan-400/60 bg-cyan-950/50 text-cyan-300 shadow-md shadow-cyan-900/30'
-                  : 'border-white/10 bg-white/5 text-gray-400 hover:text-white hover:border-cyan-500/30'
+                  ? 'border-emerald-600 bg-emerald-50 text-emerald-800 shadow-sm'
+                  : 'border-stone-300 bg-white/60 text-stone-600 hover:text-stone-900 hover:border-stone-400'
               }`}
             >
               {isPlayingAudio ? (
                 <>
-                  <Volume2 className="w-3.5 h-3.5 text-cyan-400 animate-pulse" />
-                  <span className="text-[11px] font-medium tracking-wide">River Flow</span>
+                  <Volume2 className="w-3.5 h-3.5 text-emerald-700 animate-pulse" />
+                  <span className="text-[11px] font-semibold tracking-wide">River Flow</span>
                   <span className="flex gap-0.5 items-end h-3">
-                    <span className="w-0.5 h-2 bg-cyan-400 animate-pulse"></span>
-                    <span className="w-0.5 h-3 bg-cyan-400 animate-pulse delay-75"></span>
-                    <span className="w-0.5 h-1.5 bg-cyan-400 animate-pulse delay-150"></span>
+                    <span className="w-0.5 h-2 bg-emerald-700 animate-pulse"></span>
+                    <span className="w-0.5 h-3 bg-emerald-700 animate-pulse delay-75"></span>
+                    <span className="w-0.5 h-1.5 bg-emerald-700 animate-pulse delay-150"></span>
                   </span>
                 </>
               ) : (
@@ -105,18 +105,18 @@ export default function Navbar({ onOpenVipModal }) {
             </button>
 
             {/* MahaRERA Badge */}
-            <div className="hidden xl:flex items-center gap-1.5 text-[11px] text-gray-300 border border-white/10 px-3 py-1 rounded-full bg-white/5">
-              <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-ping"></span>
-              <span className="font-mono text-gray-300">P52100052298</span>
+            <div className="hidden xl:flex items-center gap-1.5 text-[11px] text-stone-600 border border-stone-300 px-3 py-1 rounded-full bg-white/70">
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+              <span className="font-mono text-stone-700 font-medium">P52100052298</span>
             </div>
 
             {/* VIP Site Visit Button */}
             <button
               onClick={onOpenVipModal}
-              className="relative group overflow-hidden px-4 sm:px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider text-dark-950 bg-gradient-to-r from-cyan-400 via-teal-300 to-cyan-300 hover:from-cyan-300 hover:to-teal-200 transition-all duration-300 shadow-lg shadow-cyan-500/20 active:scale-95"
+              className="relative group overflow-hidden px-4 sm:px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider text-white bg-stone-900 hover:bg-stone-800 transition-all duration-300 shadow-md shadow-stone-900/10 active:scale-95"
             >
               <span className="relative z-10 flex items-center gap-1.5">
-                <Sparkles className="w-3.5 h-3.5 text-dark-950" />
+                <Sparkles className="w-3.5 h-3.5 text-amber-400" />
                 <span>VIP Site Tour</span>
               </span>
             </button>
@@ -124,7 +124,7 @@ export default function Navbar({ onOpenVipModal }) {
             {/* Mobile Menu Hamburger */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="lg:hidden p-1.5 rounded-full text-gray-300 hover:text-white hover:bg-white/5"
+              className="lg:hidden p-1.5 rounded-full text-stone-800 hover:bg-black/5"
               aria-label="Toggle navigation"
             >
               {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -134,14 +134,14 @@ export default function Navbar({ onOpenVipModal }) {
 
         {/* Mobile Dropdown Menu */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden mt-2 max-w-7xl mx-auto rounded-3xl bg-dark-950/95 backdrop-blur-2xl border border-cyan-500/20 p-5 space-y-4 shadow-2xl">
-            <div className="flex items-center justify-between pb-3 border-b border-white/10">
-              <span className="text-xs font-mono text-cyan-400">MAHARERA: P52100052298</span>
+          <div className="lg:hidden mt-2 max-w-7xl mx-auto rounded-3xl bg-[#FAF8F5]/98 backdrop-blur-2xl border border-stone-300 p-5 space-y-4 shadow-xl">
+            <div className="flex items-center justify-between pb-3 border-b border-stone-200">
+              <span className="text-xs font-mono text-stone-800 font-bold">MAHARERA: P52100052298</span>
               <button
                 onClick={handleAudioToggle}
-                className="flex items-center gap-1.5 text-xs text-cyan-300 px-2.5 py-1 rounded-full bg-cyan-950/60 border border-cyan-500/30"
+                className="flex items-center gap-1.5 text-xs text-stone-800 px-2.5 py-1 rounded-full bg-white border border-stone-300"
               >
-                {isPlayingAudio ? <Volume2 className="w-3.5 h-3.5" /> : <VolumeX className="w-3.5 h-3.5" />}
+                {isPlayingAudio ? <Volume2 className="w-3.5 h-3.5 text-emerald-600" /> : <VolumeX className="w-3.5 h-3.5" />}
                 <span>{isPlayingAudio ? 'Audio ON' : 'Audio OFF'}</span>
               </button>
             </div>
@@ -151,7 +151,7 @@ export default function Navbar({ onOpenVipModal }) {
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-sm font-medium text-gray-200 hover:text-cyan-400 transition-colors py-1"
+                  className="text-sm font-medium text-stone-800 hover:text-stone-950 py-1"
                 >
                   {link.name}
                 </a>
@@ -163,7 +163,7 @@ export default function Navbar({ onOpenVipModal }) {
                   setIsMobileMenuOpen(false);
                   onOpenVipModal();
                 }}
-                className="w-full py-3 rounded-full bg-cyan-400 hover:bg-cyan-300 text-dark-950 font-bold text-xs uppercase tracking-wider shadow-lg shadow-cyan-500/20"
+                className="w-full py-3 rounded-full bg-stone-900 hover:bg-stone-800 text-white font-bold text-xs uppercase tracking-wider shadow-md"
               >
                 Schedule Private VIP Tour
               </button>

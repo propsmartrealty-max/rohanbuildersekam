@@ -27,16 +27,14 @@ export default function VIPExperienceModal({ isOpen, onClose, initialConfig = '3
   };
 
   return (
-    <div className="fixed inset-0 z-50 overflow-y-auto bg-black/85 backdrop-blur-xl flex items-center justify-center p-4">
+    <div className="fixed inset-0 z-50 overflow-y-auto bg-stone-950/70 backdrop-blur-md flex items-center justify-center p-4">
       <div 
-        className="relative max-w-xl w-full bg-dark-900 rounded-3xl border border-cyan-500/40 p-6 sm:p-8 shadow-2xl shadow-cyan-950/60 overflow-hidden"
+        className="relative max-w-xl w-full bg-[#FAF8F5] rounded-3xl border border-stone-300 p-6 sm:p-8 shadow-2xl overflow-hidden"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="absolute top-0 right-0 w-64 h-64 bg-cyan-500/10 rounded-full blur-[90px] pointer-events-none" />
-
         <button
           onClick={onClose}
-          className="absolute top-6 right-6 w-9 h-9 rounded-full bg-white/5 border border-white/10 text-gray-400 hover:text-white hover:bg-white/10 flex items-center justify-center transition-colors z-20"
+          className="absolute top-6 right-6 w-9 h-9 rounded-full bg-white border border-stone-300 text-stone-500 hover:text-stone-900 flex items-center justify-center transition-colors z-20 shadow-xs"
         >
           <X className="w-5 h-5" />
         </button>
@@ -44,62 +42,62 @@ export default function VIPExperienceModal({ isOpen, onClose, initialConfig = '3
         {!submitted ? (
           <div>
             <div className="mb-6">
-              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cyan-950/80 border border-cyan-400/30 text-cyan-300 text-xs font-mono uppercase tracking-widest mb-2">
-                <Sparkles className="w-3.5 h-3.5" />
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-stone-300 text-stone-800 text-xs font-mono uppercase tracking-widest mb-2 shadow-xs">
+                <Sparkles className="w-3.5 h-3.5 text-amber-600" />
                 <span>Rohan Ekam Experience Center</span>
               </div>
-              <h3 className="font-serif text-2xl sm:text-3xl font-bold text-white">
+              <h3 className="font-serif text-2xl sm:text-3xl font-bold text-stone-900">
                 Schedule Your VIP Site Tour
               </h3>
-              <p className="text-xs text-gray-400 mt-1">
+              <p className="text-xs text-stone-600 mt-1">
                 Experience the 14th-floor sky mockups, cascading sloping lawns, and private Mula Riverfront boardwalk in Balewadi.
               </p>
             </div>
 
             <form onSubmit={handleSubmit} className="space-y-4 text-xs">
               <div>
-                <label className="block text-gray-300 font-medium mb-1">Full Name *</label>
+                <label className="block text-stone-700 font-semibold mb-1">Full Name *</label>
                 <input
                   type="text"
                   required
                   placeholder="e.g. Vikramaditya Singhania"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="w-full bg-dark-950 border border-white/10 rounded-xl px-4 py-2.5 text-white placeholder-gray-500 focus:outline-none focus:border-cyan-400"
+                  className="w-full bg-white border border-stone-300 rounded-xl px-4 py-2.5 text-stone-900 placeholder-stone-400 focus:outline-none focus:border-stone-800 shadow-xs"
                 />
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div>
-                  <label className="block text-gray-300 font-medium mb-1">Phone Number (WhatsApp) *</label>
+                  <label className="block text-stone-700 font-semibold mb-1">Phone Number (WhatsApp) *</label>
                   <input
                     type="tel"
                     required
                     placeholder="+91 98220 XXXXX"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="w-full bg-dark-950 border border-white/10 rounded-xl px-4 py-2.5 text-white placeholder-gray-500 focus:outline-none focus:border-cyan-400"
+                    className="w-full bg-white border border-stone-300 rounded-xl px-4 py-2.5 text-stone-900 placeholder-stone-400 focus:outline-none focus:border-stone-800 shadow-xs"
                   />
                 </div>
                 <div>
-                  <label className="block text-gray-300 font-medium mb-1">Email Address</label>
+                  <label className="block text-stone-700 font-semibold mb-1">Email Address</label>
                   <input
                     type="email"
                     placeholder="name@executive.com"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full bg-dark-950 border border-white/10 rounded-xl px-4 py-2.5 text-white placeholder-gray-500 focus:outline-none focus:border-cyan-400"
+                    className="w-full bg-white border border-stone-300 rounded-xl px-4 py-2.5 text-stone-900 placeholder-stone-400 focus:outline-none focus:border-stone-800 shadow-xs"
                   />
                 </div>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div>
-                  <label className="block text-gray-300 font-medium mb-1">Preferred Unit</label>
+                  <label className="block text-stone-700 font-semibold mb-1">Preferred Unit</label>
                   <select
                     value={formData.config}
                     onChange={(e) => setFormData({ ...formData, config: e.target.value })}
-                    className="w-full bg-dark-950 border border-white/10 rounded-xl px-4 py-2.5 text-white focus:outline-none focus:border-cyan-400"
+                    className="w-full bg-white border border-stone-300 rounded-xl px-4 py-2.5 text-stone-900 focus:outline-none focus:border-stone-800 shadow-xs font-medium"
                   >
                     {OFFICIAL_FLOOR_PLANS.map((plan) => (
                       <option key={plan.id} value={plan.id}>
@@ -109,22 +107,22 @@ export default function VIPExperienceModal({ isOpen, onClose, initialConfig = '3
                   </select>
                 </div>
                 <div>
-                  <label className="block text-gray-300 font-medium mb-1">Tour Date</label>
+                  <label className="block text-stone-700 font-semibold mb-1">Tour Date</label>
                   <input
                     type="date"
                     value={formData.date}
                     onChange={(e) => setFormData({ ...formData, date: e.target.value })}
-                    className="w-full bg-dark-950 border border-white/10 rounded-xl px-4 py-2.5 text-white focus:outline-none focus:border-cyan-400"
+                    className="w-full bg-white border border-stone-300 rounded-xl px-4 py-2.5 text-stone-900 focus:outline-none focus:border-stone-800 shadow-xs font-medium"
                   />
                 </div>
               </div>
 
               <div>
-                <label className="block text-gray-300 font-medium mb-1">Preferred Experience Slot</label>
+                <label className="block text-stone-700 font-semibold mb-1">Preferred Experience Slot</label>
                 <select
                   value={formData.slot}
                   onChange={(e) => setFormData({ ...formData, slot: e.target.value })}
-                  className="w-full bg-dark-950 border border-white/10 rounded-xl px-4 py-2.5 text-white focus:outline-none focus:border-cyan-400"
+                  className="w-full bg-white border border-stone-300 rounded-xl px-4 py-2.5 text-stone-900 focus:outline-none focus:border-stone-800 shadow-xs font-medium"
                 >
                   <option>10:00 AM (Morning River Breeze Tour)</option>
                   <option>1:30 PM (Midday Solar & Light Test)</option>
@@ -133,16 +131,16 @@ export default function VIPExperienceModal({ isOpen, onClose, initialConfig = '3
                 </select>
               </div>
 
-              <div className="p-3.5 rounded-2xl bg-white/5 border border-white/10 space-y-2">
+              <div className="p-3.5 rounded-2xl bg-white border border-stone-300 space-y-2 shadow-xs">
                 <label className="flex items-center gap-2 cursor-pointer">
                   <input
                     type="checkbox"
                     checked={formData.chauffeurPickup}
                     onChange={(e) => setFormData({ ...formData, chauffeurPickup: e.target.checked })}
-                    className="w-4 h-4 accent-cyan-400 rounded cursor-pointer"
+                    className="w-4 h-4 accent-stone-900 rounded cursor-pointer"
                   />
-                  <span className="font-semibold text-white flex items-center gap-1.5">
-                    <Car className="w-4 h-4 text-cyan-400" />
+                  <span className="font-semibold text-stone-900 flex items-center gap-1.5">
+                    <Car className="w-4 h-4 text-amber-700" />
                     Request Chauffeur Pickup (Baner / Hinjawadi / Airport)
                   </span>
                 </label>
@@ -152,14 +150,14 @@ export default function VIPExperienceModal({ isOpen, onClose, initialConfig = '3
                     placeholder="Enter pickup address"
                     value={formData.pickupLocation}
                     onChange={(e) => setFormData({ ...formData, pickupLocation: e.target.value })}
-                    className="w-full bg-dark-950 border border-cyan-500/30 rounded-xl px-3 py-2 text-white text-xs mt-2"
+                    className="w-full bg-[#FAF8F5] border border-stone-300 rounded-xl px-3 py-2 text-stone-900 text-xs mt-2"
                   />
                 )}
               </div>
 
               <button
                 type="submit"
-                className="w-full py-3.5 rounded-xl bg-gradient-to-r from-cyan-400 to-teal-300 hover:from-cyan-300 hover:to-teal-200 text-dark-950 font-bold text-xs uppercase tracking-wider transition-all duration-300 shadow-xl shadow-cyan-500/20 active:scale-98"
+                className="w-full py-3.5 rounded-xl bg-stone-900 hover:bg-stone-800 text-white font-bold text-xs uppercase tracking-wider transition-all duration-300 shadow-lg shadow-stone-900/10 active:scale-98"
               >
                 Confirm VIP Reservation
               </button>
@@ -169,7 +167,7 @@ export default function VIPExperienceModal({ isOpen, onClose, initialConfig = '3
                   href="https://wa.me/912071178899?text=Hello%20Rohan%20Builders,%20I%20would%20like%20to%20schedule%20a%20VIP%20visit%20for%20Rohan%20Ekam%20Balewadi."
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center gap-1.5 text-xs text-cyan-300 hover:underline"
+                  className="inline-flex items-center gap-1.5 text-xs text-emerald-700 font-medium hover:underline"
                 >
                   <MessageSquare className="w-3.5 h-3.5" />
                   <span>Prefer WhatsApp? Chat directly with Rohan Relationship Manager</span>
@@ -179,40 +177,40 @@ export default function VIPExperienceModal({ isOpen, onClose, initialConfig = '3
           </div>
         ) : (
           <div className="text-center py-6 space-y-5">
-            <div className="w-16 h-16 rounded-full bg-cyan-500/20 border border-cyan-400/50 flex items-center justify-center mx-auto text-cyan-400">
+            <div className="w-16 h-16 rounded-full bg-emerald-100 border border-emerald-300 flex items-center justify-center mx-auto text-emerald-700">
               <CheckCircle2 className="w-9 h-9" />
             </div>
 
             <div>
-              <span className="text-xs font-mono uppercase tracking-widest text-cyan-400">
+              <span className="text-xs font-mono uppercase tracking-widest text-amber-800 font-bold">
                 Reservation Confirmed
               </span>
-              <h3 className="font-serif text-2xl sm:text-3xl font-bold text-white mt-1">
+              <h3 className="font-serif text-2xl sm:text-3xl font-bold text-stone-900 mt-1">
                 Welcome to Rohan Ekam, {formData.name}
               </h3>
-              <p className="text-xs text-gray-300 mt-2 max-w-md mx-auto">
+              <p className="text-xs text-stone-600 mt-2 max-w-md mx-auto">
                 Your private tour has been locked for <strong>{formData.date}</strong> at <strong>{formData.slot}</strong>.
               </p>
             </div>
 
-            <div className="bg-white/5 border border-cyan-500/30 rounded-2xl p-4 text-xs max-w-sm mx-auto text-left space-y-1.5 font-mono">
+            <div className="bg-white border border-stone-300 rounded-2xl p-4 text-xs max-w-sm mx-auto text-left space-y-1.5 font-mono shadow-xs">
               <div className="flex justify-between">
-                <span className="text-gray-400">Booking Pass:</span>
-                <strong className="text-cyan-400">{bookingRef}</strong>
+                <span className="text-stone-500">Booking Pass:</span>
+                <strong className="text-stone-900">{bookingRef}</strong>
               </div>
               <div className="flex justify-between">
-                <span className="text-gray-400">Selected Unit:</span>
-                <span className="text-white">{formData.config.toUpperCase()}</span>
+                <span className="text-stone-500">Selected Unit:</span>
+                <span className="text-stone-900 font-semibold">{formData.config.toUpperCase()}</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-gray-400">Desk Support:</span>
-                <span className="text-cyan-300">+91 20 7117 8899</span>
+                <span className="text-stone-500">Desk Support:</span>
+                <span className="text-emerald-800 font-bold">+91 20 7117 8899</span>
               </div>
             </div>
 
             <button
               onClick={onClose}
-              className="px-6 py-2.5 rounded-xl bg-cyan-400 text-dark-950 font-bold text-xs uppercase tracking-wider"
+              className="px-6 py-2.5 rounded-xl bg-stone-900 text-white font-bold text-xs uppercase tracking-wider hover:bg-stone-800 transition-colors"
             >
               Close & Return
             </button>

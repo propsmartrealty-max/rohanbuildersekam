@@ -25,12 +25,12 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-dark-950 text-gray-100 flex flex-col relative selection:bg-cyan-500 selection:text-dark-950">
+    <div className="min-h-screen bg-[#F5F2EB] text-stone-900 flex flex-col relative selection:bg-stone-900 selection:text-white">
       {/* Top Floating Navbar */}
       <Navbar onOpenVipModal={() => openVipModalWithConfig('3bhk-type1')} />
 
-      {/* Main Showcase Sections */}
-      <main className="flex-1">
+      {/* Main Showcase Sections on Warm Beige Canvas */}
+      <main className="flex-1 bg-[#F5F2EB]">
         {/* 4K Hero with Background Carousel */}
         <Hero onOpenVipModal={() => openVipModalWithConfig('3bhk-type1')} />
 
@@ -76,10 +76,10 @@ export default function App() {
           target="_blank"
           rel="noreferrer"
           title="Chat with Rohan Ekam Concierge on WhatsApp"
-          className="w-12 h-12 rounded-full bg-emerald-500 hover:bg-emerald-400 text-dark-950 flex items-center justify-center shadow-2xl shadow-emerald-950/80 hover:scale-110 transition-all duration-300 group relative"
+          className="w-12 h-12 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white flex items-center justify-center shadow-xl shadow-stone-900/10 hover:scale-105 transition-all duration-300 group relative"
         >
           <MessageSquare className="w-5 h-5" />
-          <span className="absolute right-full mr-3 hidden group-hover:block whitespace-nowrap bg-dark-900 text-white text-xs px-2.5 py-1 rounded-lg border border-white/10 shadow-xl">
+          <span className="absolute right-full mr-3 hidden group-hover:block whitespace-nowrap bg-stone-900 text-white text-xs px-2.5 py-1 rounded-lg border border-stone-700 shadow-xl">
             WhatsApp Concierge
           </span>
         </a>
@@ -87,9 +87,9 @@ export default function App() {
         {/* VIP Tour Pill */}
         <button
           onClick={() => openVipModalWithConfig('3bhk-type1')}
-          className="px-4 py-2.5 rounded-full bg-gradient-to-r from-cyan-400 to-teal-300 hover:from-cyan-300 hover:to-teal-200 text-dark-950 font-bold text-xs uppercase tracking-wider shadow-2xl shadow-cyan-500/30 flex items-center gap-2 group hover:scale-105 transition-all duration-300"
+          className="px-4 py-2.5 rounded-full bg-stone-900 hover:bg-stone-800 text-white font-bold text-xs uppercase tracking-wider shadow-xl shadow-stone-900/15 flex items-center gap-2 group hover:scale-105 transition-all duration-300"
         >
-          <Sparkles className="w-4 h-4 text-dark-950" />
+          <Sparkles className="w-4 h-4 text-amber-400" />
           <span className="hidden sm:inline">Book VIP Tour</span>
         </button>
       </div>

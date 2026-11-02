@@ -9,85 +9,86 @@
   }
   
   body {
-    background-color: #030712;
-    color: #F8FAFC;
+    background-color: #F5F2EB;
+    color: #1C1917;
     overflow-x: hidden;
   }
 }
 
-/* Modern Sleek Scrollbar */
+/* Warm Travertine Scrollbar */
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 7px;
 }
 ::-webkit-scrollbar-track {
-  background: #030712;
+  background: #EFECE6;
 }
 ::-webkit-scrollbar-thumb {
-  background: #1E293B;
+  background: #C8BCA7;
   border-radius: 9999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #06B6D4;
+  background: #8E7D65;
 }
 
-/* Luxury Modern Typography Gradients (No Beige) */
-.silver-gradient-text {
-  background: linear-gradient(135deg, #FFFFFF 0%, #E2E8F0 45%, #94A3B8 100%);
+/* Editorial Typography Gradients for Beige Theme */
+.espresso-gradient-text {
+  background: linear-gradient(135deg, #1C1917 0%, #292524 50%, #44403C 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.cyan-gradient-text {
-  background: linear-gradient(135deg, #E0F2FE 0%, #38BDF8 40%, #06B6D4 75%, #0284C7 100%);
+.bronze-gradient-text {
+  background: linear-gradient(135deg, #78350F 0%, #92400E 50%, #B45309 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.river-gradient-text {
-  background: linear-gradient(135deg, #A7F3D0 0%, #34D399 35%, #06B6D4 70%, #38BDF8 100%);
+.river-stone-text {
+  background: linear-gradient(135deg, #0F766E 0%, #115E59 50%, #134E4A 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-/* Modern High-End Glassmorphism */
+/* Luxury Beige Theme Glass Panels */
 .glass-panel {
-  background: rgba(11, 15, 23, 0.75);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(214, 204, 187, 0.7);
+  box-shadow: 0 4px 20px -2px rgba(28, 25, 23, 0.05);
 }
 
 .glass-panel-glow {
-  background: rgba(16, 22, 34, 0.72);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
-  border: 1px solid rgba(6, 182, 212, 0.25);
-  box-shadow: 0 20px 50px -15px rgba(6, 182, 212, 0.12);
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(184, 168, 142, 0.55);
+  box-shadow: 0 16px 40px -10px rgba(28, 25, 23, 0.08);
 }
 
 .glass-card-hover {
   transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .glass-card-hover:hover {
-  transform: translateY(-4px);
-  border-color: rgba(6, 182, 212, 0.45);
-  box-shadow: 0 20px 40px -12px rgba(6, 182, 212, 0.2);
+  transform: translateY(-3px);
+  border-color: rgba(142, 125, 101, 0.6);
+  box-shadow: 0 16px 36px -8px rgba(28, 25, 23, 0.12);
 }
 
-/* Architectural Grid & Technical Coordinate Patterns */
+/* Architectural Grid & Coordinate Lines */
 .arch-grid-pattern {
   background-image: 
-    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    linear-gradient(to right, rgba(28, 25, 23, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(28, 25, 23, 0.04) 1px, transparent 1px);
   background-size: 32px 32px;
 }
 
 .arch-dots-pattern {
-  background-image: radial-gradient(rgba(6, 182, 212, 0.18) 1px, transparent 1px);
+  background-image: radial-gradient(rgba(142, 125, 101, 0.25) 1px, transparent 1px);
   background-size: 20px 20px;
 }
 
-/* Pulsing Sonar Ring */
+/* Pulsing Radar Ring */
 @keyframes radarPing {
   0% { transform: scale(0.8); opacity: 0.8; }
   100% { transform: scale(2.4); opacity: 0; }
@@ -96,10 +97,10 @@
   animation: radarPing 2.8s cubic-bezier(0, 0.2, 0.8, 1) infinite;
 }
 
-/* Custom Interactive Range Input */
+/* Clean Range Sliders */
 input[type=range] {
   -webkit-appearance: none;
-  background: rgba(255, 255, 255, 0.1);
+  background: #E2DBD0;
   border-radius: 9999px;
   height: 6px;
 }
@@ -108,21 +109,21 @@ input[type=range]::-webkit-slider-thumb {
   height: 18px;
   width: 18px;
   border-radius: 50%;
-  background: #06B6D4;
+  background: #1C1917;
   cursor: pointer;
-  box-shadow: 0 0 12px rgba(6, 182, 212, 0.8);
-  border: 2px solid #ffffff;
+  box-shadow: 0 2px 8px rgba(28, 25, 23, 0.3);
+  border: 2px solid #FFFFFF;
   transition: transform 0.15s ease;
 }
 input[type=range]::-webkit-slider-thumb:hover {
   transform: scale(1.2);
 }
 
-/* Print styles for digital brochure */
+/* Print Styles */
 @media print {
   body {
-    background: #ffffff !important;
-    color: #0f172a !important;
+    background: #FFFFFF !important;
+    color: #1C1917 !important;
   }
   .no-print {
     display: none !important;
