@@ -39,7 +39,7 @@ export default function Hero({ onOpenVipModal }) {
         {/* Curated Eyebrow Badge in Frosted Glass */}
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-panel text-stone-800 text-xs sm:text-sm font-semibold tracking-widest uppercase mb-4 shadow-xs glass-shimmer">
           <Sparkles className="w-4 h-4 text-amber-700 animate-pulse" />
-          <span>Official Showcase • Rohan Builders & Ar. Sanjay Mohe</span>
+          <span>Project Showcase • Rohan Builders &amp; Ar. Sanjay Mohe</span>
         </div>
 
         {/* Colorful Brand Insignia (Exact User Typography) */}
@@ -77,7 +77,7 @@ export default function Hero({ onOpenVipModal }) {
             className="w-full sm:w-auto px-7 py-3.5 rounded-full glass-panel hover:bg-white/95 text-stone-900 font-semibold text-xs uppercase tracking-wider border border-white/90 transition-all duration-300 shadow-sm flex items-center justify-center gap-2 glass-shimmer"
           >
             <Download className="w-4 h-4 text-amber-700" />
-            <span>Official Brochure PDF (18MB)</span>
+            <span>Brochure PDF (18MB)</span>
           </a>
         </div>
 

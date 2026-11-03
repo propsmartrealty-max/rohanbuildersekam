@@ -27,7 +27,7 @@ export default function OfficialBrochureStrip() {
                 </span>
               </div>
               <p className="text-xs text-stone-600 mt-0.5">
-                Download the official high-resolution project brochure with complete floor plans, elevation renders, and specifications.
+                Download the complete high-resolution project brochure with complete floor plans, elevation renders, and specifications.
               </p>
             </div>
           </div>

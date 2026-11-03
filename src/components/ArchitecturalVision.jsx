@@ -74,7 +74,7 @@ export default function ArchitecturalVision() {
               <div className="flex items-center justify-between pb-3 border-b border-stone-200 mb-3">
                 <div className="flex items-center gap-2">
                   <Ruler className="w-4 h-4 text-amber-800" />
-                  <span className="text-xs font-mono text-stone-900 uppercase tracking-wider font-semibold">Official Master Plan</span>
+                  <span className="text-xs font-mono text-stone-900 uppercase tracking-wider font-semibold">Master Plan Layout</span>
                 </div>
                 <span className="text-[10px] px-2.5 py-0.5 rounded-full bg-white text-stone-800 font-mono font-semibold border border-stone-300/80 shadow-xs">
                   13-ACRE PARCEL
@@ -140,7 +140,7 @@ export default function ArchitecturalVision() {
               </div>
 
               <div className="p-3 text-center text-xs text-stone-700 font-mono">
-                Official Rohan Ekam 13-Acre Master Plan • Conceptualized by Mindspace Architects
+                Rohan Ekam 13-Acre Master Plan • Conceptualized by Mindspace Architects
               </div>
             </div>
           </div>

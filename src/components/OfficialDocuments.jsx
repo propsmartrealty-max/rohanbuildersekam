@@ -17,7 +17,7 @@ export default function OfficialDocuments() {
             <span>Transparency & Compliance</span>
           </div>
           <h2 className="font-serif text-3xl sm:text-5xl font-normal text-stone-900 tracking-tight mb-3">
-            Official <span className="italic font-serif font-medium text-amber-800">Legal Documents</span>
+            Certified <span className="italic font-serif font-medium text-amber-800">Legal Documents</span>
           </h2>
           <p className="text-stone-600 text-sm sm:text-base leading-relaxed">
             Download certified project brochures, environmental clearances, and verify MahaRERA registration QR codes directly from Rohan Builders.
@@ -31,7 +31,7 @@ export default function OfficialDocuments() {
             <div className="glass-panel-glow p-6 sm:p-7 rounded-3xl border border-white/90 shadow-xl shadow-stone-900/5">
               <h3 className="font-serif text-xl font-bold text-stone-900 mb-4 flex items-center gap-2">
                 <FileText className="w-5 h-5 text-amber-800" />
-                <span>Certified Official Brochures & Approvals</span>
+                <span>Certified Brochures &amp; Approvals</span>
               </h3>
 
               <div className="space-y-3">

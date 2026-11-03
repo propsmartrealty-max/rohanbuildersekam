@@ -54,7 +54,7 @@ export const OFFICIAL_PROJECT_DETAILS = {
   brochures: [
     {
       title: "Rohan Ekam Project Brochure",
-      type: "Official PDF Brochure",
+      type: "PDF Brochure",
       url: "https://rohanbuilders.com/wp-content/uploads/2023/09/Rohan-Ekam-Brochure.pdf",
       size: "18.4 MB"
     },

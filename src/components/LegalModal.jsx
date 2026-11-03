@@ -156,17 +156,17 @@ export default function LegalModal({ isOpen, onClose, initialTab = 'privacy' }) 
                 </a>
               </div>
               <p>
-                <strong>MahaRERA Compliance:</strong> Rohan Ekam is officially registered under the Maharashtra Real Estate Regulatory Authority (MahaRERA):
+                <strong>MahaRERA Compliance:</strong> Rohan Ekam is registered under the Maharashtra Real Estate Regulatory Authority (MahaRERA):
               </p>
               <div className="p-3 rounded-xl glass-panel border border-stone-300 font-mono text-[11px] space-y-1">
                 <div>Phase 1 Registration No: <strong className="text-stone-900">P52100052298</strong></div>
                 <div>Phase 2 Registration No: <strong className="text-stone-900">PR1261012502532</strong></div>
-                <div>Official Portal: <a href="https://maharera.mahaonline.gov.in" target="_blank" rel="noreferrer" className="text-emerald-800 underline font-semibold">maharera.mahaonline.gov.in</a></div>
+                <div>MahaRERA Portal: <a href="https://maharera.mahaonline.gov.in" target="_blank" rel="noreferrer" className="text-emerald-800 underline font-semibold">maharera.mahaonline.gov.in</a></div>
               </div>
 
               <h4 className="font-bold text-stone-900 text-xs mt-2">Channel Partner Disclosure</h4>
               <p>
-                This website is operated by <strong>Propsmart Realty</strong> as an authorized real estate channel partner. It is not the corporate website of Rohan Builders (India) Pvt. Ltd., but a dedicated project marketing portal designed to assist home buyers with official information, floor plans, and VIP tour bookings.
+                This website is operated by <strong>Propsmart Realty</strong> as an authorized real estate channel partner. It is not the corporate website of Rohan Builders (India) Pvt. Ltd., but a dedicated project marketing portal designed to assist home buyers with verified project information, floor plans, and VIP tour bookings.
               </p>
             </div>
           )}

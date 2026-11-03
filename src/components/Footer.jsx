@@ -43,7 +43,7 @@ export default function Footer() {
               className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-white hover:bg-stone-50 border border-stone-300 text-stone-800 text-xs font-semibold transition-colors shadow-xs"
             >
               <Download className="w-3.5 h-3.5 text-amber-700" />
-              <span>Official Brochure</span>
+              <span>Project Brochure</span>
             </a>
             <a
               href="https://maharera.mahaonline.gov.in"
@@ -81,13 +81,13 @@ export default function Footer() {
           {/* Quick Links */}
           <div className="space-y-3">
             <h4 className="font-serif text-sm font-bold text-stone-900 uppercase tracking-wider">
-              Architecture & Living
+              Architecture &amp; Living
             </h4>
             <ul className="space-y-2 text-xs">
               <li><a href="#vision" className="hover:text-stone-950 transition-colors">Architect's Note</a></li>
               <li><a href="#sky-ground" className="hover:text-stone-950 transition-colors">The 14th Fl Sky Ground</a></li>
               <li><a href="#plus-philosophy" className="hover:text-stone-950 transition-colors">Rohan PLUS Science</a></li>
-              <li><a href="#residences" className="hover:text-stone-950 transition-colors">Official Floor Plans</a></li>
+              <li><a href="#residences" className="hover:text-stone-950 transition-colors">Floor Plans</a></li>
               <li><a href="#amenities" className="hover:text-stone-950 transition-colors">36+ Curated Amenities</a></li>
             </ul>
           </div>
@@ -95,14 +95,14 @@ export default function Footer() {
           {/* Legal Documents */}
           <div className="space-y-3">
             <h4 className="font-serif text-sm font-bold text-stone-900 uppercase tracking-wider">
-              Legal & Documents
+              Legal &amp; Documents
             </h4>
             <ul className="space-y-2 text-xs">
               <li><a href="#documents" className="hover:text-stone-950 transition-colors">MahaRERA Phase QR Codes</a></li>
               <li><a href="#documents" className="hover:text-stone-950 transition-colors">Environmental Clearance (EC)</a></li>
-              <li><a href="#faq" className="hover:text-stone-950 transition-colors">Official FAQ Section</a></li>
+              <li><a href="#faq" className="hover:text-stone-950 transition-colors">FAQ Section</a></li>
               <li><a href="#location" className="hover:text-stone-950 transition-colors">Balewadi High Street Network</a></li>
-              <li><a href="#financial-suite" className="hover:text-stone-950 transition-colors">Cost Sheet & Stamp Duty</a></li>
+              <li><a href="#financial-suite" className="hover:text-stone-950 transition-colors">Cost Sheet &amp; Stamp Duty</a></li>
             </ul>
           </div>
 
@@ -144,7 +144,7 @@ export default function Footer() {
               Rohan Builders Ekam Ecosystem &amp; Pune Real Estate Knowledge Directory
             </span>
             <h3 className="font-serif text-lg sm:text-xl font-bold text-stone-900">
-              Rohan Ekam, Balewadi • Official Project Overview &amp; Specifications
+              Rohan Ekam, Balewadi • Project Overview &amp; Specifications
             </h3>
             <p className="text-xs text-stone-600 mt-1 max-w-4xl leading-relaxed">
               Rohan Ekam is a landmark 13-acre riverfront luxury residential enclave conceptualized by <strong>Rohan Builders (India) Pvt. Ltd.</strong> and master-architect <strong>Ar. Sanjay Mohe</strong> (Mindspace Architects). Situated directly along the serene Mula River in Balewadi, Pune (PIN 411045), this development introduces India’s first <em>Ground Floor in the Sky</em> at Level 14, seamlessly connecting 14-storey towers with elevated lawns, sky walkways, co-working lounges, and 50+ curated lifestyle amenities. Engineered with Rohan's proprietary <strong>PLUS Homes</strong> philosophy (Perfect Ventilation, Lively Light, Utmost Privacy, Smart Space), Rohan Ekam offers zero-corridor wastage 2, 3 &amp; 4 BHK residences starting ₹1.45 Cr*. Registered under MahaRERA: <strong>P52100052298</strong> (Phase 1) &amp; <strong>PR1261012502532</strong> (Phase 2).
@@ -162,7 +162,7 @@ export default function Footer() {
                 <li><a href="#residences" className="hover:text-stone-900 transition-colors">Rohan Ekam 3 BHK Residences - Type 1 (₹1.95 Cr*)</a></li>
                 <li><a href="#residences" className="hover:text-stone-900 transition-colors">Rohan Ekam 3 BHK Grand Layout - Type 2 (₹2.15 Cr*)</a></li>
                 <li><a href="#residences" className="hover:text-stone-900 transition-colors">Rohan Ekam 4 BHK Sky Suite Penthouses (₹2.75 Cr*)</a></li>
-                <li><a href="#residences" className="hover:text-stone-900 transition-colors">Official Rohan Ekam Floor Plans PDF Download</a></li>
+                <li><a href="#residences" className="hover:text-stone-900 transition-colors">Rohan Ekam Floor Plans PDF Download</a></li>
                 <li><a href="#financialSuite" className="hover:text-stone-900 transition-colors">Rohan Ekam Cost Sheet &amp; Stamp Duty Calculator</a></li>
                 <li><a href="#financialSuite" className="hover:text-stone-900 transition-colors">SBI, HDFC, ICICI Bank Approved Home Loans</a></li>
               </ul>
@@ -208,7 +208,7 @@ export default function Footer() {
               <ul className="space-y-1.5 text-[11px] text-stone-600">
                 <li><a href="#documents" className="hover:text-stone-900 transition-colors">MahaRERA Registration No: P52100052298</a></li>
                 <li><a href="#documents" className="hover:text-stone-900 transition-colors">MahaRERA Phase 2: PR1261012502532</a></li>
-                <li><a href="#faq" className="hover:text-stone-900 transition-colors">Official Possession Date: Dec 2027 – Dec 2028</a></li>
+                <li><a href="#faq" className="hover:text-stone-900 transition-colors">Possession Date: Dec 2027 – Dec 2028</a></li>
                 <li><a href="#documents" className="hover:text-stone-900 transition-colors">SEIAA State Environmental Clearance (EC)</a></li>
                 <li><a href="#documents" className="hover:text-stone-900 transition-colors">PMC Sanctioned Layout &amp; Commencement Certificate</a></li>
                 <li><a href="#interested" className="hover:text-stone-900 transition-colors">Authorized Advisory Desk: Propsmart Realty</a></li>
@@ -261,7 +261,7 @@ export default function Footer() {
             <span>MahaRERA Statutory Compliance &amp; Channel Partner Disclosure</span>
           </div>
           <p>
-            <strong>Disclaimer:</strong> This website is an informational marketing showcase operated by <strong>Propsmart Realty</strong>, an authorized real estate channel partner for <strong>Rohan Ekam</strong>, developed by <strong>Rohan Builders (India) Pvt. Ltd.</strong> (MahaRERA Registration: Phase 1: <strong>P52100052298</strong> | Phase 2: <strong>PR1261012502532</strong>). Official project details, sanction plans, and certificates are verifiable at <a href="https://maharera.mahaonline.gov.in" target="_blank" rel="noreferrer" className="text-emerald-800 underline font-semibold">maharera.mahaonline.gov.in</a> under registered projects.
+            <strong>Disclaimer:</strong> This website is an informational marketing showcase operated by <strong>Propsmart Realty</strong>, an authorized real estate channel partner for <strong>Rohan Ekam</strong>, developed by <strong>Rohan Builders (India) Pvt. Ltd.</strong> (MahaRERA Registration: Phase 1: <strong>P52100052298</strong> | Phase 2: <strong>PR1261012502532</strong>). Project details, sanction plans, and certificates are verifiable at <a href="https://maharera.mahaonline.gov.in" target="_blank" rel="noreferrer" className="text-emerald-800 underline font-semibold">maharera.mahaonline.gov.in</a> under registered projects.
           </p>
           <p>
             All artistic impressions, 3D elevation renders, floor plan dimensions, square footages, and price quotes (e.g. Starting ₹1.45 Cr*) are purely conceptual and subject to change without notice at the promoter's sole discretion. Government taxes (GST), stamp duty, and registration charges are extra. This website does not constitute an offer, warranty, or legal contract.

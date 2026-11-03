@@ -26,7 +26,7 @@ export default function OfficialInterestedForm() {
     await sendLeadToRealtor({
       name: formData.name.trim(),
       mobile: formData.mobile.trim(),
-      source: 'Official Interested Form (Balewadi Page)'
+      source: 'Interested Form (Balewadi Page)'
     });
     setIsSubmitting(false);
     setSubmitted(true);
@@ -47,7 +47,7 @@ export default function OfficialInterestedForm() {
                 Interested?
               </h2>
               <div className="w-12 h-0.5 bg-amber-800 mt-2 mb-2"></div>
-              <span className="text-[11px] font-mono text-stone-500 uppercase tracking-wider block">Official Direct Inquiry</span>
+              <span className="text-[11px] font-mono text-stone-500 uppercase tracking-wider block">Direct Project Inquiry</span>
             </div>
 
             {/* Right Content Area */}

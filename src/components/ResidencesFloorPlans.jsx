@@ -20,13 +20,13 @@ export default function ResidencesFloorPlans({ onOpenVipModal }) {
           <div className="max-w-2xl">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-panel text-stone-700 text-xs font-mono uppercase tracking-widest mb-3 shadow-xs glass-shimmer">
               <Layers className="w-3.5 h-3.5 text-amber-700 animate-pulse" />
-              <span>Official Architectural Plans</span>
+              <span>Curated Architectural Plans</span>
             </div>
             <h2 className="font-serif text-3xl sm:text-5xl font-normal text-stone-900 tracking-tight">
               Curated <span className="italic font-serif font-medium text-amber-800">Floor Plans</span>
             </h2>
             <p className="text-stone-600 text-sm sm:text-base mt-2">
-              Official 2, 3 & 4 BHK layouts from Rohan Builders. Planned with zero corridor wastage and maximum usable carpet area.
+              Spacious 2, 3 &amp; 4 BHK layouts from Rohan Builders. Planned with zero corridor wastage and maximum usable carpet area.
             </p>
           </div>
 
@@ -121,7 +121,7 @@ export default function ResidencesFloorPlans({ onOpenVipModal }) {
                 Room Breakdown
               </h4>
               <p className="text-xs text-stone-600 mb-4">
-                Official room dimensions for {activePlan.type}.
+                Verified room dimensions for {activePlan.type}.
               </p>
 
               <div className="space-y-2 py-3 border-t border-b border-stone-200/80 text-xs">
@@ -186,7 +186,7 @@ export default function ResidencesFloorPlans({ onOpenVipModal }) {
               </div>
 
               <div className="mt-4 pt-3 border-t border-stone-200/80 flex items-center justify-between text-xs text-stone-700 font-mono">
-                <span>{activePlan.type} • Official Rohan Ekam Architectural Drawing</span>
+                <span>{activePlan.type} • Rohan Ekam Architectural Drawing</span>
                 <a
                   href={activePlan.image}
                   target="_blank"

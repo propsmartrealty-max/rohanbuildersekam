@@ -19,7 +19,7 @@ export default function SpecificationsGallery() {
         <div className="text-center max-w-3xl mx-auto mb-10">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-stone-300 text-stone-700 text-xs font-mono uppercase tracking-widest mb-3 shadow-xs">
             <Sparkles className="w-3.5 h-3.5 text-amber-700" />
-            <span>Official Visual Monograph</span>
+            <span>Project Visual Monograph</span>
           </div>
           <h2 className="font-serif text-3xl sm:text-5xl font-normal text-stone-900 tracking-tight mb-3">
             4K <span className="italic font-serif font-medium text-amber-800">Visual Gallery</span>

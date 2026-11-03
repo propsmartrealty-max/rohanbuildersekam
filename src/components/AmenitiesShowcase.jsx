@@ -28,7 +28,7 @@ export default function AmenitiesShowcase({ onOpenVipModal }) {
             <span>36+ Curated Lifestyle Features</span>
           </div>
           <h2 className="font-serif text-3xl sm:text-5xl font-normal text-stone-900 tracking-tight mb-3">
-            Official <span className="italic font-serif font-medium text-amber-800">Project Amenities</span>
+            Curated <span className="italic font-serif font-medium text-amber-800">Project Amenities</span>
           </h2>
           <p className="text-stone-600 text-sm sm:text-base leading-relaxed">
             Directly from Rohan Builders' masterplan — spanning the riverfront promenade, multi-level clubhouse, and the 14th-floor Sky Ground.
@@ -39,7 +39,7 @@ export default function AmenitiesShowcase({ onOpenVipModal }) {
             <Search className="w-4 h-4 text-stone-400 absolute left-4 top-1/2 -translate-y-1/2" />
             <input
               type="text"
-              placeholder="Search official amenities (e.g. pool, yoga, squash, co-working)..."
+              placeholder="Search amenities (e.g. pool, yoga, squash, co-working)..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full glass-panel border border-white/90 rounded-full pl-11 pr-4 py-3 text-xs text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-stone-900/10 focus:border-stone-800 shadow-md transition-all"
@@ -103,7 +103,7 @@ export default function AmenitiesShowcase({ onOpenVipModal }) {
         <div className="mt-12 text-center">
           <div className="inline-flex flex-col sm:flex-row items-center gap-4 p-4 rounded-2xl glass-panel-glow border border-white/90 shadow-xl shadow-stone-900/5 glass-shimmer">
             <span className="text-xs text-stone-700 font-medium">
-              Want the complete official amenity specifications and schedules?
+              Want the complete amenity specifications and schedules?
             </span>
             <button
               onClick={onOpenVipModal}

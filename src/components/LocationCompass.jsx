@@ -29,7 +29,7 @@ export default function LocationCompass() {
           <div className="max-w-2xl">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-panel text-stone-700 text-xs font-mono uppercase tracking-widest mb-3 shadow-xs glass-shimmer">
               <Compass className="w-3.5 h-3.5 text-amber-700 animate-spin [animation-duration:15s]" />
-              <span>Official Location Highlights</span>
+              <span>Prime Location Highlights</span>
             </div>
             <h2 className="font-serif text-3xl sm:text-5xl font-normal text-stone-900 tracking-tight">
               The <span className="italic font-serif font-medium text-amber-800">Balewadi Network</span>
