@@ -47,7 +47,7 @@ export default function OfficialWhatsAppBar() {
               WhatsApp Enquiry: <strong className="font-mono text-emerald-800">+91 774409295</strong>
             </span>
             <span className="text-[10px] text-stone-500 block">
-              Propsmart Realty Advisory • <a href="/privacy-policy.html" target="_blank" rel="noreferrer" className="underline hover:text-stone-800">Privacy Policy</a>
+              Project Advisory • <a href="/privacy-policy" target="_blank" rel="noreferrer" className="underline hover:text-stone-800">Privacy Policy</a>
             </span>
           </div>
         </a>
