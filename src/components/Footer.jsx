@@ -321,10 +321,10 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Copyright & Channel Partner Attribution */}
+        {/* Copyright & Project RERA */}
         <div className="mt-6 pt-5 border-t border-stone-200 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
           <div className="text-stone-600 text-[11px]">
-            © {new Date().getFullYear()} <strong>Propsmart Realty</strong> &amp; <strong>Rohan Builders (India) Pvt. Ltd.</strong> All Rights Reserved. • Channel Partner MahaRERA: <strong>A031262401295</strong> • Project MahaRERA: <strong>P52100052298</strong> &amp; <strong>PR1261012502532</strong>
+            © {new Date().getFullYear()} <strong>Rohan Ekam</strong>. All Rights Reserved. • Project MahaRERA: <strong>P52100052298</strong> &amp; <strong>PR1261012502532</strong>
           </div>
           <button
             onClick={scrollToTop}
