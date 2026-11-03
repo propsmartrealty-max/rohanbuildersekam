@@ -121,7 +121,7 @@ export default function LegalModal({ isOpen, onClose, initialTab = 'privacy' }) 
                 </a>
               </div>
               <p>
-                By accessing this portal, you acknowledge that <strong>rohanbuildersekam.com</strong> is an informational real estate showcase operated by <strong>Propsmart Realty</strong>, an authorized real estate channel partner for <strong>Rohan Ekam</strong>, developed by <strong>Rohan Builders (India) Pvt. Ltd.</strong>
+                By accessing this portal, you acknowledge that <strong>rohanbuildersekam.com</strong> is an informational real estate showcase operated by <strong>Propsmart Realty</strong> (MahaRERA Channel Partner Reg: <strong>A031262401295</strong>), an authorized real estate channel partner for <strong>Rohan Ekam</strong>, developed by <strong>Rohan Builders (India) Pvt. Ltd.</strong>
               </p>
 
               <h4 className="font-bold text-stone-900 text-xs mt-2">1. Informational Showcase Only</h4>
@@ -161,12 +161,13 @@ export default function LegalModal({ isOpen, onClose, initialTab = 'privacy' }) 
               <div className="p-3 rounded-xl glass-panel border border-stone-300 font-mono text-[11px] space-y-1">
                 <div>Phase 1 Registration No: <strong className="text-stone-900">P52100052298</strong></div>
                 <div>Phase 2 Registration No: <strong className="text-stone-900">PR1261012502532</strong></div>
+                <div>Channel Partner Registration: <strong className="text-stone-900">A031262401295</strong> (Propsmart Realty)</div>
                 <div>MahaRERA Portal: <a href="https://maharera.mahaonline.gov.in" target="_blank" rel="noreferrer" className="text-emerald-800 underline font-semibold">maharera.mahaonline.gov.in</a></div>
               </div>
 
               <h4 className="font-bold text-stone-900 text-xs mt-2">Channel Partner Disclosure</h4>
               <p>
-                This website is operated by <strong>Propsmart Realty</strong> as an authorized real estate channel partner. It is not the corporate website of Rohan Builders (India) Pvt. Ltd., but a dedicated project marketing portal designed to assist home buyers with verified project information, floor plans, and VIP tour bookings.
+                This website is operated by <strong>Propsmart Realty</strong> (MahaRERA Channel Partner Reg: <strong>A031262401295</strong>) as an authorized real estate channel partner. It is not the corporate website of Rohan Builders (India) Pvt. Ltd., but a dedicated project marketing portal designed to assist home buyers with verified project information, floor plans, and VIP tour bookings.
               </p>
             </div>
           )}
@@ -174,7 +175,7 @@ export default function LegalModal({ isOpen, onClose, initialTab = 'privacy' }) 
 
         <div className="mt-6 pt-4 border-t border-stone-200 flex items-center justify-between text-xs">
           <div className="text-[11px] text-stone-500">
-            Advisory Desk: <strong className="text-stone-900">propsmartrealty@gmail.com</strong> • <strong className="text-stone-900">+91 774409295</strong>
+            Advisory Desk: <strong>Propsmart Realty (RERA: A031262401295)</strong> • <strong className="text-stone-900">propsmartrealty@gmail.com</strong> • <strong className="text-stone-900">+91 774409295</strong>
           </div>
           <button
             onClick={onClose}

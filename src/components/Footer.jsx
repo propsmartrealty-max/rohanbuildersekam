@@ -206,12 +206,13 @@ export default function Footer() {
                 MahaRERA &amp; Approvals Compliance
               </h4>
               <ul className="space-y-1.5 text-[11px] text-stone-600">
+                <li><a href="#documents" className="hover:text-stone-900 font-semibold text-emerald-900 transition-colors">Channel Partner MahaRERA: A031262401295</a></li>
                 <li><a href="#documents" className="hover:text-stone-900 transition-colors">MahaRERA Registration No: P52100052298</a></li>
                 <li><a href="#documents" className="hover:text-stone-900 transition-colors">MahaRERA Phase 2: PR1261012502532</a></li>
                 <li><a href="#faq" className="hover:text-stone-900 transition-colors">Possession Date: Dec 2027 – Dec 2028</a></li>
                 <li><a href="#documents" className="hover:text-stone-900 transition-colors">SEIAA State Environmental Clearance (EC)</a></li>
                 <li><a href="#documents" className="hover:text-stone-900 transition-colors">PMC Sanctioned Layout &amp; Commencement Certificate</a></li>
-                <li><a href="#interested" className="hover:text-stone-900 transition-colors">Authorized Advisory Desk: Propsmart Realty</a></li>
+                <li><a href="#interested" className="hover:text-stone-900 transition-colors">Authorized Advisory Desk: Propsmart Realty (RERA: A031262401295)</a></li>
                 <li><a href="https://wa.me/91774409295" className="hover:text-emerald-800 font-semibold transition-colors">WhatsApp Enquiry Desk: +91 774409295</a></li>
               </ul>
             </div>
@@ -239,6 +240,7 @@ export default function Footer() {
                 { label: 'Flats near Balewadi High Street', href: '#location' },
                 { label: 'Apartments along Mula River', href: '#location' },
                 { label: 'Rohan Ekam Cost Sheet', href: '#financialSuite' },
+                { label: 'Channel Partner RERA A031262401295', href: '#documents' },
                 { label: 'Propsmart Realty Advisory', href: '#interested' },
                 { label: 'Rohan Ekam WhatsApp Desk +91 774409295', href: 'https://wa.me/91774409295' }
               ].map((tag, i) => (
@@ -261,7 +263,7 @@ export default function Footer() {
             <span>MahaRERA Statutory Compliance &amp; Channel Partner Disclosure</span>
           </div>
           <p>
-            <strong>Disclaimer:</strong> This website is an informational marketing showcase operated by <strong>Propsmart Realty</strong>, an authorized real estate channel partner for <strong>Rohan Ekam</strong>, developed by <strong>Rohan Builders (India) Pvt. Ltd.</strong> (MahaRERA Registration: Phase 1: <strong>P52100052298</strong> | Phase 2: <strong>PR1261012502532</strong>). Project details, sanction plans, and certificates are verifiable at <a href="https://maharera.mahaonline.gov.in" target="_blank" rel="noreferrer" className="text-emerald-800 underline font-semibold">maharera.mahaonline.gov.in</a> under registered projects.
+            <strong>Disclaimer:</strong> This website is an informational marketing showcase operated by <strong>Propsmart Realty</strong> (MahaRERA Channel Partner Reg: <strong>A031262401295</strong>), an authorized real estate channel partner for <strong>Rohan Ekam</strong>, developed by <strong>Rohan Builders (India) Pvt. Ltd.</strong> (Project MahaRERA Registration: Phase 1: <strong>P52100052298</strong> | Phase 2: <strong>PR1261012502532</strong>). Project details, sanction plans, and certificates are verifiable at <a href="https://maharera.mahaonline.gov.in" target="_blank" rel="noreferrer" className="text-emerald-800 underline font-semibold">maharera.mahaonline.gov.in</a> under registered projects.
           </p>
           <p>
             All artistic impressions, 3D elevation renders, floor plan dimensions, square footages, and price quotes (e.g. Starting ₹1.45 Cr*) are purely conceptual and subject to change without notice at the promoter's sole discretion. Government taxes (GST), stamp duty, and registration charges are extra. This website does not constitute an offer, warranty, or legal contract.
@@ -322,7 +324,7 @@ export default function Footer() {
         {/* Copyright & Channel Partner Attribution */}
         <div className="mt-6 pt-5 border-t border-stone-200 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
           <div className="text-stone-600 text-[11px]">
-            © {new Date().getFullYear()} <strong>Propsmart Realty</strong> &amp; <strong>Rohan Builders (India) Pvt. Ltd.</strong> All Rights Reserved. • Project MahaRERA: <strong>P52100052298</strong>
+            © {new Date().getFullYear()} <strong>Propsmart Realty</strong> &amp; <strong>Rohan Builders (India) Pvt. Ltd.</strong> All Rights Reserved. • Channel Partner MahaRERA: <strong>A031262401295</strong> • Project MahaRERA: <strong>P52100052298</strong> &amp; <strong>PR1261012502532</strong>
           </div>
           <button
             onClick={scrollToTop}

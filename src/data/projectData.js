@@ -5,6 +5,8 @@ export const OFFICIAL_PROJECT_DETAILS = {
   title: "Rohan Ekam, Pune | 2, 3 & 4 BHK Flats for Sale",
   developer: "Rohan Builders (India) Pvt. Ltd.",
   developerLegacy: "30+ Years of Excellence | CRISIL DA2+ Rated",
+  channelPartner: "Propsmart Realty",
+  channelPartnerRera: "A031262401295",
   location: "Balewadi, Pune (Mula Riverfront, Behind Balewadi High Street)",
   civicBody: "Pune Municipal Corporation (PMC limits)",
   landParcel: "Around 13-acre riverside parcel of land",
