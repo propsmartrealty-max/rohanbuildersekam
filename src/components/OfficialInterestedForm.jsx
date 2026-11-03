@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Send, CheckCircle2, ShieldCheck, Sparkles, Loader2 } from 'lucide-react';
 import { sendLeadToRealtor } from '../utils/leadService';
+import LegalModal from './LegalModal';
 
 export default function OfficialInterestedForm() {
   const [formData, setFormData] = useState({
@@ -10,6 +11,12 @@ export default function OfficialInterestedForm() {
   });
   const [submitted, setSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [legalModal, setLegalModal] = useState({ isOpen: false, tab: 'privacy' });
+
+  const openLegal = (tab, e) => {
+    if (e) e.preventDefault();
+    setLegalModal({ isOpen: true, tab });
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -77,14 +84,32 @@ export default function OfficialInterestedForm() {
                   </div>
 
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-2">
-                    <label className="flex items-center gap-2 cursor-pointer text-xs text-stone-600">
+                    <label className="flex items-start sm:items-center gap-2 cursor-pointer text-xs text-stone-600">
                       <input
                         type="checkbox"
                         checked={formData.agreed}
                         onChange={(e) => setFormData({ ...formData, agreed: e.target.checked })}
-                        className="w-4 h-4 accent-stone-900 rounded"
+                        className="w-4 h-4 accent-stone-900 rounded mt-0.5 sm:mt-0"
                       />
-                      <span>I agree to the Terms & Conditions and Privacy Policy of Rohan Builders.</span>
+                      <span>
+                        I agree to the{' '}
+                        <button 
+                          type="button" 
+                          onClick={(e) => openLegal('terms', e)} 
+                          className="text-stone-900 font-semibold underline hover:text-amber-800"
+                        >
+                          Terms &amp; Conditions
+                        </button>{' '}
+                        and{' '}
+                        <button 
+                          type="button" 
+                          onClick={(e) => openLegal('privacy', e)} 
+                          className="text-stone-900 font-semibold underline hover:text-amber-800"
+                        >
+                          Privacy Policy
+                        </button>
+                        . Authorized marketing by Propsmart Realty.
+                      </span>
                     </label>
 
                     <button
@@ -119,6 +144,12 @@ export default function OfficialInterestedForm() {
           </div>
         </div>
       </div>
+
+      <LegalModal
+        isOpen={legalModal.isOpen}
+        onClose={() => setLegalModal({ ...legalModal, isOpen: false })}
+        initialTab={legalModal.tab}
+      />
     </section>
   );
 }

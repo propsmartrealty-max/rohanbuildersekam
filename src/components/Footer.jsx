@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { OFFICIAL_PROJECT_DETAILS } from '../data/projectData';
-import { ShieldCheck, MapPin, ExternalLink, ArrowUp, Download, Clock } from 'lucide-react';
+import { ShieldCheck, MapPin, ExternalLink, ArrowUp, Download, Clock, Lock, Scale } from 'lucide-react';
 import RohanEkamLogo from './RohanEkamLogo';
+import LegalModal from './LegalModal';
 
 export default function Footer() {
+  const [legalModal, setLegalModal] = useState({ isOpen: false, tab: 'privacy' });
+
+  const openLegal = (tab, e) => {
+    if (e) e.preventDefault();
+    setLegalModal({ isOpen: true, tab });
+  };
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -246,20 +254,75 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Disclaimer */}
-        <div className="mt-10 pt-6 border-t border-stone-300 text-[10px] leading-relaxed text-stone-500 space-y-1.5">
+        {/* Google Ads & MahaRERA Statutory Compliance & Channel Partner Disclosure */}
+        <div className="mt-10 p-5 rounded-2xl bg-white/70 border border-stone-300 text-[11px] leading-relaxed text-stone-600 space-y-2.5 shadow-2xs">
+          <div className="flex items-center gap-2 text-stone-900 font-bold text-xs uppercase tracking-wider">
+            <Scale className="w-4 h-4 text-amber-800" />
+            <span>MahaRERA Statutory Compliance &amp; Channel Partner Disclosure</span>
+          </div>
           <p>
-            <strong>Disclaimer:</strong> The artistic impressions, specifications, floor plans, dimensions, and amenities presented on this page are sourced directly from the official project details of Rohan Ekam by Rohan Builders. Subject to approvals by authorities.
+            <strong>Disclaimer:</strong> This website is an informational marketing showcase operated by <strong>Propsmart Realty</strong>, an authorized real estate channel partner for <strong>Rohan Ekam</strong>, developed by <strong>Rohan Builders (India) Pvt. Ltd.</strong> (MahaRERA Registration: Phase 1: <strong>P52100052298</strong> | Phase 2: <strong>PR1261012502532</strong>). Official project details, sanction plans, and certificates are verifiable at <a href="https://maharera.mahaonline.gov.in" target="_blank" rel="noreferrer" className="text-emerald-800 underline font-semibold">maharera.mahaonline.gov.in</a> under registered projects.
           </p>
           <p>
-            MahaRERA Registration Numbers: Phase 1: <strong>P52100052298</strong> | Phase 2: <strong>PR1261012502532</strong>. Details accessible at <a href="https://maharera.mahaonline.gov.in" target="_blank" rel="noreferrer" className="text-stone-900 underline font-medium">maharera.mahaonline.gov.in</a>.
+            All artistic impressions, 3D elevation renders, floor plan dimensions, square footages, and price quotes (e.g. Starting ₹1.45 Cr*) are purely conceptual and subject to change without notice at the promoter's sole discretion. Government taxes (GST), stamp duty, and registration charges are extra. This website does not constitute an offer, warranty, or legal contract.
           </p>
+
+          {/* Legal Compliance Quick Links */}
+          <div className="pt-2 border-t border-stone-200/80 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs font-semibold text-stone-800">
+            <button 
+              type="button" 
+              onClick={(e) => openLegal('privacy', e)} 
+              className="hover:text-amber-800 underline flex items-center gap-1"
+            >
+              <Lock className="w-3 h-3 text-emerald-700" />
+              <span>Privacy Policy</span>
+            </button>
+            <a 
+              href="/privacy-policy.html" 
+              target="_blank" 
+              rel="noreferrer" 
+              className="text-stone-500 hover:text-stone-800 text-[10px]"
+            >
+              (Standalone)
+            </a>
+
+            <button 
+              type="button" 
+              onClick={(e) => openLegal('terms', e)} 
+              className="hover:text-amber-800 underline"
+            >
+              Terms &amp; Conditions
+            </button>
+            <a 
+              href="/terms.html" 
+              target="_blank" 
+              rel="noreferrer" 
+              className="text-stone-500 hover:text-stone-800 text-[10px]"
+            >
+              (Standalone)
+            </a>
+
+            <button 
+              type="button" 
+              onClick={(e) => openLegal('disclaimer', e)} 
+              className="hover:text-amber-800 underline"
+            >
+              MahaRERA Disclaimer
+            </button>
+
+            <a 
+              href="mailto:propsmartrealty@gmail.com?subject=Data%20Opt-Out%20Request" 
+              className="hover:text-amber-800 underline text-stone-600"
+            >
+              Data Privacy Opt-Out
+            </a>
+          </div>
         </div>
 
-        {/* Copyright */}
+        {/* Copyright & Channel Partner Attribution */}
         <div className="mt-6 pt-5 border-t border-stone-200 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
-          <div>
-            © {new Date().getFullYear()} Rohan Builders (India) Pvt. Ltd. All Rights Reserved.
+          <div className="text-stone-600 text-[11px]">
+            © {new Date().getFullYear()} <strong>Propsmart Realty</strong> &amp; <strong>Rohan Builders (India) Pvt. Ltd.</strong> All Rights Reserved. • Project MahaRERA: <strong>P52100052298</strong>
           </div>
           <button
             onClick={scrollToTop}
@@ -270,6 +333,12 @@ export default function Footer() {
           </button>
         </div>
       </div>
+
+      <LegalModal
+        isOpen={legalModal.isOpen}
+        onClose={() => setLegalModal({ ...legalModal, isOpen: false })}
+        initialTab={legalModal.tab}
+      />
     </footer>
   );
 }

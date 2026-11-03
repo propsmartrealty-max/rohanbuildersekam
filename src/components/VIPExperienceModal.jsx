@@ -169,6 +169,27 @@ export default function VIPExperienceModal({ isOpen, onClose, initialConfig = '3
                 )}
               </div>
 
+              <div className="pt-1">
+                <label className="flex items-start gap-2 cursor-pointer text-[11px] text-stone-600">
+                  <input
+                    type="checkbox"
+                    required
+                    defaultChecked
+                    className="w-4 h-4 accent-stone-900 rounded mt-0.5 shrink-0"
+                  />
+                  <span>
+                    I authorize Propsmart Realty &amp; Rohan Builders to contact me via Call/WhatsApp regarding Rohan Ekam in accordance with the{' '}
+                    <a href="/privacy-policy.html" target="_blank" rel="noreferrer" className="text-stone-900 font-semibold underline hover:text-amber-800">
+                      Privacy Policy
+                    </a>{' '}
+                    and{' '}
+                    <a href="/terms.html" target="_blank" rel="noreferrer" className="text-stone-900 font-semibold underline hover:text-amber-800">
+                      Terms
+                    </a>.
+                  </span>
+                </label>
+              </div>
+
               <button
                 type="submit"
                 disabled={isSubmitting}
