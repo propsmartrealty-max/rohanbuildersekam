@@ -225,21 +225,19 @@ export default function Footer() {
             </span>
             <div className="flex flex-wrap gap-1.5">
               {[
-                { label: 'Rohan Ekam', href: '#' },
-                { label: 'Rohan Builders Ekam Balewadi', href: '#architectNote' },
-                { label: 'Rohan Ekam Price', href: '#residences' },
-                { label: 'Rohan Ekam Floor Plans', href: '#residences' },
-                { label: 'Rohan Ekam 2 BHK', href: '#residences' },
-                { label: 'Rohan Ekam 3 BHK', href: '#residences' },
-                { label: 'Rohan Ekam 4 BHK Sky Suite', href: '#residences' },
+                { label: 'Flats in Balewadi', href: '/flats-in-balewadi' },
+                { label: '2 BHK in Balewadi', href: '/2-bhk-flats-in-balewadi' },
+                { label: '3 BHK in Balewadi', href: '/3-bhk-flats-in-balewadi' },
+                { label: '4 BHK Sky Suites', href: '/4-bhk-flats-in-balewadi' },
+                { label: 'Rohan Ekam Cost Sheet', href: '/price-and-cost-sheet' },
+                { label: 'Balewadi High Street Commute', href: '/location-balewadi-high-street' },
+                { label: 'Rohan Builders Pune Projects', href: '/rohan-builders-pune-projects' },
                 { label: 'Ground Floor in the Sky L14', href: '#skyGround' },
                 { label: 'Rohan PLUS Homes', href: '#plusPhilosophy' },
                 { label: 'Rohan Ekam Brochure PDF', href: OFFICIAL_PROJECT_DETAILS.brochures[0].url },
                 { label: 'MahaRERA P52100052298', href: '#documents' },
                 { label: 'Rohan Ekam Possession Date', href: '#faq' },
-                { label: 'Flats near Balewadi High Street', href: '#location' },
                 { label: 'Apartments along Mula River', href: '#location' },
-                { label: 'Rohan Ekam Cost Sheet', href: '#financialSuite' },
                 { label: 'Channel Partner RERA A031262401295', href: '#documents' },
                 { label: 'Propsmart Realty Advisory', href: '#interested' },
                 { label: 'Rohan Ekam WhatsApp Desk +91 774409295', href: 'https://wa.me/91774409295' }
