@@ -67,7 +67,7 @@ export default function ResidencesFloorPlans({ onOpenVipModal }) {
                 </div>
 
                 <div className="text-right">
-                  <div className="text-xs text-stone-500 uppercase tracking-wider font-mono">Starting Price</div>
+                  <div className="text-xs text-stone-700 uppercase tracking-wider font-mono font-medium">Starting Price</div>
                   <div className="text-xl sm:text-2xl font-serif font-bold text-amber-800">
                     {activePlan.priceStarting}
                   </div>

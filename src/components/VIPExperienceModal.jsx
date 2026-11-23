@@ -263,15 +263,15 @@ export default function VIPExperienceModal({ isOpen, onClose, initialConfig = '3
 
             <div className="glass-panel border border-white/90 rounded-2xl p-4 text-xs max-w-sm mx-auto text-left space-y-1.5 font-mono shadow-md">
               <div className="flex justify-between">
-                <span className="text-stone-500">Booking Pass:</span>
+                <span className="text-stone-700 font-medium">Booking Pass:</span>
                 <strong className="text-stone-900">{bookingRef}</strong>
               </div>
               <div className="flex justify-between">
-                <span className="text-stone-500">Selected Unit:</span>
+                <span className="text-stone-700 font-medium">Selected Unit:</span>
                 <span className="text-stone-900 font-semibold">{formData.config.toUpperCase()}</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-stone-500">WhatsApp Desk:</span>
+                <span className="text-stone-700 font-medium">WhatsApp Desk:</span>
                 <a href="https://wa.me/91774409295" target="_blank" rel="noreferrer" className="text-emerald-800 font-bold hover:underline">
                   +91 774409295
                 </a>

@@ -29,7 +29,7 @@ export default function Footer() {
               <div className="font-semibold text-stone-900 text-sm">
                 MahaRERA Registered Project • Pune Municipal Corporation (PMC) Limits
               </div>
-              <div className="text-[11px] text-stone-500 font-mono">
+              <div className="text-[11px] text-stone-700 font-mono font-medium">
                 Phase 1: <strong className="text-stone-900">P52100052298</strong> | Phase 2: <strong className="text-stone-900">PR1261012502532</strong>
               </div>
             </div>
@@ -129,7 +129,7 @@ export default function Footer() {
                   WhatsApp: +91 774409295
                 </a>
               </div>
-              <div className="flex items-center gap-2 text-stone-500">
+              <div className="flex items-center gap-2 text-stone-700 font-medium">
                 <Clock className="w-4 h-4 text-amber-700 shrink-0" />
                 <span>Mon – Sun: 9:30 AM – 7:00 PM</span>
               </div>
@@ -210,20 +210,20 @@ export default function Footer() {
               <h4 className="font-serif font-bold text-stone-900 text-xs uppercase tracking-wider mb-2.5">
                 Real Estate Guides &amp; Insights
               </h4>
-              <ul className="space-y-1.5 text-[11px] text-stone-600">
-                <li><a href="/blog" className="hover:text-stone-900 font-semibold text-emerald-900 transition-colors">Knowledge Hub Index &rarr;</a></li>
-                <li><a href="/blog/top-luxury-projects-baner-balewadi" className="hover:text-stone-900 font-medium transition-colors">Top Luxury Projects Benchmark</a></li>
-                <li><a href="/blog/pune-real-estate-west-vs-east-market-analysis" className="hover:text-stone-900 font-medium transition-colors">West vs East Pune Market Analysis</a></li>
-                <li><a href="/blog/pune-real-estate-stamp-duty-taxes-rera-guide" className="hover:text-stone-900 font-medium transition-colors">Pune Stamp Duty &amp; MahaRERA Guide</a></li>
-                <li><a href="/blog/baner-vs-balewadi-real-estate-investment-comparison" className="hover:text-stone-900 font-medium transition-colors">Baner vs Balewadi Investment ROI</a></li>
-                <li><a href="/blog/pune-luxury-real-estate-market-trends-2026-2027" className="hover:text-stone-900 font-medium transition-colors">Pune Luxury Trends 2026-2027</a></li>
-                <li><a href="/blog/luxury-penthouses-sky-villas-baner-balewadi" className="hover:text-stone-900 font-medium transition-colors">Penthouses &amp; Sky Villas</a></li>
-                <li><a href="/blog/why-balewadi-is-pune-top-luxury-real-estate-hub" className="hover:text-stone-900 transition-colors">Why Balewadi is #1 Luxury Hub</a></li>
-                <li><a href="/blog/ground-floor-in-the-sky-architectural-monograph" className="hover:text-stone-900 transition-colors">Ground Floor in the Sky Architecture</a></li>
-                <li><a href="/blog/rohan-plus-homes-design-science-cross-ventilation" className="hover:text-stone-900 transition-colors">Rohan PLUS Science (Air &amp; Light)</a></li>
-                <li><a href="/blog/nri-real-estate-investment-guide-pune-balewadi" className="hover:text-stone-900 transition-colors">NRI Investment Guide: West Pune</a></li>
-                <li><a href="/blog/balewadi-high-street-metro-line-3-connectivity-boom" className="hover:text-stone-900 transition-colors">Metro Line 3 &amp; High Street Boom</a></li>
-                <li><a href="/blog/2-bhk-3-bhk-4-bhk-carpet-area-price-comparison-balewadi" className="hover:text-stone-900 transition-colors">2, 3 &amp; 4 BHK Carpet &amp; Price Guide</a></li>
+              <ul className="space-y-2.5 text-xs text-stone-700">
+                <li><a href="/blog" className="inline-block py-1 hover:text-stone-900 font-semibold text-emerald-900 transition-colors">Knowledge Hub Index &rarr;</a></li>
+                <li><a href="/blog/top-luxury-projects-baner-balewadi" className="inline-block py-1 hover:text-stone-900 font-medium transition-colors">Top Luxury Projects Benchmark</a></li>
+                <li><a href="/blog/pune-real-estate-west-vs-east-market-analysis" className="inline-block py-1 hover:text-stone-900 font-medium transition-colors">West vs East Pune Market Analysis</a></li>
+                <li><a href="/blog/pune-real-estate-stamp-duty-taxes-rera-guide" className="inline-block py-1 hover:text-stone-900 font-medium transition-colors">Pune Stamp Duty &amp; MahaRERA Guide</a></li>
+                <li><a href="/blog/baner-vs-balewadi-real-estate-investment-comparison" className="inline-block py-1 hover:text-stone-900 font-medium transition-colors">Baner vs Balewadi Investment ROI</a></li>
+                <li><a href="/blog/pune-luxury-real-estate-market-trends-2026-2027" className="inline-block py-1 hover:text-stone-900 font-medium transition-colors">Pune Luxury Trends 2026-2027</a></li>
+                <li><a href="/blog/luxury-penthouses-sky-villas-baner-balewadi" className="inline-block py-1 hover:text-stone-900 font-medium transition-colors">Penthouses &amp; Sky Villas</a></li>
+                <li><a href="/blog/why-balewadi-is-pune-top-luxury-real-estate-hub" className="inline-block py-1 hover:text-stone-900 transition-colors">Why Balewadi is #1 Luxury Hub</a></li>
+                <li><a href="/blog/ground-floor-in-the-sky-architectural-monograph" className="inline-block py-1 hover:text-stone-900 transition-colors">Ground Floor in the Sky Architecture</a></li>
+                <li><a href="/blog/rohan-plus-homes-design-science-cross-ventilation" className="inline-block py-1 hover:text-stone-900 transition-colors">Rohan PLUS Science (Air &amp; Light)</a></li>
+                <li><a href="/blog/nri-real-estate-investment-guide-pune-balewadi" className="inline-block py-1 hover:text-stone-900 transition-colors">NRI Investment Guide: West Pune</a></li>
+                <li><a href="/blog/balewadi-high-street-metro-line-3-connectivity-boom" className="inline-block py-1 hover:text-stone-900 transition-colors">Metro Line 3 &amp; High Street Boom</a></li>
+                <li><a href="/blog/2-bhk-3-bhk-4-bhk-carpet-area-price-comparison-balewadi" className="inline-block py-1 hover:text-stone-900 transition-colors">2, 3 &amp; 4 BHK Carpet &amp; Price Guide</a></li>
               </ul>
             </div>
 
@@ -232,25 +232,25 @@ export default function Footer() {
               <h4 className="font-serif font-bold text-stone-900 text-xs uppercase tracking-wider mb-2.5">
                 MahaRERA &amp; Approvals Compliance
               </h4>
-              <ul className="space-y-1.5 text-[11px] text-stone-600">
-                <li><a href="#documents" className="hover:text-stone-900 font-semibold text-emerald-900 transition-colors">Channel Partner MahaRERA: A031262401295</a></li>
-                <li><a href="#documents" className="hover:text-stone-900 transition-colors">MahaRERA Registration No: P52100052298</a></li>
-                <li><a href="#documents" className="hover:text-stone-900 transition-colors">MahaRERA Phase 2: PR1261012502532</a></li>
-                <li><a href="#faq" className="hover:text-stone-900 transition-colors">Possession Date: Dec 2027 – Dec 2028</a></li>
-                <li><a href="#documents" className="hover:text-stone-900 transition-colors">SEIAA State Environmental Clearance (EC)</a></li>
-                <li><a href="#documents" className="hover:text-stone-900 transition-colors">PMC Sanctioned Layout &amp; Commencement Certificate</a></li>
-                <li><a href="#interested" className="hover:text-stone-900 transition-colors">Authorized Advisory Desk: Propsmart Realty (RERA: A031262401295)</a></li>
-                <li><a href="https://wa.me/91774409295" className="hover:text-emerald-800 font-semibold transition-colors">WhatsApp Enquiry Desk: +91 774409295</a></li>
+              <ul className="space-y-2.5 text-xs text-stone-700">
+                <li><a href="#documents" className="inline-block py-1 hover:text-stone-900 font-semibold text-emerald-900 transition-colors">Channel Partner MahaRERA: A031262401295</a></li>
+                <li><a href="#documents" className="inline-block py-1 hover:text-stone-900 transition-colors">MahaRERA Registration No: P52100052298</a></li>
+                <li><a href="#documents" className="inline-block py-1 hover:text-stone-900 transition-colors">MahaRERA Phase 2: PR1261012502532</a></li>
+                <li><a href="#faq" className="inline-block py-1 hover:text-stone-900 transition-colors">Possession Date: Dec 2027 – Dec 2028</a></li>
+                <li><a href="#documents" className="inline-block py-1 hover:text-stone-900 transition-colors">SEIAA State Environmental Clearance (EC)</a></li>
+                <li><a href="#documents" className="inline-block py-1 hover:text-stone-900 transition-colors">PMC Sanctioned Layout &amp; Commencement Certificate</a></li>
+                <li><a href="#interested" className="inline-block py-1 hover:text-stone-900 transition-colors">Authorized Advisory Desk: Propsmart Realty (RERA: A031262401295)</a></li>
+                <li><a href="https://wa.me/91774409295" className="inline-block py-1 hover:text-emerald-800 font-semibold transition-colors">WhatsApp Enquiry Desk: +91 774409295</a></li>
               </ul>
             </div>
           </div>
 
           {/* Quick-Hop Keyword Pills for Instant Anchor Traversal */}
           <div className="mt-8 pt-6 border-t border-stone-200">
-            <span className="text-[10px] font-mono uppercase tracking-wider text-stone-500 block mb-2.5">
+            <span className="text-xs font-mono uppercase tracking-wider text-stone-800 font-bold block mb-3">
               Popular Search Topics for Rohan Ekam Balewadi
             </span>
-            <div className="flex flex-wrap gap-1.5">
+            <div className="flex flex-wrap gap-2.5 sm:gap-3">
               {[
                 { label: 'Luxury Flats in Baner Balewadi', href: '/luxury-flats-in-baner-balewadi' },
                 { label: 'Flats in Baner Pune', href: '/flats-in-baner' },
@@ -285,7 +285,7 @@ export default function Footer() {
                 <a
                   key={i}
                   href={tag.href}
-                  className="px-2.5 py-1 rounded-lg bg-white/80 hover:bg-white text-stone-700 hover:text-stone-900 border border-stone-300 text-[10px] font-medium transition-all shadow-2xs hover:shadow-xs"
+                  className="px-3.5 py-2 rounded-xl bg-white hover:bg-stone-100 text-stone-800 hover:text-stone-950 border border-stone-300 text-xs font-semibold transition-all shadow-xs min-h-[38px] inline-flex items-center"
                 >
                   {tag.label}
                 </a>
@@ -295,7 +295,7 @@ export default function Footer() {
         </div>
 
         {/* Google Ads & MahaRERA Statutory Compliance & Channel Partner Disclosure */}
-        <div className="mt-10 p-5 rounded-2xl bg-white/70 border border-stone-300 text-[11px] leading-relaxed text-stone-600 space-y-2.5 shadow-2xs">
+        <div className="mt-10 p-5 rounded-2xl bg-white/70 border border-stone-300 text-[11px] leading-relaxed text-stone-700 space-y-2.5 shadow-2xs">
           <div className="flex items-center gap-2 text-stone-900 font-bold text-xs uppercase tracking-wider">
             <Scale className="w-4 h-4 text-amber-800" />
             <span>MahaRERA Statutory Compliance &amp; Channel Partner Disclosure</span>
@@ -308,53 +308,42 @@ export default function Footer() {
           </p>
 
           {/* Legal Compliance Quick Links */}
-          <div className="pt-2 border-t border-stone-200/80 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs font-semibold text-stone-800">
-            <button 
-              type="button" 
-              onClick={(e) => openLegal('privacy', e)} 
-              className="hover:text-amber-800 underline flex items-center gap-1"
-            >
-              <Lock className="w-3 h-3 text-emerald-700" />
-              <span>Privacy Policy</span>
-            </button>
+          <div className="pt-3 border-t border-stone-200/80 flex flex-wrap items-center gap-4 text-xs font-semibold text-stone-800">
             <a 
               href="/privacy-policy.html" 
               target="_blank" 
               rel="noreferrer" 
-              className="text-stone-500 hover:text-stone-800 text-[10px]"
+              className="hover:text-amber-800 underline flex items-center gap-1.5 py-2 px-2 min-h-[44px]"
             >
-              (Standalone)
+              <Lock className="w-3.5 h-3.5 text-emerald-700" />
+              <span>Privacy Policy</span>
             </a>
 
-            <button 
-              type="button" 
-              onClick={(e) => openLegal('terms', e)} 
-              className="hover:text-amber-800 underline"
-            >
-              Terms &amp; Conditions
-            </button>
             <a 
               href="/terms.html" 
               target="_blank" 
               rel="noreferrer" 
-              className="text-stone-500 hover:text-stone-800 text-[10px]"
+              className="hover:text-amber-800 underline flex items-center gap-1.5 py-2 px-2 min-h-[44px]"
             >
-              (Standalone)
+              <FileText className="w-3.5 h-3.5 text-amber-700" />
+              <span>Terms of Use</span>
             </a>
 
             <button 
               type="button" 
               onClick={(e) => openLegal('disclaimer', e)} 
-              className="hover:text-amber-800 underline"
+              aria-label="View MahaRERA statutory disclaimer modal"
+              className="hover:text-amber-800 underline flex items-center gap-1.5 py-2 px-2 min-h-[44px]"
             >
-              MahaRERA Disclaimer
+              <Scale className="w-3.5 h-3.5 text-stone-700" />
+              <span>MahaRERA Disclaimer</span>
             </button>
 
             <a 
               href="mailto:propsmartrealty@gmail.com?subject=Data%20Opt-Out%20Request" 
-              className="hover:text-amber-800 underline text-stone-600"
+              className="hover:text-amber-800 underline text-stone-800 flex items-center gap-1.5 py-2 px-2 min-h-[44px]"
             >
-              Data Privacy Opt-Out
+              <span>Data Privacy Opt-Out</span>
             </a>
           </div>
         </div>

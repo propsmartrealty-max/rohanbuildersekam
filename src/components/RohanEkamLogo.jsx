@@ -28,7 +28,7 @@ export default function RohanEkamLogo({
             <span className="font-serif font-bold text-xl bg-gradient-to-br from-rose-400 via-amber-400 to-cyan-400 bg-clip-text text-transparent tracking-widest leading-none">
               E
             </span>
-            <span className="text-[7px] font-sans font-extrabold uppercase tracking-widest text-stone-300 mt-0.5">
+            <span className="text-[7px] font-sans font-extrabold uppercase tracking-widest text-white/90 mt-0.5">
               EKAM
             </span>
           </div>
@@ -84,7 +84,7 @@ export default function RohanEkamLogo({
             ROHAN
           </span>
           <span className="w-1 h-1 rounded-full bg-amber-500" />
-          <span className="text-[9px] font-mono tracking-widest uppercase text-stone-500">
+          <span className="text-[9px] font-mono tracking-widest uppercase text-stone-700 font-semibold">
             PUNE
           </span>
         </div>

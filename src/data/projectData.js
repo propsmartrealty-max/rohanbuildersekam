@@ -74,13 +74,13 @@ export const OFFICIAL_PROJECT_DETAILS = {
     }
   ],
 
-  masterPlanImage: "https://rohanbuilders.com/wp-content/uploads/2023/09/Rohan-Ekam-Master-Plan-scaled.jpg",
+  masterPlanImage: "/images/optimized/master-plan.webp",
 
   heroBanners: [
     {
       title: "The Riverfront Skyline",
       subtitle: "13-Acre Riverside Horizon on Mula River",
-      url: "https://rohanbuilders.com/wp-content/uploads/2023/09/3840x1694-px-03-scaled.jpg"
+      url: "/images/optimized/hero-riverfront.webp"
     },
     {
       title: "Cascading Plaza & Lawns",
@@ -113,7 +113,7 @@ export const OFFICIAL_FLOOR_PLANS = [
     carpetArea: "869 - 987 sq.ft",
     priceStarting: "₹ 1.28 Cr*",
     description: "Perfect cross-ventilation with spacious river deck and separate utility terrace.",
-    image: "https://rohanbuilders.com/wp-content/uploads/2023/09/Ekam-Typical-2-BHK.png",
+    image: "/images/optimized/plan-2bhk.webp",
     specs: [
       { room: "Living & Dining", dimension: "21'0\" × 12'6\"" },
       { room: "Master Suite", dimension: "14'6\" × 11'0\"" },
@@ -128,7 +128,7 @@ export const OFFICIAL_FLOOR_PLANS = [
     carpetArea: "1,046 - 1,180 sq.ft",
     priceStarting: "₹ 1.62 Cr*",
     description: "Flow-through circulation with dual balconies and walk-in wardrobe niche in master suite.",
-    image: "https://rohanbuilders.com/wp-content/uploads/2023/09/Ekam-Typical-3-BHK-1.png",
+    image: "/images/optimized/plan-3bhk-1.webp",
     specs: [
       { room: "Living & Dining", dimension: "24'6\" × 13'0\"" },
       { room: "Master Bedroom", dimension: "15'6\" × 12'0\"" },
@@ -143,7 +143,7 @@ export const OFFICIAL_FLOOR_PLANS = [
     carpetArea: "1,220 - 1,410 sq.ft",
     priceStarting: "₹ 1.78 Cr*",
     description: "Expansive 26-foot living salon opening to uninterrupted riverbend views.",
-    image: "https://rohanbuilders.com/wp-content/uploads/2023/09/Ekam-Typical-3-BHK-2.png",
+    image: "/images/optimized/plan-3bhk-2.webp",
     specs: [
       { room: "Grand Living Salon", dimension: "26'4\" × 13'6\"" },
       { room: "Master Suite + Dress", dimension: "16'0\" × 12'6\"" },
@@ -158,7 +158,7 @@ export const OFFICIAL_FLOOR_PLANS = [
     carpetArea: "1,350 - 1,440 sq.ft",
     priceStarting: "₹ 1.89 Cr*",
     description: "Three-side open corner residences ensuring maximum natural illumination and privacy.",
-    image: "https://rohanbuilders.com/wp-content/uploads/2023/09/Ekam-Typical-3-BHK-3.png",
+    image: "/images/optimized/plan-3bhk-2.webp",
     specs: [
       { room: "Living & Dining", dimension: "25'0\" × 14'0\"" },
       { room: "Master Bedroom", dimension: "16'6\" × 12'0\"" },
@@ -173,7 +173,7 @@ export const OFFICIAL_FLOOR_PLANS = [
     carpetArea: "1,840 - 1,980 sq.ft",
     priceStarting: "₹ 2.65 Cr*",
     description: "Palatial multi-generational suite with maid's room, staff entry, and dual living decks.",
-    image: "https://rohanbuilders.com/wp-content/uploads/2023/09/Ekam-Typical-4-BHK-1.png",
+    image: "/images/optimized/plan-4bhk.webp",
     specs: [
       { room: "Formal Living & Dining", dimension: "31'6\" × 15'0\"" },
       { room: "Presidential Master Suite", dimension: "18'0\" × 13'6\"" },
@@ -248,20 +248,20 @@ export const OFFICIAL_AMENITIES = [
 
 // Official Gallery Images (14 full renderings)
 export const OFFICIAL_GALLERY_IMAGES = [
-  "https://rohanbuilders.com/wp-content/uploads/2023/09/3840x1694-px-03-scaled.jpg",
-  "https://rohanbuilders.com/wp-content/uploads/2023/09/3840x1694-px-05-scaled.jpg",
-  "https://rohanbuilders.com/wp-content/uploads/2023/09/3840x1694-px-09-1-scaled.jpg",
-  "https://rohanbuilders.com/wp-content/uploads/2023/09/3840x1694-px-10-scaled.jpg",
-  "https://rohanbuilders.com/wp-content/uploads/2023/09/3840x1694-px-11-scaled.jpg",
-  "https://rohanbuilders.com/wp-content/uploads/2023/09/3840x1694-px-02-scaled.jpg",
-  "https://rohanbuilders.com/wp-content/uploads/2023/09/3840x1694-px-04-scaled.jpg",
-  "https://rohanbuilders.com/wp-content/uploads/2023/09/3840x1694-px-06-scaled.jpg",
-  "https://rohanbuilders.com/wp-content/uploads/2023/09/3840x1694-px-07-scaled.jpg",
-  "https://rohanbuilders.com/wp-content/uploads/2023/09/3840x1694-px-08-scaled.jpg",
-  "https://rohanbuilders.com/wp-content/uploads/2023/09/3840x1694-px-12-scaled.jpg",
-  "https://rohanbuilders.com/wp-content/uploads/2023/09/3840x1694-px-13-scaled.jpg",
-  "https://rohanbuilders.com/wp-content/uploads/2023/09/3840x1694-px-14-scaled.jpg",
-  "https://rohanbuilders.com/wp-content/uploads/2023/09/3840x1694-px-01-1-scaled.jpg"
+  "/images/optimized/gallery-01.webp",
+  "/images/optimized/gallery-02.webp",
+  "/images/optimized/gallery-03.webp",
+  "/images/optimized/gallery-04.webp",
+  "/images/optimized/gallery-05.webp",
+  "/images/optimized/gallery-06.webp",
+  "/images/optimized/gallery-07.webp",
+  "/images/optimized/gallery-08.webp",
+  "/images/optimized/gallery-09.webp",
+  "/images/optimized/gallery-10.webp",
+  "/images/optimized/gallery-11.webp",
+  "/images/optimized/gallery-12.webp",
+  "/images/optimized/gallery-13.webp",
+  "/images/optimized/gallery-14.webp"
 ];
 
 // Official Videos & 360 Walkthroughs

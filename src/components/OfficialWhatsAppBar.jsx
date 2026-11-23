@@ -46,8 +46,8 @@ export default function OfficialWhatsAppBar() {
             <span className="text-xs font-semibold text-stone-900 leading-tight block">
               WhatsApp Enquiry: <strong className="font-mono text-emerald-800">+91 774409295</strong>
             </span>
-            <span className="text-[10px] text-stone-500 block">
-              Project Advisory • <a href="/privacy-policy" target="_blank" rel="noreferrer" className="underline hover:text-stone-800">Privacy Policy</a>
+            <span className="text-[10px] text-stone-700 font-medium block">
+              Project Advisory • <a href="/privacy-policy" target="_blank" rel="noreferrer" className="underline hover:text-stone-900 font-semibold">Privacy Policy</a>
             </span>
           </div>
         </a>

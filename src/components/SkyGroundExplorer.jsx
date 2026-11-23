@@ -14,7 +14,7 @@ export default function SkyGroundExplorer({ onOpenVipModal }) {
       subtitle: "A suspended community earth connecting the towers",
       description: "Conceived by Ar. Sanjay Mohe to reconnect high-rise dwellers with the soul of the ground. Level 14 bridges across the towers to form an open-air suspended sanctuary with cloud co-working pods, yoga decks, reading nooks, and panoramic river frames.",
       badge: "Architectural Wonder",
-      image: "https://rohanbuilders.com/wp-content/uploads/2023/09/3840x1694-px-09-1-scaled.jpg",
+      image: "/images/optimized/gallery-03.webp",
       features: [
         {
           title: "Inter-Tower Sky Bridges",
@@ -46,7 +46,7 @@ export default function SkyGroundExplorer({ onOpenVipModal }) {
       subtitle: "13 acres of sloping landscape touching the river",
       description: "As you enter the central plaza, vast cascading lawns open up before you, culminating in an elevated frame with serene views of the Mula River. Features an Olympic-length infinity lap pool, sports courts, and reflecting water bodies in a 100% vehicle-free surface.",
       badge: "13-Acre Ecosystem",
-      image: "https://rohanbuilders.com/wp-content/uploads/2023/09/3840x1694-px-10-scaled.jpg",
+      image: "/images/optimized/gallery-04.webp",
       features: [
         {
           title: "Lap Pool with Deck",
@@ -78,7 +78,7 @@ export default function SkyGroundExplorer({ onOpenVipModal }) {
       subtitle: "Double-height living volumes with 270° vistas",
       description: "Double-height grand living salons with floor-to-ceiling glass curtains, cantilevered river viewing decks, and panoramic vistas of the Sahyadri hill ranges and Balewadi skyline.",
       badge: "Signature Living",
-      image: "https://rohanbuilders.com/wp-content/uploads/2023/09/3840x1694-px-06-scaled.jpg",
+      image: "/images/optimized/gallery-08.webp",
       features: [
         {
           title: "Double-Height Living Salons",
@@ -267,11 +267,11 @@ export default function SkyGroundExplorer({ onOpenVipModal }) {
 
                 <div className="grid grid-cols-2 gap-3 pt-3 border-t border-stone-200/80 text-xs">
                   <div className="p-3.5 rounded-2xl glass-panel border border-white/80">
-                    <span className="text-stone-500 block text-[10px] uppercase font-mono">Access</span>
+                    <span className="text-stone-700 block text-[10px] uppercase font-mono font-medium">Access</span>
                     <strong className="text-stone-900">All Residents</strong>
                   </div>
                   <div className="p-3.5 rounded-2xl glass-panel border border-white/80">
-                    <span className="text-stone-500 block text-[10px] uppercase font-mono">Ambiance</span>
+                    <span className="text-stone-700 block text-[10px] uppercase font-mono font-medium">Ambiance</span>
                     <strong className="text-amber-800">Open-Air River Breeze</strong>
                   </div>
                 </div>
@@ -279,12 +279,12 @@ export default function SkyGroundExplorer({ onOpenVipModal }) {
                 <div className="mt-5 flex items-center justify-between">
                   <button
                     onClick={onOpenVipModal}
-                    className="text-xs font-bold uppercase tracking-wider text-white bg-stone-900 hover:bg-stone-800 px-5 py-2.5 rounded-xl transition-all flex items-center gap-1.5 shadow-md shadow-stone-900/10 glass-shimmer"
+                    className="text-xs font-bold uppercase tracking-wider text-white bg-stone-900 hover:bg-stone-800 px-5 py-2.5 rounded-xl transition-all flex items-center gap-1.5 shadow-md shadow-stone-900/10 glass-shimmer min-h-[44px]"
                   >
                     <span>Tour this realm</span>
                     <ArrowUpRight className="w-3.5 h-3.5" />
                   </button>
-                  <span className="text-[11px] text-stone-500 flex items-center gap-1">
+                  <span className="text-[11px] text-stone-700 font-medium flex items-center gap-1">
                     <Volume2 className="w-3.5 h-3.5 text-emerald-700 animate-pulse" />
                     <span>River breeze audible</span>
                   </span>
@@ -314,7 +314,7 @@ export default function SkyGroundExplorer({ onOpenVipModal }) {
                         <span className={`w-1.5 h-1.5 rounded-full ${selectedHotspot === idx ? 'bg-amber-600 animate-pulse' : 'bg-stone-400'}`} />
                         <span>{feat.title}</span>
                       </div>
-                      <div className="text-[11px] text-stone-500 mt-0.5 line-clamp-1">{feat.description}</div>
+                      <div className="text-[11px] text-stone-700 mt-0.5 line-clamp-1">{feat.description}</div>
                     </div>
                     <span className="text-[10px] px-2.5 py-0.5 rounded-full glass-panel text-stone-600 border border-stone-200/60 whitespace-nowrap">
                       {feat.tag}

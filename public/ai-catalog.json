@@ -8,96 +8,15 @@
   },
   "entries": [
     {
-      "identifier": "urn:air:rohanbuildersekam:portal",
-      "displayName": "Rohan Ekam Showcase Portal",
-      "type": "text/html",
-      "url": "https://rohanbuildersekam.com/",
+      "identifier": "urn:air:rohanbuildersekam:mcp:server",
+      "displayName": "Rohan Ekam Real Estate Concierge MCP",
+      "type": "application/mcp-server-card+json",
+      "url": "https://rohanbuildersekam.com/.well-known/mcp-card.json",
       "representativeQueries": [
         "Rohan Ekam Balewadi",
-        "Rohan Ekam Pune luxury flats",
-        "Rohan Ekam 2 BHK 3 BHK 4 BHK"
-      ]
-    },
-    {
-      "identifier": "urn:air:rohanbuildersekam:pricing",
-      "displayName": "Price and Cost Sheet Breakdown",
-      "type": "text/html",
-      "url": "https://rohanbuildersekam.com/price-and-cost-sheet/",
-      "representativeQueries": [
-        "Rohan Ekam price list",
-        "Rohan Ekam cost sheet",
-        "Rohan Ekam payment schedule"
-      ]
-    },
-    {
-      "identifier": "urn:air:rohanbuildersekam:2bhk",
-      "displayName": "2 BHK Luxury Flats in Balewadi",
-      "type": "text/html",
-      "url": "https://rohanbuildersekam.com/2-bhk-flats-in-balewadi/",
-      "representativeQueries": [
-        "2 BHK flats in Balewadi Pune",
-        "Rohan Ekam 2 BHK layout carpet area"
-      ]
-    },
-    {
-      "identifier": "urn:air:rohanbuildersekam:3bhk",
-      "displayName": "3 BHK Premium Riverfront Flats in Balewadi",
-      "type": "text/html",
-      "url": "https://rohanbuildersekam.com/3-bhk-flats-in-balewadi/",
-      "representativeQueries": [
-        "3 BHK flats in Balewadi Pune",
-        "Rohan Ekam 3 BHK river facing"
-      ]
-    },
-    {
-      "identifier": "urn:air:rohanbuildersekam:4bhk",
-      "displayName": "4 BHK Sky Suite Duplex Penthouses",
-      "type": "text/html",
-      "url": "https://rohanbuildersekam.com/4-bhk-flats-in-balewadi/",
-      "representativeQueries": [
-        "4 BHK penthouses in Balewadi Pune",
-        "Rohan Ekam 4 BHK duplex sky suite"
-      ]
-    },
-    {
-      "identifier": "urn:air:rohanbuildersekam:location",
-      "displayName": "Balewadi High Street Location and Connectivity",
-      "type": "text/html",
-      "url": "https://rohanbuildersekam.com/location-balewadi-high-street/",
-      "representativeQueries": [
-        "Rohan Ekam location map",
-        "Rohan Ekam distance from Balewadi High Street"
-      ]
-    },
-    {
-      "identifier": "urn:air:rohanbuildersekam:riverfront",
-      "displayName": "Riverfront Flats in Pune - 13-Acre Masterplan",
-      "type": "text/html",
-      "url": "https://rohanbuildersekam.com/riverfront-flats-in-pune/",
-      "representativeQueries": [
-        "Riverfront apartments in Pune",
-        "Mula riverfront residential project Balewadi"
-      ]
-    },
-    {
-      "identifier": "urn:air:rohanbuildersekam:llms-txt",
-      "displayName": "Rohan Ekam LLM Documentation",
-      "type": "text/markdown",
-      "url": "https://rohanbuildersekam.com/llms.txt",
-      "representativeQueries": [
-        "Rohan Ekam specifications",
-        "Rohan Ekam RERA registration numbers",
-        "Rohan Ekam project facts"
-      ]
-    },
-    {
-      "identifier": "urn:air:rohanbuildersekam:sitemap",
-      "displayName": "Rohan Ekam XML Sitemap",
-      "type": "application/xml",
-      "url": "https://rohanbuildersekam.com/sitemap.xml",
-      "representativeQueries": [
-        "Rohan Ekam sitemap",
-        "Rohan Ekam all indexed pages"
+        "Rohan Ekam floor plans and specifications",
+        "2 BHK 3 BHK 4 BHK luxury residences Balewadi Pune",
+        "Rohan Ekam price and cost sheet breakdown"
       ]
     }
   ]

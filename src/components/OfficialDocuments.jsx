@@ -44,7 +44,7 @@ export default function OfficialDocuments() {
                       <div className="text-sm font-semibold text-stone-900 group-hover:text-amber-800 transition-colors">
                         {doc.title}
                       </div>
-                      <div className="text-xs text-stone-500 font-mono mt-0.5">
+                      <div className="text-xs text-stone-700 font-mono font-medium mt-0.5">
                         {doc.type} • {doc.size}
                       </div>
                     </div>

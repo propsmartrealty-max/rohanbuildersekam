@@ -58,7 +58,7 @@ export default function OfficialFAQ() {
               <h3 className="font-serif text-xl sm:text-2xl font-bold text-stone-900">
                 {activeCategory}
               </h3>
-              <span className="text-xs font-mono text-stone-500">
+              <span className="text-xs font-mono text-stone-700 font-medium">
                 {currentQuestions.length} Questions Answered
               </span>
             </div>

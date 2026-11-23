@@ -100,7 +100,7 @@ export default function AmenitiesShowcase({ onOpenVipModal }) {
                 <h3 className="text-xs font-semibold text-stone-900 group-hover:text-amber-800 transition-colors line-clamp-2">
                   {amenity.name}
                 </h3>
-                <span className="text-[10px] text-stone-500 font-mono mt-1 block">
+                <span className="text-[10px] text-stone-700 font-mono font-medium mt-1 block">
                   {amenity.category}
                 </span>
               </div>

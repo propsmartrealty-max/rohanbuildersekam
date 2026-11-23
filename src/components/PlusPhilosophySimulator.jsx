@@ -123,15 +123,15 @@ export default function PlusPhilosophySimulator() {
                 }`}
               >
                 <div className="flex items-center justify-between mb-2">
-                  <span className={`text-2xl font-serif font-black ${isSelected ? 'text-amber-800' : 'text-stone-400'}`}>
+                  <span className={`text-2xl font-serif font-black ${isSelected ? 'text-amber-800' : 'text-stone-600'}`}>
                     {pillar.letter}
                   </span>
-                  <Icon className={`w-5 h-5 ${isSelected ? 'text-stone-900 animate-bounce' : 'text-stone-400'}`} />
+                  <Icon className={`w-5 h-5 ${isSelected ? 'text-stone-900 animate-bounce' : 'text-stone-600'}`} />
                 </div>
                 <div className={`text-sm font-bold ${isSelected ? 'text-stone-900' : 'text-stone-700'}`}>
                   {pillar.name}
                 </div>
-                <div className="text-[11px] text-stone-500 mt-0.5">
+                <div className="text-[11px] text-stone-700 font-medium mt-0.5">
                   {pillar.stat} {pillar.statLabel}
                 </div>
               </button>
@@ -289,7 +289,7 @@ export default function PlusPhilosophySimulator() {
                         <div className="px-3 py-1 rounded-full bg-emerald-50 border border-emerald-300 text-emerald-800 text-xs font-mono font-bold">
                           0% Direct Overlook
                         </div>
-                        <span className="text-[10px] text-stone-500 mt-1">Sightlines deflect outward</span>
+                        <span className="text-[10px] text-stone-700 font-medium mt-1">Sightlines deflect outward</span>
                       </div>
                       <div className="w-16 h-16 rounded-xl bg-[#EFECE6] border border-stone-300 flex items-center justify-center text-center p-1 text-[10px] text-stone-600">
                         Neighbor Tower
@@ -388,7 +388,7 @@ export default function PlusPhilosophySimulator() {
             </p>
 
             <div className="space-y-2.5 pt-2">
-              <span className="text-xs font-mono uppercase tracking-wider text-stone-500 block font-semibold">
+              <span className="text-xs font-mono uppercase tracking-wider text-stone-700 block font-bold">
                 Engineering Benefits:
               </span>
               {currentPillarData.benefits.map((benefit, bIdx) => (

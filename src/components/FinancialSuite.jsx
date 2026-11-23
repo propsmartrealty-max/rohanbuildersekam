@@ -214,9 +214,9 @@ export default function FinancialSuite({ onOpenVipModal }) {
               </div>
               <div className="text-4xl sm:text-5xl font-serif font-bold text-stone-900 tracking-tight mb-2">
                 ₹ {monthlyEmi.toLocaleString('en-IN')}
-                <span className="text-xs font-sans text-stone-500 font-normal"> / month</span>
+                <span className="text-xs font-sans text-stone-700 font-medium"> / month</span>
               </div>
-              <div className="text-xs text-stone-600 mb-6">
+              <div className="text-xs text-stone-700 mb-6">
                 Principal Loan Amount: <strong className="text-stone-900 font-mono">{formatINR(loanAmount)}</strong>
               </div>
 
@@ -230,7 +230,7 @@ export default function FinancialSuite({ onOpenVipModal }) {
                   <div style={{ width: `${principalShare}%` }} className="h-full bg-stone-900" />
                   <div style={{ width: `${interestShare}%` }} className="h-full bg-amber-600" />
                 </div>
-                <div className="flex justify-between text-[10px] text-stone-500 font-mono">
+                <div className="flex justify-between text-[10px] text-stone-700 font-mono font-medium">
                   <span>Loan: {formatINR(loanAmount)}</span>
                   <span>Total Interest: {formatINR(totalInterest)}</span>
                 </div>
@@ -238,7 +238,7 @@ export default function FinancialSuite({ onOpenVipModal }) {
 
               {/* Statutory Sheet */}
               <div className="pt-4 border-t border-stone-200 space-y-2 text-xs">
-                <div className="text-[11px] font-mono uppercase text-stone-500 mb-1 font-semibold">
+                <div className="text-[11px] font-mono uppercase text-stone-700 mb-1 font-semibold">
                   Transparent Statutory Estimate:
                 </div>
                 <div className="flex justify-between py-1 border-b border-stone-100">

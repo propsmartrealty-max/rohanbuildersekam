@@ -47,7 +47,7 @@ export default function OfficialInterestedForm() {
                 Interested?
               </h2>
               <div className="w-12 h-0.5 bg-amber-800 mt-2 mb-2"></div>
-              <span className="text-[11px] font-mono text-stone-500 uppercase tracking-wider block">Direct Project Inquiry</span>
+              <span className="text-[11px] font-mono text-stone-700 font-semibold uppercase tracking-wider block">Direct Project Inquiry</span>
             </div>
 
             {/* Right Content Area */}

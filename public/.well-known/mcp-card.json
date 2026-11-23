@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/v1/server-card.schema.json",
+  "name": "com.rohanbuildersekam/property-concierge",
+  "version": "1.0.0",
+  "title": "Rohan Ekam Real Estate Concierge",
+  "description": "Model Context Protocol discovery card for Rohan Ekam luxury riverfront residences in Balewadi, Pune. Provides access to verified floor plans, pricing sheets, MahaRERA registrations, and site visit scheduling.",
+  "websiteUrl": "https://rohanbuildersekam.com/",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://rohanbuildersekam.com/mcp",
+      "supportedProtocolVersions": [
+        "2026-07-28",
+        "2025-06-18"
+      ]
+    }
+  ]
+}
