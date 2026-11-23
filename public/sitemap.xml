@@ -4,7 +4,7 @@
   <!-- Primary Landing Experience -->
   <url>
     <loc>https://rohanbuildersekam.com/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -26,63 +26,91 @@
   <!-- High-Volume Balewadi Search Cluster -->
   <url>
     <loc>https://rohanbuildersekam.com/flats-in-balewadi</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://rohanbuildersekam.com/rohan-ekam-logo.png</image:loc>
+      <image:title>Flats in Balewadi Pune - Rohan Ekam</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://rohanbuildersekam.com/2-bhk-flats-in-balewadi</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://rohanbuildersekam.com/rohan-ekam-logo.png</image:loc>
+      <image:title>2 BHK Flats in Balewadi Pune Floor Plans</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://rohanbuildersekam.com/3-bhk-flats-in-balewadi</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://rohanbuildersekam.com/rohan-ekam-logo.png</image:loc>
+      <image:title>3 BHK Flats in Balewadi Pune Riverfront Plans</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://rohanbuildersekam.com/4-bhk-flats-in-balewadi</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://rohanbuildersekam.com/rohan-ekam-logo.png</image:loc>
+      <image:title>4 BHK Sky Suites Balewadi Pune Duplex Penthouses</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://rohanbuildersekam.com/price-and-cost-sheet</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://rohanbuildersekam.com/rohan-ekam-logo.png</image:loc>
+      <image:title>Rohan Ekam Cost Sheet &amp; Price Breakdown</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://rohanbuildersekam.com/location-balewadi-high-street</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://rohanbuildersekam.com/rohan-ekam-logo.png</image:loc>
+      <image:title>Rohan Ekam Balewadi High Street Location Map</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://rohanbuildersekam.com/rohan-builders-pune-projects</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://rohanbuildersekam.com/rohan-ekam-logo.png</image:loc>
+      <image:title>Rohan Builders Pune Projects Portfolio</image:title>
+    </image:image>
   </url>
 
   <!-- Regulatory & Compliance Pages -->
   <url>
     <loc>https://rohanbuildersekam.com/privacy-policy</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://rohanbuildersekam.com/terms</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://rohanbuildersekam.com/disclaimer</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

@@ -1,10 +1,10 @@
-# Complete Robots Directives for Rohan Ekam Balewadi
-# Optimized for Googlebot, Google-InspectionTool, Bingbot & Social Crawlers
+# Standard Robots.txt for Rohan Ekam Balewadi
+# Fully compliant with RFC 9309 and optimized for Googlebot, Bingbot & Search Indexers
 
 User-agent: *
 Allow: /
 
-# Google Search & Inspection Crawlers
+# Explicit Declarations for Search Crawlers
 User-agent: Googlebot
 Allow: /
 
@@ -20,42 +20,11 @@ Allow: /
 User-agent: AdsBot-Google
 Allow: /
 
-# Microsoft Bing & IndexNow Crawlers
 User-agent: Bingbot
 Allow: /
 
-User-agent: msnbot
-Allow: /
-
-# Apple Spotlight & Siri Crawler
 User-agent: Applebot
 Allow: /
 
-# Privacy & International Search Engines
-User-agent: DuckDuckBot
-Allow: /
-
-User-agent: Slurp
-Allow: /
-
-User-agent: Baiduspider
-Allow: /
-
-User-agent: YandexBot
-Allow: /
-
-# Social Share Preview Crawlers
-User-agent: facebookexternalhit
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: LinkedInBot
-Allow: /
-
-User-agent: WhatsApp
-Allow: /
-
-# Sitemap Index Declaration
+# XML Sitemap Index
 Sitemap: https://rohanbuildersekam.com/sitemap.xml
