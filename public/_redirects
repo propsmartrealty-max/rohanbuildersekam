@@ -1,6 +1,9 @@
 # Static blog and content clean URL mappings
 /blog                                                   /blog/index.html                                            200
 /blog/                                                  /blog/index.html                                            200
+/blog/baner-vs-balewadi-real-estate-investment-comparison /blog/baner-vs-balewadi-real-estate-investment-comparison/index.html 200
+/blog/pune-luxury-real-estate-market-trends-2026-2027   /blog/pune-luxury-real-estate-market-trends-2026-2027/index.html   200
+/blog/luxury-penthouses-sky-villas-baner-balewadi       /blog/luxury-penthouses-sky-villas-baner-balewadi/index.html       200
 /blog/why-balewadi-is-pune-top-luxury-real-estate-hub   /blog/why-balewadi-is-pune-top-luxury-real-estate-hub/index.html   200
 /blog/ground-floor-in-the-sky-architectural-monograph   /blog/ground-floor-in-the-sky-architectural-monograph/index.html   200
 /blog/rohan-plus-homes-design-science-cross-ventilation  /blog/rohan-plus-homes-design-science-cross-ventilation/index.html  200
@@ -8,7 +11,10 @@
 /blog/balewadi-high-street-metro-line-3-connectivity-boom /blog/balewadi-high-street-metro-line-3-connectivity-boom/index.html 200
 /blog/2-bhk-3-bhk-4-bhk-carpet-area-price-comparison-balewadi /blog/2-bhk-3-bhk-4-bhk-carpet-area-price-comparison-balewadi/index.html 200
 
-# Legacy Landing Pages
+# Dedicated Market Landing Pages
+/luxury-flats-in-baner-balewadi                         /luxury-flats-in-baner-balewadi/index.html                  200
+/flats-in-baner                                         /flats-in-baner/index.html                                  200
+/pune-luxury-real-estate                                /pune-luxury-real-estate/index.html                         200
 /flats-in-balewadi                                      /flats-in-balewadi.html                                     200
 /2-bhk-flats-in-balewadi                                /2-bhk-flats-in-balewadi.html                               200
 /3-bhk-flats-in-balewadi                                /3-bhk-flats-in-balewadi.html                               200

@@ -23,51 +23,37 @@
     </image:image>
   </url>
 
-  <!-- Knowledge Hub & Pillar Real Estate Articles -->
+  <!-- High-Impact Baner, Balewadi & Pune Luxury Real Estate Market Clusters -->
   <url>
-    <loc>https://rohanbuildersekam.com/blog</loc>
+    <loc>https://rohanbuildersekam.com/luxury-flats-in-baner-balewadi</loc>
     <lastmod>2026-11-23</lastmod>
     <changefreq>daily</changefreq>
-    <priority>0.85</priority>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://rohanbuildersekam.com/rohan-ekam-logo.png</image:loc>
+      <image:title>Luxury Flats in Baner Balewadi Pune</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://rohanbuildersekam.com/blog/why-balewadi-is-pune-top-luxury-real-estate-hub</loc>
+    <loc>https://rohanbuildersekam.com/flats-in-baner</loc>
     <lastmod>2026-11-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://rohanbuildersekam.com/rohan-ekam-logo.png</image:loc>
+      <image:title>Flats in Baner Pune - Luxury Residences</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://rohanbuildersekam.com/blog/ground-floor-in-the-sky-architectural-monograph</loc>
+    <loc>https://rohanbuildersekam.com/pune-luxury-real-estate</loc>
     <lastmod>2026-11-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://rohanbuildersekam.com/rohan-ekam-logo.png</image:loc>
+      <image:title>Pune Luxury Real Estate Market Benchmark</image:title>
+    </image:image>
   </url>
-  <url>
-    <loc>https://rohanbuildersekam.com/blog/rohan-plus-homes-design-science-cross-ventilation</loc>
-    <lastmod>2026-11-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://rohanbuildersekam.com/blog/nri-real-estate-investment-guide-pune-balewadi</loc>
-    <lastmod>2026-11-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://rohanbuildersekam.com/blog/balewadi-high-street-metro-line-3-connectivity-boom</loc>
-    <lastmod>2026-11-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://rohanbuildersekam.com/blog/2-bhk-3-bhk-4-bhk-carpet-area-price-comparison-balewadi</loc>
-    <lastmod>2026-11-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-
-  <!-- High-Volume Balewadi Search Cluster -->
   <url>
     <loc>https://rohanbuildersekam.com/flats-in-balewadi</loc>
     <lastmod>2026-11-23</lastmod>
@@ -137,6 +123,68 @@
       <image:loc>https://rohanbuildersekam.com/rohan-ekam-logo.png</image:loc>
       <image:title>Rohan Builders Pune Projects Portfolio</image:title>
     </image:image>
+  </url>
+
+  <!-- Knowledge Hub & Pillar Real Estate Articles -->
+  <url>
+    <loc>https://rohanbuildersekam.com/blog</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://rohanbuildersekam.com/blog/baner-vs-balewadi-real-estate-investment-comparison</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://rohanbuildersekam.com/blog/pune-luxury-real-estate-market-trends-2026-2027</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://rohanbuildersekam.com/blog/luxury-penthouses-sky-villas-baner-balewadi</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://rohanbuildersekam.com/blog/why-balewadi-is-pune-top-luxury-real-estate-hub</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://rohanbuildersekam.com/blog/ground-floor-in-the-sky-architectural-monograph</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://rohanbuildersekam.com/blog/rohan-plus-homes-design-science-cross-ventilation</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://rohanbuildersekam.com/blog/nri-real-estate-investment-guide-pune-balewadi</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://rohanbuildersekam.com/blog/balewadi-high-street-metro-line-3-connectivity-boom</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://rohanbuildersekam.com/blog/2-bhk-3-bhk-4-bhk-carpet-area-price-comparison-balewadi</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
   </url>
 
   <!-- Regulatory & Compliance Pages -->

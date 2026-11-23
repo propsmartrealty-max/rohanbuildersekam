@@ -158,13 +158,14 @@ export default function Footer() {
                 Residences &amp; Configurations
               </h4>
               <ul className="space-y-1.5 text-[11px] text-stone-600">
+                <li><a href="/luxury-flats-in-baner-balewadi" className="hover:text-stone-900 font-semibold text-emerald-900 transition-colors">Luxury Flats in Baner Balewadi</a></li>
+                <li><a href="/flats-in-baner" className="hover:text-stone-900 font-semibold text-emerald-900 transition-colors">Flats in Baner Pune</a></li>
+                <li><a href="/pune-luxury-real-estate" className="hover:text-stone-900 font-semibold text-emerald-900 transition-colors">Pune Luxury Real Estate Benchmark</a></li>
                 <li><a href="#residences" className="hover:text-stone-900 transition-colors">Rohan Ekam 2 BHK Luxury Flats (₹1.45 Cr*)</a></li>
                 <li><a href="#residences" className="hover:text-stone-900 transition-colors">Rohan Ekam 3 BHK Residences - Type 1 (₹1.95 Cr*)</a></li>
                 <li><a href="#residences" className="hover:text-stone-900 transition-colors">Rohan Ekam 3 BHK Grand Layout - Type 2 (₹2.15 Cr*)</a></li>
                 <li><a href="#residences" className="hover:text-stone-900 transition-colors">Rohan Ekam 4 BHK Sky Suite Penthouses (₹2.75 Cr*)</a></li>
-                <li><a href="#residences" className="hover:text-stone-900 transition-colors">Rohan Ekam Floor Plans PDF Download</a></li>
-                <li><a href="#financialSuite" className="hover:text-stone-900 transition-colors">Rohan Ekam Cost Sheet &amp; Stamp Duty Calculator</a></li>
-                <li><a href="#financialSuite" className="hover:text-stone-900 transition-colors">SBI, HDFC, ICICI Bank Approved Home Loans</a></li>
+                <li><a href="#financialSuite" className="hover:text-stone-900 transition-colors">Rohan Ekam Cost Sheet &amp; Stamp Duty</a></li>
               </ul>
             </div>
 
@@ -207,12 +208,15 @@ export default function Footer() {
               </h4>
               <ul className="space-y-1.5 text-[11px] text-stone-600">
                 <li><a href="/blog" className="hover:text-stone-900 font-semibold text-emerald-900 transition-colors">Knowledge Hub Index &rarr;</a></li>
-                <li><a href="/blog/why-balewadi-is-pune-top-luxury-real-estate-hub" className="hover:text-stone-900 transition-colors">Why Balewadi is Pune's #1 Luxury Hub</a></li>
+                <li><a href="/blog/baner-vs-balewadi-real-estate-investment-comparison" className="hover:text-stone-900 font-medium transition-colors">Baner vs Balewadi Investment ROI</a></li>
+                <li><a href="/blog/pune-luxury-real-estate-market-trends-2026-2027" className="hover:text-stone-900 font-medium transition-colors">Pune Luxury Trends 2026-2027</a></li>
+                <li><a href="/blog/luxury-penthouses-sky-villas-baner-balewadi" className="hover:text-stone-900 font-medium transition-colors">Penthouses &amp; Sky Villas</a></li>
+                <li><a href="/blog/why-balewadi-is-pune-top-luxury-real-estate-hub" className="hover:text-stone-900 transition-colors">Why Balewadi is #1 Luxury Hub</a></li>
                 <li><a href="/blog/ground-floor-in-the-sky-architectural-monograph" className="hover:text-stone-900 transition-colors">Ground Floor in the Sky Architecture</a></li>
-                <li><a href="/blog/rohan-plus-homes-design-science-cross-ventilation" className="hover:text-stone-900 transition-colors">Rohan PLUS Science (Ventilation &amp; Space)</a></li>
-                <li><a href="/blog/nri-real-estate-investment-guide-pune-balewadi" className="hover:text-stone-900 transition-colors">NRI Investment Guide: Balewadi &amp; Baner</a></li>
-                <li><a href="/blog/balewadi-high-street-metro-line-3-connectivity-boom" className="hover:text-stone-900 transition-colors">Metro Line 3 &amp; High Street Transit Boom</a></li>
-                <li><a href="/blog/2-bhk-3-bhk-4-bhk-carpet-area-price-comparison-balewadi" className="hover:text-stone-900 transition-colors">2, 3 &amp; 4 BHK Carpet Area &amp; Price Guide</a></li>
+                <li><a href="/blog/rohan-plus-homes-design-science-cross-ventilation" className="hover:text-stone-900 transition-colors">Rohan PLUS Science (Air &amp; Light)</a></li>
+                <li><a href="/blog/nri-real-estate-investment-guide-pune-balewadi" className="hover:text-stone-900 transition-colors">NRI Investment Guide: West Pune</a></li>
+                <li><a href="/blog/balewadi-high-street-metro-line-3-connectivity-boom" className="hover:text-stone-900 transition-colors">Metro Line 3 &amp; High Street Boom</a></li>
+                <li><a href="/blog/2-bhk-3-bhk-4-bhk-carpet-area-price-comparison-balewadi" className="hover:text-stone-900 transition-colors">2, 3 &amp; 4 BHK Carpet &amp; Price Guide</a></li>
               </ul>
             </div>
 
@@ -241,6 +245,12 @@ export default function Footer() {
             </span>
             <div className="flex flex-wrap gap-1.5">
               {[
+                { label: 'Luxury Flats in Baner Balewadi', href: '/luxury-flats-in-baner-balewadi' },
+                { label: 'Flats in Baner Pune', href: '/flats-in-baner' },
+                { label: 'Pune Luxury Real Estate', href: '/pune-luxury-real-estate' },
+                { label: 'Baner vs Balewadi ROI Monograph', href: '/blog/baner-vs-balewadi-real-estate-investment-comparison' },
+                { label: 'Pune Luxury Market Trends 2026-2027', href: '/blog/pune-luxury-real-estate-market-trends-2026-2027' },
+                { label: 'Sky Villas & Penthouses Baner Balewadi', href: '/blog/luxury-penthouses-sky-villas-baner-balewadi' },
                 { label: 'Real Estate Blog Hub', href: '/blog' },
                 { label: 'Balewadi Luxury Market Monograph', href: '/blog/why-balewadi-is-pune-top-luxury-real-estate-hub' },
                 { label: 'Ground Floor in Sky Monograph', href: '/blog/ground-floor-in-the-sky-architectural-monograph' },

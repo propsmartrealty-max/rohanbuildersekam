@@ -23,6 +23,9 @@ jobs:
           curl -sI "https://rohanbuildersekam.com/" | head -n 5
           curl -sI "https://rohanbuildersekam.com/sitemap.xml" | head -n 5
           curl -sI "https://rohanbuildersekam.com/blog" | head -n 5
+          curl -sI "https://rohanbuildersekam.com/luxury-flats-in-baner-balewadi" | head -n 5
+          curl -sI "https://rohanbuildersekam.com/flats-in-baner" | head -n 5
+          curl -sI "https://rohanbuildersekam.com/pune-luxury-real-estate" | head -n 5
 
       - name: Dispatch to IndexNow Engine API
         run: |
@@ -35,13 +38,9 @@ jobs:
               "keyLocation": "https://rohanbuildersekam.com/89ee1144bc371c5c322b749de98dd2b5.txt",
               "urlList": [
                 "https://rohanbuildersekam.com/",
-                "https://rohanbuildersekam.com/blog",
-                "https://rohanbuildersekam.com/blog/why-balewadi-is-pune-top-luxury-real-estate-hub",
-                "https://rohanbuildersekam.com/blog/ground-floor-in-the-sky-architectural-monograph",
-                "https://rohanbuildersekam.com/blog/rohan-plus-homes-design-science-cross-ventilation",
-                "https://rohanbuildersekam.com/blog/nri-real-estate-investment-guide-pune-balewadi",
-                "https://rohanbuildersekam.com/blog/balewadi-high-street-metro-line-3-connectivity-boom",
-                "https://rohanbuildersekam.com/blog/2-bhk-3-bhk-4-bhk-carpet-area-price-comparison-balewadi",
+                "https://rohanbuildersekam.com/luxury-flats-in-baner-balewadi",
+                "https://rohanbuildersekam.com/flats-in-baner",
+                "https://rohanbuildersekam.com/pune-luxury-real-estate",
                 "https://rohanbuildersekam.com/flats-in-balewadi",
                 "https://rohanbuildersekam.com/2-bhk-flats-in-balewadi",
                 "https://rohanbuildersekam.com/3-bhk-flats-in-balewadi",
@@ -49,6 +48,16 @@ jobs:
                 "https://rohanbuildersekam.com/price-and-cost-sheet",
                 "https://rohanbuildersekam.com/location-balewadi-high-street",
                 "https://rohanbuildersekam.com/rohan-builders-pune-projects",
+                "https://rohanbuildersekam.com/blog",
+                "https://rohanbuildersekam.com/blog/baner-vs-balewadi-real-estate-investment-comparison",
+                "https://rohanbuildersekam.com/blog/pune-luxury-real-estate-market-trends-2026-2027",
+                "https://rohanbuildersekam.com/blog/luxury-penthouses-sky-villas-baner-balewadi",
+                "https://rohanbuildersekam.com/blog/why-balewadi-is-pune-top-luxury-real-estate-hub",
+                "https://rohanbuildersekam.com/blog/ground-floor-in-the-sky-architectural-monograph",
+                "https://rohanbuildersekam.com/blog/rohan-plus-homes-design-science-cross-ventilation",
+                "https://rohanbuildersekam.com/blog/nri-real-estate-investment-guide-pune-balewadi",
+                "https://rohanbuildersekam.com/blog/balewadi-high-street-metro-line-3-connectivity-boom",
+                "https://rohanbuildersekam.com/blog/2-bhk-3-bhk-4-bhk-carpet-area-price-comparison-balewadi",
                 "https://rohanbuildersekam.com/sitemap.xml",
                 "https://rohanbuildersekam.com/feed.xml"
               ]
