@@ -27,6 +27,7 @@ export default function Navbar({ onOpenVipModal }) {
     { name: 'Floor Plans', href: '#floorPlan' },
     { name: 'Amenities', href: '#amenities' },
     { name: 'Location', href: '#location' },
+    { name: 'Guides & Blog', href: '/blog' },
     { name: 'Gallery', href: '#gallery' },
     { name: 'Cost Planner', href: '#financialSuite' },
   ];

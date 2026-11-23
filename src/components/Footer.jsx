@@ -151,7 +151,7 @@ export default function Footer() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-xs pt-4 border-t border-stone-200">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 text-xs pt-4 border-t border-stone-200">
             {/* Cluster 1: Configurations & Commercials */}
             <div>
               <h4 className="font-serif font-bold text-stone-900 text-xs uppercase tracking-wider mb-2.5">
@@ -200,7 +200,23 @@ export default function Footer() {
               </ul>
             </div>
 
-            {/* Cluster 4: MahaRERA & Approvals */}
+            {/* Cluster 4: Real Estate Guides & Pillar Articles */}
+            <div>
+              <h4 className="font-serif font-bold text-stone-900 text-xs uppercase tracking-wider mb-2.5">
+                Real Estate Guides &amp; Insights
+              </h4>
+              <ul className="space-y-1.5 text-[11px] text-stone-600">
+                <li><a href="/blog" className="hover:text-stone-900 font-semibold text-emerald-900 transition-colors">Knowledge Hub Index &rarr;</a></li>
+                <li><a href="/blog/why-balewadi-is-pune-top-luxury-real-estate-hub" className="hover:text-stone-900 transition-colors">Why Balewadi is Pune's #1 Luxury Hub</a></li>
+                <li><a href="/blog/ground-floor-in-the-sky-architectural-monograph" className="hover:text-stone-900 transition-colors">Ground Floor in the Sky Architecture</a></li>
+                <li><a href="/blog/rohan-plus-homes-design-science-cross-ventilation" className="hover:text-stone-900 transition-colors">Rohan PLUS Science (Ventilation &amp; Space)</a></li>
+                <li><a href="/blog/nri-real-estate-investment-guide-pune-balewadi" className="hover:text-stone-900 transition-colors">NRI Investment Guide: Balewadi &amp; Baner</a></li>
+                <li><a href="/blog/balewadi-high-street-metro-line-3-connectivity-boom" className="hover:text-stone-900 transition-colors">Metro Line 3 &amp; High Street Transit Boom</a></li>
+                <li><a href="/blog/2-bhk-3-bhk-4-bhk-carpet-area-price-comparison-balewadi" className="hover:text-stone-900 transition-colors">2, 3 &amp; 4 BHK Carpet Area &amp; Price Guide</a></li>
+              </ul>
+            </div>
+
+            {/* Cluster 5: MahaRERA & Approvals */}
             <div>
               <h4 className="font-serif font-bold text-stone-900 text-xs uppercase tracking-wider mb-2.5">
                 MahaRERA &amp; Approvals Compliance
@@ -225,6 +241,13 @@ export default function Footer() {
             </span>
             <div className="flex flex-wrap gap-1.5">
               {[
+                { label: 'Real Estate Blog Hub', href: '/blog' },
+                { label: 'Balewadi Luxury Market Monograph', href: '/blog/why-balewadi-is-pune-top-luxury-real-estate-hub' },
+                { label: 'Ground Floor in Sky Monograph', href: '/blog/ground-floor-in-the-sky-architectural-monograph' },
+                { label: 'Rohan PLUS Science Guide', href: '/blog/rohan-plus-homes-design-science-cross-ventilation' },
+                { label: 'NRI Balewadi Investment Guide', href: '/blog/nri-real-estate-investment-guide-pune-balewadi' },
+                { label: 'Metro Line 3 Connectivity', href: '/blog/balewadi-high-street-metro-line-3-connectivity-boom' },
+                { label: '2, 3 & 4 BHK Carpet & Price Comparison', href: '/blog/2-bhk-3-bhk-4-bhk-carpet-area-price-comparison-balewadi' },
                 { label: 'Flats in Balewadi', href: '/flats-in-balewadi' },
                 { label: '2 BHK in Balewadi', href: '/2-bhk-flats-in-balewadi' },
                 { label: '3 BHK in Balewadi', href: '/3-bhk-flats-in-balewadi' },

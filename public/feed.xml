@@ -1,12 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Rohan Ekam Balewadi | Official Project Updates &amp; Showcase</title>
+    <title>Rohan Ekam Balewadi | Project Showcase &amp; Real Estate Insights</title>
     <link>https://rohanbuildersekam.com/</link>
     <description>Latest project updates, architectural releases, floor plans, and pricing for Rohan Ekam by Rohan Builders in Balewadi, Pune.</description>
     <language>en-in</language>
     <lastBuildDate>Mon, 23 Nov 2026 12:00:00 +0530</lastBuildDate>
     <atom:link href="https://rohanbuildersekam.com/feed.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>Why Balewadi is Pune's #1 Luxury Real Estate Investment Hub</title>
+      <link>https://rohanbuildersekam.com/blog/why-balewadi-is-pune-top-luxury-real-estate-hub</link>
+      <guid>https://rohanbuildersekam.com/blog/why-balewadi-is-pune-top-luxury-real-estate-hub</guid>
+      <pubDate>Mon, 23 Nov 2026 12:00:00 +0530</pubDate>
+      <description>Comprehensive analysis of capital appreciation, rental yield, and commercial infrastructure in Balewadi &amp; Baner corridor.</description>
+    </item>
+
+    <item>
+      <title>The Ground Floor in the Sky: Architectural Monograph on Level 14</title>
+      <link>https://rohanbuildersekam.com/blog/ground-floor-in-the-sky-architectural-monograph</link>
+      <guid>https://rohanbuildersekam.com/blog/ground-floor-in-the-sky-architectural-monograph</guid>
+      <pubDate>Mon, 23 Nov 2026 12:00:00 +0530</pubDate>
+      <description>How Ar. Sanjay Mohe elevated the earth to the sky with suspended lawns, sky bridges, and wind-tested structural engineering.</description>
+    </item>
+
+    <item>
+      <title>Rohan PLUS Homes: The Science of Daylight, Ventilation &amp; Privacy</title>
+      <link>https://rohanbuildersekam.com/blog/rohan-plus-homes-design-science-cross-ventilation</link>
+      <guid>https://rohanbuildersekam.com/blog/rohan-plus-homes-design-science-cross-ventilation</guid>
+      <pubDate>Mon, 23 Nov 2026 12:00:00 +0530</pubDate>
+      <description>Explore the architectural physics behind Rohan PLUS Homes: zero corridor wastage, wind corridors, and daylight optimization.</description>
+    </item>
+
+    <item>
+      <title>NRI Real Estate Investment Guide: Luxury Living in Balewadi &amp; Baner</title>
+      <link>https://rohanbuildersekam.com/blog/nri-real-estate-investment-guide-pune-balewadi</link>
+      <guid>https://rohanbuildersekam.com/blog/nri-real-estate-investment-guide-pune-balewadi</guid>
+      <pubDate>Mon, 23 Nov 2026 12:00:00 +0530</pubDate>
+      <description>Taxation, NRE/NRO repatriation, FEMA guidelines, and high rental yield analysis for non-resident property investors.</description>
+    </item>
+
+    <item>
+      <title>Balewadi High Street &amp; Metro Line 3: The Transit Infrastructure Boom</title>
+      <link>https://rohanbuildersekam.com/blog/balewadi-high-street-metro-line-3-connectivity-boom</link>
+      <guid>https://rohanbuildersekam.com/blog/balewadi-high-street-metro-line-3-connectivity-boom</guid>
+      <pubDate>Mon, 23 Nov 2026 12:00:00 +0530</pubDate>
+      <description>How Pune Metro Line 3 and arterial ring road upgrades are transforming commute times and driving 15-20% capital growth.</description>
+    </item>
+
+    <item>
+      <title>2 BHK, 3 BHK &amp; 4 BHK Carpet Area &amp; Price Comparison in Balewadi</title>
+      <link>https://rohanbuildersekam.com/blog/2-bhk-3-bhk-4-bhk-carpet-area-price-comparison-balewadi</link>
+      <guid>https://rohanbuildersekam.com/blog/2-bhk-3-bhk-4-bhk-carpet-area-price-comparison-balewadi</guid>
+      <pubDate>Mon, 23 Nov 2026 12:00:00 +0530</pubDate>
+      <description>Detailed financial matrix, square footage breakdown, maintenance costs, and capital efficiency comparison across unit layouts.</description>
+    </item>
 
     <item>
       <title>Rohan Ekam Balewadi: Luxury 2, 3 &amp; 4 BHK Riverfront Residences</title>
