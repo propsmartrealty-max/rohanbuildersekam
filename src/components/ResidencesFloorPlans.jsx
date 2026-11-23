@@ -82,6 +82,10 @@ export default function ResidencesFloorPlans({ onOpenVipModal }) {
                 <img
                   src={activePlan.image}
                   alt={activePlan.type}
+                  width="800"
+                  height="600"
+                  loading="lazy"
+                  decoding="async"
                   className="max-h-[440px] w-auto object-contain transition-transform duration-500 group-hover/plan:scale-105"
                 />
 
@@ -172,7 +176,8 @@ export default function ResidencesFloorPlans({ onOpenVipModal }) {
             >
               <button
                 onClick={() => setIsBlueprintLightboxOpen(false)}
-                className="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-stone-900 text-white flex items-center justify-center hover:bg-stone-800 transition-colors shadow-lg"
+                aria-label="Close floor plan blueprint"
+                className="absolute top-4 right-4 z-20 min-w-[44px] min-h-[44px] rounded-full bg-stone-900 text-white flex items-center justify-center hover:bg-stone-800 transition-colors shadow-lg"
               >
                 <X className="w-5 h-5" />
               </button>
@@ -181,6 +186,9 @@ export default function ResidencesFloorPlans({ onOpenVipModal }) {
                 <img
                   src={activePlan.image}
                   alt={activePlan.type}
+                  width="1600"
+                  height="1200"
+                  decoding="async"
                   className="max-h-[75vh] w-auto object-contain"
                 />
               </div>

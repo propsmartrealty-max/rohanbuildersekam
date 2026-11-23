@@ -55,18 +55,23 @@ export default function OfficialWhatsAppBar() {
         {/* Right input form */}
         {!submitted ? (
           <form onSubmit={handleSubmit} className="flex items-center gap-2 w-full sm:w-auto">
+            <label htmlFor="whatsapp-mobile-input" className="sr-only">10-Digit Mobile Number</label>
             <input
+              id="whatsapp-mobile-input"
+              name="whatsappMobile"
               type="tel"
               required
               maxLength="10"
+              aria-label="Enter 10-Digit Mobile Number for WhatsApp chat"
               placeholder="Enter Mobile No."
               value={mobileNumber}
               onChange={(e) => setMobileNumber(e.target.value.replace(/\D/g, ''))}
-              className="glass-panel border border-stone-300 rounded-full px-4 py-1.5 text-xs text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-[#25D366]/40 focus:border-[#25D366] w-full sm:w-44 shadow-xs"
+              className="glass-panel border border-stone-300 rounded-full px-4 py-2 text-xs text-stone-900 placeholder-stone-500 focus:outline-none focus:ring-2 focus:ring-[#25D366]/40 focus:border-[#25D366] w-full sm:w-44 shadow-xs min-h-[40px]"
             />
             <button
               type="submit"
-              className="w-8 h-8 rounded-full bg-stone-900 hover:bg-[#25D366] text-white flex items-center justify-center shrink-0 shadow-md transition-all duration-300 active:scale-95 group"
+              aria-label="Send WhatsApp Inquiry"
+              className="w-10 h-10 min-w-[40px] min-h-[40px] rounded-full bg-stone-900 hover:bg-[#25D366] text-white flex items-center justify-center shrink-0 shadow-md transition-all duration-300 active:scale-95 group cursor-pointer"
             >
               <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
             </button>

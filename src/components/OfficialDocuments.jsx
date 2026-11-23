@@ -86,6 +86,10 @@ export default function OfficialDocuments() {
                       <img
                         src={phase.qrCode}
                         alt={phase.phase}
+                        width="96"
+                        height="96"
+                        loading="lazy"
+                        decoding="async"
                         className="w-full h-full object-contain"
                       />
                     </div>

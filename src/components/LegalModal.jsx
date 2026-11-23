@@ -14,7 +14,8 @@ export default function LegalModal({ isOpen, onClose, initialTab = 'privacy' }) 
       >
         <button
           onClick={onClose}
-          className="absolute top-6 right-6 w-9 h-9 rounded-full glass-panel border border-stone-300 text-stone-700 hover:text-stone-900 flex items-center justify-center transition-all z-20 hover:scale-105"
+          aria-label="Close legal compliance modal"
+          className="absolute top-6 right-6 min-w-[44px] min-h-[44px] rounded-full glass-panel border border-stone-300 text-stone-700 hover:text-stone-900 flex items-center justify-center transition-all z-20 hover:scale-105"
         >
           <X className="w-5 h-5" />
         </button>

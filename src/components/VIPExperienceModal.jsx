@@ -57,7 +57,8 @@ export default function VIPExperienceModal({ isOpen, onClose, initialConfig = '3
 
         <button
           onClick={onClose}
-          className="absolute top-6 right-6 w-9 h-9 rounded-full glass-panel border border-stone-300 text-stone-700 hover:text-stone-900 flex items-center justify-center transition-all duration-300 z-20 shadow-xs hover:scale-105"
+          aria-label="Close VIP site tour modal"
+          className="absolute top-6 right-6 min-w-[44px] min-h-[44px] rounded-full glass-panel border border-stone-300 text-stone-700 hover:text-stone-900 flex items-center justify-center transition-all duration-300 z-20 shadow-xs hover:scale-105"
         >
           <X className="w-5 h-5" />
         </button>
@@ -82,10 +83,13 @@ export default function VIPExperienceModal({ isOpen, onClose, initialConfig = '3
 
             <form onSubmit={handleSubmit} className="space-y-4 text-xs">
               <div>
-                <label className="block text-stone-700 font-semibold mb-1">Full Name *</label>
+                <label htmlFor="vip-fullname" className="block text-stone-700 font-semibold mb-1">Full Name *</label>
                 <input
+                  id="vip-fullname"
+                  name="name"
                   type="text"
                   required
+                  aria-label="Full Name"
                   placeholder="e.g. Vikramaditya Singhania"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
@@ -94,10 +98,13 @@ export default function VIPExperienceModal({ isOpen, onClose, initialConfig = '3
               </div>
 
               <div>
-                <label className="block text-stone-700 font-semibold mb-1">Phone Number (WhatsApp) *</label>
+                <label htmlFor="vip-phone" className="block text-stone-700 font-semibold mb-1">Phone Number (WhatsApp) *</label>
                 <input
+                  id="vip-phone"
+                  name="phone"
                   type="tel"
                   required
+                  aria-label="Phone Number (WhatsApp)"
                   placeholder="+91 98220 XXXXX"
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
@@ -107,8 +114,11 @@ export default function VIPExperienceModal({ isOpen, onClose, initialConfig = '3
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div>
-                  <label className="block text-stone-700 font-semibold mb-1">Preferred Unit</label>
+                  <label htmlFor="vip-config" className="block text-stone-700 font-semibold mb-1">Preferred Unit</label>
                   <select
+                    id="vip-config"
+                    name="config"
+                    aria-label="Preferred Unit"
                     value={formData.config}
                     onChange={(e) => setFormData({ ...formData, config: e.target.value })}
                     className="w-full glass-panel border border-white/90 rounded-2xl px-4 py-2.5 text-stone-900 focus:outline-none focus:border-stone-800 shadow-xs font-medium"
@@ -121,9 +131,12 @@ export default function VIPExperienceModal({ isOpen, onClose, initialConfig = '3
                   </select>
                 </div>
                 <div>
-                  <label className="block text-stone-700 font-semibold mb-1">Tour Date</label>
+                  <label htmlFor="vip-date" className="block text-stone-700 font-semibold mb-1">Tour Date</label>
                   <input
+                    id="vip-date"
+                    name="date"
                     type="date"
+                    aria-label="Tour Date"
                     value={formData.date}
                     onChange={(e) => setFormData({ ...formData, date: e.target.value })}
                     className="w-full glass-panel border border-white/90 rounded-2xl px-4 py-2.5 text-stone-900 focus:outline-none focus:border-stone-800 shadow-xs font-medium"
@@ -132,8 +145,11 @@ export default function VIPExperienceModal({ isOpen, onClose, initialConfig = '3
               </div>
 
               <div>
-                <label className="block text-stone-700 font-semibold mb-1">Preferred Experience Slot</label>
+                <label htmlFor="vip-slot" className="block text-stone-700 font-semibold mb-1">Preferred Experience Slot</label>
                 <select
+                  id="vip-slot"
+                  name="slot"
+                  aria-label="Preferred Experience Slot"
                   value={formData.slot}
                   onChange={(e) => setFormData({ ...formData, slot: e.target.value })}
                   className="w-full glass-panel border border-white/90 rounded-2xl px-4 py-2.5 text-stone-900 focus:outline-none focus:border-stone-800 shadow-xs font-medium"
@@ -146,8 +162,9 @@ export default function VIPExperienceModal({ isOpen, onClose, initialConfig = '3
               </div>
 
               <div className="p-4 rounded-2xl glass-panel border border-white/90 space-y-2 shadow-xs">
-                <label className="flex items-center gap-2 cursor-pointer">
+                <label htmlFor="vip-chauffeur-checkbox" className="flex items-center gap-2 cursor-pointer">
                   <input
+                    id="vip-chauffeur-checkbox"
                     type="checkbox"
                     checked={formData.chauffeurPickup}
                     onChange={(e) => setFormData({ ...formData, chauffeurPickup: e.target.checked })}
@@ -159,22 +176,30 @@ export default function VIPExperienceModal({ isOpen, onClose, initialConfig = '3
                   </span>
                 </label>
                 {formData.chauffeurPickup && (
-                  <input
-                    type="text"
-                    placeholder="Enter pickup address"
-                    value={formData.pickupLocation}
-                    onChange={(e) => setFormData({ ...formData, pickupLocation: e.target.value })}
-                    className="w-full glass-panel border border-stone-300 rounded-xl px-3 py-2 text-stone-900 text-xs mt-2"
-                  />
+                  <div>
+                    <label htmlFor="vip-pickup-address" className="sr-only">Enter pickup address</label>
+                    <input
+                      id="vip-pickup-address"
+                      name="pickupLocation"
+                      type="text"
+                      aria-label="Enter pickup address"
+                      placeholder="Enter pickup address"
+                      value={formData.pickupLocation}
+                      onChange={(e) => setFormData({ ...formData, pickupLocation: e.target.value })}
+                      className="w-full glass-panel border border-stone-300 rounded-xl px-3 py-2 text-stone-900 text-xs mt-2"
+                    />
+                  </div>
                 )}
               </div>
 
               <div className="pt-1">
-                <label className="flex items-start gap-2 cursor-pointer text-[11px] text-stone-600">
+                <label htmlFor="vip-agree-terms" className="flex items-start gap-2 cursor-pointer text-[11px] text-stone-600">
                   <input
+                    id="vip-agree-terms"
                     type="checkbox"
                     required
                     defaultChecked
+                    aria-label="Authorize contact and agree to Privacy Policy and Terms of Use"
                     className="w-4 h-4 accent-stone-900 rounded mt-0.5 shrink-0"
                   />
                   <span>

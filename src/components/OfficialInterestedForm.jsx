@@ -60,33 +60,44 @@ export default function OfficialInterestedForm() {
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
                     <div>
+                      <label htmlFor="interested-name" className="sr-only">Full Name</label>
                       <input
+                        id="interested-name"
+                        name="name"
                         type="text"
                         required
-                        placeholder="Name"
+                        aria-label="Full Name"
+                        placeholder="Your Name"
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        className="w-full glass-panel border border-white/90 rounded-2xl px-4 py-3 text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-stone-900/10 focus:border-stone-800 shadow-xs transition-all"
+                        className="w-full glass-panel border border-white/90 rounded-2xl px-4 py-3 text-sm text-stone-900 placeholder-stone-500 focus:outline-none focus:ring-2 focus:ring-stone-900/10 focus:border-stone-800 shadow-xs transition-all"
                       />
                     </div>
 
                     <div>
+                      <label htmlFor="interested-mobile" className="sr-only">Mobile Number</label>
                       <input
+                        id="interested-mobile"
+                        name="mobile"
                         type="tel"
                         required
                         maxLength="10"
-                        placeholder="Mobile Number"
+                        aria-label="10-digit Mobile Number"
+                        placeholder="10-Digit Mobile Number"
                         value={formData.mobile}
                         onChange={(e) => setFormData({ ...formData, mobile: e.target.value.replace(/\D/g, '') })}
-                        className="w-full glass-panel border border-white/90 rounded-2xl px-4 py-3 text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-stone-900/10 focus:border-stone-800 shadow-xs transition-all"
+                        className="w-full glass-panel border border-white/90 rounded-2xl px-4 py-3 text-sm text-stone-900 placeholder-stone-500 focus:outline-none focus:ring-2 focus:ring-stone-900/10 focus:border-stone-800 shadow-xs transition-all"
                       />
                     </div>
                   </div>
 
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-2">
-                    <label className="flex items-start sm:items-center gap-2 cursor-pointer text-xs text-stone-600">
+                    <label htmlFor="interested-agreed" className="flex items-start sm:items-center gap-2 cursor-pointer text-xs text-stone-700">
                       <input
+                        id="interested-agreed"
+                        name="agreed"
                         type="checkbox"
+                        aria-label="Agree to Terms & Conditions and Privacy Policy"
                         checked={formData.agreed}
                         onChange={(e) => setFormData({ ...formData, agreed: e.target.checked })}
                         className="w-4 h-4 accent-stone-900 rounded mt-0.5 sm:mt-0"
@@ -96,6 +107,7 @@ export default function OfficialInterestedForm() {
                         <button 
                           type="button" 
                           onClick={(e) => openLegal('terms', e)} 
+                          aria-label="Open Terms and Conditions modal"
                           className="text-stone-900 font-semibold underline hover:text-amber-800"
                         >
                           Terms &amp; Conditions
@@ -104,6 +116,7 @@ export default function OfficialInterestedForm() {
                         <button 
                           type="button" 
                           onClick={(e) => openLegal('privacy', e)} 
+                          aria-label="Open Privacy Policy modal"
                           className="text-stone-900 font-semibold underline hover:text-amber-800"
                         >
                           Privacy Policy
@@ -115,7 +128,8 @@ export default function OfficialInterestedForm() {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="px-8 py-3.5 rounded-xl bg-stone-900 hover:bg-stone-800 disabled:bg-stone-500 text-white font-bold text-xs uppercase tracking-wider transition-all shadow-md shadow-stone-900/10 flex items-center justify-center gap-2 active:scale-95 glass-shimmer cursor-pointer"
+                      aria-label="Submit project inquiry"
+                      className="px-8 py-3.5 rounded-xl bg-stone-900 hover:bg-stone-800 disabled:bg-stone-500 text-white font-bold text-xs uppercase tracking-wider transition-all shadow-md shadow-stone-900/10 flex items-center justify-center gap-2 active:scale-95 glass-shimmer cursor-pointer min-h-[44px]"
                     >
                       {isSubmitting ? (
                         <>

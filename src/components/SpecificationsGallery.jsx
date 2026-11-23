@@ -57,6 +57,10 @@ export default function SpecificationsGallery() {
               <img
                 src={item.url}
                 alt={item.title}
+                width="400"
+                height="250"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-stone-950/20 to-transparent opacity-85 group-hover:opacity-70 transition-opacity" />
@@ -98,7 +102,8 @@ export default function SpecificationsGallery() {
             >
               <button
                 onClick={() => setLightboxImage(null)}
-                className="absolute top-6 right-6 z-20 w-10 h-10 rounded-full bg-stone-900 text-white flex items-center justify-center hover:bg-stone-800 transition-colors"
+                aria-label="Close specification preview"
+                className="absolute top-6 right-6 z-20 min-w-[44px] min-h-[44px] rounded-full bg-stone-900 text-white flex items-center justify-center hover:bg-stone-800 transition-colors shadow-lg"
               >
                 <X className="w-5 h-5" />
               </button>
@@ -107,6 +112,9 @@ export default function SpecificationsGallery() {
                 <img
                   src={lightboxImage.url}
                   alt={lightboxImage.title}
+                  width="1200"
+                  height="675"
+                  decoding="async"
                   className="w-full h-full object-cover"
                 />
               </div>

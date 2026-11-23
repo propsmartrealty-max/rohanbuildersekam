@@ -38,6 +38,10 @@ export default function OfficialTilesBar({ onOpenMasterPlan, onOpenBuyingGuide }
                 <img
                   src={tile.icon}
                   alt={tile.title}
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-contain filter group-hover:brightness-0 group-hover:invert transition-all duration-300"
                 />
               </div>

@@ -198,11 +198,14 @@ export default function PlusPhilosophySimulator() {
 
                 <div className="w-full max-w-md mt-6">
                   <div className="flex justify-between text-xs text-stone-700 mb-2">
-                    <span className="font-medium">Adjust River Wind Velocity</span>
+                    <label htmlFor="sim-wind-speed" className="font-medium cursor-pointer">Adjust River Wind Velocity</label>
                     <strong className="text-stone-900 font-mono">{windSpeed} km/h (Pune River Breeze)</strong>
                   </div>
                   <input
+                    id="sim-wind-speed"
+                    name="windSpeed"
                     type="range"
+                    aria-label="Adjust River Wind Velocity in kilometers per hour"
                     min="5"
                     max="30"
                     value={windSpeed}
@@ -249,11 +252,14 @@ export default function PlusPhilosophySimulator() {
 
                 <div className="w-full max-w-md mt-6">
                   <div className="flex justify-between text-xs text-stone-700 mb-2">
-                    <span className="font-medium">Adjust Solar Time</span>
+                    <label htmlFor="sim-solar-hour" className="font-medium cursor-pointer">Adjust Solar Time</label>
                     <strong className="text-stone-900 font-mono">{formatHour(solarHour)}</strong>
                   </div>
                   <input
+                    id="sim-solar-hour"
+                    name="solarHour"
                     type="range"
+                    aria-label="Adjust Solar Time of Day"
                     min="6"
                     max="19"
                     value={solarHour}

@@ -161,6 +161,10 @@ export default function SkyGroundExplorer({ onOpenVipModal }) {
                 <img
                   src={currentRealm.image}
                   alt={currentRealm.name}
+                  width="1200"
+                  height="750"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-stone-950/70 via-transparent to-transparent" />

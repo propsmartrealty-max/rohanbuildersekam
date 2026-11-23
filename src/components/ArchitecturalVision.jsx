@@ -42,12 +42,16 @@ export default function ArchitecturalVision() {
                 <img
                   src={OFFICIAL_PROJECT_DETAILS.architectImage}
                   alt="Ar. Sanjay Mohe"
+                  width="56"
+                  height="56"
+                  loading="lazy"
+                  decoding="async"
                   className="w-14 h-14 rounded-full object-cover border-2 border-stone-400 p-0.5 bg-white shadow-sm ring-2 ring-white"
                 />
                 <div>
                   <div className="text-sm font-bold text-stone-900">Ar. Sanjay Mohe</div>
                   <div className="text-xs text-amber-800 font-mono font-semibold">Principal Architect, Mindspace Architects</div>
-                  <div className="text-[11px] text-stone-500">Chief Mastermind behind Rohan Ekam</div>
+                  <div className="text-[11px] text-stone-600 font-medium">Chief Mastermind behind Rohan Ekam</div>
                 </div>
               </div>
             </div>
@@ -89,6 +93,10 @@ export default function ArchitecturalVision() {
                 <img
                   src={OFFICIAL_PROJECT_DETAILS.masterPlanImage}
                   alt="Rohan Ekam Master Plan"
+                  width="600"
+                  height="450"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover/img:scale-105"
                 />
                 
@@ -126,7 +134,8 @@ export default function ArchitecturalVision() {
             >
               <button
                 onClick={() => setIsMasterPlanOpen(false)}
-                className="absolute top-6 right-6 z-20 w-10 h-10 rounded-full bg-stone-900 text-white flex items-center justify-center hover:bg-stone-800 transition-colors"
+                aria-label="Close master plan blueprint"
+                className="absolute top-6 right-6 z-20 min-w-[44px] min-h-[44px] rounded-full bg-stone-900 text-white flex items-center justify-center hover:bg-stone-800 transition-colors shadow-lg"
               >
                 <X className="w-5 h-5" />
               </button>
@@ -135,6 +144,9 @@ export default function ArchitecturalVision() {
                 <img
                   src={OFFICIAL_PROJECT_DETAILS.masterPlanImage}
                   alt="Rohan Ekam Master Plan High-Res"
+                  width="1600"
+                  height="1200"
+                  decoding="async"
                   className="w-full h-auto object-contain"
                 />
               </div>

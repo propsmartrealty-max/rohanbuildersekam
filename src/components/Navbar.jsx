@@ -65,6 +65,7 @@ export default function Navbar({ onOpenVipModal }) {
             {/* Ambient River Breeze Button */}
             <button
               onClick={handleAudioToggle}
+              aria-label={isPlayingAudio ? 'Mute river soundscape' : 'Play procedural river breeze and birds soundscape'}
               title={isPlayingAudio ? 'Mute river soundscape' : 'Play procedural river breeze & birds'}
               className={`hidden md:flex items-center gap-2 text-xs px-3.5 py-1.5 rounded-full border transition-all duration-300 ${
                 isPlayingAudio
@@ -110,8 +111,8 @@ export default function Navbar({ onOpenVipModal }) {
             {/* Mobile Menu Hamburger */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="lg:hidden p-1.5 rounded-full text-stone-800 hover:bg-black/5"
-              aria-label="Toggle navigation"
+              className="lg:hidden min-w-[44px] min-h-[44px] flex items-center justify-center p-2 rounded-full text-stone-800 hover:bg-black/5"
+              aria-label="Toggle navigation menu"
             >
               {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>
@@ -125,7 +126,8 @@ export default function Navbar({ onOpenVipModal }) {
               <span className="text-xs font-mono text-stone-800 font-bold">MAHARERA: P52100052298</span>
               <button
                 onClick={handleAudioToggle}
-                className="flex items-center gap-1.5 text-xs text-stone-800 px-2.5 py-1 rounded-full bg-white border border-stone-300"
+                aria-label={isPlayingAudio ? 'Turn off river audio' : 'Turn on river audio'}
+                className="flex items-center gap-1.5 text-xs text-stone-800 px-3 py-1.5 rounded-full bg-white border border-stone-300 min-h-[36px]"
               >
                 {isPlayingAudio ? <Volume2 className="w-3.5 h-3.5 text-emerald-600" /> : <VolumeX className="w-3.5 h-3.5" />}
                 <span>{isPlayingAudio ? 'Audio ON' : 'Audio OFF'}</span>

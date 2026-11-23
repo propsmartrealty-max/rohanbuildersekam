@@ -4,8 +4,11 @@ import { Play, Maximize2, X } from 'lucide-react';
 
 export default function OfficialGallerySection() {
   const [activeTab, setActiveTab] = useState('images'); // 'images' | 'videos'
+  const [showAllImages, setShowAllImages] = useState(false);
   const [lightboxImage, setLightboxImage] = useState(null);
   const [activeVideo, setActiveVideo] = useState(null);
+
+  const visibleImages = showAllImages ? OFFICIAL_GALLERY_IMAGES : OFFICIAL_GALLERY_IMAGES.slice(0, 6);
 
   return (
     <section id="gallery" className="py-20 bg-[#F5F2EB] border-t border-b border-stone-300/80 relative overflow-hidden">
@@ -35,6 +38,10 @@ export default function OfficialGallerySection() {
                 <img
                   src="https://rohanbuilders.com/wp-content/uploads/2023/04/images-tile.png"
                   alt="Images"
+                  width="24"
+                  height="24"
+                  loading="lazy"
+                  decoding="async"
                   className={`w-6 h-6 object-contain ${activeTab === 'images' ? 'brightness-0 invert' : ''}`}
                 />
                 <span className="text-xs font-bold uppercase tracking-wider font-sans">
@@ -44,6 +51,7 @@ export default function OfficialGallerySection() {
 
               <button
                 onClick={() => setActiveTab('videos')}
+                aria-label="View Videos and 360 Walkthroughs"
                 className={`p-3.5 rounded-2xl border text-left flex items-center gap-3 transition-all duration-300 glass-card-hover glass-shimmer ${
                   activeTab === 'videos'
                     ? 'bg-stone-900 text-white border-stone-900 shadow-md shadow-stone-900/10'
@@ -53,6 +61,10 @@ export default function OfficialGallerySection() {
                 <img
                   src="https://rohanbuilders.com/wp-content/uploads/2023/04/Video360-tile.png"
                   alt="Videos & 360"
+                  width="24"
+                  height="24"
+                  loading="lazy"
+                  decoding="async"
                   className={`w-6 h-6 object-contain ${activeTab === 'videos' ? 'brightness-0 invert' : ''}`}
                 />
                 <span className="text-xs font-bold uppercase tracking-wider font-sans">
@@ -66,25 +78,43 @@ export default function OfficialGallerySection() {
           <div className="lg:col-span-9">
             {/* Sub-Tab 1: Images */}
             {activeTab === 'images' && (
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5">
-                {OFFICIAL_GALLERY_IMAGES.map((imgUrl, idx) => (
-                  <div
-                    key={idx}
-                    onClick={() => setLightboxImage(imgUrl)}
-                    className="group relative aspect-[16/10] rounded-2xl overflow-hidden glass-panel cursor-pointer border border-white/90 shadow-sm glass-card-hover glass-shimmer"
-                  >
-                    <img
-                      src={imgUrl}
-                      alt={`Rohan Ekam ${idx + 1}`}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-stone-950/25 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-xs">
-                      <div className="w-10 h-10 rounded-full bg-stone-900/90 text-white flex items-center justify-center shadow-xl">
-                        <Maximize2 className="w-4 h-4 text-amber-400" />
+              <div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5">
+                  {visibleImages.map((imgUrl, idx) => (
+                    <div
+                      key={idx}
+                      onClick={() => setLightboxImage(imgUrl)}
+                      className="group relative aspect-[16/10] rounded-2xl overflow-hidden glass-panel cursor-pointer border border-white/90 shadow-sm glass-card-hover glass-shimmer"
+                    >
+                      <img
+                        src={imgUrl}
+                        alt={`Rohan Ekam Rendering ${idx + 1}`}
+                        width="600"
+                        height="375"
+                        loading="lazy"
+                        decoding="async"
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-stone-950/25 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-xs">
+                        <div className="w-10 h-10 rounded-full bg-stone-900/90 text-white flex items-center justify-center shadow-xl">
+                          <Maximize2 className="w-4 h-4 text-amber-400" />
+                        </div>
                       </div>
                     </div>
+                  ))}
+                </div>
+
+                {OFFICIAL_GALLERY_IMAGES.length > 6 && (
+                  <div className="text-center mt-6">
+                    <button
+                      onClick={() => setShowAllImages(!showAllImages)}
+                      aria-label={showAllImages ? 'Show fewer gallery renderings' : `View all ${OFFICIAL_GALLERY_IMAGES.length} project renderings`}
+                      className="px-6 py-3 rounded-full bg-stone-900 hover:bg-stone-800 text-white text-xs font-bold uppercase tracking-wider transition-all duration-300 shadow-md min-h-[44px]"
+                    >
+                      {showAllImages ? 'Show Fewer Photos' : `View All ${OFFICIAL_GALLERY_IMAGES.length} Project Photos`}
+                    </button>
                   </div>
-                ))}
+                )}
               </div>
             )}
 
@@ -100,6 +130,10 @@ export default function OfficialGallerySection() {
                     <img
                       src={vid.thumb}
                       alt={vid.title}
+                      width="600"
+                      height="375"
+                      loading="lazy"
+                      decoding="async"
                       className="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-stone-950/30 to-transparent" />
@@ -138,7 +172,8 @@ export default function OfficialGallerySection() {
           <div className="relative max-w-5xl w-full bg-white rounded-3xl p-4 shadow-2xl">
             <button
               onClick={() => setLightboxImage(null)}
-              className="absolute top-6 right-6 z-20 w-10 h-10 rounded-full bg-stone-900 text-white flex items-center justify-center hover:bg-stone-800"
+              aria-label="Close enlarged gallery preview"
+              className="absolute top-6 right-6 z-20 min-w-[44px] min-h-[44px] rounded-full bg-stone-900 text-white flex items-center justify-center hover:bg-stone-800 transition-colors shadow-lg"
             >
               <X className="w-5 h-5" />
             </button>
@@ -146,6 +181,9 @@ export default function OfficialGallerySection() {
               <img
                 src={lightboxImage}
                 alt="Enlarged gallery view"
+                width="1200"
+                height="750"
+                decoding="async"
                 className="max-h-[78vh] w-auto object-contain"
               />
             </div>
@@ -167,7 +205,8 @@ export default function OfficialGallerySection() {
               <span className="text-sm font-bold">{activeVideo.title}</span>
               <button
                 onClick={() => setActiveVideo(null)}
-                className="w-8 h-8 rounded-full bg-white/20 text-white flex items-center justify-center hover:bg-white/40"
+                aria-label="Close video player"
+                className="min-w-[44px] min-h-[44px] rounded-full bg-white/20 text-white flex items-center justify-center hover:bg-white/40 transition-colors"
               >
                 <X className="w-4 h-4" />
               </button>

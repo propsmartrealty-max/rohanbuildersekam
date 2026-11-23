@@ -15,21 +15,17 @@ export default function Hero({ onOpenVipModal }) {
       <div className="glass-orb w-[420px] h-[420px] bg-[#C8DECE] top-1/3 -right-24 animate-blob [animation-delay:4s]" />
       <div className="glass-orb w-80 h-80 bg-[#DDD4C4] -bottom-10 left-1/3 animate-blob [animation-delay:8s]" />
 
-      {/* Background Carousel with Warm Beige Architectural Blends */}
+      {/* Background Hero Banner with Warm Beige Architectural Blends */}
       <div className="absolute inset-0 z-0">
-        {banners.map((banner, idx) => (
-          <div
-            key={banner.url}
-            className={`absolute inset-0 transition-opacity duration-1000 ${
-              activeBannerIdx === idx ? 'opacity-25 scale-100' : 'opacity-0 scale-105 pointer-events-none'
-            }`}
-            style={{
-              backgroundImage: `url('${banner.url}')`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-            }}
-          />
-        ))}
+        <div
+          key={currentBanner.url}
+          className="absolute inset-0 transition-opacity duration-1000 opacity-25 scale-100"
+          style={{
+            backgroundImage: `url('${currentBanner.url}')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
+        />
 
         {/* Soft Warm Vignette Gradients transitioning to Beige */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#F5F2EB] via-[#F5F2EB]/70 to-[#F5F2EB]/50 backdrop-blur-[1px]" />
@@ -108,31 +104,31 @@ export default function Hero({ onOpenVipModal }) {
             <div className="flex flex-col items-center text-center px-2 pt-3 sm:pt-0 group cursor-default">
               <span className="text-2xl sm:text-3xl font-serif font-bold text-stone-900 tracking-tight group-hover:text-amber-800 transition-colors">13 Acres</span>
               <span className="text-xs font-semibold text-amber-800 mt-0.5 uppercase tracking-wider">Riverfront Land</span>
-              <span className="text-[11px] text-stone-500 mt-0.5">Along Mula River bend</span>
+              <span className="text-[11px] text-stone-600 mt-0.5 font-medium">Along Mula River bend</span>
             </div>
 
             <div className="flex flex-col items-center text-center px-2 pt-3 sm:pt-0 group cursor-default">
               <span className="text-2xl sm:text-3xl font-serif font-bold text-stone-900 tracking-tight group-hover:text-amber-800 transition-colors">Level 14</span>
               <span className="text-xs font-semibold text-amber-800 mt-0.5 uppercase tracking-wider">Sky Ground</span>
-              <span className="text-[11px] text-stone-500 mt-0.5">Suspended 150 ft in air</span>
+              <span className="text-[11px] text-stone-600 mt-0.5 font-medium">Suspended 150 ft in air</span>
             </div>
 
             <div className="flex flex-col items-center text-center px-2 pt-3 sm:pt-0 group cursor-default">
               <span className="text-2xl sm:text-3xl font-serif font-bold text-stone-900 tracking-tight group-hover:text-amber-800 transition-colors">PMC Limits</span>
               <span className="text-xs font-semibold text-amber-800 mt-0.5 uppercase tracking-wider">Civic Body</span>
-              <span className="text-[11px] text-stone-500 mt-0.5">Pune Municipal Corp</span>
+              <span className="text-[11px] text-stone-600 mt-0.5 font-medium">Pune Municipal Corp</span>
             </div>
 
             <div className="flex flex-col items-center text-center px-2 pt-3 sm:pt-0 group cursor-default">
               <span className="text-2xl sm:text-3xl font-serif font-bold text-stone-900 tracking-tight group-hover:text-amber-800 transition-colors">36+ Curated</span>
               <span className="text-xs font-semibold text-amber-800 mt-0.5 uppercase tracking-wider">World Amenities</span>
-              <span className="text-[11px] text-stone-500 mt-0.5">Earth & Sky Realms</span>
+              <span className="text-[11px] text-stone-600 mt-0.5 font-medium">Earth & Sky Realms</span>
             </div>
 
             <div className="flex flex-col items-center text-center px-2 pt-3 sm:pt-0 col-span-2 sm:col-span-1 group cursor-default">
               <span className="text-2xl sm:text-3xl font-serif font-bold text-stone-900 tracking-tight group-hover:text-amber-800 transition-colors">Dec 2027</span>
               <span className="text-xs font-semibold text-amber-800 mt-0.5 uppercase tracking-wider">Possession Date</span>
-              <span className="text-[11px] text-stone-500 mt-0.5">Phase 1 Delivery</span>
+              <span className="text-[11px] text-stone-600 mt-0.5 font-medium">Phase 1 Delivery</span>
             </div>
           </div>
 

@@ -366,7 +366,8 @@ export default function Footer() {
           </div>
           <button
             onClick={scrollToTop}
-            className="flex items-center gap-1.5 text-xs text-stone-800 hover:text-stone-950 font-medium transition-colors"
+            aria-label="Scroll back to top of page"
+            className="flex items-center gap-1.5 text-xs text-stone-800 hover:text-stone-950 font-medium transition-colors p-2 min-h-[36px]"
           >
             <span>Back to Top</span>
             <ArrowUp className="w-3.5 h-3.5" />

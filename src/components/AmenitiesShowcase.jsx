@@ -36,18 +36,23 @@ export default function AmenitiesShowcase({ onOpenVipModal }) {
 
           {/* Search Bar in Frosted Glass */}
           <div className="mt-6 max-w-md mx-auto relative">
-            <Search className="w-4 h-4 text-stone-400 absolute left-4 top-1/2 -translate-y-1/2" />
+            <label htmlFor="amenity-search-input" className="sr-only">Search amenities</label>
+            <Search className="w-4 h-4 text-stone-500 absolute left-4 top-1/2 -translate-y-1/2" />
             <input
+              id="amenity-search-input"
+              name="amenitySearch"
               type="text"
+              aria-label="Search project amenities"
               placeholder="Search amenities (e.g. pool, yoga, squash, co-working)..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full glass-panel border border-white/90 rounded-full pl-11 pr-4 py-3 text-xs text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-stone-900/10 focus:border-stone-800 shadow-md transition-all"
+              className="w-full glass-panel border border-white/90 rounded-full pl-11 pr-4 py-3 text-xs text-stone-900 placeholder-stone-500 focus:outline-none focus:ring-2 focus:ring-stone-900/10 focus:border-stone-800 shadow-md transition-all"
             />
             {searchQuery && (
               <button
                 onClick={() => setSearchQuery('')}
-                className="absolute right-4 top-1/2 -translate-y-1/2 text-stone-400 hover:text-stone-900 text-xs font-semibold"
+                aria-label="Clear amenity search filter"
+                className="absolute right-4 top-1/2 -translate-y-1/2 text-stone-600 hover:text-stone-900 text-xs font-semibold p-1"
               >
                 Clear
               </button>
@@ -83,6 +88,10 @@ export default function AmenitiesShowcase({ onOpenVipModal }) {
                 <img
                   src={amenity.iconUrl}
                   alt={amenity.name}
+                  width="56"
+                  height="56"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-contain opacity-85 group-hover:opacity-100 transition-opacity"
                 />
               </div>

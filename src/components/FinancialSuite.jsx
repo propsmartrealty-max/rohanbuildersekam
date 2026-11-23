@@ -96,11 +96,14 @@ export default function FinancialSuite({ onOpenVipModal }) {
             {/* Property Cost */}
             <div className="space-y-2">
               <div className="flex justify-between text-xs text-stone-700">
-                <span className="font-medium">Agreement Base Value</span>
+                <label htmlFor="loan-property-cost" className="font-medium cursor-pointer">Agreement Base Value</label>
                 <strong className="text-stone-900 font-mono text-sm">{formatINR(propertyCost)}</strong>
               </div>
               <input
+                id="loan-property-cost"
+                name="propertyCost"
                 type="range"
+                aria-label="Agreement Base Value in Indian Rupees"
                 min="11000000"
                 max="35000000"
                 step="500000"
@@ -108,7 +111,7 @@ export default function FinancialSuite({ onOpenVipModal }) {
                 onChange={(e) => setPropertyCost(Number(e.target.value))}
                 className="w-full"
               />
-              <div className="flex justify-between text-[10px] text-stone-500 font-mono">
+              <div className="flex justify-between text-[10px] text-stone-600 font-mono">
                 <span>₹1.10 Cr (2 BHK)</span>
                 <span>₹2.00 Cr</span>
                 <span>₹3.50 Cr (4 BHK)</span>
@@ -118,11 +121,14 @@ export default function FinancialSuite({ onOpenVipModal }) {
             {/* Down Payment */}
             <div className="space-y-2">
               <div className="flex justify-between text-xs text-stone-700">
-                <span className="font-medium">Down Payment ({downPaymentPercent}%)</span>
+                <label htmlFor="loan-down-payment" className="font-medium cursor-pointer">Down Payment ({downPaymentPercent}%)</label>
                 <strong className="text-stone-900 font-mono text-sm">{formatINR(downPaymentAmount)}</strong>
               </div>
               <input
+                id="loan-down-payment"
+                name="downPayment"
                 type="range"
+                aria-label="Down Payment Percentage"
                 min="10"
                 max="50"
                 step="5"
@@ -130,7 +136,7 @@ export default function FinancialSuite({ onOpenVipModal }) {
                 onChange={(e) => setDownPaymentPercent(Number(e.target.value))}
                 className="w-full"
               />
-              <div className="flex justify-between text-[10px] text-stone-500 font-mono">
+              <div className="flex justify-between text-[10px] text-stone-600 font-mono">
                 <span>10% (Min Reserve)</span>
                 <span>20% (Standard)</span>
                 <span>50%</span>
@@ -140,11 +146,14 @@ export default function FinancialSuite({ onOpenVipModal }) {
             {/* Interest Rate */}
             <div className="space-y-2">
               <div className="flex justify-between text-xs text-stone-700">
-                <span className="font-medium">Home Loan Interest Rate</span>
+                <label htmlFor="loan-interest-rate" className="font-medium cursor-pointer">Home Loan Interest Rate</label>
                 <strong className="text-amber-800 font-mono text-sm">{interestRate.toFixed(1)}% p.a.</strong>
               </div>
               <input
+                id="loan-interest-rate"
+                name="interestRate"
                 type="range"
+                aria-label="Home Loan Interest Rate Percentage per Annum"
                 min="7.5"
                 max="11.5"
                 step="0.1"
@@ -152,7 +161,7 @@ export default function FinancialSuite({ onOpenVipModal }) {
                 onChange={(e) => setInterestRate(Number(e.target.value))}
                 className="w-full"
               />
-              <div className="flex justify-between text-[10px] text-stone-500 font-mono">
+              <div className="flex justify-between text-[10px] text-stone-600 font-mono">
                 <span>7.5% (Prime Tier)</span>
                 <span>8.5% (Market Avg)</span>
                 <span>11.5%</span>
@@ -162,11 +171,14 @@ export default function FinancialSuite({ onOpenVipModal }) {
             {/* Tenure */}
             <div className="space-y-2">
               <div className="flex justify-between text-xs text-stone-700">
-                <span className="font-medium">Tenure Duration</span>
+                <label htmlFor="loan-tenure-years" className="font-medium cursor-pointer">Tenure Duration</label>
                 <strong className="text-stone-900 font-mono text-sm">{tenureYears} Years ({totalMonths} Months)</strong>
               </div>
               <input
+                id="loan-tenure-years"
+                name="tenureYears"
                 type="range"
+                aria-label="Tenure Duration in Years"
                 min="5"
                 max="30"
                 step="5"
@@ -174,7 +186,7 @@ export default function FinancialSuite({ onOpenVipModal }) {
                 onChange={(e) => setTenureYears(Number(e.target.value))}
                 className="w-full"
               />
-              <div className="flex justify-between text-[10px] text-stone-500 font-mono">
+              <div className="flex justify-between text-[10px] text-stone-600 font-mono">
                 <span>5 Yrs</span>
                 <span>15 Yrs</span>
                 <span>20 Yrs</span>
