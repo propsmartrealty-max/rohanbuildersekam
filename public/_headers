@@ -1,25 +1,55 @@
+# ==============================================================================
+# ENTERPRISE-GRADE CLOUDFLARE EDGE INFRASTRUCTURE HEADERS
+# Domain: rohanbuildersekam.com (Zone: 89ee1144bc371c5c322b749de98dd2b5)
+# ==============================================================================
+
+# Global Edge Security & Transport Policies
 /*
-  X-Frame-Options: SAMEORIGIN
-  X-Content-Type-Options: nosniff
-  Referrer-Policy: strict-origin-when-cross-origin
-  Permissions-Policy: camera=(), microphone=(), geolocation=()
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), interest-cohort=()
+  Cross-Origin-Opener-Policy: same-origin-allow-popups
   Access-Control-Allow-Origin: *
 
+# Search Engine Crawl & Syndication Directives
 /sitemap.xml
   Content-Type: application/xml; charset=utf-8
   Cache-Control: public, max-age=3600, stale-while-revalidate=1800
   Access-Control-Allow-Origin: *
+  X-Robots-Tag: all
 
 /feed.xml
   Content-Type: application/rss+xml; charset=utf-8
   Cache-Control: public, max-age=3600, stale-while-revalidate=1800
   Access-Control-Allow-Origin: *
+  X-Robots-Tag: all
 
 /robots.txt
   Content-Type: text/plain; charset=utf-8
   Cache-Control: public, max-age=3600, stale-while-revalidate=1800
   Access-Control-Allow-Origin: *
+  X-Robots-Tag: all
 
+# IndexNow Protocol Token
+/89ee1144bc371c5c322b749de98dd2b5.txt
+  Content-Type: text/plain; charset=utf-8
+  Cache-Control: public, max-age=86400
+  Access-Control-Allow-Origin: *
+
+# High-Performance Immutable Static Assets (Vite Fingerprinted Bundles)
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
+  Access-Control-Allow-Origin: *
+
+# Static Brand Imagery & Icons
+/*.png
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
+/*.svg
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
+/*.ico
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
+/*.jpg
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
