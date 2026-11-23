@@ -1,0 +1,8 @@
+# RFC 9116 Security Policy for rohanbuildersekam.com
+Contact: mailto:propsmartrealty@gmail.com
+Contact: https://wa.me/91774409295
+Expires: 2027-12-31T23:59:59.000Z
+Canonical: https://rohanbuildersekam.com/.well-known/security.txt
+Preferred-Languages: en, mr, hi
+Policy: https://rohanbuildersekam.com/privacy-policy/
+Hiring: https://rohanbuildersekam.com/
