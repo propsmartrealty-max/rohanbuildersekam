@@ -1,0 +1,33 @@
+{
+  "name": "Rohan Ekam Balewadi",
+  "short_name": "Rohan Ekam",
+  "description": "13-Acre Riverfront Luxury Residences with Level 14 Ground Floor in the Sky in Balewadi, Baner, Pune by Rohan Builders.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F5F2EB",
+  "theme_color": "#181614",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/rohan-ekam-logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

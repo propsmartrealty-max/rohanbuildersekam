@@ -1,18 +1,34 @@
-# Standard Robots.txt for Rohan Ekam Balewadi
-# Fully compliant with RFC 9309 and optimized for Googlebot, Bingbot & Search Indexers
+# ==============================================================================
+# ENTERPRISE ROBOTS CONFIGURATION • ROHAN EKAM BALEWADI, PUNE
+# Domain: https://rohanbuildersekam.com
+# Compliance: RFC 9309 (Robot Exclusion Standard) & Google Search Central Guidelines
+# ==============================================================================
 
+# Default Access Policy for Compliant Crawlers
 User-agent: *
 Allow: /
+Disallow: /*?*fbclid*
+Disallow: /*?*gclid*
+Disallow: /*?*utm_*
+Disallow: /*?*trk*
 
-# Explicit Declarations for Search Crawlers
+# Googlebot Ecosystem (Primary Search, Mobile, Images, News, Ads & Inspection)
 User-agent: Googlebot
-Allow: /
-
-User-agent: Googlebot-Image
 Allow: /
 
 User-agent: Googlebot-Mobile
 Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.svg$
+Allow: /*.webp$
+
+User-agent: Googlebot-News
+Allow: /
+Allow: /blog/
 
 User-agent: Google-InspectionTool
 Allow: /
@@ -20,11 +36,20 @@ Allow: /
 User-agent: AdsBot-Google
 Allow: /
 
+User-agent: Mediapartners-Google
+Allow: /
+
+# Microsoft Bingbot Ecosystem
 User-agent: Bingbot
 Allow: /
 
+# Apple Search Ecosystem
 User-agent: Applebot
 Allow: /
 
-# XML Sitemap Index
+# Host Declaration
+Host: https://rohanbuildersekam.com
+
+# XML Sitemaps & RSS Syndication Feeds
 Sitemap: https://rohanbuildersekam.com/sitemap.xml
+Sitemap: https://rohanbuildersekam.com/feed.xml

@@ -159,6 +159,8 @@ export default function Footer() {
               </h4>
               <ul className="space-y-1.5 text-[11px] text-stone-600">
                 <li><a href="/luxury-flats-in-baner-balewadi" className="hover:text-stone-900 font-semibold text-emerald-900 transition-colors">Luxury Flats in Baner Balewadi</a></li>
+                <li><a href="/riverfront-flats-in-pune" className="hover:text-stone-900 font-semibold text-emerald-900 transition-colors">Riverfront Flats in Pune</a></li>
+                <li><a href="/flats-in-baner-pashan-link-road" className="hover:text-stone-900 font-semibold text-emerald-900 transition-colors">Flats in Baner Pashan Link Road</a></li>
                 <li><a href="/flats-in-baner" className="hover:text-stone-900 font-semibold text-emerald-900 transition-colors">Flats in Baner Pune</a></li>
                 <li><a href="/flats-near-hinjawadi-it-park" className="hover:text-stone-900 font-semibold text-emerald-900 transition-colors">Flats Near Hinjawadi IT Park</a></li>
                 <li><a href="/flats-in-mahalunge-pune" className="hover:text-stone-900 font-semibold text-emerald-900 transition-colors">Flats in Mahalunge Pune</a></li>
@@ -210,6 +212,7 @@ export default function Footer() {
               </h4>
               <ul className="space-y-1.5 text-[11px] text-stone-600">
                 <li><a href="/blog" className="hover:text-stone-900 font-semibold text-emerald-900 transition-colors">Knowledge Hub Index &rarr;</a></li>
+                <li><a href="/blog/top-luxury-projects-baner-balewadi" className="hover:text-stone-900 font-medium transition-colors">Top Luxury Projects Benchmark</a></li>
                 <li><a href="/blog/pune-real-estate-west-vs-east-market-analysis" className="hover:text-stone-900 font-medium transition-colors">West vs East Pune Market Analysis</a></li>
                 <li><a href="/blog/pune-real-estate-stamp-duty-taxes-rera-guide" className="hover:text-stone-900 font-medium transition-colors">Pune Stamp Duty &amp; MahaRERA Guide</a></li>
                 <li><a href="/blog/baner-vs-balewadi-real-estate-investment-comparison" className="hover:text-stone-900 font-medium transition-colors">Baner vs Balewadi Investment ROI</a></li>
