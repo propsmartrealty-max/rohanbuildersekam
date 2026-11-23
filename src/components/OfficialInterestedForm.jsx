@@ -52,7 +52,7 @@ export default function OfficialInterestedForm() {
 
             {/* Right Content Area */}
             <div className="lg:col-span-9">
-              <p className="text-sm text-stone-600 mb-6">
+              <p className="text-sm text-stone-700 mb-6">
                 Share your mobile number, our sales representative will contact you with floor plans and price sheets.
               </p>
 
@@ -70,7 +70,7 @@ export default function OfficialInterestedForm() {
                         placeholder="Your Name"
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        className="w-full glass-panel border border-white/90 rounded-2xl px-4 py-3 text-sm text-stone-900 placeholder-stone-500 focus:outline-none focus:ring-2 focus:ring-stone-900/10 focus:border-stone-800 shadow-xs transition-all"
+                        className="w-full glass-panel border border-white/90 rounded-2xl px-4 py-3 text-sm text-stone-900 placeholder-stone-600 focus:outline-none focus:ring-2 focus:ring-stone-900/10 focus:border-stone-800 shadow-xs transition-all"
                       />
                     </div>
 
@@ -86,7 +86,7 @@ export default function OfficialInterestedForm() {
                         placeholder="10-Digit Mobile Number"
                         value={formData.mobile}
                         onChange={(e) => setFormData({ ...formData, mobile: e.target.value.replace(/\D/g, '') })}
-                        className="w-full glass-panel border border-white/90 rounded-2xl px-4 py-3 text-sm text-stone-900 placeholder-stone-500 focus:outline-none focus:ring-2 focus:ring-stone-900/10 focus:border-stone-800 shadow-xs transition-all"
+                        className="w-full glass-panel border border-white/90 rounded-2xl px-4 py-3 text-sm text-stone-900 placeholder-stone-600 focus:outline-none focus:ring-2 focus:ring-stone-900/10 focus:border-stone-800 shadow-xs transition-all"
                       />
                     </div>
                   </div>

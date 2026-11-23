@@ -100,7 +100,7 @@ export default function Navbar({ onOpenVipModal }) {
             {/* VIP Site Visit Button */}
             <button
               onClick={onOpenVipModal}
-              className="relative group overflow-hidden px-4 sm:px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider text-white bg-stone-900 hover:bg-stone-800 transition-all duration-300 shadow-md shadow-stone-900/10 active:scale-95 glass-shimmer"
+              className="relative group overflow-hidden px-4 sm:px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider text-white bg-stone-900 hover:bg-stone-800 transition-all duration-300 shadow-md shadow-stone-900/10 active:scale-95 glass-shimmer min-h-[44px] inline-flex items-center justify-center"
             >
               <span className="relative z-10 flex items-center gap-1.5">
                 <Sparkles className="w-3.5 h-3.5 text-amber-400" />
@@ -127,19 +127,19 @@ export default function Navbar({ onOpenVipModal }) {
               <button
                 onClick={handleAudioToggle}
                 aria-label={isPlayingAudio ? 'Turn off river audio' : 'Turn on river audio'}
-                className="flex items-center gap-1.5 text-xs text-stone-800 px-3 py-1.5 rounded-full bg-white border border-stone-300 min-h-[36px]"
+                className="flex items-center gap-1.5 text-xs text-stone-800 px-3 py-2 rounded-full bg-white border border-stone-300 min-h-[44px]"
               >
                 {isPlayingAudio ? <Volume2 className="w-3.5 h-3.5 text-emerald-600" /> : <VolumeX className="w-3.5 h-3.5" />}
                 <span>{isPlayingAudio ? 'Audio ON' : 'Audio OFF'}</span>
               </button>
             </div>
-            <div className="flex flex-col space-y-2.5">
+            <div className="flex flex-col space-y-1.5">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-sm font-medium text-stone-800 hover:text-stone-950 py-1"
+                  className="text-sm font-medium text-stone-800 hover:text-stone-950 py-2.5 px-3 min-h-[44px] flex items-center rounded-xl hover:bg-white/80 transition-colors"
                 >
                   {link.name}
                 </a>
@@ -151,7 +151,7 @@ export default function Navbar({ onOpenVipModal }) {
                   setIsMobileMenuOpen(false);
                   onOpenVipModal();
                 }}
-                className="w-full py-3 rounded-full bg-stone-900 hover:bg-stone-800 text-white font-bold text-xs uppercase tracking-wider shadow-md"
+                className="w-full py-3.5 min-h-[44px] rounded-full bg-stone-900 hover:bg-stone-800 text-white font-bold text-xs uppercase tracking-wider shadow-md flex items-center justify-center"
               >
                 Schedule Private VIP Tour
               </button>

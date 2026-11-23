@@ -157,19 +157,19 @@ export default function Footer() {
               <h4 className="font-serif font-bold text-stone-900 text-xs uppercase tracking-wider mb-2.5">
                 Residences &amp; Configurations
               </h4>
-              <ul className="space-y-1.5 text-[11px] text-stone-600">
-                <li><a href="/luxury-flats-in-baner-balewadi" className="hover:text-stone-900 font-semibold text-emerald-900 transition-colors">Luxury Flats in Baner Balewadi</a></li>
-                <li><a href="/riverfront-flats-in-pune" className="hover:text-stone-900 font-semibold text-emerald-900 transition-colors">Riverfront Flats in Pune</a></li>
-                <li><a href="/flats-in-baner-pashan-link-road" className="hover:text-stone-900 font-semibold text-emerald-900 transition-colors">Flats in Baner Pashan Link Road</a></li>
-                <li><a href="/flats-in-baner" className="hover:text-stone-900 font-semibold text-emerald-900 transition-colors">Flats in Baner Pune</a></li>
-                <li><a href="/flats-near-hinjawadi-it-park" className="hover:text-stone-900 font-semibold text-emerald-900 transition-colors">Flats Near Hinjawadi IT Park</a></li>
-                <li><a href="/flats-in-mahalunge-pune" className="hover:text-stone-900 font-semibold text-emerald-900 transition-colors">Flats in Mahalunge Pune</a></li>
-                <li><a href="/pune-luxury-real-estate" className="hover:text-stone-900 font-semibold text-emerald-900 transition-colors">Pune Luxury Real Estate Benchmark</a></li>
-                <li><a href="#residences" className="hover:text-stone-900 transition-colors">Rohan Ekam 2 BHK Luxury Flats (₹1.45 Cr*)</a></li>
-                <li><a href="#residences" className="hover:text-stone-900 transition-colors">Rohan Ekam 3 BHK Residences - Type 1 (₹1.95 Cr*)</a></li>
-                <li><a href="#residences" className="hover:text-stone-900 transition-colors">Rohan Ekam 3 BHK Grand Layout - Type 2 (₹2.15 Cr*)</a></li>
-                <li><a href="#residences" className="hover:text-stone-900 transition-colors">Rohan Ekam 4 BHK Sky Suite Penthouses (₹2.75 Cr*)</a></li>
-                <li><a href="#financialSuite" className="hover:text-stone-900 transition-colors">Rohan Ekam Cost Sheet &amp; Stamp Duty</a></li>
+              <ul className="space-y-2 text-xs text-stone-700">
+                <li><a href="/luxury-flats-in-baner-balewadi" className="inline-block py-1 hover:text-stone-900 font-semibold text-emerald-900 transition-colors">Luxury Flats in Baner Balewadi</a></li>
+                <li><a href="/riverfront-flats-in-pune" className="inline-block py-1 hover:text-stone-900 font-semibold text-emerald-900 transition-colors">Riverfront Flats in Pune</a></li>
+                <li><a href="/flats-in-baner-pashan-link-road" className="inline-block py-1 hover:text-stone-900 font-semibold text-emerald-900 transition-colors">Flats in Baner Pashan Link Road</a></li>
+                <li><a href="/flats-in-baner" className="inline-block py-1 hover:text-stone-900 font-semibold text-emerald-900 transition-colors">Flats in Baner Pune</a></li>
+                <li><a href="/flats-near-hinjawadi-it-park" className="inline-block py-1 hover:text-stone-900 font-semibold text-emerald-900 transition-colors">Flats Near Hinjawadi IT Park</a></li>
+                <li><a href="/flats-in-mahalunge-pune" className="inline-block py-1 hover:text-stone-900 font-semibold text-emerald-900 transition-colors">Flats in Mahalunge Pune</a></li>
+                <li><a href="/pune-luxury-real-estate" className="inline-block py-1 hover:text-stone-900 font-semibold text-emerald-900 transition-colors">Pune Luxury Real Estate Benchmark</a></li>
+                <li><a href="#residences" className="inline-block py-1 hover:text-stone-900 font-medium transition-colors">Rohan Ekam 2 BHK Luxury Flats (₹1.45 Cr*)</a></li>
+                <li><a href="#residences" className="inline-block py-1 hover:text-stone-900 font-medium transition-colors">Rohan Ekam 3 BHK Residences - Type 1 (₹1.95 Cr*)</a></li>
+                <li><a href="#residences" className="inline-block py-1 hover:text-stone-900 font-medium transition-colors">Rohan Ekam 3 BHK Grand Layout - Type 2 (₹2.15 Cr*)</a></li>
+                <li><a href="#residences" className="inline-block py-1 hover:text-stone-900 font-medium transition-colors">Rohan Ekam 4 BHK Sky Suite Penthouses (₹2.75 Cr*)</a></li>
+                <li><a href="#financialSuite" className="inline-block py-1 hover:text-stone-900 font-medium transition-colors">Rohan Ekam Cost Sheet &amp; Stamp Duty</a></li>
               </ul>
             </div>
 
@@ -178,14 +178,14 @@ export default function Footer() {
               <h4 className="font-serif font-bold text-stone-900 text-xs uppercase tracking-wider mb-2.5">
                 Rohan PLUS Science &amp; Architecture
               </h4>
-              <ul className="space-y-1.5 text-[11px] text-stone-600">
-                <li><a href="#architectNote" className="hover:text-stone-900 transition-colors">Ar. Sanjay Mohe (Mindspace Architects) Design</a></li>
-                <li><a href="#skyGround" className="hover:text-stone-900 transition-colors">Level 14 Ground Floor in the Sky Concept</a></li>
-                <li><a href="#plusPhilosophy" className="hover:text-stone-900 transition-colors">Rohan PLUS Science (Ventilation, Light, Privacy, Space)</a></li>
-                <li><a href="#plusPhilosophy" className="hover:text-stone-900 transition-colors">Zero Corridor Wastage &amp; Usable Carpet Area</a></li>
-                <li><a href="#skyGround" className="hover:text-stone-900 transition-colors">Cascading Sloping Lawns &amp; Sky Walkways</a></li>
-                <li><a href="#amenities" className="hover:text-stone-900 transition-colors">1.2 km Mula Riverfront Boardwalk Promenade</a></li>
-                <li><a href="#amenities" className="hover:text-stone-900 transition-colors">50m Olympic-Length Swimming Lap Pool</a></li>
+              <ul className="space-y-2 text-xs text-stone-700">
+                <li><a href="#architectNote" className="inline-block py-1 hover:text-stone-900 font-medium transition-colors">Ar. Sanjay Mohe (Mindspace Architects) Design</a></li>
+                <li><a href="#skyGround" className="inline-block py-1 hover:text-stone-900 font-medium transition-colors">Level 14 Ground Floor in the Sky Concept</a></li>
+                <li><a href="#plusPhilosophy" className="inline-block py-1 hover:text-stone-900 font-medium transition-colors">Rohan PLUS Science (Ventilation, Light, Privacy, Space)</a></li>
+                <li><a href="#plusPhilosophy" className="inline-block py-1 hover:text-stone-900 font-medium transition-colors">Zero Corridor Wastage &amp; Usable Carpet Area</a></li>
+                <li><a href="#skyGround" className="inline-block py-1 hover:text-stone-900 font-medium transition-colors">Cascading Sloping Lawns &amp; Sky Walkways</a></li>
+                <li><a href="#amenities" className="inline-block py-1 hover:text-stone-900 font-medium transition-colors">1.2 km Mula Riverfront Boardwalk Promenade</a></li>
+                <li><a href="#amenities" className="inline-block py-1 hover:text-stone-900 font-medium transition-colors">50m Olympic-Length Swimming Lap Pool</a></li>
               </ul>
             </div>
 
@@ -194,14 +194,14 @@ export default function Footer() {
               <h4 className="font-serif font-bold text-stone-900 text-xs uppercase tracking-wider mb-2.5">
                 Location &amp; Connectivity (Pune 411045)
               </h4>
-              <ul className="space-y-1.5 text-[11px] text-stone-600">
-                <li><a href="#location" className="hover:text-stone-900 transition-colors">Behind Balewadi High Street (5 mins)</a></li>
-                <li><a href="#location" className="hover:text-stone-900 transition-colors">Baner &amp; Baner-Pashan Link Road (7 mins)</a></li>
-                <li><a href="#location" className="hover:text-stone-900 transition-colors">Hinjawadi IT Park Phase 1 &amp; 2 (12-15 mins)</a></li>
-                <li><a href="#location" className="hover:text-stone-900 transition-colors">Mumbai-Pune Expressway Connectivity (5 mins)</a></li>
-                <li><a href="#location" className="hover:text-stone-900 transition-colors">Upcoming Balewadi Metro Station Line 3</a></li>
-                <li><a href="#location" className="hover:text-stone-900 transition-colors">Shree Shiv Chhatrapati Sports Complex</a></li>
-                <li><a href="#location" className="hover:text-stone-900 transition-colors">Near The Orchid School, Jupiter &amp; Manipal Hospital</a></li>
+              <ul className="space-y-2 text-xs text-stone-700">
+                <li><a href="#location" className="inline-block py-1 hover:text-stone-900 font-medium transition-colors">Behind Balewadi High Street (5 mins)</a></li>
+                <li><a href="#location" className="inline-block py-1 hover:text-stone-900 font-medium transition-colors">Baner &amp; Baner-Pashan Link Road (7 mins)</a></li>
+                <li><a href="#location" className="inline-block py-1 hover:text-stone-900 font-medium transition-colors">Hinjawadi IT Park Phase 1 &amp; 2 (12-15 mins)</a></li>
+                <li><a href="#location" className="inline-block py-1 hover:text-stone-900 font-medium transition-colors">Mumbai-Pune Expressway Connectivity (5 mins)</a></li>
+                <li><a href="#location" className="inline-block py-1 hover:text-stone-900 font-medium transition-colors">Upcoming Balewadi Metro Station Line 3</a></li>
+                <li><a href="#location" className="inline-block py-1 hover:text-stone-900 font-medium transition-colors">Shree Shiv Chhatrapati Sports Complex</a></li>
+                <li><a href="#location" className="inline-block py-1 hover:text-stone-900 font-medium transition-colors">Near The Orchid School, Jupiter &amp; Manipal Hospital</a></li>
               </ul>
             </div>
 
@@ -285,7 +285,7 @@ export default function Footer() {
                 <a
                   key={i}
                   href={tag.href}
-                  className="px-3.5 py-2 rounded-xl bg-white hover:bg-stone-100 text-stone-800 hover:text-stone-950 border border-stone-300 text-xs font-semibold transition-all shadow-xs min-h-[38px] inline-flex items-center"
+                  className="px-3.5 py-2.5 rounded-xl bg-white hover:bg-stone-100 text-stone-800 hover:text-stone-950 border border-stone-300 text-xs font-semibold transition-all shadow-xs min-h-[44px] inline-flex items-center"
                 >
                   {tag.label}
                 </a>
@@ -356,7 +356,7 @@ export default function Footer() {
           <button
             onClick={scrollToTop}
             aria-label="Scroll back to top of page"
-            className="flex items-center gap-1.5 text-xs text-stone-800 hover:text-stone-950 font-medium transition-colors p-2 min-h-[36px]"
+            className="flex items-center gap-1.5 text-xs text-stone-800 hover:text-stone-950 font-medium transition-colors px-3 py-2.5 rounded-xl border border-stone-200/80 bg-white/60 hover:bg-white min-h-[44px]"
           >
             <span>Back to Top</span>
             <ArrowUp className="w-3.5 h-3.5" />

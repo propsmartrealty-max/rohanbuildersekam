@@ -83,13 +83,13 @@ export default function Hero({ onOpenVipModal }) {
             <button
               key={bIdx}
               onClick={() => setActiveBannerIdx(bIdx)}
-              className={`px-3.5 py-1.5 rounded-full text-xs transition-all whitespace-nowrap flex items-center gap-2 ${
+              className={`px-4 py-2.5 rounded-full text-xs transition-all whitespace-nowrap min-h-[44px] flex items-center gap-2 ${
                 activeBannerIdx === bIdx
                   ? 'bg-stone-900 text-white font-bold shadow-md shadow-stone-900/10 scale-105'
                   : 'glass-panel text-stone-700 hover:text-stone-950 hover:bg-white/90'
               }`}
             >
-              <span className={`w-1.5 h-1.5 rounded-full ${activeBannerIdx === bIdx ? 'bg-amber-400' : 'bg-stone-400'}`} />
+              <span className={`w-1.5 h-1.5 rounded-full ${activeBannerIdx === bIdx ? 'bg-amber-400' : 'bg-stone-500'}`} />
               <span>{banner.title}</span>
             </button>
           ))}
@@ -104,36 +104,36 @@ export default function Hero({ onOpenVipModal }) {
             <div className="flex flex-col items-center text-center px-2 pt-3 sm:pt-0 group cursor-default">
               <span className="text-2xl sm:text-3xl font-serif font-bold text-stone-900 tracking-tight group-hover:text-amber-800 transition-colors">13 Acres</span>
               <span className="text-xs font-semibold text-amber-800 mt-0.5 uppercase tracking-wider">Riverfront Land</span>
-              <span className="text-[11px] text-stone-600 mt-0.5 font-medium">Along Mula River bend</span>
+              <span className="text-xs text-stone-700 mt-0.5 font-medium">Along Mula River bend</span>
             </div>
 
             <div className="flex flex-col items-center text-center px-2 pt-3 sm:pt-0 group cursor-default">
               <span className="text-2xl sm:text-3xl font-serif font-bold text-stone-900 tracking-tight group-hover:text-amber-800 transition-colors">Level 14</span>
               <span className="text-xs font-semibold text-amber-800 mt-0.5 uppercase tracking-wider">Sky Ground</span>
-              <span className="text-[11px] text-stone-600 mt-0.5 font-medium">Suspended 150 ft in air</span>
+              <span className="text-xs text-stone-700 mt-0.5 font-medium">Suspended 150 ft in air</span>
             </div>
 
             <div className="flex flex-col items-center text-center px-2 pt-3 sm:pt-0 group cursor-default">
               <span className="text-2xl sm:text-3xl font-serif font-bold text-stone-900 tracking-tight group-hover:text-amber-800 transition-colors">PMC Limits</span>
               <span className="text-xs font-semibold text-amber-800 mt-0.5 uppercase tracking-wider">Civic Body</span>
-              <span className="text-[11px] text-stone-600 mt-0.5 font-medium">Pune Municipal Corp</span>
+              <span className="text-xs text-stone-700 mt-0.5 font-medium">Pune Municipal Corp</span>
             </div>
 
             <div className="flex flex-col items-center text-center px-2 pt-3 sm:pt-0 group cursor-default">
               <span className="text-2xl sm:text-3xl font-serif font-bold text-stone-900 tracking-tight group-hover:text-amber-800 transition-colors">36+ Curated</span>
               <span className="text-xs font-semibold text-amber-800 mt-0.5 uppercase tracking-wider">World Amenities</span>
-              <span className="text-[11px] text-stone-600 mt-0.5 font-medium">Earth & Sky Realms</span>
+              <span className="text-xs text-stone-700 mt-0.5 font-medium">Earth & Sky Realms</span>
             </div>
 
             <div className="flex flex-col items-center text-center px-2 pt-3 sm:pt-0 col-span-2 sm:col-span-1 group cursor-default">
               <span className="text-2xl sm:text-3xl font-serif font-bold text-stone-900 tracking-tight group-hover:text-amber-800 transition-colors">Dec 2027</span>
               <span className="text-xs font-semibold text-amber-800 mt-0.5 uppercase tracking-wider">Possession Date</span>
-              <span className="text-[11px] text-stone-600 mt-0.5 font-medium">Phase 1 Delivery</span>
+              <span className="text-xs text-stone-700 mt-0.5 font-medium">Phase 1 Delivery</span>
             </div>
           </div>
 
           {/* RERA and Official Status Bar */}
-          <div className="relative z-10 mt-5 pt-4 border-t border-stone-200/80 flex flex-wrap items-center justify-between gap-3 text-xs text-stone-600">
+          <div className="relative z-10 mt-5 pt-4 border-t border-stone-200/80 flex flex-wrap items-center justify-between gap-3 text-xs text-stone-700">
             <div className="flex items-center gap-2">
               <ShieldCheck className="w-4 h-4 text-emerald-700" />
               <span>MahaRERA Registration No: <strong className="text-stone-900 font-mono">P52100052298 (Phase 1)</strong></span>
@@ -143,7 +143,7 @@ export default function Hero({ onOpenVipModal }) {
                 <span className="w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span>
                 <span>CRISIL DA2+ Rated Developer</span>
               </span>
-              <span className="text-stone-300">•</span>
+              <span className="text-stone-700 font-bold">•</span>
               <span>Behind Balewadi High Street</span>
             </div>
           </div>

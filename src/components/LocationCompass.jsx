@@ -45,7 +45,7 @@ export default function LocationCompass() {
             <div className="flex glass-panel p-1 rounded-2xl border border-white/90 shadow-xs">
               <button
                 onClick={() => setViewMode('map')}
-                className={`px-3.5 py-1.5 rounded-xl text-xs font-semibold flex items-center gap-1.5 transition-all ${
+                className={`px-3.5 py-2.5 rounded-xl text-xs font-semibold flex items-center gap-1.5 transition-all min-h-[44px] ${
                   viewMode === 'map' ? 'bg-stone-900 text-white shadow-xs' : 'text-stone-700 hover:text-stone-950'
                 }`}
               >
@@ -54,7 +54,7 @@ export default function LocationCompass() {
               </button>
               <button
                 onClick={() => setViewMode('radar')}
-                className={`px-3.5 py-1.5 rounded-xl text-xs font-semibold flex items-center gap-1.5 transition-all ${
+                className={`px-3.5 py-2.5 rounded-xl text-xs font-semibold flex items-center gap-1.5 transition-all min-h-[44px] ${
                   viewMode === 'radar' ? 'bg-stone-900 text-white shadow-xs' : 'text-stone-700 hover:text-stone-950'
                 }`}
               >
@@ -70,7 +70,7 @@ export default function LocationCompass() {
                   <button
                     key={cat.key}
                     onClick={() => setActiveCategory(cat.key)}
-                    className={`px-3 py-1.5 rounded-xl text-xs font-semibold transition-all duration-300 flex items-center gap-1.5 ${
+                    className={`px-3.5 py-2.5 rounded-xl text-xs font-semibold transition-all duration-300 flex items-center gap-1.5 min-h-[44px] ${
                       activeCategory === cat.key
                         ? 'bg-stone-900 text-white shadow-md shadow-stone-900/10'
                         : 'text-stone-700 hover:text-stone-950 hover:bg-white/70'

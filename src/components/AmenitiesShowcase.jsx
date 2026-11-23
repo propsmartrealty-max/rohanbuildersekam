@@ -37,7 +37,7 @@ export default function AmenitiesShowcase({ onOpenVipModal }) {
           {/* Search Bar in Frosted Glass */}
           <div className="mt-6 max-w-md mx-auto relative">
             <label htmlFor="amenity-search-input" className="sr-only">Search amenities</label>
-            <Search className="w-4 h-4 text-stone-500 absolute left-4 top-1/2 -translate-y-1/2" />
+            <Search className="w-4 h-4 text-stone-700 absolute left-4 top-1/2 -translate-y-1/2" />
             <input
               id="amenity-search-input"
               name="amenitySearch"
@@ -46,13 +46,13 @@ export default function AmenitiesShowcase({ onOpenVipModal }) {
               placeholder="Search amenities (e.g. pool, yoga, squash, co-working)..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full glass-panel border border-white/90 rounded-full pl-11 pr-4 py-3 text-xs text-stone-900 placeholder-stone-500 focus:outline-none focus:ring-2 focus:ring-stone-900/10 focus:border-stone-800 shadow-md transition-all"
+              className="w-full glass-panel border border-white/90 rounded-full pl-11 pr-14 py-3 text-xs text-stone-900 placeholder-stone-600 focus:outline-none focus:ring-2 focus:ring-stone-900/10 focus:border-stone-800 shadow-md transition-all"
             />
             {searchQuery && (
               <button
                 onClick={() => setSearchQuery('')}
                 aria-label="Clear amenity search filter"
-                className="absolute right-4 top-1/2 -translate-y-1/2 text-stone-600 hover:text-stone-900 text-xs font-semibold p-1"
+                className="absolute right-2 top-1/2 -translate-y-1/2 text-stone-700 hover:text-stone-950 text-xs font-semibold px-3 py-2 min-h-[44px] min-w-[44px] flex items-center justify-center rounded-full hover:bg-stone-200/50"
               >
                 Clear
               </button>
@@ -66,7 +66,7 @@ export default function AmenitiesShowcase({ onOpenVipModal }) {
             <button
               key={cat}
               onClick={() => setActiveCategory(cat)}
-              className={`px-4 py-2 rounded-full text-xs font-semibold whitespace-nowrap transition-all duration-300 ${
+              className={`px-4 py-2.5 rounded-full text-xs font-semibold whitespace-nowrap transition-all duration-300 min-h-[44px] inline-flex items-center justify-center ${
                 activeCategory === cat
                   ? 'bg-stone-900 text-white shadow-md shadow-stone-900/10 scale-102'
                   : 'glass-panel text-stone-700 hover:text-stone-950 hover:bg-white/80'

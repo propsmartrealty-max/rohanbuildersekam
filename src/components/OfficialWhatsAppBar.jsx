@@ -66,12 +66,12 @@ export default function OfficialWhatsAppBar() {
               placeholder="Enter Mobile No."
               value={mobileNumber}
               onChange={(e) => setMobileNumber(e.target.value.replace(/\D/g, ''))}
-              className="glass-panel border border-stone-300 rounded-full px-4 py-2 text-xs text-stone-900 placeholder-stone-500 focus:outline-none focus:ring-2 focus:ring-[#25D366]/40 focus:border-[#25D366] w-full sm:w-44 shadow-xs min-h-[40px]"
+              className="glass-panel border border-stone-300 rounded-full px-4 py-2.5 text-xs text-stone-900 placeholder-stone-600 focus:outline-none focus:ring-2 focus:ring-[#25D366]/40 focus:border-[#25D366] w-full sm:w-44 shadow-xs min-h-[44px]"
             />
             <button
               type="submit"
               aria-label="Send WhatsApp Inquiry"
-              className="w-10 h-10 min-w-[40px] min-h-[40px] rounded-full bg-stone-900 hover:bg-[#25D366] text-white flex items-center justify-center shrink-0 shadow-md transition-all duration-300 active:scale-95 group cursor-pointer"
+              className="w-11 h-11 min-w-[44px] min-h-[44px] rounded-full bg-stone-900 hover:bg-[#25D366] text-white flex items-center justify-center shrink-0 shadow-md transition-all duration-300 active:scale-95 group cursor-pointer"
             >
               <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
             </button>

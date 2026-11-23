@@ -34,7 +34,7 @@ export default function SpecificationsGallery() {
               <button
                 key={fil}
                 onClick={() => setActiveFilter(fil)}
-                className={`px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all ${
+                className={`px-4 py-2.5 rounded-full text-xs font-semibold transition-all min-h-[44px] flex items-center justify-center ${
                   activeFilter === fil
                     ? 'bg-stone-900 text-white shadow-sm'
                     : 'bg-white text-stone-700 hover:bg-stone-50 border border-stone-200'

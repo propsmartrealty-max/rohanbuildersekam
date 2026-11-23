@@ -24,43 +24,43 @@ export default function LegalModal({ isOpen, onClose, initialTab = 'privacy' }) 
         <div className="flex flex-wrap gap-2 mb-6 border-b border-stone-200/80 pb-3 pr-10">
           <button
             onClick={() => setActiveTab('privacy')}
-            className={`px-3.5 py-1.5 rounded-xl text-xs font-semibold flex items-center gap-1.5 transition-all ${
+            className={`px-3.5 py-2.5 rounded-xl text-xs font-semibold flex items-center gap-1.5 transition-all min-h-[44px] ${
               activeTab === 'privacy'
                 ? 'bg-stone-900 text-white shadow-sm'
-                : 'glass-panel text-stone-600 hover:text-stone-900'
+                : 'glass-panel text-stone-700 hover:text-stone-950 font-medium'
             }`}
           >
-            <ShieldCheck className="w-3.5 h-3.5 text-amber-500" />
+            <ShieldCheck className="w-3.5 h-3.5 text-amber-700" />
             <span>Privacy Policy</span>
           </button>
 
           <button
             onClick={() => setActiveTab('terms')}
-            className={`px-3.5 py-1.5 rounded-xl text-xs font-semibold flex items-center gap-1.5 transition-all ${
+            className={`px-3.5 py-2.5 rounded-xl text-xs font-semibold flex items-center gap-1.5 transition-all min-h-[44px] ${
               activeTab === 'terms'
                 ? 'bg-stone-900 text-white shadow-sm'
-                : 'glass-panel text-stone-600 hover:text-stone-900'
+                : 'glass-panel text-stone-700 hover:text-stone-950 font-medium'
             }`}
           >
-            <FileText className="w-3.5 h-3.5 text-amber-500" />
+            <FileText className="w-3.5 h-3.5 text-amber-700" />
             <span>Terms of Use</span>
           </button>
 
           <button
             onClick={() => setActiveTab('disclaimer')}
-            className={`px-3.5 py-1.5 rounded-xl text-xs font-semibold flex items-center gap-1.5 transition-all ${
+            className={`px-3.5 py-2.5 rounded-xl text-xs font-semibold flex items-center gap-1.5 transition-all min-h-[44px] ${
               activeTab === 'disclaimer'
                 ? 'bg-stone-900 text-white shadow-sm'
-                : 'glass-panel text-stone-600 hover:text-stone-900'
+                : 'glass-panel text-stone-700 hover:text-stone-950 font-medium'
             }`}
           >
-            <AlertTriangle className="w-3.5 h-3.5 text-amber-500" />
+            <AlertTriangle className="w-3.5 h-3.5 text-amber-700" />
             <span>MahaRERA Disclaimer</span>
           </button>
         </div>
 
         {/* Content Area */}
-        <div className="max-h-[65vh] overflow-y-auto pr-2 space-y-4 text-xs leading-relaxed text-stone-600">
+        <div className="max-h-[65vh] overflow-y-auto pr-2 space-y-4 text-xs leading-relaxed text-stone-700">
           {activeTab === 'privacy' && (
             <div className="space-y-3">
               <div className="flex items-center justify-between">
@@ -175,12 +175,12 @@ export default function LegalModal({ isOpen, onClose, initialTab = 'privacy' }) 
         </div>
 
         <div className="mt-6 pt-4 border-t border-stone-200 flex items-center justify-between text-xs">
-          <div className="text-[11px] text-stone-500">
+          <div className="text-xs text-stone-700 font-medium">
             Advisory Desk: <strong>Propsmart Realty (RERA: A031262401295)</strong> • <strong className="text-stone-900">propsmartrealty@gmail.com</strong> • <strong className="text-stone-900">+91 774409295</strong>
           </div>
           <button
             onClick={onClose}
-            className="px-5 py-2 rounded-xl bg-stone-900 text-white font-bold text-xs uppercase tracking-wider hover:bg-stone-800 transition-colors"
+            className="px-5 py-2.5 rounded-xl bg-stone-900 text-white font-bold text-xs uppercase tracking-wider hover:bg-stone-800 transition-colors min-h-[44px]"
           >
             Close
           </button>

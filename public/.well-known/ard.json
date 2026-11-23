@@ -1,0 +1,23 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "Rohan Ekam Balewadi",
+    "identifier": "did:web:rohanbuildersekam.com",
+    "documentationUrl": "https://rohanbuildersekam.com/llms.txt"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:rohanbuildersekam.com:mcp:server",
+      "displayName": "Rohan Ekam Real Estate Concierge MCP",
+      "type": "application/mcp-server-card+json",
+      "url": "https://rohanbuildersekam.com/.well-known/mcp-card.json",
+      "description": "Interactive Model Context Protocol server for Rohan Ekam luxury riverfront residences in Balewadi, Pune.",
+      "representativeQueries": [
+        "Rohan Ekam Balewadi floor plans",
+        "Rohan Ekam price sheet Balewadi Pune",
+        "Schedule Rohan Ekam site visit",
+        "Rohan Ekam MahaRERA details"
+      ]
+    }
+  ]
+}

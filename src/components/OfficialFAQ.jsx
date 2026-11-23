@@ -37,7 +37,7 @@ export default function OfficialFAQ() {
                     setActiveCategory(cat);
                     setOpenQuestionIdx(0);
                   }}
-                  className={`p-3 rounded-2xl text-left text-xs font-semibold transition-all duration-300 flex items-center justify-between glass-card-hover ${
+                  className={`px-3.5 py-3 rounded-2xl text-left text-xs font-semibold transition-all duration-300 flex items-center justify-between glass-card-hover min-h-[44px] ${
                     activeCategory === cat
                       ? 'bg-stone-900 text-white shadow-md shadow-stone-900/10'
                       : 'glass-panel text-stone-700 hover:text-stone-950 hover:bg-white/80 border-white/80'

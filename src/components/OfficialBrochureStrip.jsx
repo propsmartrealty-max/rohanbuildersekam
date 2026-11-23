@@ -26,7 +26,7 @@ export default function OfficialBrochureStrip() {
                   18.4 MB PDF
                 </span>
               </div>
-              <p className="text-xs text-stone-600 mt-0.5">
+              <p className="text-xs text-stone-700 mt-0.5 font-medium">
                 Download the complete high-resolution project brochure with complete floor plans, elevation renders, and specifications.
               </p>
             </div>
@@ -36,7 +36,7 @@ export default function OfficialBrochureStrip() {
             href={brochureUrl}
             target="_blank"
             rel="noreferrer"
-            className="px-8 py-3.5 rounded-2xl bg-stone-900 hover:bg-stone-800 text-white font-bold text-xs uppercase tracking-wider flex items-center gap-2.5 transition-all shadow-md shadow-stone-900/10 shrink-0 group active:scale-95 glass-shimmer"
+            className="px-8 py-3.5 rounded-2xl bg-stone-900 hover:bg-stone-800 text-white font-bold text-xs uppercase tracking-wider flex items-center gap-2.5 transition-all shadow-md shadow-stone-900/10 shrink-0 group active:scale-95 glass-shimmer min-h-[44px]"
           >
             <Download className="w-4 h-4 text-amber-400 group-hover:-translate-y-0.5 transition-transform" />
             <span>DOWNLOAD NOW</span>

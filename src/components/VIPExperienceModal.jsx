@@ -108,7 +108,7 @@ export default function VIPExperienceModal({ isOpen, onClose, initialConfig = '3
                   placeholder="+91 98220 XXXXX"
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  className="w-full glass-panel border border-white/90 rounded-2xl px-4 py-2.5 text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-stone-900/10 focus:border-stone-800 shadow-xs transition-all"
+                  className="w-full glass-panel border border-white/90 rounded-2xl px-4 py-2.5 text-stone-900 placeholder-stone-600 focus:outline-none focus:ring-2 focus:ring-stone-900/10 focus:border-stone-800 shadow-xs transition-all"
                 />
               </div>
 
@@ -193,7 +193,7 @@ export default function VIPExperienceModal({ isOpen, onClose, initialConfig = '3
               </div>
 
               <div className="pt-1">
-                <label htmlFor="vip-agree-terms" className="flex items-start gap-2 cursor-pointer text-[11px] text-stone-600">
+                <label htmlFor="vip-agree-terms" className="flex items-start gap-2 cursor-pointer text-xs text-stone-700 font-medium">
                   <input
                     id="vip-agree-terms"
                     type="checkbox"
@@ -218,7 +218,7 @@ export default function VIPExperienceModal({ isOpen, onClose, initialConfig = '3
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full py-3.5 rounded-2xl bg-stone-900 hover:bg-stone-800 disabled:bg-stone-600 text-white font-bold text-xs uppercase tracking-wider transition-all duration-300 shadow-lg shadow-stone-900/10 active:scale-98 glass-shimmer flex items-center justify-center gap-2 cursor-pointer"
+                className="w-full py-3.5 rounded-2xl bg-stone-900 hover:bg-stone-800 disabled:bg-stone-600 text-white font-bold text-xs uppercase tracking-wider transition-all duration-300 shadow-lg shadow-stone-900/10 active:scale-98 glass-shimmer flex items-center justify-center gap-2 cursor-pointer min-h-[44px]"
               >
                 {isSubmitting ? (
                   <>
@@ -235,9 +235,9 @@ export default function VIPExperienceModal({ isOpen, onClose, initialConfig = '3
                   href="https://wa.me/91774409295?text=Hello%20Rohan%20Builders,%20I%20would%20like%20to%20schedule%20a%20VIP%20visit%20for%20Rohan%20Ekam%20Balewadi."
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center gap-1.5 text-xs text-emerald-700 font-medium hover:underline"
+                  className="inline-flex items-center gap-1.5 text-xs text-emerald-800 font-semibold hover:underline py-2 min-h-[44px]"
                 >
-                  <MessageSquare className="w-3.5 h-3.5" />
+                  <MessageSquare className="w-3.5 h-3.5 text-emerald-700" />
                   <span>WhatsApp Enquiry (+91 774409295): Chat directly with Relationship Manager</span>
                 </a>
               </div>

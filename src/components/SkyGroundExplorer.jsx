@@ -137,7 +137,7 @@ export default function SkyGroundExplorer({ onOpenVipModal }) {
                   setActiveRealmIndex(idx);
                   setSelectedHotspot(0);
                 }}
-                className={`relative px-4 py-2 rounded-xl text-xs font-semibold transition-all duration-300 flex items-center gap-2 ${
+                className={`relative px-4 py-2.5 rounded-xl text-xs font-semibold transition-all duration-300 min-h-[44px] flex items-center gap-2 ${
                   activeRealmIndex === idx
                     ? 'bg-stone-900 text-white shadow-md shadow-stone-900/10 scale-102'
                     : 'text-stone-700 hover:text-stone-950 hover:bg-white/70'
@@ -197,7 +197,8 @@ export default function SkyGroundExplorer({ onOpenVipModal }) {
                         key={fIdx}
                         onClick={() => setSelectedHotspot(fIdx)}
                         style={{ top: coords.top, left: coords.left }}
-                        className={`pointer-events-auto absolute -translate-x-1/2 -translate-y-1/2 transition-all duration-300 ${
+                        aria-label={`Select feature ${fIdx + 1}: ${feat.title}`}
+                        className={`pointer-events-auto absolute -translate-x-1/2 -translate-y-1/2 min-w-[44px] min-h-[44px] flex items-center justify-center transition-all duration-300 ${
                           isSelected ? 'scale-125 z-30' : 'hover:scale-110'
                         }`}
                       >
@@ -205,7 +206,7 @@ export default function SkyGroundExplorer({ onOpenVipModal }) {
                           <span className={`absolute -inset-2 rounded-full opacity-75 animate-ping ${
                             isSelected ? 'bg-amber-400' : 'bg-white'
                           }`} />
-                          <div className={`w-8 h-8 rounded-full flex items-center justify-center font-bold text-xs shadow-2xl transition-all ${
+                          <div className={`w-9 h-9 rounded-full flex items-center justify-center font-bold text-xs shadow-2xl transition-all ${
                             isSelected
                               ? 'bg-amber-400 text-stone-950 ring-4 ring-amber-400/40 scale-110'
                               : 'glass-panel text-stone-900 hover:bg-stone-900 hover:text-white'
@@ -252,7 +253,7 @@ export default function SkyGroundExplorer({ onOpenVipModal }) {
                   <span className="px-3 py-1 rounded-full glass-panel text-stone-800 font-mono text-[11px] font-semibold border border-white">
                     FEATURE {selectedHotspot + 1} OF {currentRealm.features.length}
                   </span>
-                  <span className="text-xs text-stone-500 font-medium">
+                  <span className="text-xs text-stone-700 font-medium">
                     {currentRealm.features[selectedHotspot].tag}
                   </span>
                 </div>
@@ -261,7 +262,7 @@ export default function SkyGroundExplorer({ onOpenVipModal }) {
                   {currentRealm.features[selectedHotspot].title}
                 </h4>
 
-                <p className="text-sm text-stone-600 leading-relaxed mb-6">
+                <p className="text-sm text-stone-700 leading-relaxed mb-6">
                   {currentRealm.features[selectedHotspot].description}
                 </p>
 

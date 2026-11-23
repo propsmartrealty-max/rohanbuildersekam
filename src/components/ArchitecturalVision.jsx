@@ -33,7 +33,7 @@ export default function ArchitecturalVision() {
           {/* Left Column: Official Architect Portrait & Quote */}
           <div className="lg:col-span-7 space-y-6">
             <div className="relative pl-6 py-6 pr-6 rounded-3xl glass-panel-glow border-l-4 border-l-stone-900 border border-white/90 shadow-lg shadow-stone-900/5 glass-shimmer">
-              <Quote className="w-8 h-8 text-stone-300 absolute top-4 right-4" />
+              <Quote className="w-8 h-8 text-stone-400 absolute top-4 right-4" />
               <p className="font-serif text-lg sm:text-2xl text-stone-900 italic leading-snug">
                 "{OFFICIAL_PROJECT_DETAILS.architectNote}"
               </p>
@@ -108,14 +108,14 @@ export default function ArchitecturalVision() {
                 </div>
               </div>
 
-              <div className="mt-3 flex items-center justify-between text-xs text-stone-600">
+              <div className="mt-3 flex items-center justify-between text-xs text-stone-700">
                 <span>Cascading lawns & Mula River edge</span>
                 <button
                   onClick={() => setIsMasterPlanOpen(true)}
-                  className="text-stone-900 font-mono font-semibold hover:underline flex items-center gap-1"
+                  className="text-stone-900 font-mono font-semibold hover:underline flex items-center gap-1.5 py-2 px-2.5 rounded-lg hover:bg-white/80 min-h-[44px]"
                 >
                   <span>Enlarge Blueprint</span>
-                  <ExternalLink className="w-3 h-3" />
+                  <ExternalLink className="w-3.5 h-3.5" />
                 </button>
               </div>
             </div>

@@ -242,19 +242,19 @@ export default function FinancialSuite({ onOpenVipModal }) {
                   Transparent Statutory Estimate:
                 </div>
                 <div className="flex justify-between py-1 border-b border-stone-100">
-                  <span className="text-stone-600">Base Agreement Value:</span>
+                  <span className="text-stone-700 font-medium">Base Agreement Value:</span>
                   <span className="text-stone-900 font-mono font-medium">{formatINR(propertyCost)}</span>
                 </div>
                 <div className="flex justify-between py-1 border-b border-stone-100">
-                  <span className="text-stone-600">Maha Stamp Duty (7%):</span>
+                  <span className="text-stone-700 font-medium">Maha Stamp Duty (7%):</span>
                   <span className="text-stone-900 font-mono font-medium">{formatINR(stampDuty)}</span>
                 </div>
                 <div className="flex justify-between py-1 border-b border-stone-100">
-                  <span className="text-stone-600">GST (5% Under-Construction):</span>
+                  <span className="text-stone-700 font-medium">GST (5% Under-Construction):</span>
                   <span className="text-stone-900 font-mono font-medium">{formatINR(gst)}</span>
                 </div>
                 <div className="flex justify-between py-1 border-b border-stone-100">
-                  <span className="text-stone-600">Govt Registration Fee:</span>
+                  <span className="text-stone-700 font-medium">Govt Registration Fee:</span>
                   <span className="text-stone-900 font-mono font-medium">₹ 30,000</span>
                 </div>
                 <div className="flex justify-between py-2 font-bold text-sm">
@@ -265,7 +265,7 @@ export default function FinancialSuite({ onOpenVipModal }) {
 
               <button
                 onClick={onOpenVipModal}
-                className="w-full mt-6 py-3.5 rounded-xl bg-stone-900 hover:bg-stone-800 text-white font-bold text-xs uppercase tracking-wider transition-all duration-300 shadow-md shadow-stone-900/10 flex items-center justify-center gap-2 group active:scale-95"
+                className="w-full mt-6 py-3.5 rounded-xl bg-stone-900 hover:bg-stone-800 text-white font-bold text-xs uppercase tracking-wider transition-all duration-300 shadow-md shadow-stone-900/10 flex items-center justify-center gap-2 group active:scale-95 min-h-[44px]"
               >
                 <FileText className="w-4 h-4 text-amber-400" />
                 <span>Request Detailed Cost Sheet PDF</span>

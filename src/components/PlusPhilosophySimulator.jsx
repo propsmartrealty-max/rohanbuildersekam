@@ -172,7 +172,7 @@ export default function PlusPhilosophySimulator() {
                     ))}
                   </div>
 
-                  <div className="flex justify-between items-center text-[10px] font-mono text-stone-500 z-10">
+                  <div className="flex justify-between items-center text-xs font-mono text-stone-700 z-10">
                     <span className="bg-white px-2 py-0.5 rounded text-stone-800 border border-stone-300 font-medium">
                       ← River Wind Inflow
                     </span>
@@ -188,7 +188,7 @@ export default function PlusPhilosophySimulator() {
                     </div>
                   </div>
 
-                  <div className="flex justify-between items-center text-[10px] font-mono text-stone-500 z-10">
+                  <div className="flex justify-between items-center text-xs font-mono text-stone-700 z-10">
                     <span className="text-stone-700">Master Bedroom</span>
                     <span className="bg-white px-2 py-0.5 rounded text-stone-800 border border-stone-300 font-medium">
                       Cross-Vent Exhaust →

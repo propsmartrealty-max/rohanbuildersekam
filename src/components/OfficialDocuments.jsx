@@ -53,7 +53,7 @@ export default function OfficialDocuments() {
                       href={doc.url}
                       target="_blank"
                       rel="noreferrer"
-                      className="px-4 py-2 rounded-xl bg-stone-900 hover:bg-stone-800 text-white font-bold text-xs uppercase tracking-wider flex items-center gap-1.5 transition-all shadow-sm active:scale-95"
+                      className="px-4 py-2.5 rounded-xl bg-stone-900 hover:bg-stone-800 text-white font-bold text-xs uppercase tracking-wider flex items-center gap-1.5 transition-all shadow-sm active:scale-95 min-h-[44px]"
                     >
                       <Download className="w-3.5 h-3.5 text-amber-400" />
                       <span>Download</span>
@@ -62,7 +62,7 @@ export default function OfficialDocuments() {
                 ))}
               </div>
 
-              <div className="mt-4 text-xs text-stone-600 glass-panel p-3.5 rounded-2xl border border-white/80">
+              <div className="mt-4 text-xs text-stone-700 glass-panel p-3.5 rounded-2xl border border-white/80">
                 Note: Environmental Clearance (EC) Copy granted under State Level Environment Impact Assessment Authority (SEIAA), Maharashtra.
               </div>
             </div>

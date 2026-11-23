@@ -36,7 +36,7 @@ export default function ResidencesFloorPlans({ onOpenVipModal }) {
               <button
                 key={plan.id}
                 onClick={() => setSelectedPlanId(plan.id)}
-                className={`px-4 py-2 rounded-xl text-xs font-semibold transition-all duration-300 ${
+                className={`px-4 py-2.5 rounded-xl text-xs font-semibold transition-all duration-300 min-h-[44px] flex items-center justify-center ${
                   selectedPlanId === plan.id
                     ? 'bg-stone-900 text-white shadow-md shadow-stone-900/10 scale-102'
                     : 'text-stone-700 hover:text-stone-950 hover:bg-white/70'
@@ -61,7 +61,7 @@ export default function ResidencesFloorPlans({ onOpenVipModal }) {
                       Rohan PLUS Certified
                     </span>
                   </h3>
-                  <div className="text-xs text-stone-600 mt-1">
+                  <div className="text-xs text-stone-700 mt-1">
                     Carpet Area: <strong className="text-stone-900 font-semibold">{activePlan.carpetArea}</strong>
                   </div>
                 </div>
@@ -105,7 +105,7 @@ export default function ResidencesFloorPlans({ onOpenVipModal }) {
                 </span>
                 <button
                   onClick={() => setIsBlueprintLightboxOpen(true)}
-                  className="text-stone-900 font-mono font-semibold hover:underline flex items-center gap-1"
+                  className="text-stone-900 font-mono font-semibold hover:underline flex items-center gap-1.5 py-2 px-2.5 rounded-lg hover:bg-white/80 min-h-[44px]"
                 >
                   <span>Zoom Drawing</span>
                   <Maximize2 className="w-3.5 h-3.5 text-amber-700" />
