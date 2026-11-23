@@ -160,6 +160,8 @@ export default function Footer() {
               <ul className="space-y-1.5 text-[11px] text-stone-600">
                 <li><a href="/luxury-flats-in-baner-balewadi" className="hover:text-stone-900 font-semibold text-emerald-900 transition-colors">Luxury Flats in Baner Balewadi</a></li>
                 <li><a href="/flats-in-baner" className="hover:text-stone-900 font-semibold text-emerald-900 transition-colors">Flats in Baner Pune</a></li>
+                <li><a href="/flats-near-hinjawadi-it-park" className="hover:text-stone-900 font-semibold text-emerald-900 transition-colors">Flats Near Hinjawadi IT Park</a></li>
+                <li><a href="/flats-in-mahalunge-pune" className="hover:text-stone-900 font-semibold text-emerald-900 transition-colors">Flats in Mahalunge Pune</a></li>
                 <li><a href="/pune-luxury-real-estate" className="hover:text-stone-900 font-semibold text-emerald-900 transition-colors">Pune Luxury Real Estate Benchmark</a></li>
                 <li><a href="#residences" className="hover:text-stone-900 transition-colors">Rohan Ekam 2 BHK Luxury Flats (₹1.45 Cr*)</a></li>
                 <li><a href="#residences" className="hover:text-stone-900 transition-colors">Rohan Ekam 3 BHK Residences - Type 1 (₹1.95 Cr*)</a></li>
@@ -208,6 +210,8 @@ export default function Footer() {
               </h4>
               <ul className="space-y-1.5 text-[11px] text-stone-600">
                 <li><a href="/blog" className="hover:text-stone-900 font-semibold text-emerald-900 transition-colors">Knowledge Hub Index &rarr;</a></li>
+                <li><a href="/blog/pune-real-estate-west-vs-east-market-analysis" className="hover:text-stone-900 font-medium transition-colors">West vs East Pune Market Analysis</a></li>
+                <li><a href="/blog/pune-real-estate-stamp-duty-taxes-rera-guide" className="hover:text-stone-900 font-medium transition-colors">Pune Stamp Duty &amp; MahaRERA Guide</a></li>
                 <li><a href="/blog/baner-vs-balewadi-real-estate-investment-comparison" className="hover:text-stone-900 font-medium transition-colors">Baner vs Balewadi Investment ROI</a></li>
                 <li><a href="/blog/pune-luxury-real-estate-market-trends-2026-2027" className="hover:text-stone-900 font-medium transition-colors">Pune Luxury Trends 2026-2027</a></li>
                 <li><a href="/blog/luxury-penthouses-sky-villas-baner-balewadi" className="hover:text-stone-900 font-medium transition-colors">Penthouses &amp; Sky Villas</a></li>
