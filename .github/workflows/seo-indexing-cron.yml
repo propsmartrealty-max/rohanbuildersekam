@@ -1,0 +1,61 @@
+name: SEO Automated Indexing & Search Engine Dispatch
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    # Run every day at 06:00 UTC (11:30 AM IST)
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+jobs:
+  indexnow-dispatch:
+    name: Dispatch Sitemaps & URLs to Search Indexers
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Verify Live Endpoints & Sitemaps
+        run: |
+          echo "Checking live production endpoints..."
+          curl -sI "https://rohanbuildersekam.com/" | head -n 5
+          curl -sI "https://rohanbuildersekam.com/sitemap.xml" | head -n 5
+          curl -sI "https://rohanbuildersekam.com/blog" | head -n 5
+
+      - name: Dispatch to IndexNow Engine API
+        run: |
+          echo "Broadcasting URL updates to IndexNow API (Bing, Yandex, Naver)..."
+          STATUS=$(curl -s -o /dev/null -w "%{http_code}" -X POST "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            -d '{
+              "host": "rohanbuildersekam.com",
+              "key": "89ee1144bc371c5c322b749de98dd2b5",
+              "keyLocation": "https://rohanbuildersekam.com/89ee1144bc371c5c322b749de98dd2b5.txt",
+              "urlList": [
+                "https://rohanbuildersekam.com/",
+                "https://rohanbuildersekam.com/blog",
+                "https://rohanbuildersekam.com/blog/why-balewadi-is-pune-top-luxury-real-estate-hub",
+                "https://rohanbuildersekam.com/blog/ground-floor-in-the-sky-architectural-monograph",
+                "https://rohanbuildersekam.com/blog/rohan-plus-homes-design-science-cross-ventilation",
+                "https://rohanbuildersekam.com/blog/nri-real-estate-investment-guide-pune-balewadi",
+                "https://rohanbuildersekam.com/blog/balewadi-high-street-metro-line-3-connectivity-boom",
+                "https://rohanbuildersekam.com/blog/2-bhk-3-bhk-4-bhk-carpet-area-price-comparison-balewadi",
+                "https://rohanbuildersekam.com/flats-in-balewadi",
+                "https://rohanbuildersekam.com/2-bhk-flats-in-balewadi",
+                "https://rohanbuildersekam.com/3-bhk-flats-in-balewadi",
+                "https://rohanbuildersekam.com/4-bhk-flats-in-balewadi",
+                "https://rohanbuildersekam.com/price-and-cost-sheet",
+                "https://rohanbuildersekam.com/location-balewadi-high-street",
+                "https://rohanbuildersekam.com/rohan-builders-pune-projects",
+                "https://rohanbuildersekam.com/sitemap.xml",
+                "https://rohanbuildersekam.com/feed.xml"
+              ]
+            }')
+          echo "IndexNow Response Code: $STATUS"
+          if [ "$STATUS" -eq 200 ] || [ "$STATUS" -eq 202 ]; then
+            echo "IndexNow broadcast successful!"
+          else
+            echo "IndexNow broadcast returned code $STATUS"
+          fi
