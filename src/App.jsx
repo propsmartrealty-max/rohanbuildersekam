@@ -38,6 +38,14 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[#F5F2EB] text-stone-900 flex flex-col relative selection:bg-stone-900 selection:text-white pb-14 overflow-x-hidden">
+      {/* Accessible Skip to Content for Assistive Tech */}
+      <a 
+        href="#main-content" 
+        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2.5 focus:bg-stone-900 focus:text-white focus:rounded-xl focus:shadow-xl focus:font-semibold focus:text-xs"
+      >
+        Skip to main content
+      </a>
+
       {/* Global Ambient Glass Refraction Orbs (Living, breathing atmosphere behind frosted surfaces) */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
         <div className="glass-orb w-[650px] h-[650px] bg-[#E8D5C4]/40 -top-40 -left-40 animate-blob" />
@@ -49,8 +57,8 @@ export default function App() {
       {/* Top Floating Navbar */}
       <Navbar onOpenVipModal={() => openVipModalWithConfig('3bhk-type1')} />
 
-      {/* Main Container */}
-      <main className="flex-1 bg-transparent relative z-10">
+      {/* Main Semantic Landmark Container */}
+      <main id="main-content" role="main" tabIndex="-1" className="flex-1 bg-transparent relative z-10 focus:outline-none">
         {/* 1. Official 4K Hero Carousel */}
         <Hero onOpenVipModal={() => openVipModalWithConfig('3bhk-type1')} />
 

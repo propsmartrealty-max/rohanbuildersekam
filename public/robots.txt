@@ -47,12 +47,6 @@ Allow: /
 User-agent: Applebot
 Allow: /
 
-# Host Declaration
-Host: https://rohanbuildersekam.com
-
-# Agentic Resource Discovery (ARD 1.0) Manifest
-Agentmap: https://rohanbuildersekam.com/.well-known/ai-catalog.json
-
 # XML Sitemaps & RSS Syndication Feeds
 Sitemap: https://rohanbuildersekam.com/sitemap.xml
 Sitemap: https://rohanbuildersekam.com/feed.xml
