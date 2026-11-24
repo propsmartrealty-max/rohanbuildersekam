@@ -1,267 +1,285 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <!-- Primary Landing Experience -->
   <url>
     <loc>https://rohanbuildersekam.com/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
+      <image:loc>https://rohanbuildersekam.com/images/optimized/hero-riverfront.webp</image:loc>
+      <image:title>Rohan Ekam 13-Acre Riverfront Sanctuary Balewadi Pune</image:title>
+      <image:caption>13-Acre riverfront residential development along Mula River with Ground Floor in the Sky at Level 14.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rohanbuildersekam.com/images/optimized/master-plan.webp</image:loc>
+      <image:title>Rohan Ekam Master Plan Layout</image:title>
+      <image:caption>Master plan designed by Ar. Sanjay Mohe Mindspace Architects.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rohanbuildersekam.com/images/optimized/plan-2bhk.webp</image:loc>
+      <image:title>Rohan Ekam 2 BHK Luxury Floor Plan</image:title>
+      <image:caption>2 BHK Luxury Riverfront Apartment floor plan with zero corridor wastage.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rohanbuildersekam.com/images/optimized/plan-3bhk-1.webp</image:loc>
+      <image:title>Rohan Ekam 3 BHK Premium Floor Plan (Type 1)</image:title>
+      <image:caption>3 BHK Premium layout with river-facing balconies.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rohanbuildersekam.com/images/optimized/plan-3bhk-2.webp</image:loc>
+      <image:title>Rohan Ekam 3 BHK Grand Floor Plan (Type 2)</image:title>
+      <image:caption>3 BHK Grand layout with cross-ventilation corridors.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rohanbuildersekam.com/images/optimized/plan-4bhk.webp</image:loc>
+      <image:title>Rohan Ekam 4 BHK Sky Suite Penthouse Floor Plan</image:title>
+      <image:caption>4 BHK Sky Suite Duplex Penthouse layout.</image:caption>
+    </image:image>
+    <image:image>
       <image:loc>https://rohanbuildersekam.com/rohan-ekam-logo.png</image:loc>
       <image:title>Rohan Ekam Balewadi Pune Logo</image:title>
-      <image:caption>Rohan Ekam luxury residences along Mula River in Balewadi, Pune by Rohan Builders.</image:caption>
+      <image:caption>Official brand insignia for Rohan Ekam by Rohan Builders.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://rohanbuildersekam.com/rohan-ekam-logo-colorful.png</image:loc>
       <image:title>Rohan Ekam Colorful Brand Insignia</image:title>
-      <image:caption>Rohan Ekam Didone typography insignia with vibrant radiant gradients.</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://rohanbuildersekam.com/rohan-ekam-logo.svg</image:loc>
-      <image:title>Rohan Ekam Vector Mark Balewadi</image:title>
+      <image:caption>Radiant Didone brand identity.</image:caption>
     </image:image>
   </url>
-
-  <!-- High-Impact Baner, Balewadi & Pune Luxury Real Estate Market Clusters -->
   <url>
-    <loc>https://rohanbuildersekam.com/riverfront-flats-in-pune/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <loc>https://rohanbuildersekam.com/luxury-flats-in-baner-balewadi</loc>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
     <image:image>
-      <image:loc>https://rohanbuildersekam.com/rohan-ekam-logo.png</image:loc>
-      <image:title>Riverfront Flats in Pune - Luxury Waterfront Residences</image:title>
+      <image:loc>https://rohanbuildersekam.com/images/optimized/hero-riverfront.webp</image:loc>
+      <image:title>Luxury Flats in Baner Balewadi - Rohan Ekam</image:title>
+      <image:caption>Ultra-luxury riverfront residences in Baner Balewadi corridor.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://rohanbuildersekam.com/flats-in-baner-pashan-link-road/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <loc>https://rohanbuildersekam.com/riverfront-flats-in-pune</loc>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
     <image:image>
-      <image:loc>https://rohanbuildersekam.com/rohan-ekam-logo.png</image:loc>
-      <image:title>Flats in Baner Pashan Link Road Pune</image:title>
+      <image:loc>https://rohanbuildersekam.com/images/optimized/hero-riverfront.webp</image:loc>
+      <image:title>Riverfront Flats in Pune along Mula River</image:title>
+      <image:caption>Waterfront residential apartments in West Pune.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://rohanbuildersekam.com/flats-near-hinjawadi-it-park/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <loc>https://rohanbuildersekam.com/flats-in-baner-pashan-link-road</loc>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
     <image:image>
-      <image:loc>https://rohanbuildersekam.com/rohan-ekam-logo.png</image:loc>
-      <image:title>Flats Near Hinjawadi IT Park Pune</image:title>
+      <image:loc>https://rohanbuildersekam.com/images/optimized/master-plan.webp</image:loc>
+      <image:title>Flats in Baner Pashan Link Road Location</image:title>
+      <image:caption>Proximity to Baner Pashan Link Road and High Street.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://rohanbuildersekam.com/flats-in-mahalunge-pune/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <loc>https://rohanbuildersekam.com/flats-near-hinjawadi-it-park</loc>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
     <image:image>
-      <image:loc>https://rohanbuildersekam.com/rohan-ekam-logo.png</image:loc>
-      <image:title>Flats in Mahalunge Pune - Riverfront Living</image:title>
+      <image:loc>https://rohanbuildersekam.com/images/optimized/hero-riverfront.webp</image:loc>
+      <image:title>Flats Near Hinjawadi IT Park Phase 1 and 2</image:title>
+      <image:caption>12-minute commute to Hinjawadi IT SEZ from Balewadi.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://rohanbuildersekam.com/luxury-flats-in-baner-balewadi/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <loc>https://rohanbuildersekam.com/flats-in-mahalunge-pune</loc>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
     <image:image>
-      <image:loc>https://rohanbuildersekam.com/rohan-ekam-logo.png</image:loc>
-      <image:title>Luxury Flats in Baner Balewadi Pune</image:title>
+      <image:loc>https://rohanbuildersekam.com/images/optimized/hero-riverfront.webp</image:loc>
+      <image:title>Flats in Mahalunge Mula Riverfront</image:title>
+      <image:caption>Adjacent to Mahalunge-Balewadi sports corridor.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://rohanbuildersekam.com/flats-in-baner/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <loc>https://rohanbuildersekam.com/flats-in-baner</loc>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
     <image:image>
-      <image:loc>https://rohanbuildersekam.com/rohan-ekam-logo.png</image:loc>
-      <image:title>Flats in Baner Pune - Luxury Residences</image:title>
+      <image:loc>https://rohanbuildersekam.com/images/optimized/hero-riverfront.webp</image:loc>
+      <image:title>Flats in Baner Pune</image:title>
+      <image:caption>Premium homes 7 mins from Baner Main Road.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://rohanbuildersekam.com/pune-luxury-real-estate/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <loc>https://rohanbuildersekam.com/pune-luxury-real-estate</loc>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
     <image:image>
-      <image:loc>https://rohanbuildersekam.com/rohan-ekam-logo.png</image:loc>
-      <image:title>Pune Luxury Real Estate Market Benchmark</image:title>
+      <image:loc>https://rohanbuildersekam.com/images/optimized/master-plan.webp</image:loc>
+      <image:title>Pune Luxury Real Estate Benchmark</image:title>
+      <image:caption>The gold standard of luxury housing in Pune.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://rohanbuildersekam.com/flats-in-balewadi/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <loc>https://rohanbuildersekam.com/flats-in-balewadi</loc>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
-      <image:loc>https://rohanbuildersekam.com/rohan-ekam-logo.png</image:loc>
-      <image:title>Flats in Balewadi Pune - Rohan Ekam</image:title>
+      <image:loc>https://rohanbuildersekam.com/images/optimized/hero-riverfront.webp</image:loc>
+      <image:title>Flats in Balewadi Pune</image:title>
+      <image:caption>Luxury living behind Balewadi High Street.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://rohanbuildersekam.com/2-bhk-flats-in-balewadi/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <loc>https://rohanbuildersekam.com/2-bhk-flats-in-balewadi</loc>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
-      <image:loc>https://rohanbuildersekam.com/rohan-ekam-logo.png</image:loc>
-      <image:title>2 BHK Flats in Balewadi Pune Floor Plans</image:title>
+      <image:loc>https://rohanbuildersekam.com/images/optimized/plan-2bhk.webp</image:loc>
+      <image:title>2 BHK Luxury Floor Plan Balewadi</image:title>
+      <image:caption>850-950 sq ft usable carpet area.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://rohanbuildersekam.com/3-bhk-flats-in-balewadi/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <loc>https://rohanbuildersekam.com/3-bhk-flats-in-balewadi</loc>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
-      <image:loc>https://rohanbuildersekam.com/rohan-ekam-logo.png</image:loc>
-      <image:title>3 BHK Flats in Balewadi Pune Riverfront Plans</image:title>
+      <image:loc>https://rohanbuildersekam.com/images/optimized/plan-3bhk-1.webp</image:loc>
+      <image:title>3 BHK Premium Floor Plan Balewadi</image:title>
+      <image:caption>1150-1450 sq ft usable carpet area.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://rohanbuildersekam.com/4-bhk-flats-in-balewadi/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <loc>https://rohanbuildersekam.com/4-bhk-flats-in-balewadi</loc>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
-      <image:loc>https://rohanbuildersekam.com/rohan-ekam-logo.png</image:loc>
-      <image:title>4 BHK Sky Suites Balewadi Pune Duplex Penthouses</image:title>
+      <image:loc>https://rohanbuildersekam.com/images/optimized/plan-4bhk.webp</image:loc>
+      <image:title>4 BHK Sky Suite Penthouse Layout</image:title>
+      <image:caption>1950-2300 sq ft duplex penthouses.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://rohanbuildersekam.com/price-and-cost-sheet/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <loc>https://rohanbuildersekam.com/price-and-cost-sheet</loc>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
-    <image:image>
-      <image:loc>https://rohanbuildersekam.com/rohan-ekam-logo.png</image:loc>
-      <image:title>Rohan Ekam Cost Sheet &amp; Price Breakdown</image:title>
-    </image:image>
   </url>
   <url>
-    <loc>https://rohanbuildersekam.com/location-balewadi-high-street/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <loc>https://rohanbuildersekam.com/location-balewadi-high-street</loc>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
-    <image:image>
-      <image:loc>https://rohanbuildersekam.com/rohan-ekam-logo.png</image:loc>
-      <image:title>Rohan Ekam Balewadi High Street Location Map</image:title>
-    </image:image>
   </url>
   <url>
-    <loc>https://rohanbuildersekam.com/rohan-builders-pune-projects/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <loc>https://rohanbuildersekam.com/rohan-builders-pune-projects</loc>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
-    <image:image>
-      <image:loc>https://rohanbuildersekam.com/rohan-ekam-logo.png</image:loc>
-      <image:title>Rohan Builders Pune Projects Portfolio</image:title>
-    </image:image>
   </url>
-
-  <!-- Knowledge Hub & Pillar Real Estate Articles -->
   <url>
-    <loc>https://rohanbuildersekam.com/blog/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <loc>https://rohanbuildersekam.com/blog</loc>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.88</priority>
   </url>
   <url>
-    <loc>https://rohanbuildersekam.com/blog/top-luxury-projects-baner-balewadi/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <loc>https://rohanbuildersekam.com/blog/top-luxury-projects-baner-balewadi</loc>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://rohanbuildersekam.com/blog/pune-real-estate-west-vs-east-market-analysis/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <loc>https://rohanbuildersekam.com/blog/pune-real-estate-west-vs-east-market-analysis</loc>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://rohanbuildersekam.com/blog/pune-real-estate-stamp-duty-taxes-rera-guide/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <loc>https://rohanbuildersekam.com/blog/pune-real-estate-stamp-duty-taxes-rera-guide</loc>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://rohanbuildersekam.com/blog/baner-vs-balewadi-real-estate-investment-comparison/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <loc>https://rohanbuildersekam.com/blog/baner-vs-balewadi-real-estate-investment-comparison</loc>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://rohanbuildersekam.com/blog/pune-luxury-real-estate-market-trends-2026-2027/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <loc>https://rohanbuildersekam.com/blog/pune-luxury-real-estate-market-trends-2026-2027</loc>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://rohanbuildersekam.com/blog/luxury-penthouses-sky-villas-baner-balewadi/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <loc>https://rohanbuildersekam.com/blog/luxury-penthouses-sky-villas-baner-balewadi</loc>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://rohanbuildersekam.com/blog/why-balewadi-is-pune-top-luxury-real-estate-hub/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <loc>https://rohanbuildersekam.com/blog/why-balewadi-is-pune-top-luxury-real-estate-hub</loc>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://rohanbuildersekam.com/blog/ground-floor-in-the-sky-architectural-monograph/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <loc>https://rohanbuildersekam.com/blog/ground-floor-in-the-sky-architectural-monograph</loc>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://rohanbuildersekam.com/blog/rohan-plus-homes-design-science-cross-ventilation/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <loc>https://rohanbuildersekam.com/blog/rohan-plus-homes-design-science-cross-ventilation</loc>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://rohanbuildersekam.com/blog/nri-real-estate-investment-guide-pune-balewadi/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <loc>https://rohanbuildersekam.com/blog/nri-real-estate-investment-guide-pune-balewadi</loc>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://rohanbuildersekam.com/blog/balewadi-high-street-metro-line-3-connectivity-boom/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <loc>https://rohanbuildersekam.com/blog/balewadi-high-street-metro-line-3-connectivity-boom</loc>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://rohanbuildersekam.com/blog/2-bhk-3-bhk-4-bhk-carpet-area-price-comparison-balewadi/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <loc>https://rohanbuildersekam.com/blog/2-bhk-3-bhk-4-bhk-carpet-area-price-comparison-balewadi</loc>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
-
-  <!-- Regulatory & Compliance Pages -->
   <url>
-    <loc>https://rohanbuildersekam.com/privacy-policy/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <loc>https://rohanbuildersekam.com/privacy-policy</loc>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.50</priority>
   </url>
   <url>
-    <loc>https://rohanbuildersekam.com/terms/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <loc>https://rohanbuildersekam.com/terms</loc>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.50</priority>
   </url>
   <url>
-    <loc>https://rohanbuildersekam.com/disclaimer/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <loc>https://rohanbuildersekam.com/disclaimer</loc>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.50</priority>
   </url>
 </urlset>
