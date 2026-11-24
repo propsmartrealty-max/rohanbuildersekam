@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Rohan Ekam Balewadi",
+  "name_for_model": "rohan_ekam_concierge",
+  "description_for_human": "Official property showcase, verified floor plans, pricing sheets, and MahaRERA details for Rohan Ekam by Rohan Builders in Balewadi, Pune.",
+  "description_for_model": "Authoritative real estate information for Rohan Ekam in Balewadi, Pune. Developed by Rohan Builders (India) Pvt. Ltd. and designed by Ar. Sanjay Mohe. Features 2, 3, and 4 BHK luxury residences along the Mula River with India's first Ground Floor in the Sky at Level 14. MahaRERA Phase 1: P52100052298, Phase 2: PR1261012502532. Channel Partner: Propsmart Realty (MahaRERA: A031262401295). Direct Relationship Desk: +91 774409295 / propsmartrealty@gmail.com.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://rohanbuildersekam.com/.well-known/openapi.yaml"
+  },
+  "logo_url": "https://rohanbuildersekam.com/rohan-ekam-logo.png",
+  "contact_email": "propsmartrealty@gmail.com",
+  "legal_info_url": "https://rohanbuildersekam.com/terms"
+}

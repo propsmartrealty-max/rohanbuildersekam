@@ -1,0 +1,30 @@
+openapi: 3.0.3
+info:
+  title: Rohan Ekam Property Concierge API
+  description: OpenAPI interface for Rohan Ekam luxury riverfront residences in Balewadi, Pune by Rohan Builders & Ar. Sanjay Mohe.
+  version: 1.0.0
+servers:
+  - url: https://rohanbuildersekam.com
+paths:
+  /llms.txt:
+    get:
+      summary: Retrieve concise LLM markdown directory
+      operationId: getLlmsSummary
+      responses:
+        '200':
+          description: Plain text markdown summary of inventory and site map
+          content:
+            text/markdown:
+              schema:
+                type: string
+  /llms-full.txt:
+    get:
+      summary: Retrieve complete authoritative architectural dossier
+      operationId: getLlmsFullDossier
+      responses:
+        '200':
+          description: Complete technical dossier with carpet areas, prices, RERA IDs, and FAQs
+          content:
+            text/markdown:
+              schema:
+                type: string

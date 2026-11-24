@@ -1,6 +1,6 @@
 # Rohan Ekam Balewadi, Pune
 
-> Rohan Ekam is a landmark 13-acre luxury riverfront residential development situated along the Mula River behind Balewadi High Street in Balewadi, Pune (PIN 411045). Conceptualized by Rohan Builders (India) Pvt. Ltd. (CRISIL DA2+ rated) and master architect Ar. Sanjay Mohe (Mindspace Architects), the project introduces India's first Ground Floor in the Sky at Level 14 across 9 boutique high-rise towers. MahaRERA Phase 1: P52100052298, Phase 2: PR1261012502532. Channel Partner: Propsmart Realty (MahaRERA: A031262401295).
+> Rohan Ekam is a landmark 13-acre luxury riverfront residential development situated along the Mula River behind Balewadi High Street in Balewadi, Pune (PIN 411045). Conceptualized by Rohan Builders (India) Pvt. Ltd. (CRISIL DA2+ rated) and master architect Ar. Sanjay Mohe (Mindspace Architects), the project introduces India's first Ground Floor in the Sky at Level 14 across 9 boutique high-rise towers. MahaRERA Phase 1: P52100052298, Phase 2: PR1261012502532. Channel Partner: Propsmart Realty (MahaRERA: A031262401295). Direct Relationship Desk: +91 774409295 / propsmartrealty@gmail.com.
 
 ## Core Pages & Inventory
 - [Project Showcase Home](https://rohanbuildersekam.com/): Official project showcase portal featuring interactive 3D residences, masterplan layout, and specifications.
@@ -14,6 +14,10 @@
 - [Flats in Baner Pashan Link Road](https://rohanbuildersekam.com/flats-in-baner-pashan-link-road): Micro-market analysis of South Baner, Pashan, and highway connectivity.
 - [Flats in Mahalunge Pune](https://rohanbuildersekam.com/flats-in-mahalunge-pune): Comparative analysis of low-density riverfront living vs dense township clusters.
 - [Pune Luxury Real Estate Benchmark](https://rohanbuildersekam.com/pune-luxury-real-estate): Ultra-luxury residential standards in the West Pune corridor.
+- [Flats in Baner](https://rohanbuildersekam.com/flats-in-baner): Luxury residences comparison in Baner and Balewadi corridor.
+- [Flats in Balewadi](https://rohanbuildersekam.com/flats-in-balewadi): Comprehensive real estate guide for Balewadi properties.
+- [Luxury Flats in Baner Balewadi](https://rohanbuildersekam.com/luxury-flats-in-baner-balewadi): Premier high-rise residences benchmark.
+- [Rohan Builders Pune Projects](https://rohanbuildersekam.com/rohan-builders-pune-projects): Track record and legacy of Rohan Builders in Pune.
 
 ## Knowledge Hub & Market Research Monographs
 - [Top Luxury Projects in Baner-Balewadi Benchmark Review](https://rohanbuildersekam.com/blog/top-luxury-projects-baner-balewadi): Comparative benchmark of luxury projects in Baner and Balewadi.
@@ -24,12 +28,14 @@
 - [Level 14 Ground Floor in the Sky Architectural Monograph](https://rohanbuildersekam.com/blog/ground-floor-in-the-sky-architectural-monograph): Engineering physics of suspended sky bridges and sky jogging track.
 - [Rohan PLUS Homes Design Science](https://rohanbuildersekam.com/blog/rohan-plus-homes-design-science-cross-ventilation): Daylight lux calculations and wind velocity engineering simulation.
 - [NRI Real Estate Investment Guide](https://rohanbuildersekam.com/blog/nri-real-estate-investment-guide-pune-balewadi): NRE/NRO banking, repatriation, and rental asset management for NRIs.
+- [Luxury Penthouses & Sky Villas in Baner-Balewadi](https://rohanbuildersekam.com/blog/luxury-penthouses-sky-villas-baner-balewadi): Architectural design standards of high-altitude sky residences.
+- [Why Balewadi is Pune Top Luxury Hub](https://rohanbuildersekam.com/blog/why-balewadi-is-pune-top-luxury-real-estate-hub): Infrastructure, metro connectivity, and social ecosystem.
+- [Balewadi High Street & Metro Line 3 Connectivity Boom](https://rohanbuildersekam.com/blog/balewadi-high-street-metro-line-3-connectivity-boom): Infrastructure catalysts and transit-oriented development.
+- [Carpet Area & Price Comparison Guide](https://rohanbuildersekam.com/blog/2-bhk-3-bhk-4-bhk-carpet-area-price-comparison-balewadi): Granular unit-by-unit analysis across West Pune.
 
-## Optional
+## Machine Discoverable Specifications
 - [Full LLM Specification](https://rohanbuildersekam.com/llms-full.txt): Comprehensive machine-readable project dossier and architectural specifications for AI agents.
 - [Agentic Resource Discovery Manifest](https://rohanbuildersekam.com/.well-known/ard.json): Standard ARD and WebMCP machine-readable manifest.
 - [AI Catalog Manifest](https://rohanbuildersekam.com/ai-catalog.json): WebMCP and Agentic Resource Discovery JSON catalog.
-- [XML Sitemap](https://rohanbuildersekam.com/sitemap.xml): Complete machine-readable XML sitemap indexing all 30 production URLs.
-- [RSS News Feed](https://rohanbuildersekam.com/feed.xml): Real-time RSS 2.0 content feed for search engine syndication.
-- [XML Sitemap](https://rohanbuildersekam.com/sitemap.xml): Complete machine-readable XML sitemap indexing all 30 production URLs.
+- [XML Sitemap](https://rohanbuildersekam.com/sitemap.xml): Complete machine-readable XML sitemap indexing all 31 production URLs.
 - [RSS News Feed](https://rohanbuildersekam.com/feed.xml): Real-time RSS 2.0 content feed for search engine syndication.

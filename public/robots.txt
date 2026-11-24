@@ -2,6 +2,7 @@
 # ENTERPRISE ROBOTS CONFIGURATION • ROHAN EKAM BALEWADI, PUNE
 # Domain: https://rohanbuildersekam.com
 # Compliance: RFC 9309 (Robot Exclusion Standard) & Google Search Central Guidelines
+# Fully Hardened for AI Search Engines: ChatGPT, Claude, Google Gemini, Perplexity
 # ==============================================================================
 
 # Default Access Policy for Compliant Crawlers
@@ -12,7 +13,21 @@ Disallow: /*?*gclid*
 Disallow: /*?*utm_*
 Disallow: /*?*trk*
 
-# Googlebot Ecosystem (Primary Search, Mobile, Images, News, Ads & Inspection)
+# OpenAI & ChatGPT Ecosystem (Training, Citations & Live Browsing)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic Claude Ecosystem (Claude Search, Retrieval & Analysis)
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+# Google Gemini & Search Ecosystem (Search, Mobile, Images, News & AI Grounding)
 User-agent: Googlebot
 Allow: /
 
@@ -30,6 +45,12 @@ User-agent: Googlebot-News
 Allow: /
 Allow: /blog/
 
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
 User-agent: Google-InspectionTool
 Allow: /
 
@@ -39,12 +60,34 @@ Allow: /
 User-agent: Mediapartners-Google
 Allow: /
 
-# Microsoft Bingbot Ecosystem
+# Perplexity AI Ecosystem
+User-agent: PerplexityBot
+Allow: /
+
+# Apple Intelligence & Search Ecosystem
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Microsoft Bing & Copilot Ecosystem
 User-agent: Bingbot
 Allow: /
 
-# Apple Search Ecosystem
-User-agent: Applebot
+# Cohere AI Ecosystem
+User-agent: cohere-ai
+Allow: /
+
+# Meta AI Ecosystem
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+# Amazon AI Ecosystem
+User-agent: Amazonbot
 Allow: /
 
 # XML Sitemaps & RSS Syndication Feeds

@@ -15,7 +15,7 @@
   Cross-Origin-Opener-Policy: same-origin-allow-popups
   Access-Control-Allow-Origin: *
   X-Robots-Tag: index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1
-  Link: </.well-known/ard.json>; rel="ard", </.well-known/ai-catalog.json>; rel="ai-catalog"
+  Link: </.well-known/ard.json>; rel="ard", </.well-known/ai-catalog.json>; rel="ai-catalog", </llms.txt>; rel="describedby"; type="text/markdown", </llms-full.txt>; rel="alternate"; type="text/markdown"
 
 # Search Engine Crawl & Syndication Directives
 /sitemap.xml
@@ -75,6 +75,16 @@
 
 /.well-known/mcp-card.json
   Content-Type: application/mcp-server-card+json; charset=utf-8
+  Cache-Control: public, max-age=86400, stale-while-revalidate=3600
+  Access-Control-Allow-Origin: *
+
+/.well-known/ai-plugin.json
+  Content-Type: application/json; charset=utf-8
+  Cache-Control: public, max-age=86400, stale-while-revalidate=3600
+  Access-Control-Allow-Origin: *
+
+/.well-known/openapi.yaml
+  Content-Type: text/yaml; charset=utf-8
   Cache-Control: public, max-age=86400, stale-while-revalidate=3600
   Access-Control-Allow-Origin: *
 
