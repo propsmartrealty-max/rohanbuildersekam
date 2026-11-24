@@ -32,6 +32,7 @@ export default function OfficialWhatsAppBar() {
           href="https://wa.me/91774409295?text=Hello%20Rohan%20Builders,%20I%20would%20like%20to%20enquire%20about%20Rohan%20Ekam%20Balewadi."
           target="_blank"
           rel="noreferrer"
+          aria-label="Open direct WhatsApp conversation with Rohan Ekam advisory desk"
           className="flex items-center gap-3 group/link hover:opacity-95 transition-opacity"
         >
           <div className="relative">

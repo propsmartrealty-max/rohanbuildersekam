@@ -39,7 +39,7 @@ export default function Hero({ onOpenVipModal }) {
         </div>
 
         {/* Colorful Brand Insignia (Exact User Typography) */}
-        <div className="mb-5 p-3 rounded-3xl glass-panel-glow border border-white/90 shadow-lg shadow-stone-900/5 transition-all duration-300 hover:scale-105 glass-shimmer">
+        <div className="mb-5 p-3 rounded-3xl glass-panel-glow border border-white/90 shadow-lg shadow-stone-900/5 transition-all duration-300 hover:scale-105 glass-shimmer min-h-[80px] sm:min-h-[110px] flex items-center justify-center">
           <RohanEkamLogo variant="stacked" />
         </div>
 

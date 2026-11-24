@@ -53,6 +53,7 @@ export default function OfficialDocuments() {
                       href={doc.url}
                       target="_blank"
                       rel="noreferrer"
+                      aria-label={`Download ${doc.title} PDF`}
                       className="px-4 py-2.5 rounded-xl bg-stone-900 hover:bg-stone-800 text-white font-bold text-xs uppercase tracking-wider flex items-center gap-1.5 transition-all shadow-sm active:scale-95 min-h-[44px]"
                     >
                       <Download className="w-3.5 h-3.5 text-amber-400" />
@@ -111,7 +112,8 @@ export default function OfficialDocuments() {
                   href="https://maharera.mahaonline.gov.in"
                   target="_blank"
                   rel="noreferrer"
-                  className="text-stone-900 font-bold underline font-mono flex items-center gap-1"
+                  aria-label="Verify project registration on official MahaRERA website"
+                  className="text-stone-900 font-bold underline font-mono flex items-center gap-1 min-h-[44px]"
                 >
                   <span>maharera.mahaonline.gov.in</span>
                   <ExternalLink className="w-3 h-3" />

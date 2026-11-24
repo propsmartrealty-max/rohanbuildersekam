@@ -14,7 +14,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=optional" rel="stylesheet" />
     
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Flats Near Hinjawadi IT Park Pune | 2, 3 & 4 BHK Luxury Residences | Rohan Ekam" />
@@ -467,28 +467,28 @@
               <input type="hidden" name="_next" value="https://rohanbuildersekam.com/#interested" />
 
               <div class="form-group">
-                <label class="form-label">Full Name *</label>
-                <input type="text" name="name" required placeholder="Your Name" class="form-input" />
+                <label class="form-label" for="hinj-lead-name">Full Name *</label>
+                <input type="text" id="hinj-lead-name" name="name" required aria-label="Full Name" placeholder="Your Name" class="form-input" />
               </div>
 
               <div class="form-group">
-                <label class="form-label">Mobile Number *</label>
-                <input type="tel" name="mobile" required pattern="[0-9]{10}" placeholder="10-digit Mobile Number" class="form-input" />
+                <label class="form-label" for="hinj-lead-mobile">Mobile Number *</label>
+                <input type="tel" id="hinj-lead-mobile" name="mobile" required pattern="[0-9]{10}" aria-label="10-digit Mobile Number" placeholder="10-digit Mobile Number" class="form-input" />
               </div>
 
               <div class="form-group">
-                <label class="form-label">Email Address (Optional)</label>
-                <input type="email" name="email" placeholder="you@workplace.com" class="form-input" />
+                <label class="form-label" for="hinj-lead-email">Email Address (Optional)</label>
+                <input type="email" id="hinj-lead-email" name="email" aria-label="Email Address" placeholder="you@workplace.com" class="form-input" />
               </div>
 
               <div class="form-group">
-                <label class="form-label">Workplace / Campus</label>
-                <input type="text" name="company" placeholder="e.g. Infosys, TCS, Wipro, Barclays" class="form-input" />
+                <label class="form-label" for="hinj-lead-company">Workplace / Campus</label>
+                <input type="text" id="hinj-lead-company" name="company" aria-label="Workplace or Campus" placeholder="e.g. Infosys, TCS, Wipro, Barclays" class="form-input" />
               </div>
 
               <div class="form-group">
-                <label class="form-label">Configuration Interest</label>
-                <select name="configuration" class="form-input" style="background: #FFF;">
+                <label class="form-label" for="hinj-lead-config">Configuration Interest</label>
+                <select id="hinj-lead-config" name="configuration" aria-label="Configuration Interest" class="form-input" style="background: #FFF;">
                   <option value="2 BHK" selected>2 BHK Luxury Residence (From ₹1.45 Cr*)</option>
                   <option value="3 BHK">3 BHK Premium Residence (From ₹1.95 Cr*)</option>
                   <option value="4 BHK">4 BHK Sky Suite Duplex (From ₹2.75 Cr*)</option>

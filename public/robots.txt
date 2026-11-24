@@ -36,10 +36,6 @@ Allow: /
 
 User-agent: Googlebot-Image
 Allow: /
-Allow: /*.png$
-Allow: /*.jpg$
-Allow: /*.svg$
-Allow: /*.webp$
 
 User-agent: Googlebot-News
 Allow: /

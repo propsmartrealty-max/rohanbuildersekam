@@ -341,7 +341,15 @@ export const OFFICIAL_FAQS_COMPLETE = {
   "Project Overview": [
     {
       q: "Is the project RERA compliant?",
-      a: "Yes, Rohan Ekam is RERA registered. The MahaRERA Registration Number is P52100052298 and all information can be accessed on the MahaRERA portal."
+      a: "Yes, Rohan Ekam is RERA registered. The MahaRERA Registration Number is P52100052298 (Phase 1) and PR1261012502532 (Phase 2) and all information can be accessed on the MahaRERA portal."
+    },
+    {
+      q: "What configurations, carpet areas, and prices are offered at Rohan Ekam?",
+      a: "Rohan Ekam features spacious 2 BHK luxury flats (850-920 sq.ft. carpet) starting from ₹1.45 Cr*, 3 BHK residences (1,180-1,450 sq.ft. carpet) starting from ₹1.95 Cr*, and 4 BHK Sky Suite Duplexes (1,850-2,200 sq.ft. carpet) starting from ₹2.75 Cr*. All apartments feature Rohan's PLUS homes design ensuring 0% corridor wastage."
+    },
+    {
+      q: "How does Rohan Ekam benchmark against other luxury residential projects in Baner and Balewadi?",
+      a: "Unlike land-constrained standalone towers or crowded 100-acre mega-townships in Mahalunge, Rohan Ekam is spread across 13 pristine riverfront acres along the Mula River with 9 boutique towers, a 1.2 km boardwalk, and India's first Level 14 Ground Floor in the Sky designed by Ar. Sanjay Mohe."
     },
     {
       q: "Is the project under PMC or PMRDA?",
@@ -375,7 +383,11 @@ export const OFFICIAL_FAQS_COMPLETE = {
   "Location & Connectivity": [
     {
       q: "Where is Rohan Ekam located in Pune?",
-      a: "Rohan Ekam is strategically located at the heart of Balewadi in West Pune. It is very close to the Pune-Mumbai Expressway and is easily accessible from Hinjewadi, Baner, Aundh, Wakad, Pashan."
+      a: "Rohan Ekam is strategically located at the heart of Balewadi along the serene Mula River behind Balewadi High Street in West Pune (411045). It is close to the Mumbai-Bangalore Highway and easily accessible from Hinjawadi IT Park, Baner, Aundh, Wakad, and Pashan."
+    },
+    {
+      q: "How does Rohan Ekam connect to Balewadi High Street, Hinjawadi IT Park, and Pune Metro Line 3?",
+      a: "Rohan Ekam is located 5 minutes from Balewadi High Street, 4 minutes (1.5 km) from the upcoming Balewadi Metro Station on Pune Metro Line 3, and 12-15 minutes from Hinjawadi Phase 1 IT Park (Infosys, TCS, Wipro, Barclays) via a direct riverfront bypass avoiding highway bottlenecks."
     },
     {
       q: "How is Rohan Ekam connected to major transportation hubs?",
@@ -464,12 +476,20 @@ export const OFFICIAL_FAQS_COMPLETE = {
   ],
   "Booking, Finance & Investment": [
     {
+      q: "What is the starting price and cost sheet for Rohan Ekam?",
+      a: "Rohan Ekam starting prices: 2 BHK luxury flats start from ₹1.45 Cr*, 3 BHK residences start from ₹1.95 Cr*, and 4 BHK Sky Suite Duplexes start from ₹2.75 Cr*. Detailed cost sheets including base price, floor rise charges, 6% stamp duty, ₹30,000 capped registration, and 5% GST are available on request."
+    },
+    {
       q: "What is the token booking amount for Rohan Ekam?",
-      a: "The initial expression of interest token is collected during launch phases with flexible installment schedules."
+      a: "The initial expression of interest token is collected during launch phases with flexible construction-linked milestone installment schedules."
     },
     {
       q: "Which banks have approved the project for home loans?",
-      a: "Pre-approved by SBI, HDFC Bank, ICICI Bank, Axis Bank, Tata Capital, and Kotak Mahindra Bank."
+      a: "Pre-approved by State Bank of India (SBI), HDFC Bank, ICICI Bank, Axis Bank, Tata Capital, and Kotak Mahindra Bank."
+    },
+    {
+      q: "What is the expected rental yield and capital appreciation in Balewadi?",
+      a: "Balewadi delivers rental yields of 3.5% to 4.2% driven by tech and corporate leadership tenants from Hinjawadi IT Park. Capital appreciation across the Baner-Balewadi corridor has historically compounded at 8.5% to 11.2% CAGR."
     }
   ],
   "About Rohan Builders": [
