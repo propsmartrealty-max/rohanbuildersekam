@@ -34,6 +34,7 @@ export default function SpecificationsGallery() {
               <button
                 key={fil}
                 onClick={() => setActiveFilter(fil)}
+                aria-label={`Filter visual gallery by category: ${fil}`}
                 className={`px-4 py-2.5 rounded-full text-xs font-semibold transition-all min-h-[44px] flex items-center justify-center ${
                   activeFilter === fil
                     ? 'bg-stone-900 text-white shadow-sm'

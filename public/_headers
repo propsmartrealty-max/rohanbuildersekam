@@ -15,6 +15,7 @@
   Cross-Origin-Opener-Policy: same-origin-allow-popups
   Access-Control-Allow-Origin: *
   X-Robots-Tag: index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1
+  Link: </.well-known/ard.json>; rel="ard", </.well-known/ai-catalog.json>; rel="ai-catalog"
 
 # Search Engine Crawl & Syndication Directives
 /sitemap.xml

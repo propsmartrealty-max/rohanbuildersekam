@@ -7,6 +7,7 @@
     <meta name="description" content="Looking for ultra-luxury 4 BHK flats or penthouses in Balewadi, Pune? Explore Rohan Ekam 4 BHK Sky Suites. Double-height ceilings, private elevator lobby, and 360° river views. Starting ₹2.75 Cr*." />
     <meta name="keywords" content="4 bhk in balewadi, 4 bhk flats in balewadi pune, luxury penthouses in balewadi, sky suites rohan ekam, 4 bhk luxury flats pune, flats near balewadi high street 4 bhk" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <link rel="ard" type="application/json" href="/.well-known/ard.json" />
     <link rel="canonical" href="https://rohanbuildersekam.com/4-bhk-flats-in-balewadi" />
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <link rel="alternate icon" type="image/x-icon" href="./favicon.ico" />
@@ -119,19 +120,16 @@
       }
       .nav-actions { display: flex; align-items: center; gap: 12px; }
       .btn-whatsapp {
-        background: #25D366; color: #FFFFFF !important; text-decoration: none;
-        font-size: 12px; font-weight: 600; padding: 8px 16px; border-radius: 9999px;
-        display: inline-flex; align-items: center; gap: 6px; transition: transform 0.2s;
+        background: #15803D; color: #FFFFFF !important; text-decoration: none; font-size: 13px; font-weight: 600; padding: 10px 18px; border-radius: 9999px; display: inline-flex; align-items: center; gap: 6px; min-height: 44px; transition: transform 0.2s;
       }
       .btn-whatsapp:hover { transform: translateY(-1px); }
       .btn-outline {
-        border: 1px solid var(--text-heading); color: var(--text-heading) !important;
-        text-decoration: none; font-size: 12px; font-weight: 600; padding: 7px 14px; border-radius: 9999px;
+        border: 1px solid var(--text-heading); color: var(--text-heading) !important; text-decoration: none; font-size: 13px; font-weight: 600; padding: 10px 18px; border-radius: 9999px; min-height: 44px; display: inline-flex; align-items: center;
       }
       .btn-outline:hover { background: var(--text-heading); color: #FFF !important; }
       .container { max-width: 1100px; margin: 0 auto; padding: 40px 20px 80px 20px; }
-      .breadcrumb { font-size: 12px; color: #78716C; margin-bottom: 20px; }
-      .breadcrumb a { color: #78716C; text-decoration: none; }
+      .breadcrumb { font-size: 12px; color: #57534E; margin-bottom: 20px; }
+      .breadcrumb a { color: #57534E; text-decoration: none; }
       .breadcrumb a:hover { text-decoration: underline; }
       .hero-card {
         background: var(--card-bg); border: 1px solid var(--border);
@@ -198,7 +196,7 @@
       }
       .cluster-pill:hover { border-color: var(--emerald); color: var(--emerald); }
       .site-footer {
-        margin-top: 60px; padding-top: 24px; border-top: 1px solid var(--border); text-align: center; font-size: 11px; color: #78716C;
+        margin-top: 60px; padding-top: 24px; border-top: 1px solid var(--border); text-align: center; font-size: 11px; color: #57534E;
       }
     </style>
       <!-- Google Local Geo Targeting Tags (Balewadi, Pune) -->
@@ -211,7 +209,7 @@
     <header class="top-nav">
       <div class="top-nav-inner">
         <a href="/" class="brand-link">
-          <img src="./rohan-ekam-logo.svg" alt="Rohan Ekam" style="height: 28px; width: auto;" />
+          <img src="./rohan-ekam-logo.svg" alt="Rohan Ekam Logo" width="160" height="28" style="height: 28px; width: auto;" />
           <span>Rohan Ekam</span>
         </a>
         <div class="nav-actions">
@@ -287,7 +285,7 @@
         <div>
           <div class="inquiry-form" id="inquiry">
             <h3 style="margin-top: 0; font-family: 'Cormorant Garamond', serif; font-size: 22px; color: #1C1917;">Instant VIP Site Visit &amp; Cost Sheet</h3>
-            <p style="font-size: 12px; color: #78716C; margin-bottom: 16px;">Direct Relationship Desk • Dispatches to propsmartrealty@gmail.com</p>
+            <p style="font-size: 12px; color: #57534E; margin-bottom: 16px;">Direct Relationship Desk • Dispatches to propsmartrealty@gmail.com</p>
             
             <form action="https://formsubmit.co/propsmartrealty@gmail.com" method="POST">
               <input type="hidden" name="_subject" value="New Inquiry from 4-bhk-flats-in-balewadi - Rohan Ekam" />
@@ -296,33 +294,33 @@
               <input type="hidden" name="_next" value="https://rohanbuildersekam.com/#interested" />
 
               <div class="form-group">
-                <label class="form-label">Full Name *</label>
-                <input type="text" name="name" required placeholder="Your Name" class="form-input" />
+                <label class="form-label" for="lead-name">Full Name *</label>
+                <input type="text" id="lead-name" name="name" required aria-label="Full Name" placeholder="Your Name" class="form-input" />
               </div>
 
               <div class="form-group">
-                <label class="form-label">Mobile Number *</label>
-                <input type="tel" name="mobile" required pattern="[0-9]{10}" placeholder="10-digit Mobile Number" class="form-input" />
+                <label class="form-label" for="lead-mobile">Mobile Number *</label>
+                <input type="tel" id="lead-mobile" name="mobile" required pattern="[0-9]{10}" aria-label="10-digit Mobile Number" placeholder="10-digit Mobile Number" class="form-input" />
               </div>
 
               <div class="form-group">
-                <label class="form-label">Email Address (Optional)</label>
-                <input type="email" name="email" placeholder="you@domain.com" class="form-input" />
+                <label class="form-label" for="lead-email">Email Address (Optional)</label>
+                <input type="email" id="lead-email" name="email" aria-label="Email Address (Optional)" placeholder="you@domain.com" class="form-input" />
               </div>
 
               <div class="form-group">
-                <label class="form-label">Configuration Interest</label>
-                <select name="configuration" class="form-input" style="background: #FFF;">
+                <label class="form-label" for="lead-config">Configuration Interest</label>
+                <select id="lead-config" name="configuration" aria-label="Configuration Interest" class="form-input" style="background: #FFF;">
                   <option value="2 BHK" >2 BHK Luxury Residence (From ₹1.45 Cr*)</option>
                   <option value="3 BHK" >3 BHK Premium Residence (From ₹1.95 Cr*)</option>
                   <option value="4 BHK" selected>4 BHK Sky Suite Penthouse (From ₹2.75 Cr*)</option>
                 </select>
               </div>
 
-              <button type="submit" class="btn-submit">Request Detailed Pricing &amp; Callback</button>
+              <button type="submit" aria-label="Request Detailed Pricing &amp; Callback" class="btn-submit">Request Detailed Pricing &amp; Callback</button>
             </form>
 
-            <div style="margin-top: 16px; font-size: 11px; color: #78716C; text-align: center;">
+            <div style="margin-top: 16px; font-size: 11px; color: #57534E; text-align: center;">
               Advisory Desk: Propsmart Realty (MahaRERA: <strong>A031262401295</strong>)<br/>
               WhatsApp Desk: <a href="https://wa.me/91774409295" style="color: #065F46; font-weight: 600;">+91 774409295</a>
             </div>
@@ -365,9 +363,9 @@
       <footer class="site-footer">
         <p>&copy; 2026 Rohan Ekam. All Rights Reserved. &bull; Project MahaRERA: P52100052298 &amp; PR1261012502532.</p>
         <p style="margin-top: 6px;">
-          <a href="/privacy-policy" style="color: #78716C; margin-right: 12px;">Privacy Policy</a>
-          <a href="/terms" style="color: #78716C; margin-right: 12px;">Terms &amp; Conditions</a>
-          <a href="/disclaimer" style="color: #78716C; margin-right: 12px;">MahaRERA Disclaimer</a>
+          <a href="/privacy-policy" style="color: #57534E; margin-right: 12px;">Privacy Policy</a>
+          <a href="/terms" style="color: #57534E; margin-right: 12px;">Terms &amp; Conditions</a>
+          <a href="/disclaimer" style="color: #57534E; margin-right: 12px;">MahaRERA Disclaimer</a>
         </p>
       </footer>
     </main>

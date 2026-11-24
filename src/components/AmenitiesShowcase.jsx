@@ -66,6 +66,7 @@ export default function AmenitiesShowcase({ onOpenVipModal }) {
             <button
               key={cat}
               onClick={() => setActiveCategory(cat)}
+              aria-label={`Filter amenities by category: ${cat}`}
               className={`px-4 py-2.5 rounded-full text-xs font-semibold whitespace-nowrap transition-all duration-300 min-h-[44px] inline-flex items-center justify-center ${
                 activeCategory === cat
                   ? 'bg-stone-900 text-white shadow-md shadow-stone-900/10 scale-102'
@@ -116,7 +117,8 @@ export default function AmenitiesShowcase({ onOpenVipModal }) {
             </span>
             <button
               onClick={onOpenVipModal}
-              className="px-6 py-2.5 rounded-xl bg-stone-900 hover:bg-stone-800 text-white text-xs font-bold uppercase tracking-wider transition-all shadow-md active:scale-95"
+              aria-label="Download Full Brochure with complete amenity specifications"
+              className="px-6 py-2.5 rounded-xl bg-stone-900 hover:bg-stone-800 text-white text-xs font-bold uppercase tracking-wider transition-all shadow-md active:scale-95 min-h-[44px] inline-flex items-center justify-center"
             >
               Download Full Brochure
             </button>

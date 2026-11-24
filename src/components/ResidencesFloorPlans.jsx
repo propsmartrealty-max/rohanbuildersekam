@@ -36,6 +36,7 @@ export default function ResidencesFloorPlans({ onOpenVipModal }) {
               <button
                 key={plan.id}
                 onClick={() => setSelectedPlanId(plan.id)}
+                aria-label={`Select ${plan.type} floor plan layout`}
                 className={`px-4 py-2.5 rounded-xl text-xs font-semibold transition-all duration-300 min-h-[44px] flex items-center justify-center ${
                   selectedPlanId === plan.id
                     ? 'bg-stone-900 text-white shadow-md shadow-stone-900/10 scale-102'
@@ -105,6 +106,7 @@ export default function ResidencesFloorPlans({ onOpenVipModal }) {
                 </span>
                 <button
                   onClick={() => setIsBlueprintLightboxOpen(true)}
+                  aria-label="Zoom floor plan drawing"
                   className="text-stone-900 font-mono font-semibold hover:underline flex items-center gap-1.5 py-2 px-2.5 rounded-lg hover:bg-white/80 min-h-[44px]"
                 >
                   <span>Zoom Drawing</span>
@@ -154,7 +156,8 @@ export default function ResidencesFloorPlans({ onOpenVipModal }) {
 
               <button
                 onClick={onOpenVipModal}
-                className="w-full mt-6 py-3.5 rounded-xl bg-stone-900 hover:bg-stone-800 text-white font-bold text-xs uppercase tracking-wider transition-all duration-300 shadow-md shadow-stone-900/10 flex items-center justify-center gap-2 active:scale-95 glass-shimmer"
+                aria-label={`Enquire for ${activePlan.type}`}
+                className="w-full mt-6 py-3.5 rounded-xl bg-stone-900 hover:bg-stone-800 text-white font-bold text-xs uppercase tracking-wider transition-all duration-300 shadow-md shadow-stone-900/10 flex items-center justify-center gap-2 active:scale-95 glass-shimmer min-h-[44px]"
               >
                 <Sparkles className="w-4 h-4 text-amber-400" />
                 <span>Enquire For {activePlan.type}</span>

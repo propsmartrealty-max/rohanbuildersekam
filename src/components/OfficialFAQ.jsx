@@ -37,6 +37,7 @@ export default function OfficialFAQ() {
                     setActiveCategory(cat);
                     setOpenQuestionIdx(0);
                   }}
+                  aria-label={`Switch FAQ category to: ${cat}`}
                   className={`px-3.5 py-3 rounded-2xl text-left text-xs font-semibold transition-all duration-300 flex items-center justify-between glass-card-hover min-h-[44px] ${
                     activeCategory === cat
                       ? 'bg-stone-900 text-white shadow-md shadow-stone-900/10'
@@ -74,7 +75,9 @@ export default function OfficialFAQ() {
                   >
                     <button
                       onClick={() => toggleQuestion(idx)}
-                      className="w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 hover:bg-white/70 transition-colors"
+                      aria-label={`Toggle answer for: ${item.q}`}
+                      aria-expanded={isOpen}
+                      className="w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 hover:bg-white/70 transition-colors min-h-[44px]"
                     >
                       <span className="text-xs sm:text-sm font-bold text-stone-900 leading-snug">
                         {item.q}

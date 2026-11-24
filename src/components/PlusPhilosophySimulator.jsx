@@ -116,7 +116,8 @@ export default function PlusPhilosophySimulator() {
               <button
                 key={pillar.id}
                 onClick={() => setActivePillar(pillar.id)}
-                className={`p-4 rounded-2xl border text-left transition-all duration-300 shadow-sm glass-card-hover glass-shimmer ${
+                aria-label={`Select ${pillar.name} architecture pillar`}
+                className={`p-4 rounded-2xl border text-left transition-all duration-300 shadow-sm glass-card-hover glass-shimmer min-h-[44px] ${
                   isSelected
                     ? 'glass-panel-glow border-stone-900 ring-2 ring-stone-900/10 scale-102'
                     : 'glass-panel border-white/80 hover:border-stone-400'
@@ -314,7 +315,8 @@ export default function PlusPhilosophySimulator() {
                 <div className="w-full max-w-md flex justify-center gap-3 mb-4">
                   <button
                     onClick={() => setSpaceEfficiencyMode('standard')}
-                    className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${
+                    aria-label="View Standard Flat layout with 18% corridor waste"
+                    className={`px-3 py-2 rounded-lg text-xs font-medium transition-all min-h-[44px] inline-flex items-center justify-center ${
                       spaceEfficiencyMode === 'standard'
                         ? 'bg-rose-100 text-rose-800 border border-rose-300 font-semibold'
                         : 'bg-white text-stone-600 border border-stone-200'
@@ -324,7 +326,8 @@ export default function PlusPhilosophySimulator() {
                   </button>
                   <button
                     onClick={() => setSpaceEfficiencyMode('ekam')}
-                    className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${
+                    aria-label="View Rohan PLUS Home layout with zero corridor waste"
+                    className={`px-3 py-2 rounded-lg text-xs font-medium transition-all min-h-[44px] inline-flex items-center justify-center ${
                       spaceEfficiencyMode === 'ekam'
                         ? 'bg-stone-900 text-white font-bold'
                         : 'bg-white text-stone-600 border border-stone-200'

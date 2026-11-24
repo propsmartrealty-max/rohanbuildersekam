@@ -24,6 +24,7 @@ export default function LegalModal({ isOpen, onClose, initialTab = 'privacy' }) 
         <div className="flex flex-wrap gap-2 mb-6 border-b border-stone-200/80 pb-3 pr-10">
           <button
             onClick={() => setActiveTab('privacy')}
+            aria-label="View Privacy Policy"
             className={`px-3.5 py-2.5 rounded-xl text-xs font-semibold flex items-center gap-1.5 transition-all min-h-[44px] ${
               activeTab === 'privacy'
                 ? 'bg-stone-900 text-white shadow-sm'
@@ -36,6 +37,7 @@ export default function LegalModal({ isOpen, onClose, initialTab = 'privacy' }) 
 
           <button
             onClick={() => setActiveTab('terms')}
+            aria-label="View Terms of Use"
             className={`px-3.5 py-2.5 rounded-xl text-xs font-semibold flex items-center gap-1.5 transition-all min-h-[44px] ${
               activeTab === 'terms'
                 ? 'bg-stone-900 text-white shadow-sm'
@@ -48,6 +50,7 @@ export default function LegalModal({ isOpen, onClose, initialTab = 'privacy' }) 
 
           <button
             onClick={() => setActiveTab('disclaimer')}
+            aria-label="View Disclaimers and MahaRERA Compliance"
             className={`px-3.5 py-2.5 rounded-xl text-xs font-semibold flex items-center gap-1.5 transition-all min-h-[44px] ${
               activeTab === 'disclaimer'
                 ? 'bg-stone-900 text-white shadow-sm'
@@ -180,6 +183,7 @@ export default function LegalModal({ isOpen, onClose, initialTab = 'privacy' }) 
           </div>
           <button
             onClick={onClose}
+            aria-label="Close legal compliance modal"
             className="px-5 py-2.5 rounded-xl bg-stone-900 text-white font-bold text-xs uppercase tracking-wider hover:bg-stone-800 transition-colors min-h-[44px]"
           >
             Close

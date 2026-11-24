@@ -100,6 +100,7 @@ export default function Navbar({ onOpenVipModal }) {
             {/* VIP Site Visit Button */}
             <button
               onClick={onOpenVipModal}
+              aria-label="Book VIP Site Tour"
               className="relative group overflow-hidden px-4 sm:px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider text-white bg-stone-900 hover:bg-stone-800 transition-all duration-300 shadow-md shadow-stone-900/10 active:scale-95 glass-shimmer min-h-[44px] inline-flex items-center justify-center"
             >
               <span className="relative z-10 flex items-center gap-1.5">
@@ -151,6 +152,7 @@ export default function Navbar({ onOpenVipModal }) {
                   setIsMobileMenuOpen(false);
                   onOpenVipModal();
                 }}
+                aria-label="Schedule Private VIP Tour"
                 className="w-full py-3.5 min-h-[44px] rounded-full bg-stone-900 hover:bg-stone-800 text-white font-bold text-xs uppercase tracking-wider shadow-md flex items-center justify-center"
               >
                 Schedule Private VIP Tour

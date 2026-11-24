@@ -137,6 +137,7 @@ export default function SkyGroundExplorer({ onOpenVipModal }) {
                   setActiveRealmIndex(idx);
                   setSelectedHotspot(0);
                 }}
+                aria-label={`Explore elevation: ${realm.name}`}
                 className={`relative px-4 py-2.5 rounded-xl text-xs font-semibold transition-all duration-300 min-h-[44px] flex items-center gap-2 ${
                   activeRealmIndex === idx
                     ? 'bg-stone-900 text-white shadow-md shadow-stone-900/10 scale-102'
@@ -280,6 +281,7 @@ export default function SkyGroundExplorer({ onOpenVipModal }) {
                 <div className="mt-5 flex items-center justify-between">
                   <button
                     onClick={onOpenVipModal}
+                    aria-label={`Tour ${currentRealm.name} with VIP Relationship Manager`}
                     className="text-xs font-bold uppercase tracking-wider text-white bg-stone-900 hover:bg-stone-800 px-5 py-2.5 rounded-xl transition-all flex items-center gap-1.5 shadow-md shadow-stone-900/10 glass-shimmer min-h-[44px]"
                   >
                     <span>Tour this realm</span>
@@ -304,7 +306,8 @@ export default function SkyGroundExplorer({ onOpenVipModal }) {
                   <button
                     key={idx}
                     onClick={() => setSelectedHotspot(idx)}
-                    className={`w-full text-left p-3 rounded-2xl text-xs transition-all flex items-start justify-between gap-3 ${
+                    aria-label={`Select designed zone: ${feat.title}`}
+                    className={`w-full text-left p-3 rounded-2xl text-xs transition-all flex items-start justify-between gap-3 min-h-[44px] ${
                       selectedHotspot === idx
                         ? 'glass-panel-glow border border-amber-600/40 text-stone-950 font-medium shadow-sm'
                         : 'hover:bg-white/60 text-stone-700 border border-transparent'

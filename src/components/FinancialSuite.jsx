@@ -72,7 +72,8 @@ export default function FinancialSuite({ onOpenVipModal }) {
               <button
                 key={plan.label}
                 onClick={() => setPropertyCost(plan.cost)}
-                className={`px-4 py-2 rounded-full text-xs font-semibold transition-all duration-300 ${
+                aria-label={`Select ${plan.label} priced at ${formatINR(plan.cost)}`}
+                className={`px-4 py-2 rounded-full text-xs font-semibold transition-all duration-300 min-h-[44px] inline-flex items-center justify-center ${
                   propertyCost === plan.cost
                     ? 'bg-stone-900 text-white shadow-md shadow-stone-900/10 scale-105'
                     : 'glass-panel text-stone-700 hover:text-stone-950 hover:bg-white/80'
@@ -265,6 +266,7 @@ export default function FinancialSuite({ onOpenVipModal }) {
 
               <button
                 onClick={onOpenVipModal}
+                aria-label="Request Detailed Cost Sheet PDF"
                 className="w-full mt-6 py-3.5 rounded-xl bg-stone-900 hover:bg-stone-800 text-white font-bold text-xs uppercase tracking-wider transition-all duration-300 shadow-md shadow-stone-900/10 flex items-center justify-center gap-2 group active:scale-95 min-h-[44px]"
               >
                 <FileText className="w-4 h-4 text-amber-400" />

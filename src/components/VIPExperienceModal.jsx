@@ -218,6 +218,7 @@ export default function VIPExperienceModal({ isOpen, onClose, initialConfig = '3
               <button
                 type="submit"
                 disabled={isSubmitting}
+                aria-label="Confirm VIP Reservation"
                 className="w-full py-3.5 rounded-2xl bg-stone-900 hover:bg-stone-800 disabled:bg-stone-600 text-white font-bold text-xs uppercase tracking-wider transition-all duration-300 shadow-lg shadow-stone-900/10 active:scale-98 glass-shimmer flex items-center justify-center gap-2 cursor-pointer min-h-[44px]"
               >
                 {isSubmitting ? (
@@ -280,7 +281,8 @@ export default function VIPExperienceModal({ isOpen, onClose, initialConfig = '3
 
             <button
               onClick={onClose}
-              className="px-6 py-2.5 rounded-xl bg-stone-900 text-white font-bold text-xs uppercase tracking-wider hover:bg-stone-800 transition-colors"
+              aria-label="Close reservation confirmation and return to page"
+              className="px-6 py-2.5 rounded-xl bg-stone-900 text-white font-bold text-xs uppercase tracking-wider hover:bg-stone-800 transition-colors min-h-[44px] inline-flex items-center justify-center"
             >
               Close & Return
             </button>

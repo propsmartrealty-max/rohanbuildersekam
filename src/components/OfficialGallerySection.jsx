@@ -29,7 +29,8 @@ export default function OfficialGallerySection() {
             <div className="flex flex-col gap-2.5">
               <button
                 onClick={() => setActiveTab('images')}
-                className={`p-3.5 rounded-2xl border text-left flex items-center gap-3 transition-all duration-300 glass-card-hover glass-shimmer ${
+                aria-label="View Architectural Photo Gallery"
+                className={`p-3.5 rounded-2xl border text-left flex items-center gap-3 transition-all duration-300 glass-card-hover glass-shimmer min-h-[44px] ${
                   activeTab === 'images'
                     ? 'bg-stone-900 text-white border-stone-900 shadow-md shadow-stone-900/10'
                     : 'glass-panel text-stone-700 border-white/90 hover:border-stone-400'
@@ -37,7 +38,8 @@ export default function OfficialGallerySection() {
               >
                 <img
                   src="https://rohanbuilders.com/wp-content/uploads/2023/04/images-tile.png"
-                  alt="Images"
+                  alt=""
+                  aria-hidden="true"
                   width="24"
                   height="24"
                   loading="lazy"
@@ -52,7 +54,7 @@ export default function OfficialGallerySection() {
               <button
                 onClick={() => setActiveTab('videos')}
                 aria-label="View Videos and 360 Walkthroughs"
-                className={`p-3.5 rounded-2xl border text-left flex items-center gap-3 transition-all duration-300 glass-card-hover glass-shimmer ${
+                className={`p-3.5 rounded-2xl border text-left flex items-center gap-3 transition-all duration-300 glass-card-hover glass-shimmer min-h-[44px] ${
                   activeTab === 'videos'
                     ? 'bg-stone-900 text-white border-stone-900 shadow-md shadow-stone-900/10'
                     : 'glass-panel text-stone-700 border-white/90 hover:border-stone-400'
@@ -60,7 +62,8 @@ export default function OfficialGallerySection() {
               >
                 <img
                   src="https://rohanbuilders.com/wp-content/uploads/2023/04/Video360-tile.png"
-                  alt="Videos & 360"
+                  alt=""
+                  aria-hidden="true"
                   width="24"
                   height="24"
                   loading="lazy"

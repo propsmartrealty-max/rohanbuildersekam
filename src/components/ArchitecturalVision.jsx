@@ -112,6 +112,7 @@ export default function ArchitecturalVision() {
                 <span>Cascading lawns & Mula River edge</span>
                 <button
                   onClick={() => setIsMasterPlanOpen(true)}
+                  aria-label="Enlarge master plan blueprint"
                   className="text-stone-900 font-mono font-semibold hover:underline flex items-center gap-1.5 py-2 px-2.5 rounded-lg hover:bg-white/80 min-h-[44px]"
                 >
                   <span>Enlarge Blueprint</span>

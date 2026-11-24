@@ -60,7 +60,8 @@ export default function Hero({ onOpenVipModal }) {
         <div className="flex flex-col sm:flex-row items-center gap-3.5 mb-10 w-full sm:w-auto">
           <button
             onClick={onOpenVipModal}
-            className="w-full sm:w-auto px-8 py-3.5 rounded-full bg-stone-900 hover:bg-stone-800 text-white font-bold text-xs uppercase tracking-wider transition-all duration-300 shadow-xl shadow-stone-900/10 flex items-center justify-center gap-2 group active:scale-95 glass-shimmer"
+            aria-label="Book Private VIP Tour"
+            className="w-full sm:w-auto px-8 py-3.5 rounded-full bg-stone-900 hover:bg-stone-800 text-white font-bold text-xs uppercase tracking-wider transition-all duration-300 shadow-xl shadow-stone-900/10 flex items-center justify-center gap-2 group active:scale-95 glass-shimmer min-h-[44px]"
           >
             <span>Book Private VIP Tour</span>
             <ArrowRight className="w-4 h-4 text-white group-hover:translate-x-1 transition-transform" />
@@ -70,7 +71,8 @@ export default function Hero({ onOpenVipModal }) {
             href={OFFICIAL_PROJECT_DETAILS.brochures[0].url}
             target="_blank"
             rel="noreferrer"
-            className="w-full sm:w-auto px-7 py-3.5 rounded-full glass-panel hover:bg-white/95 text-stone-900 font-semibold text-xs uppercase tracking-wider border border-white/90 transition-all duration-300 shadow-sm flex items-center justify-center gap-2 glass-shimmer"
+            aria-label="Download Official Brochure PDF"
+            className="w-full sm:w-auto px-7 py-3.5 rounded-full glass-panel hover:bg-white/95 text-stone-900 font-semibold text-xs uppercase tracking-wider border border-white/90 transition-all duration-300 shadow-sm flex items-center justify-center gap-2 glass-shimmer min-h-[44px]"
           >
             <Download className="w-4 h-4 text-amber-700" />
             <span>Brochure PDF (18MB)</span>
@@ -83,6 +85,7 @@ export default function Hero({ onOpenVipModal }) {
             <button
               key={bIdx}
               onClick={() => setActiveBannerIdx(bIdx)}
+              aria-label={`Switch hero view to: ${banner.label}`}
               className={`px-4 py-2.5 rounded-full text-xs transition-all whitespace-nowrap min-h-[44px] flex items-center gap-2 ${
                 activeBannerIdx === bIdx
                   ? 'bg-stone-900 text-white font-bold shadow-md shadow-stone-900/10 scale-105'

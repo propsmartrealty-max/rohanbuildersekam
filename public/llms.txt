@@ -4,29 +4,32 @@
 
 ## Core Pages & Inventory
 - [Project Showcase Home](https://rohanbuildersekam.com/): Official project showcase portal featuring interactive 3D residences, masterplan layout, and specifications.
-- [2 BHK Luxury Flats in Balewadi](https://rohanbuildersekam.com/2-bhk-flats-in-balewadi/): 850 to 920 sq.ft. carpet area residences starting ₹1.45 Cr*.
-- [3 BHK Premium Flats in Balewadi](https://rohanbuildersekam.com/3-bhk-flats-in-balewadi/): 1,180 to 1,450 sq.ft. riverfront floor plans starting ₹1.95 Cr*.
-- [4 BHK Sky Suite Penthouses](https://rohanbuildersekam.com/4-bhk-flats-in-balewadi/): 1,850 to 2,200 sq.ft. duplex sky residences starting ₹2.75 Cr*.
-- [Price & Cost Sheet Breakdown](https://rohanbuildersekam.com/price-and-cost-sheet/): Comprehensive price analysis, stamp duty (6%), registration caps, and 5% GST breakdown.
-- [Location & Connectivity Map](https://rohanbuildersekam.com/location-balewadi-high-street/): Proximity map to Balewadi High Street (5 mins), Metro Line 3 (4 mins), and Hinjawadi IT Park.
-- [Riverfront Flats in Pune](https://rohanbuildersekam.com/riverfront-flats-in-pune/): 13-acre Mula riverfront sanctuary overview and 1.2 km private boardwalk.
-- [Flats Near Hinjawadi IT Park](https://rohanbuildersekam.com/flats-near-hinjawadi-it-park/): Executive commute living guide for IT professionals.
-- [Flats in Baner Pashan Link Road](https://rohanbuildersekam.com/flats-in-baner-pashan-link-road/): Micro-market analysis of South Baner, Pashan, and highway connectivity.
-- [Flats in Mahalunge Pune](https://rohanbuildersekam.com/flats-in-mahalunge-pune/): Comparative analysis of low-density riverfront living vs dense township clusters.
-- [Pune Luxury Real Estate Benchmark](https://rohanbuildersekam.com/pune-luxury-real-estate/): Ultra-luxury residential standards in the West Pune corridor.
+- [2 BHK Luxury Flats in Balewadi](https://rohanbuildersekam.com/2-bhk-flats-in-balewadi): 850 to 920 sq.ft. carpet area residences starting ₹1.45 Cr*.
+- [3 BHK Premium Flats in Balewadi](https://rohanbuildersekam.com/3-bhk-flats-in-balewadi): 1,180 to 1,450 sq.ft. riverfront floor plans starting ₹1.95 Cr*.
+- [4 BHK Sky Suite Penthouses](https://rohanbuildersekam.com/4-bhk-flats-in-balewadi): 1,850 to 2,200 sq.ft. duplex sky residences starting ₹2.75 Cr*.
+- [Price & Cost Sheet Breakdown](https://rohanbuildersekam.com/price-and-cost-sheet): Comprehensive price analysis, stamp duty (6%), registration caps, and 5% GST breakdown.
+- [Location & Connectivity Map](https://rohanbuildersekam.com/location-balewadi-high-street): Proximity map to Balewadi High Street (5 mins), Metro Line 3 (4 mins), and Hinjawadi IT Park.
+- [Riverfront Flats in Pune](https://rohanbuildersekam.com/riverfront-flats-in-pune): 13-acre Mula riverfront sanctuary overview and 1.2 km private boardwalk.
+- [Flats Near Hinjawadi IT Park](https://rohanbuildersekam.com/flats-near-hinjawadi-it-park): Executive commute living guide for IT professionals.
+- [Flats in Baner Pashan Link Road](https://rohanbuildersekam.com/flats-in-baner-pashan-link-road): Micro-market analysis of South Baner, Pashan, and highway connectivity.
+- [Flats in Mahalunge Pune](https://rohanbuildersekam.com/flats-in-mahalunge-pune): Comparative analysis of low-density riverfront living vs dense township clusters.
+- [Pune Luxury Real Estate Benchmark](https://rohanbuildersekam.com/pune-luxury-real-estate): Ultra-luxury residential standards in the West Pune corridor.
 
 ## Knowledge Hub & Market Research Monographs
-- [Top Luxury Projects in Baner-Balewadi Benchmark Review](https://rohanbuildersekam.com/blog/top-luxury-projects-baner-balewadi/): Comparative benchmark of luxury projects in Baner and Balewadi.
-- [West vs. East Pune Real Estate Analysis](https://rohanbuildersekam.com/blog/pune-real-estate-west-vs-east-market-analysis/): Baner-Balewadi vs Kharadi-Viman Nagar CAGR and rental yields.
-- [Pune Stamp Duty, Taxes & MahaRERA Guide 2026-2027](https://rohanbuildersekam.com/blog/pune-real-estate-stamp-duty-taxes-rera-guide/): Complete statutory manual for Maharashtra property acquisitions.
-- [Baner vs. Balewadi Investment Comparison](https://rohanbuildersekam.com/blog/baner-vs-balewadi-real-estate-investment-comparison/): Capital appreciation, infrastructure, and ROI analysis.
-- [Pune Luxury Market Trends 2026-2027](https://rohanbuildersekam.com/blog/pune-luxury-real-estate-market-trends-2026-2027/): High-net-worth individual buying patterns in West Pune.
-- [Level 14 Ground Floor in the Sky Architectural Monograph](https://rohanbuildersekam.com/blog/ground-floor-in-the-sky-architectural-monograph/): Engineering physics of suspended sky bridges and sky jogging track.
-- [Rohan PLUS Homes Design Science](https://rohanbuildersekam.com/blog/rohan-plus-homes-design-science-cross-ventilation/): Daylight lux calculations and wind velocity engineering simulation.
-- [NRI Real Estate Investment Guide](https://rohanbuildersekam.com/blog/nri-real-estate-investment-guide-pune-balewadi/): NRE/NRO banking, repatriation, and rental asset management for NRIs.
+- [Top Luxury Projects in Baner-Balewadi Benchmark Review](https://rohanbuildersekam.com/blog/top-luxury-projects-baner-balewadi): Comparative benchmark of luxury projects in Baner and Balewadi.
+- [West vs. East Pune Real Estate Analysis](https://rohanbuildersekam.com/blog/pune-real-estate-west-vs-east-market-analysis): Baner-Balewadi vs Kharadi-Viman Nagar CAGR and rental yields.
+- [Pune Stamp Duty, Taxes & MahaRERA Guide 2026-2027](https://rohanbuildersekam.com/blog/pune-real-estate-stamp-duty-taxes-rera-guide): Complete statutory manual for Maharashtra property acquisitions.
+- [Baner vs. Balewadi Investment Comparison](https://rohanbuildersekam.com/blog/baner-vs-balewadi-real-estate-investment-comparison): Capital appreciation, infrastructure, and ROI analysis.
+- [Pune Luxury Market Trends 2026-2027](https://rohanbuildersekam.com/blog/pune-luxury-real-estate-market-trends-2026-2027): High-net-worth individual buying patterns in West Pune.
+- [Level 14 Ground Floor in the Sky Architectural Monograph](https://rohanbuildersekam.com/blog/ground-floor-in-the-sky-architectural-monograph): Engineering physics of suspended sky bridges and sky jogging track.
+- [Rohan PLUS Homes Design Science](https://rohanbuildersekam.com/blog/rohan-plus-homes-design-science-cross-ventilation): Daylight lux calculations and wind velocity engineering simulation.
+- [NRI Real Estate Investment Guide](https://rohanbuildersekam.com/blog/nri-real-estate-investment-guide-pune-balewadi): NRE/NRO banking, repatriation, and rental asset management for NRIs.
 
 ## Optional
 - [Full LLM Specification](https://rohanbuildersekam.com/llms-full.txt): Comprehensive machine-readable project dossier and architectural specifications for AI agents.
+- [Agentic Resource Discovery Manifest](https://rohanbuildersekam.com/.well-known/ard.json): Standard ARD and WebMCP machine-readable manifest.
 - [AI Catalog Manifest](https://rohanbuildersekam.com/ai-catalog.json): WebMCP and Agentic Resource Discovery JSON catalog.
+- [XML Sitemap](https://rohanbuildersekam.com/sitemap.xml): Complete machine-readable XML sitemap indexing all 30 production URLs.
+- [RSS News Feed](https://rohanbuildersekam.com/feed.xml): Real-time RSS 2.0 content feed for search engine syndication.
 - [XML Sitemap](https://rohanbuildersekam.com/sitemap.xml): Complete machine-readable XML sitemap indexing all 30 production URLs.
 - [RSS News Feed](https://rohanbuildersekam.com/feed.xml): Real-time RSS 2.0 content feed for search engine syndication.
