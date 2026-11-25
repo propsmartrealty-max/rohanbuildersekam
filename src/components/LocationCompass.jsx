@@ -8,6 +8,7 @@ import {
 export default function LocationCompass() {
   const [activeCategory, setActiveCategory] = useState('schools');
   const [viewMode, setViewMode] = useState('map'); // 'map' or 'radar'
+  const [mapActivated, setMapActivated] = useState(false);
 
   const categories = [
     { key: 'schools', label: 'Schools', icon: GraduationCap },
@@ -95,31 +96,54 @@ export default function LocationCompass() {
             <div className="glass-panel-glow rounded-3xl p-4 sm:p-6 border border-white/90 relative overflow-hidden min-h-[440px] flex flex-col justify-between shadow-xl shadow-stone-900/5 glass-card-hover">
               {viewMode === 'map' ? (
                 <div className="flex-1 flex flex-col">
-                  <div className="relative w-full h-[320px] rounded-2xl overflow-hidden border border-stone-200/80 shadow-inner mb-4">
-                    <iframe
-                      title="Rohan Ekam Balewadi Google Map"
-                      src="https://maps.google.com/maps?q=18.5772,73.7661+(Rohan+Ekam+Balewadi)&t=&z=15&ie=UTF8&iwloc=B&output=embed"
-                      width="100%"
-                      height="100%"
-                      style={{ border: 0 }}
-                      allowFullScreen=""
-                      loading="lazy"
-                      referrerPolicy="no-referrer-when-downgrade"
-                      className="w-full h-full"
-                    />
+                  <div className="relative w-full h-[320px] rounded-2xl overflow-hidden border border-stone-200/80 shadow-inner mb-4 bg-[#E9E4D8] flex flex-col items-center justify-center p-6 text-center">
+                    {mapActivated ? (
+                      <iframe
+                        title="Rohan Ekam Balewadi Google Map"
+                        src="https://maps.google.com/maps?q=18.5772,73.7661+(Rohan+Ekam+Balewadi)&t=&z=15&ie=UTF8&iwloc=B&output=embed"
+                        width="100%"
+                        height="100%"
+                        style={{ border: 0 }}
+                        allowFullScreen=""
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        className="w-full h-full"
+                      />
+                    ) : (
+                      <div className="relative z-10 flex flex-col items-center max-w-sm">
+                        <div className="w-12 h-12 rounded-2xl bg-stone-900 text-white flex items-center justify-center mb-3 shadow-lg">
+                          <MapPin className="w-6 h-6 text-emerald-400" />
+                        </div>
+                        <h3 className="font-serif text-lg font-bold text-stone-900 mb-1">
+                          Rohan Ekam • Balewadi Riverfront
+                        </h3>
+                        <p className="text-xs text-stone-700 mb-4 leading-relaxed">
+                          Behind Balewadi High Street along the Mula River • 4 mins to Metro Line 3 Station • 12 mins to Hinjawadi IT Park
+                        </p>
+                        <button
+                          type="button"
+                          onClick={() => setMapActivated(true)}
+                          aria-label="Load interactive Google Map for Rohan Ekam Balewadi"
+                          className="px-5 py-3 rounded-xl bg-stone-900 hover:bg-stone-800 text-white text-xs font-bold uppercase tracking-wider shadow-md transition-all min-h-[44px] inline-flex items-center gap-2 cursor-pointer"
+                        >
+                          <Map className="w-4 h-4 text-emerald-400" />
+                          <span>Load Interactive Google Map</span>
+                        </button>
+                      </div>
+                    )}
                   </div>
                   <div className="flex flex-wrap items-center justify-between gap-2 pt-2 text-xs">
                     <a
                       href="https://maps.google.com/?q=18.5772,73.7661"
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-stone-900 text-white font-semibold hover:bg-stone-800 transition-colors shadow-xs"
+                      className="inline-flex items-center gap-1.5 px-3.5 py-2.5 min-h-[44px] rounded-xl bg-stone-900 text-white font-semibold hover:bg-stone-800 transition-colors shadow-xs"
                     >
                       <Navigation className="w-3.5 h-3.5 text-emerald-400" />
                       <span>Directions in Google Maps</span>
                       <ExternalLink className="w-3 h-3 opacity-70" />
                     </a>
-                    <span className="text-[11px] font-mono text-stone-600 font-semibold">
+                    <span className="text-xs font-mono text-stone-700 font-semibold">
                       GPS: 18.5772° N, 73.7661° E
                     </span>
                   </div>

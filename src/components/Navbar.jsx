@@ -43,17 +43,17 @@ export default function Navbar({ onOpenVipModal }) {
           }`}
         >
           {/* Brand Monogram & Colorful Logo */}
-          <a href="#" className="flex items-center group transition-transform active:scale-98">
+          <a href="/" aria-label="Rohan Ekam Balewadi Home" className="flex items-center group transition-transform active:scale-98 min-h-[44px]">
             <RohanEkamLogo variant="lockup" />
           </a>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden lg:flex items-center gap-5">
+          <nav aria-label="Primary navigation" className="hidden lg:flex items-center gap-5">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="text-xs uppercase tracking-widest text-stone-700 hover:text-stone-950 font-medium transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1.5px] after:bg-stone-900 hover:after:w-full after:transition-all"
+                className="text-xs uppercase tracking-widest text-stone-800 hover:text-stone-950 font-medium transition-colors py-2.5 min-h-[44px] inline-flex items-center relative after:content-[''] after:absolute after:bottom-1 after:left-0 after:w-0 after:h-[1.5px] after:bg-stone-900 hover:after:w-full after:transition-all"
               >
                 {link.name}
               </a>
@@ -67,10 +67,10 @@ export default function Navbar({ onOpenVipModal }) {
               onClick={handleAudioToggle}
               aria-label={isPlayingAudio ? 'Mute river soundscape' : 'Play procedural river breeze and birds soundscape'}
               title={isPlayingAudio ? 'Mute river soundscape' : 'Play procedural river breeze & birds'}
-              className={`hidden md:flex items-center gap-2 text-xs px-3.5 py-1.5 rounded-full border transition-all duration-300 ${
+              className={`hidden md:flex items-center gap-2 text-xs px-3.5 py-2 min-h-[44px] rounded-full border transition-all duration-300 ${
                 isPlayingAudio
-                  ? 'border-emerald-600 bg-emerald-50 text-emerald-800 shadow-sm'
-                  : 'border-white/90 glass-panel text-stone-600 hover:text-stone-900 hover:border-stone-400'
+                  ? 'border-emerald-700 bg-emerald-50 text-emerald-900 shadow-sm'
+                  : 'border-white/90 glass-panel text-stone-800 hover:text-stone-950 hover:border-stone-400'
               }`}
             >
               {isPlayingAudio ? (

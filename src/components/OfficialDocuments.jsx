@@ -86,7 +86,7 @@ export default function OfficialDocuments() {
                     <div className="w-24 h-24 bg-white/90 rounded-2xl p-1.5 mb-3 border border-stone-200/80 shadow-xs flex items-center justify-center">
                       <img
                         src={phase.qrCode}
-                        alt={phase.phase}
+                        alt={`${phase.phase} MahaRERA Verification QR Code`}
                         width="96"
                         height="96"
                         loading="lazy"

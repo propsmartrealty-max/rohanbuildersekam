@@ -37,7 +37,7 @@ export default function OfficialGallerySection() {
                 }`}
               >
                 <img
-                  src="https://rohanbuilders.com/wp-content/uploads/2023/04/images-tile.png"
+                  src="/images/optimized/tiles/images-tab.webp"
                   alt=""
                   aria-hidden="true"
                   width="24"
@@ -61,7 +61,7 @@ export default function OfficialGallerySection() {
                 }`}
               >
                 <img
-                  src="https://rohanbuilders.com/wp-content/uploads/2023/04/Video360-tile.png"
+                  src="/images/optimized/tiles/video360-tab.webp"
                   alt=""
                   aria-hidden="true"
                   width="24"
@@ -132,7 +132,7 @@ export default function OfficialGallerySection() {
                   >
                     <img
                       src={vid.thumb}
-                      alt={vid.title}
+                      alt={`${vid.title} architectural walkthrough video preview`}
                       width="600"
                       height="375"
                       loading="lazy"

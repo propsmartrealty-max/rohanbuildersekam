@@ -45,10 +45,10 @@ export default function Hero({ onOpenVipModal }) {
 
         {/* Monumental Headline in Deep Charcoal / Espresso with Semantic SEO Anchoring */}
         <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-normal tracking-tight text-stone-900 max-w-5xl leading-[1.08] mb-5">
-          <span className="block text-xs sm:text-sm font-sans font-bold tracking-[0.25em] text-amber-900/80 uppercase mb-3">
+          <span className="block text-xs sm:text-sm font-sans font-bold tracking-[0.25em] text-amber-900 uppercase mb-3">
             Rohan Ekam Balewadi, Pune • 2, 3 &amp; 4 BHK Luxury Residences
           </span>
-          Where the <span className="italic font-serif font-medium text-amber-800">River</span> Meets the <span className="italic font-serif font-medium text-stone-700">Sky</span>
+          Where the <span className="italic font-serif font-medium text-amber-800">River</span> Meets the <span className="italic font-serif font-medium text-stone-800">Sky</span>
         </h1>
 
         {/* Narrative Subhead */}
@@ -75,7 +75,7 @@ export default function Hero({ onOpenVipModal }) {
             className="w-full sm:w-auto px-7 py-3.5 rounded-full glass-panel hover:bg-white/95 text-stone-900 font-semibold text-xs uppercase tracking-wider border border-white/90 transition-all duration-300 shadow-sm flex items-center justify-center gap-2 glass-shimmer min-h-[44px]"
           >
             <Download className="w-4 h-4 text-amber-700" />
-            <span>Brochure PDF (18MB)</span>
+            <span>Download Brochure PDF</span>
           </a>
         </div>
 
@@ -85,7 +85,7 @@ export default function Hero({ onOpenVipModal }) {
             <button
               key={bIdx}
               onClick={() => setActiveBannerIdx(bIdx)}
-              aria-label={`Switch hero view to: ${banner.label}`}
+              aria-label={`Switch hero view to: ${banner.title}`}
               className={`px-4 py-2.5 rounded-full text-xs transition-all whitespace-nowrap min-h-[44px] flex items-center gap-2 ${
                 activeBannerIdx === bIdx
                   ? 'bg-stone-900 text-white font-bold shadow-md shadow-stone-900/10 scale-105'

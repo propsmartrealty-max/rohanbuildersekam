@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, lazy, Suspense } from 'react';
 import { Send, CheckCircle2, ShieldCheck, Sparkles, Loader2 } from 'lucide-react';
 import { sendLeadToRealtor } from '../utils/leadService';
-import LegalModal from './LegalModal';
+
+const LegalModal = lazy(() => import('./LegalModal'));
 
 export default function OfficialInterestedForm() {
   const [formData, setFormData] = useState({
@@ -92,7 +93,7 @@ export default function OfficialInterestedForm() {
                   </div>
 
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-2">
-                    <label htmlFor="interested-agreed" className="flex items-start sm:items-center gap-2 cursor-pointer text-xs text-stone-700">
+                    <div className="flex items-start sm:items-center gap-2.5 text-xs text-stone-700">
                       <input
                         id="interested-agreed"
                         name="agreed"
@@ -100,15 +101,15 @@ export default function OfficialInterestedForm() {
                         aria-label="Agree to Terms & Conditions and Privacy Policy"
                         checked={formData.agreed}
                         onChange={(e) => setFormData({ ...formData, agreed: e.target.checked })}
-                        className="w-4 h-4 accent-stone-900 rounded mt-0.5 sm:mt-0"
+                        className="w-6 h-6 p-1 accent-stone-900 rounded mt-0.5 sm:mt-0 cursor-pointer shrink-0"
                       />
                       <span>
-                        I agree to the{' '}
+                        <label htmlFor="interested-agreed" className="cursor-pointer">I agree to the </label>
                         <button 
                           type="button" 
                           onClick={(e) => openLegal('terms', e)} 
                           aria-label="Open Terms and Conditions modal"
-                          className="text-stone-900 font-semibold underline hover:text-amber-800"
+                          className="text-stone-900 font-semibold underline hover:text-amber-800 inline-flex items-center py-2 min-h-[36px]"
                         >
                           Terms &amp; Conditions
                         </button>{' '}
@@ -117,13 +118,13 @@ export default function OfficialInterestedForm() {
                           type="button" 
                           onClick={(e) => openLegal('privacy', e)} 
                           aria-label="Open Privacy Policy modal"
-                          className="text-stone-900 font-semibold underline hover:text-amber-800"
+                          className="text-stone-900 font-semibold underline hover:text-amber-800 inline-flex items-center py-2 min-h-[36px]"
                         >
                           Privacy Policy
                         </button>
                         . Authorized marketing by Propsmart Realty.
                       </span>
-                    </label>
+                    </div>
 
                     <button
                       type="submit"
@@ -159,11 +160,15 @@ export default function OfficialInterestedForm() {
         </div>
       </div>
 
-      <LegalModal
-        isOpen={legalModal.isOpen}
-        onClose={() => setLegalModal({ ...legalModal, isOpen: false })}
-        initialTab={legalModal.tab}
-      />
+      {legalModal.isOpen && (
+        <Suspense fallback={null}>
+          <LegalModal
+            isOpen={legalModal.isOpen}
+            onClose={() => setLegalModal({ ...legalModal, isOpen: false })}
+            initialTab={legalModal.tab}
+          />
+        </Suspense>
+      )}
     </section>
   );
 }

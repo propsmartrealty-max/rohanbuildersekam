@@ -33,9 +33,11 @@
 - [Balewadi High Street & Metro Line 3 Connectivity Boom](https://rohanbuildersekam.com/blog/balewadi-high-street-metro-line-3-connectivity-boom): Infrastructure catalysts and transit-oriented development.
 - [Carpet Area & Price Comparison Guide](https://rohanbuildersekam.com/blog/2-bhk-3-bhk-4-bhk-carpet-area-price-comparison-balewadi): Granular unit-by-unit analysis across West Pune.
 
-## Machine Discoverable Specifications
+## Optional
 - [Full LLM Specification](https://rohanbuildersekam.com/llms-full.txt): Comprehensive machine-readable project dossier and architectural specifications for AI agents.
 - [Agentic Resource Discovery Manifest](https://rohanbuildersekam.com/.well-known/ard.json): Standard ARD and WebMCP machine-readable manifest.
-- [AI Catalog Manifest](https://rohanbuildersekam.com/ai-catalog.json): WebMCP and Agentic Resource Discovery JSON catalog.
+- [AI Catalog Manifest](https://rohanbuildersekam.com/.well-known/ai-catalog.json): WebMCP and Agentic Resource Discovery JSON catalog.
 - [XML Sitemap](https://rohanbuildersekam.com/sitemap.xml): Complete machine-readable XML sitemap indexing all 31 production URLs.
 - [RSS News Feed](https://rohanbuildersekam.com/feed.xml): Real-time RSS 2.0 content feed for search engine syndication.
+- [Privacy Policy](https://rohanbuildersekam.com/privacy-policy): DPDP 2023 and channel partner data protection disclosure.
+- [MahaRERA Disclaimer](https://rohanbuildersekam.com/disclaimer): Statutory promoter & channel partner disclosure.

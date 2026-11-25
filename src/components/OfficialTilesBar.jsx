@@ -37,7 +37,8 @@ export default function OfficialTilesBar({ onOpenMasterPlan, onOpenBuyingGuide }
               <div className="w-11 h-11 mb-2.5 flex items-center justify-center p-1.5 rounded-xl bg-white/70 group-hover:bg-stone-900 border border-stone-200/80 group-hover:border-stone-900 transition-all duration-300 group-hover:scale-110 shadow-xs">
                 <img
                   src={tile.icon}
-                  alt={tile.title}
+                  alt=""
+                  aria-hidden="true"
                   width="44"
                   height="44"
                   loading="lazy"

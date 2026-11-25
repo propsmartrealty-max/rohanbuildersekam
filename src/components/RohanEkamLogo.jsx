@@ -41,17 +41,17 @@ export default function RohanEkamLogo({
     return (
       <div className={`flex flex-col items-center text-center select-none group ${className}`}>
         {/* 1. ROHAN */}
-        <span className="font-sans font-extrabold text-[13px] sm:text-[15px] tracking-[0.42em] uppercase bg-gradient-to-r from-rose-500 via-amber-500 to-amber-600 bg-clip-text text-transparent transition-all duration-300">
+        <span className="font-sans font-extrabold text-[13px] sm:text-[15px] tracking-[0.42em] uppercase bg-gradient-to-r from-rose-700 via-amber-800 to-amber-900 bg-clip-text text-transparent transition-all duration-300">
           ROHAN
         </span>
 
         {/* 2. EKAM (High-Contrast Serif Centerpiece) */}
-        <span className="font-serif text-3xl sm:text-5xl font-medium tracking-[0.24em] bg-gradient-to-r from-rose-500 via-amber-400 to-teal-500 bg-clip-text text-transparent my-[-4px] sm:my-[-6px] transition-all duration-300 filter drop-shadow-[0_2px_8px_rgba(245,158,11,0.25)] group-hover:scale-105">
+        <span className="font-serif text-3xl sm:text-5xl font-medium tracking-[0.24em] bg-gradient-to-r from-rose-700 via-amber-700 to-teal-800 bg-clip-text text-transparent my-[-4px] sm:my-[-6px] transition-all duration-300 filter drop-shadow-[0_2px_8px_rgba(180,83,9,0.18)] group-hover:scale-105">
           EKAM
         </span>
 
         {/* 3. BALEWADI */}
-        <span className="font-sans font-bold text-[9px] sm:text-[11px] tracking-[0.62em] uppercase bg-gradient-to-r from-amber-600 via-emerald-600 to-cyan-600 bg-clip-text text-transparent mt-0.5 sm:mt-1">
+        <span className="font-sans font-bold text-[9px] sm:text-[11px] tracking-[0.62em] uppercase bg-gradient-to-r from-amber-800 via-emerald-800 to-cyan-800 bg-clip-text text-transparent mt-0.5 sm:mt-1">
           BALEWADI
         </span>
       </div>
@@ -91,7 +91,7 @@ export default function RohanEkamLogo({
 
         {/* EKAM in Radiant Vibrant Gradient */}
         <div className="flex items-baseline gap-2">
-          <span className="font-serif text-2xl font-semibold tracking-[0.22em] bg-gradient-to-r from-rose-600 via-amber-500 to-teal-600 bg-clip-text text-transparent leading-none drop-shadow-xs group-hover:scale-102 transition-transform">
+          <span className="font-serif text-2xl font-semibold tracking-[0.22em] bg-gradient-to-r from-rose-700 via-amber-700 to-teal-800 bg-clip-text text-transparent leading-none drop-shadow-xs group-hover:scale-102 transition-transform">
             EKAM
           </span>
           <span className="text-[10px] px-2 py-0.5 rounded-full border border-amber-300/80 bg-gradient-to-r from-amber-50 to-emerald-50 text-stone-800 font-sans font-bold tracking-[0.2em] uppercase shadow-xs">

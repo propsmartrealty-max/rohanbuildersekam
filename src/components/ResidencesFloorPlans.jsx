@@ -82,7 +82,7 @@ export default function ResidencesFloorPlans({ onOpenVipModal }) {
               >
                 <img
                   src={activePlan.image}
-                  alt={activePlan.type}
+                  alt={`${activePlan.type} Architectural Floor Plan Blueprint`}
                   width="800"
                   height="600"
                   loading="lazy"

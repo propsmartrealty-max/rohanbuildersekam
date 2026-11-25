@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, lazy, Suspense } from 'react';
 import { OFFICIAL_PROJECT_DETAILS } from '../data/projectData';
-import { ShieldCheck, MapPin, ExternalLink, ArrowUp, Download, Clock, Lock, Scale } from 'lucide-react';
+import { ShieldCheck, MapPin, ExternalLink, ArrowUp, Download, Clock, Lock, Scale, FileText } from 'lucide-react';
 import RohanEkamLogo from './RohanEkamLogo';
-import LegalModal from './LegalModal';
+
+const LegalModal = lazy(() => import('./LegalModal'));
 
 export default function Footer() {
   const [legalModal, setLegalModal] = useState({ isOpen: false, tab: 'privacy' });
@@ -17,7 +18,8 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-[#EFECE6] border-t border-stone-300 text-stone-600 text-xs relative overflow-hidden">
+    <footer className="bg-[#EFECE6] border-t border-stone-300 text-stone-700 text-xs relative overflow-hidden">
+      <h2 className="sr-only">Rohan Ekam Balewadi Site Directory and MahaRERA Disclosures</h2>
       {/* Top Banner: Official MahaRERA Compliance */}
       <div className="bg-[#FAF8F5] border-b border-stone-200 py-6">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
@@ -80,37 +82,37 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div className="space-y-3">
-            <h4 className="font-serif text-sm font-bold text-stone-900 uppercase tracking-wider">
+            <h3 className="font-serif text-sm font-bold text-stone-900 uppercase tracking-wider">
               Architecture &amp; Living
-            </h4>
-            <ul className="space-y-2 text-xs">
-              <li><a href="#vision" className="hover:text-stone-950 transition-colors">Architect's Note</a></li>
-              <li><a href="#sky-ground" className="hover:text-stone-950 transition-colors">The 14th Fl Sky Ground</a></li>
-              <li><a href="#plus-philosophy" className="hover:text-stone-950 transition-colors">Rohan PLUS Science</a></li>
-              <li><a href="#residences" className="hover:text-stone-950 transition-colors">Floor Plans</a></li>
-              <li><a href="#amenities" className="hover:text-stone-950 transition-colors">36+ Curated Amenities</a></li>
+            </h3>
+            <ul className="space-y-1 text-xs text-stone-700">
+              <li><a href="#architectNote" className="inline-flex items-center min-h-[44px] py-2 hover:text-stone-950 font-medium transition-colors">Architect's Note</a></li>
+              <li><a href="#skyGround" className="inline-flex items-center min-h-[44px] py-2 hover:text-stone-950 font-medium transition-colors">The 14th Fl Sky Ground</a></li>
+              <li><a href="#plusPhilosophy" className="inline-flex items-center min-h-[44px] py-2 hover:text-stone-950 font-medium transition-colors">Rohan PLUS Science</a></li>
+              <li><a href="#floorPlan" className="inline-flex items-center min-h-[44px] py-2 hover:text-stone-950 font-medium transition-colors">Floor Plans</a></li>
+              <li><a href="#amenities" className="inline-flex items-center min-h-[44px] py-2 hover:text-stone-950 font-medium transition-colors">36+ Curated Amenities</a></li>
             </ul>
           </div>
 
           {/* Legal Documents */}
           <div className="space-y-3">
-            <h4 className="font-serif text-sm font-bold text-stone-900 uppercase tracking-wider">
+            <h3 className="font-serif text-sm font-bold text-stone-900 uppercase tracking-wider">
               Legal &amp; Documents
-            </h4>
-            <ul className="space-y-2 text-xs">
-              <li><a href="#documents" className="hover:text-stone-950 transition-colors">MahaRERA Phase QR Codes</a></li>
-              <li><a href="#documents" className="hover:text-stone-950 transition-colors">Environmental Clearance (EC)</a></li>
-              <li><a href="#faq" className="hover:text-stone-950 transition-colors">FAQ Section</a></li>
-              <li><a href="#location" className="hover:text-stone-950 transition-colors">Balewadi High Street Network</a></li>
-              <li><a href="#financial-suite" className="hover:text-stone-950 transition-colors">Cost Sheet &amp; Stamp Duty</a></li>
+            </h3>
+            <ul className="space-y-1 text-xs text-stone-700">
+              <li><a href="#documents" className="inline-flex items-center min-h-[44px] py-2 hover:text-stone-950 font-medium transition-colors">MahaRERA Phase QR Codes</a></li>
+              <li><a href="#documents" className="inline-flex items-center min-h-[44px] py-2 hover:text-stone-950 font-medium transition-colors">Environmental Clearance (EC)</a></li>
+              <li><a href="#faq" className="inline-flex items-center min-h-[44px] py-2 hover:text-stone-950 font-medium transition-colors">FAQ Section</a></li>
+              <li><a href="#location" className="inline-flex items-center min-h-[44px] py-2 hover:text-stone-950 font-medium transition-colors">Balewadi High Street Network</a></li>
+              <li><a href="#financialSuite" className="inline-flex items-center min-h-[44px] py-2 hover:text-stone-950 font-medium transition-colors">Cost Sheet &amp; Stamp Duty</a></li>
             </ul>
           </div>
 
           {/* Site Office */}
           <div className="space-y-3">
-            <h4 className="font-serif text-sm font-bold text-stone-900 uppercase tracking-wider">
+            <h3 className="font-serif text-sm font-bold text-stone-900 uppercase tracking-wider">
               Site Experience Center
-            </h4>
+            </h3>
             <div className="space-y-2.5 text-xs">
               <div className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-amber-700 shrink-0 mt-0.5" />
@@ -124,7 +126,7 @@ export default function Footer() {
                   href="https://wa.me/91774409295?text=Hello%20Rohan%20Builders,%20I%20would%20like%20to%20enquire%20about%20Rohan%20Ekam%20Balewadi."
                   target="_blank"
                   rel="noreferrer"
-                  className="font-mono font-semibold text-emerald-800 hover:text-emerald-950 transition-colors"
+                  className="font-mono font-semibold text-emerald-800 hover:text-emerald-950 transition-colors inline-flex items-center min-h-[44px] py-2"
                 >
                   WhatsApp: +91 774409295
                 </a>
@@ -165,11 +167,11 @@ export default function Footer() {
                 <li><a href="/flats-near-hinjawadi-it-park" className="inline-block py-1 hover:text-stone-900 font-semibold text-emerald-900 transition-colors">Flats Near Hinjawadi IT Park</a></li>
                 <li><a href="/flats-in-mahalunge-pune" className="inline-block py-1 hover:text-stone-900 font-semibold text-emerald-900 transition-colors">Flats in Mahalunge Pune</a></li>
                 <li><a href="/pune-luxury-real-estate" className="inline-block py-1 hover:text-stone-900 font-semibold text-emerald-900 transition-colors">Pune Luxury Real Estate Benchmark</a></li>
-                <li><a href="#residences" className="inline-block py-1 hover:text-stone-900 font-medium transition-colors">Rohan Ekam 2 BHK Luxury Flats (₹1.45 Cr*)</a></li>
-                <li><a href="#residences" className="inline-block py-1 hover:text-stone-900 font-medium transition-colors">Rohan Ekam 3 BHK Residences - Type 1 (₹1.95 Cr*)</a></li>
-                <li><a href="#residences" className="inline-block py-1 hover:text-stone-900 font-medium transition-colors">Rohan Ekam 3 BHK Grand Layout - Type 2 (₹2.15 Cr*)</a></li>
-                <li><a href="#residences" className="inline-block py-1 hover:text-stone-900 font-medium transition-colors">Rohan Ekam 4 BHK Sky Suite Penthouses (₹2.75 Cr*)</a></li>
-                <li><a href="#financialSuite" className="inline-block py-1 hover:text-stone-900 font-medium transition-colors">Rohan Ekam Cost Sheet &amp; Stamp Duty</a></li>
+                <li><a href="#floorPlan" className="inline-flex items-center min-h-[44px] py-2 hover:text-stone-900 font-medium transition-colors">Rohan Ekam 2 BHK Luxury Flats (₹1.45 Cr*)</a></li>
+                <li><a href="#floorPlan" className="inline-flex items-center min-h-[44px] py-2 hover:text-stone-900 font-medium transition-colors">Rohan Ekam 3 BHK Residences - Type 1 (₹1.95 Cr*)</a></li>
+                <li><a href="#floorPlan" className="inline-flex items-center min-h-[44px] py-2 hover:text-stone-900 font-medium transition-colors">Rohan Ekam 3 BHK Grand Layout - Type 2 (₹2.15 Cr*)</a></li>
+                <li><a href="#floorPlan" className="inline-flex items-center min-h-[44px] py-2 hover:text-stone-900 font-medium transition-colors">Rohan Ekam 4 BHK Sky Suite Penthouses (₹2.75 Cr*)</a></li>
+                <li><a href="#financialSuite" className="inline-flex items-center min-h-[44px] py-2 hover:text-stone-900 font-medium transition-colors">Rohan Ekam Cost Sheet &amp; Stamp Duty</a></li>
               </ul>
             </div>
 
@@ -310,7 +312,7 @@ export default function Footer() {
           {/* Legal Compliance Quick Links */}
           <div className="pt-3 border-t border-stone-200/80 flex flex-wrap items-center gap-4 text-xs font-semibold text-stone-800">
             <a 
-              href="/privacy-policy.html" 
+              href="/privacy-policy" 
               target="_blank" 
               rel="noreferrer" 
               className="hover:text-amber-800 underline flex items-center gap-1.5 py-2 px-2 min-h-[44px]"
@@ -320,7 +322,7 @@ export default function Footer() {
             </a>
 
             <a 
-              href="/terms.html" 
+              href="/terms" 
               target="_blank" 
               rel="noreferrer" 
               className="hover:text-amber-800 underline flex items-center gap-1.5 py-2 px-2 min-h-[44px]"
@@ -364,11 +366,15 @@ export default function Footer() {
         </div>
       </div>
 
-      <LegalModal
-        isOpen={legalModal.isOpen}
-        onClose={() => setLegalModal({ ...legalModal, isOpen: false })}
-        initialTab={legalModal.tab}
-      />
+      {legalModal.isOpen && (
+        <Suspense fallback={null}>
+          <LegalModal
+            isOpen={legalModal.isOpen}
+            onClose={() => setLegalModal({ ...legalModal, isOpen: false })}
+            initialTab={legalModal.tab}
+          />
+        </Suspense>
+      )}
     </footer>
   );
 }

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, lazy, Suspense } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import OfficialTilesBar from './components/OfficialTilesBar';
@@ -16,8 +16,8 @@ import OfficialFAQ from './components/OfficialFAQ';
 import FinancialSuite from './components/FinancialSuite';
 import Footer from './components/Footer';
 import OfficialWhatsAppBar from './components/OfficialWhatsAppBar';
-import VIPExperienceModal from './components/VIPExperienceModal';
-import { OFFICIAL_PROJECT_DETAILS } from './data/projectData';
+
+const VIPExperienceModal = lazy(() => import('./components/VIPExperienceModal'));
 
 export default function App() {
   const [isVipModalOpen, setIsVipModalOpen] = useState(false);
@@ -89,19 +89,13 @@ export default function App() {
         </div>
 
         {/* 7. Official 36 Amenities with Real Scraped Icons */}
-        <div id="amenities">
-          <AmenitiesShowcase onOpenVipModal={() => openVipModalWithConfig('3bhk-type1')} />
-        </div>
+        <AmenitiesShowcase onOpenVipModal={() => openVipModalWithConfig('3bhk-type1')} />
 
         {/* 8. Official Location (Schools, Colleges, Hospitals, Malls) */}
-        <div id="location">
-          <LocationCompass />
-        </div>
+        <LocationCompass />
 
         {/* 9. Official Gallery (Sub-Tabs: IMAGES & VIDEOS/360 Walkthroughs) */}
-        <div id="gallery">
-          <OfficialGallerySection />
-        </div>
+        <OfficialGallerySection />
 
         {/* 10. Official "Interested?" Lead Capture Form */}
         <OfficialInterestedForm />
@@ -110,14 +104,10 @@ export default function App() {
         <OfficialBrochureStrip />
 
         {/* 12. Legal Documents (EC Copy, Compliance & MahaRERA Phase QR Codes) */}
-        <div id="documents">
-          <OfficialDocuments />
-        </div>
+        <OfficialDocuments />
 
         {/* 13. Official FAQ Accordion (8 Categories, 55 Questions) */}
-        <div id="faq">
-          <OfficialFAQ />
-        </div>
+        <OfficialFAQ />
 
         {/* 14. Financial & Mortgage Planner Suite */}
         <div id="financialSuite">
@@ -132,11 +122,15 @@ export default function App() {
       <OfficialWhatsAppBar />
 
       {/* VIP Tour Booking Modal */}
-      <VIPExperienceModal
-        isOpen={isVipModalOpen}
-        onClose={() => setIsVipModalOpen(false)}
-        initialConfig={modalConfig}
-      />
+      {isVipModalOpen && (
+        <Suspense fallback={null}>
+          <VIPExperienceModal
+            isOpen={isVipModalOpen}
+            onClose={() => setIsVipModalOpen(false)}
+            initialConfig={modalConfig}
+          />
+        </Suspense>
+      )}
     </div>
   );
 }

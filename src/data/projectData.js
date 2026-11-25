@@ -18,37 +18,37 @@ export const OFFICIAL_PROJECT_DETAILS = {
   whatsappLink: "https://wa.me/91774409295",
 
   architect: "Ar. Sanjay Mohe (Mindspace Architects)",
-  architectImage: "https://rohanbuilders.com/wp-content/uploads/2023/02/arch_pic_2.png",
+  architectImage: "/images/optimized/architect-sanjay-mohe.webp",
   architectNote: "Rohan Ekam’s design fully utilizes around 13-acre riverside parcel of land it will occupy. The towers create a friendly, welcoming atmosphere as you enter the plaza. As you make your way closer to the center, a vast cascading landscape with sloping lawns opens up before you, culminating in an elevated frame with a serene view of the Mula River. Looking around, you will see that the openness of the project allows for visual connections both, within and outside the site. The design objective is for Rohan Ekam to give you a sense of discovery. And that will be evident anywhere you look.",
 
   // The 7 Iconic Hover Tiles from the official website
   hoverTiles: [
-    { title: "ARCHITECT'S NOTE", id: "architectNote", icon: "https://rohanbuilders.com/wp-content/uploads/2023/04/Architects-note-tile.png" },
-    { title: "LOCATION", id: "location", icon: "https://rohanbuilders.com/wp-content/uploads/2023/04/Location-tile.png" },
-    { title: "GALLERY", id: "gallery", icon: "https://rohanbuilders.com/wp-content/uploads/2023/04/Gallery-tile-1.png" },
-    { title: "MASTER PLAN", id: "masterPlan", icon: "https://rohanbuilders.com/wp-content/uploads/2023/04/Masterplan-tile.png" },
-    { title: "FLOOR PLAN", id: "floorPlan", icon: "https://rohanbuilders.com/wp-content/uploads/2023/04/Floor-plan-tile.png" },
-    { title: "AMENITIES", id: "amenities", icon: "https://rohanbuilders.com/wp-content/uploads/2023/04/Amenities-tile.png" },
-    { title: "HOME BUYING GUIDE", id: "buyingGuide", icon: "https://rohanbuilders.com/wp-content/uploads/2023/04/Home-Buying-Guide-tile.png" }
+    { title: "ARCHITECT'S NOTE", id: "architectNote", icon: "/images/optimized/tiles/architects-note.webp" },
+    { title: "LOCATION", id: "location", icon: "/images/optimized/tiles/location.webp" },
+    { title: "GALLERY", id: "gallery", icon: "/images/optimized/tiles/gallery.webp" },
+    { title: "MASTER PLAN", id: "masterPlan", icon: "/images/optimized/tiles/masterplan.webp" },
+    { title: "FLOOR PLAN", id: "floorPlan", icon: "/images/optimized/tiles/floorplan.webp" },
+    { title: "AMENITIES", id: "amenities", icon: "/images/optimized/tiles/amenities.webp" },
+    { title: "HOME BUYING GUIDE", id: "buyingGuide", icon: "/images/optimized/tiles/buying-guide.webp" }
   ],
 
   reraPhases: [
     {
       phase: "Rohan Ekam Phase 1",
       number: "P52100052298",
-      qrCode: "https://rohanbuilders.com/wp-content/uploads/2024/11/Rohan-Ekam-Phase-1P52100052298-e1731322755722.png",
+      qrCode: "/images/optimized/qr-phase1.webp",
       link: "https://maharera.mahaonline.gov.in"
     },
     {
       phase: "Rohan Ekam Phase 2",
       number: "PR1261012502532",
-      qrCode: "https://rohanbuilders.com/wp-content/uploads/2023/09/Rohan-EKAM-Phase2PR1261012502532.png",
+      qrCode: "/images/optimized/qr-phase2.webp",
       link: "https://maharera.mahaonline.gov.in"
     },
     {
       phase: "Rohan Ekam Phase 3",
       number: "Coming Soon",
-      qrCode: "https://rohanbuilders.com/wp-content/uploads/2023/09/Rohan-Ekam-Phase-3-QR.png",
+      qrCode: "/images/optimized/qr-phase3.webp",
       link: "https://maharera.mahaonline.gov.in"
     }
   ],
@@ -85,22 +85,22 @@ export const OFFICIAL_PROJECT_DETAILS = {
     {
       title: "Cascading Plaza & Lawns",
       subtitle: "Sloping Lawns Opening to River Views",
-      url: "https://rohanbuilders.com/wp-content/uploads/2023/09/3840x1694-px-05-scaled.jpg"
+      url: "/images/optimized/gallery-01.webp"
     },
     {
       title: "Level 14 Sky Ground & Bridges",
       subtitle: "India's First 14th-Floor Suspended Earth",
-      url: "https://rohanbuilders.com/wp-content/uploads/2023/09/3840x1694-px-09-1-scaled.jpg"
+      url: "/images/optimized/gallery-03.webp"
     },
     {
       title: "Riverfront Infinity Lap Pool",
       subtitle: "Water Touching the Serene Mula River",
-      url: "https://rohanbuilders.com/wp-content/uploads/2023/09/3840x1694-px-10-scaled.jpg"
+      url: "/images/optimized/gallery-04.webp"
     },
     {
       title: "Biophilic Clubhouse & Courtyard",
       subtitle: "Social Sanctuary with Reflecting Pools",
-      url: "https://rohanbuilders.com/wp-content/uploads/2023/09/3840x1694-px-11-scaled.jpg"
+      url: "/images/optimized/gallery-06.webp"
     }
   ]
 };
@@ -189,7 +189,7 @@ export const OFFICIAL_FLOOR_PLANS = [
     carpetArea: "2,050 - 2,158 sq.ft",
     priceStarting: "₹ 2.92 Cr*",
     description: "Only 2 residences per floor with wrap-around cantilevered river viewing deck.",
-    image: "https://rohanbuilders.com/wp-content/uploads/2023/09/Ekam-Typical-4-BHK-2.png",
+    image: "/images/optimized/plan-4bhk-2.webp",
     specs: [
       { room: "Grand Salon & Banquet", dimension: "34'0\" × 16'0\"" },
       { room: "Master Spa Bedroom", dimension: "19'6\" × 14'0\"" },
@@ -203,47 +203,47 @@ export const OFFICIAL_FLOOR_PLANS = [
 
 // Official 36 Amenities with real PNG icons
 export const OFFICIAL_AMENITIES = [
-  { name: "Co-working spaces", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Co-working-spaces.png", category: "Sky Ground" },
-  { name: "Yoga decks", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Yoga-decks.png", category: "Sky Ground" },
-  { name: "Hammock terrace", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Hammock-terrace.png", category: "Sky Ground" },
-  { name: "Reading nooks", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Reading-nooks.png", category: "Sky Ground" },
-  { name: "Meditation pavilion", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Meditation-pavilion.png", category: "Sky Ground" },
-  { name: "Meditative spaces", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Meditative-spaces.png", category: "Sky Ground" },
-  { name: "Tea pavilion", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Tea-pavilion.png", category: "Sky Ground" },
-  { name: "Gathering spaces", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Gathering-spaces.png", category: "Sky Ground" },
+  { name: "Co-working spaces", iconUrl: "/images/optimized/amenities/co-working-spaces.webp", category: "Sky Ground" },
+  { name: "Yoga decks", iconUrl: "/images/optimized/amenities/yoga-decks.webp", category: "Sky Ground" },
+  { name: "Hammock terrace", iconUrl: "/images/optimized/amenities/hammock-terrace.webp", category: "Sky Ground" },
+  { name: "Reading nooks", iconUrl: "/images/optimized/amenities/reading-nooks.webp", category: "Sky Ground" },
+  { name: "Meditation pavilion", iconUrl: "/images/optimized/amenities/meditation-pavilion.webp", category: "Sky Ground" },
+  { name: "Meditative spaces", iconUrl: "/images/optimized/amenities/meditative-spaces.webp", category: "Sky Ground" },
+  { name: "Tea pavilion", iconUrl: "/images/optimized/amenities/tea-pavilion.webp", category: "Sky Ground" },
+  { name: "Gathering spaces", iconUrl: "/images/optimized/amenities/gathering-spaces.webp", category: "Sky Ground" },
 
-  { name: "Lap pool with deck", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Lap-pool-with-deck.png", category: "Riverfront" },
-  { name: "Reflecting pool", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Reflecting-pool.png", category: "Riverfront" },
-  { name: "Sloped amphitheatre lawn", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Sloped-amphitheatre-lawn.png", category: "Riverfront" },
-  { name: "Barbeque pavilion", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Barbeque-pavilion.png", category: "Riverfront" },
-  { name: "Picnic areas", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Picnic-areas.png", category: "Riverfront" },
-  { name: "Outdoor dining areas with pantry provisions", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Outdoor-dining-areas-with-pantry-provisions.png", category: "Riverfront" },
-  { name: "Reflexology path", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Reflexology-path.png", category: "Riverfront" },
-  { name: "Pets area", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Pets-area.png", category: "Riverfront" },
+  { name: "Lap pool with deck", iconUrl: "/images/optimized/amenities/lap-pool-with-deck.webp", category: "Riverfront" },
+  { name: "Reflecting pool", iconUrl: "/images/optimized/amenities/reflecting-pool.webp", category: "Riverfront" },
+  { name: "Sloped amphitheatre lawn", iconUrl: "/images/optimized/amenities/sloped-amphitheatre-lawn.webp", category: "Riverfront" },
+  { name: "Barbeque pavilion", iconUrl: "/images/optimized/amenities/barbeque-pavilion.webp", category: "Riverfront" },
+  { name: "Picnic areas", iconUrl: "/images/optimized/amenities/picnic-areas.webp", category: "Riverfront" },
+  { name: "Outdoor dining areas with pantry provisions", iconUrl: "/images/optimized/amenities/outdoor-dining-areas-with-pantry-provisions.webp", category: "Riverfront" },
+  { name: "Reflexology path", iconUrl: "/images/optimized/amenities/reflexology-path.webp", category: "Riverfront" },
+  { name: "Pets area", iconUrl: "/images/optimized/amenities/pets-area.webp", category: "Riverfront" },
 
-  { name: "Gymnasium", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Gymnasium.png", category: "Clubhouse & Sports" },
-  { name: "Multipurpose hall", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Multipurpose-hall.png", category: "Clubhouse & Sports" },
-  { name: "Library", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Library.png", category: "Clubhouse & Sports" },
-  { name: "Indoor Games", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Indoor-Games.png", category: "Clubhouse & Sports" },
-  { name: "Cross fitness areas", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Cross-fitness-areas.png", category: "Clubhouse & Sports" },
-  { name: "Exercise lawn", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Exercise-lawn.png", category: "Clubhouse & Sports" },
-  { name: "Outdoor fitness stations", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Outdoor-fitness-stations.png", category: "Clubhouse & Sports" },
-  { name: "Jogging walking loops", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Jogging-walking-loops.png", category: "Clubhouse & Sports" },
+  { name: "Gymnasium", iconUrl: "/images/optimized/amenities/gymnasium.webp", category: "Clubhouse & Sports" },
+  { name: "Multipurpose hall", iconUrl: "/images/optimized/amenities/multipurpose-hall.webp", category: "Clubhouse & Sports" },
+  { name: "Library", iconUrl: "/images/optimized/amenities/library.webp", category: "Clubhouse & Sports" },
+  { name: "Indoor Games", iconUrl: "/images/optimized/amenities/indoor-games.webp", category: "Clubhouse & Sports" },
+  { name: "Cross fitness areas", iconUrl: "/images/optimized/amenities/cross-fitness-areas.webp", category: "Clubhouse & Sports" },
+  { name: "Exercise lawn", iconUrl: "/images/optimized/amenities/exercise-lawn.webp", category: "Clubhouse & Sports" },
+  { name: "Outdoor fitness stations", iconUrl: "/images/optimized/amenities/outdoor-fitness-stations.webp", category: "Clubhouse & Sports" },
+  { name: "Jogging walking loops", iconUrl: "/images/optimized/amenities/jogging-walking-loops.webp", category: "Clubhouse & Sports" },
 
-  { name: "Badminton court", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Badminton-court.png", category: "Clubhouse & Sports" },
-  { name: "Squash court", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Squash-court.png", category: "Clubhouse & Sports" },
-  { name: "Clay volley ball court", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Clay-volley-ball-court.png", category: "Clubhouse & Sports" },
-  { name: "Mini putt", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Mini-putt.png", category: "Clubhouse & Sports" },
+  { name: "Badminton court", iconUrl: "/images/optimized/amenities/badminton-court.webp", category: "Clubhouse & Sports" },
+  { name: "Squash court", iconUrl: "/images/optimized/amenities/squash-court.webp", category: "Clubhouse & Sports" },
+  { name: "Clay volley ball court", iconUrl: "/images/optimized/amenities/clay-volley-ball-court.webp", category: "Clubhouse & Sports" },
+  { name: "Mini putt", iconUrl: "/images/optimized/amenities/mini-putt.webp", category: "Clubhouse & Sports" },
 
-  { name: "Children play area", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Children-play-area.png", category: "Children & Infra" },
-  { name: "Toddler play area", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Toddler-play-area.png", category: "Children & Infra" },
-  { name: "Kids pool", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Kids-pool.png", category: "Children & Infra" },
+  { name: "Children play area", iconUrl: "/images/optimized/amenities/children-play-area.webp", category: "Children & Infra" },
+  { name: "Toddler play area", iconUrl: "/images/optimized/amenities/toddler-play-area.webp", category: "Children & Infra" },
+  { name: "Kids pool", iconUrl: "/images/optimized/amenities/kids-pool.webp", category: "Children & Infra" },
 
-  { name: "Solar powered common area lighting", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Solar-powered-common-area-lighting.png", category: "Children & Infra" },
-  { name: "Organic waste composting", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Organic-waste-composting.png", category: "Children & Infra" },
-  { name: "Sewage treatment plant", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Sewage-treatment-plant.png", category: "Children & Infra" },
-  { name: "CCTV in select common areas", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/CCTV-in-select-common-areas.png", category: "Children & Infra" },
-  { name: "Adequate branded elevators", iconUrl: "https://rohanbuilders.com/wp-content/uploads/2023/09/Adequate-branded-elevators.png", category: "Children & Infra" }
+  { name: "Solar powered common area lighting", iconUrl: "/images/optimized/amenities/solar-powered-common-area-lighting.webp", category: "Children & Infra" },
+  { name: "Organic waste composting", iconUrl: "/images/optimized/amenities/organic-waste-composting.webp", category: "Children & Infra" },
+  { name: "Sewage treatment plant", iconUrl: "/images/optimized/amenities/sewage-treatment-plant.webp", category: "Children & Infra" },
+  { name: "CCTV in select common areas", iconUrl: "/images/optimized/amenities/cctv-in-select-common-areas.webp", category: "Children & Infra" },
+  { name: "Adequate branded elevators", iconUrl: "/images/optimized/amenities/adequate-branded-elevators.webp", category: "Children & Infra" }
 ];
 
 // Official Gallery Images (14 full renderings)
@@ -268,32 +268,32 @@ export const OFFICIAL_GALLERY_IMAGES = [
 export const OFFICIAL_VIDEOS = [
   {
     title: "Location Highlights",
-    thumb: "https://rohanbuilders.com/wp-content/uploads/2023/09/VIDEO-THUMBNAILS-MASTER-2023-Location-Highlights.jpg",
+    thumb: "/images/optimized/videos/location-highlights.webp",
     embedUrl: "https://www.youtube.com/embed/5Z1m4PUAnhM"
   },
   {
     title: "Panoramic Floor View",
-    thumb: "https://rohanbuilders.com/wp-content/uploads/2023/09/VIDEO-THUMBNAILS-MASTER-2023-Panoramic-Floor-View.jpg",
+    thumb: "/images/optimized/videos/panoramic-floor.webp",
     embedUrl: "https://www.youtube.com/embed/3HVmzbfTTf0"
   },
   {
     title: "Design Concept",
-    thumb: "https://rohanbuilders.com/wp-content/uploads/2023/09/VIDEO-THUMBNAILS-MASTER-2023-Design-Concept.jpg",
+    thumb: "/images/optimized/videos/design-concept.webp",
     embedUrl: "https://www.youtube.com/embed/TMtQ0Jlb5kQ"
   },
   {
     title: "Landscape Concept",
-    thumb: "https://rohanbuilders.com/wp-content/uploads/2023/09/VIDEO-THUMBNAILS-MASTER-2023-Landscape-Concept.jpg",
+    thumb: "/images/optimized/videos/landscape-concept.webp",
     embedUrl: "https://www.youtube.com/embed/7b6zdXHmHJo"
   },
   {
     title: "Architectural Walkthrough",
-    thumb: "https://rohanbuilders.com/wp-content/uploads/2023/09/VIDEO-THUMBNAILS.jpg",
+    thumb: "/images/optimized/videos/architectural-walkthrough.webp",
     embedUrl: "https://www.youtube.com/embed/XYEwRvZYwpM"
   },
   {
     title: "Project Walkthrough",
-    thumb: "https://rohanbuilders.com/wp-content/uploads/2023/09/Rohan-Ekam-Project-walkthrough-2.jpg",
+    thumb: "/images/optimized/videos/project-walkthrough.webp",
     embedUrl: "https://www.youtube.com/embed/UdA6Qm7GVsI"
   }
 ];

@@ -41,7 +41,7 @@ export default function ArchitecturalVision() {
               <div className="mt-6 flex items-center gap-4 pt-4 border-t border-stone-200/80">
                 <img
                   src={OFFICIAL_PROJECT_DETAILS.architectImage}
-                  alt="Ar. Sanjay Mohe"
+                  alt="Portrait of Principal Architect Ar. Sanjay Mohe"
                   width="56"
                   height="56"
                   loading="lazy"

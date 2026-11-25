@@ -6,7 +6,7 @@ export default function AmenitiesShowcase({ onOpenVipModal }) {
   const [activeCategory, setActiveCategory] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
 
-  const categories = ['All', 'Sky Ground (14th Fl)', 'Riverfront & Earth', 'Clubhouse & Fitness', 'Sports', 'Kids & Family', 'Eco Infrastructure'];
+  const categories = ['All', 'Sky Ground', 'Riverfront', 'Clubhouse & Sports', 'Children & Infra'];
 
   const filteredAmenities = OFFICIAL_AMENITIES.filter(item => {
     const matchesCategory = activeCategory === 'All' || item.category === activeCategory;
@@ -88,7 +88,8 @@ export default function AmenitiesShowcase({ onOpenVipModal }) {
               <div className="w-14 h-14 rounded-2xl bg-white/70 border border-stone-200/80 flex items-center justify-center p-2.5 group-hover:scale-110 group-hover:bg-white transition-all duration-300 shadow-xs">
                 <img
                   src={amenity.iconUrl}
-                  alt={amenity.name}
+                  alt=""
+                  aria-hidden="true"
                   width="56"
                   height="56"
                   loading="lazy"

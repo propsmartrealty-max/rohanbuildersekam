@@ -48,10 +48,12 @@
     <meta name="twitter:description" content="Explore Rohan Ekam by Rohan Builders. 13-acre riverside estate with Ground Floor in the Sky at L14. MahaRERA: P52100052298. Enquire: +91 774409295." />
     <meta name="twitter:image" content="https://rohanbuildersekam.com/rohan-ekam-logo.png" />
 
-    <!-- Google Web Fonts Preconnect & Optimized Optional Display Delivery (0 CLS) -->
+    <!-- Google Web Fonts Preconnect & Non-Blocking Optional Display Delivery (0 CLS) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=optional" rel="stylesheet" />
+    <link rel="preload" as="image" type="image/webp" href="/images/optimized/hero-riverfront.webp" fetchpriority="high" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=optional" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=optional" /></noscript>
     <style>
       #root { min-height: 100vh; display: flex; flex-direction: column; }
     </style>
@@ -67,459 +69,788 @@
 
     <!-- Comprehensive Schema.org Structured Data (JSON-LD) for Google SERP Domination -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "WebSite",
-          "@id": "https://rohanbuildersekam.com/#website",
-          "url": "https://rohanbuildersekam.com/",
-          "name": "Rohan Ekam",
-          "alternateName": [
-            "Rohan Ekam Balewadi",
-            "Rohan Builders Ekam",
-            "Rohan Ekam Pune"
-          ],
-          "description": "Project Showcase for Rohan Ekam Luxury Residences by Rohan Builders in Balewadi, Pune",
-          "publisher": {
-            "@id": "https://rohanbuildersekam.com/#developer"
-          }
+      "@type": "WebSite",
+      "@id": "https://rohanbuildersekam.com/#website",
+      "url": "https://rohanbuildersekam.com/",
+      "name": "Rohan Ekam",
+      "alternateName": [
+        "Rohan Ekam Balewadi",
+        "Rohan Builders Ekam",
+        "Rohan Ekam Pune",
+        "Rohan Ekam Official Showcase"
+      ],
+      "description": "Official project showcase and comprehensive real estate guide for Rohan Ekam luxury riverfront residences by Rohan Builders in Balewadi, Pune.",
+      "publisher": {
+        "@id": "https://rohanbuildersekam.com/#developer"
+      },
+      "inLanguage": "en-IN",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://rohanbuildersekam.com/?s={search_term_string}"
         },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://rohanbuildersekam.com/#developer",
+      "name": "Rohan Builders (India) Pvt. Ltd.",
+      "alternateName": [
+        "Rohan Builders",
+        "Rohan Group",
+        "Rohan Builders Pune"
+      ],
+      "url": "https://rohanbuilders.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://rohanbuildersekam.com/rohan-ekam-logo.png",
+        "width": 1200,
+        "height": 630
+      },
+      "foundingDate": "1993",
+      "description": "CRISIL DA2+ rated premier real estate developer with 30+ years of engineering excellence, over 15 million sq.ft delivered across Pune and Bengaluru, and creators of the PLUS Homes architectural science.",
+      "sameAs": [
+        "https://rohanbuilders.com",
+        "https://www.linkedin.com/company/rohan-builders-india-pvt-ltd/",
+        "https://www.facebook.com/rohanbuilders/",
+        "https://www.instagram.com/rohan_builders/",
+        "https://www.youtube.com/@RohanBuilders",
+        "https://twitter.com/rohanbuilders",
+        "https://www.crunchbase.com/organization/rohan-builders",
+        "https://maharera.mahaonline.gov.in"
+      ],
+      "knowsAbout": [
+        "Rohan PLUS Homes (Perfect Ventilation, Lively Light, Utmost Privacy, Smart Space)",
+        "Biophilic Architecture",
+        "Sustainable Green Building Engineering",
+        "Zero Corridor Wastage Floor Plan Design",
+        "West Pune Luxury Real Estate Market",
+        "MahaRERA Statutory Compliance"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1 Modibaug, Commercial Building, Ganeshkhind Road, Shivaji Nagar",
+        "addressLocality": "Pune",
+        "addressRegion": "Maharashtra",
+        "postalCode": "411016",
+        "addressCountry": "IN"
+      },
+      "contactPoint": [
         {
-          "@type": "Organization",
-          "@id": "https://rohanbuildersekam.com/#developer",
-          "name": "Rohan Builders (India) Pvt. Ltd.",
-          "alternateName": "Rohan Builders",
-          "url": "https://rohanbuilders.com",
-          "logo": "https://rohanbuildersekam.com/rohan-ekam-logo.png",
-          "foundingDate": "1993",
-          "description": "Leading real estate developer with 30+ years of engineering excellence, CRISIL DA2+ rating, and creators of the PLUS Homes concept."
-        },
-        {
-          "@type": "RealEstateAgent",
-          "@id": "https://rohanbuildersekam.com/#agent",
-          "name": "Propsmart Realty",
-          "url": "https://rohanbuildersekam.com/",
+          "@type": "ContactPoint",
           "telephone": "+91-774409295",
-          "email": "propsmartrealty@gmail.com",
-          "identifier": "A031262401295",
-          "description": "Authorized Channel Partner (MahaRERA Registration No: A031262401295) for Rohan Ekam by Rohan Builders.",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Pune",
-            "addressRegion": "Maharashtra",
-            "addressCountry": "IN"
-          }
+          "contactType": "sales",
+          "areaServed": "IN",
+          "availableLanguage": [
+            "English",
+            "Hindi",
+            "Marathi"
+          ]
         },
         {
-          "@type": "ApartmentComplex",
-          "@id": "https://rohanbuildersekam.com/#apartmentcomplex",
-          "name": "Rohan Ekam",
-          "alternateName": [
-            "Rohan Builders Ekam Balewadi",
-            "Rohan Ekam Pune",
-            "Rohan Ekam Residences",
-            "Rohan Builders Balewadi"
-          ],
-          "description": "Rohan Ekam by Rohan Builders and Ar. Sanjay Mohe is a 13-acre luxury riverfront residential development along the Mula River in Balewadi, Pune featuring India's first Ground Floor in the Sky at Level 14.",
-          "keywords": "Rohan Ekam, Rohan Ekam Balewadi, Rohan Ekam Baner, Rohan Builders Pune, luxury flats in Baner, luxury flats in Balewadi, luxury apartments in Baner Pune, luxury apartments in Balewadi Pune, premium flats in Baner, premium flats in Balewadi, 2 BHK flats in Balewadi, 3 BHK flats in Balewadi, 4 BHK sky suite duplex, luxury penthouses Balewadi, luxury properties West Pune, flats near Balewadi High Street, flats near Hinjawadi IT Park, Pune luxury real estate, Rohan Ekam price, Rohan Ekam cost sheet, Rohan Ekam floor plans, Ground Floor in the Sky, Rohan PLUS homes, Ar. Sanjay Mohe",
-          "url": "https://rohanbuildersekam.com/",
-          "logo": "https://rohanbuildersekam.com/rohan-ekam-logo.png",
-          "image": [
-            "https://rohanbuildersekam.com/rohan-ekam-logo.png",
-            "https://rohanbuildersekam.com/rohan-ekam-logo-colorful.png"
-          ],
+          "@type": "ContactPoint",
           "telephone": "+91-774409295",
-          "email": "propsmartrealty@gmail.com",
-          "priceRange": "₹1.45 Cr - ₹3.10 Cr",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Mula Riverfront, Behind Balewadi High Street",
-            "addressLocality": "Balewadi",
-            "addressRegion": "Maharashtra",
-            "postalCode": "411045",
-            "addressCountry": "IN"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 18.5772,
-            "longitude": 73.7661
-          },
-          "hasMap": "https://maps.google.com/?q=18.5772,73.7661",
-          "openingHours": "Mo-Su 09:30-19:00",
-          "currenciesAccepted": "INR",
-          "paymentAccepted": "Cheque, Demand Draft, RTGS, NEFT, Home Loan",
-          "numberOfBedrooms": [2, 3, 4],
-          "developer": {
-            "@id": "https://rohanbuildersekam.com/#developer"
-          },
-          "architect": {
-            "@type": "Person",
-            "name": "Ar. Sanjay Mohe",
-            "alternateName": "Sanjay Mohe",
-            "jobTitle": "Master Architect",
-            "affiliation": {
-              "@type": "Organization",
-              "name": "Mindspace Architects"
-            }
-          },
+          "contactType": "NRI investment advisory",
           "areaServed": [
-            { "@type": "Place", "name": "Balewadi, Pune" },
-            { "@type": "Place", "name": "Baner, Pune" },
-            { "@type": "Place", "name": "Baner-Pashan Link Road, Pune" },
-            { "@type": "Place", "name": "Mahalunge, Pune" },
-            { "@type": "Place", "name": "Hinjawadi IT Park, Pune" },
-            { "@type": "Place", "name": "West Pune Luxury Real Estate Market" }
+            "AE",
+            "US",
+            "GB",
+            "SG",
+            "QA"
           ],
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "bestRating": "5",
-            "worstRating": "1",
-            "ratingCount": "148",
-            "reviewCount": "148"
-          },
-          "review": [
-            {
-              "@type": "Review",
-              "author": { "@type": "Person", "name": "Vikramaditya S." },
-              "datePublished": "2026-08-14",
-              "reviewBody": "Rohan Ekam's Level 14 Ground Floor in the Sky designed by Ar. Sanjay Mohe is a masterclass in modern luxury. The riverfront breeze and zero-corridor layout in our 3 BHK make it stand out in West Pune.",
-              "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
-            },
-            {
-              "@type": "Review",
-              "author": { "@type": "Person", "name": "Ananya K." },
-              "datePublished": "2026-09-22",
-              "reviewBody": "Best investment in Baner-Balewadi corridor. Proximity to Balewadi High Street, Metro Line 3, and Hinjawadi IT Park while enjoying serene Mula riverfront living.",
-              "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
-            }
-          ],
-          "speakable": {
-            "@type": "SpeakableSpecification",
-            "cssSelector": [
-              "#main-content h1",
-              "#main-content h2",
-              "#architectNote",
-              "#skyGround",
-              "#plusPhilosophy",
-              "#faq"
-            ]
-          },
-          "amenityFeature": [
-            { "@type": "LocationFeatureSpecification", "name": "Ground Floor in the Sky at Level 14", "value": true },
-            { "@type": "LocationFeatureSpecification", "name": "1.2 km Mula Riverfront Boardwalk", "value": true },
-            { "@type": "LocationFeatureSpecification", "name": "50m Olympic-length Lap Pool", "value": true },
-            { "@type": "LocationFeatureSpecification", "name": "Rohan PLUS Science (Ventilation, Light, Privacy, Space)", "value": true },
-            { "@type": "LocationFeatureSpecification", "name": "Co-Working Lounges & Sky Pavilions", "value": true },
-            { "@type": "LocationFeatureSpecification", "name": "5-Tier Security System", "value": true }
-          ]
-        },
-        {
-          "@type": "Product",
-          "@id": "https://rohanbuildersekam.com/#product-2bhk",
-          "name": "Rohan Ekam 2 BHK Luxury Riverfront Flat",
-          "description": "2 BHK Luxury Riverfront Apartment at Rohan Ekam Balewadi, Pune. 850-950 sq ft carpet area featuring zero corridor wastage, Rohan PLUS science, and river views.",
-          "image": "https://rohanbuildersekam.com/rohan-ekam-logo.png",
-          "sku": "RE-2BHK-BAL",
-          "brand": {
-            "@type": "Brand",
-            "name": "Rohan Builders"
-          },
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "reviewCount": "42"
-          },
-          "offers": {
-            "@type": "Offer",
-            "url": "https://rohanbuildersekam.com/2-bhk-flats-in-balewadi",
-            "priceCurrency": "INR",
-            "price": "14500000",
-            "priceValidUntil": "2026-12-31",
-            "itemCondition": "https://schema.org/NewCondition",
-            "availability": "https://schema.org/InStock",
-            "seller": {
-              "@id": "https://rohanbuildersekam.com/#agent"
-            }
-          }
-        },
-        {
-          "@type": "Product",
-          "@id": "https://rohanbuildersekam.com/#product-3bhk-t1",
-          "name": "Rohan Ekam 3 BHK Premium Residence (Type 1)",
-          "description": "3 BHK Premium Residence Type 1 at Rohan Ekam Balewadi, Pune. 1,150-1,280 sq ft carpet area with dedicated private foyer, expansive sky terrace, and Mula river views.",
-          "image": "https://rohanbuildersekam.com/rohan-ekam-logo.png",
-          "sku": "RE-3BHK-T1",
-          "brand": {
-            "@type": "Brand",
-            "name": "Rohan Builders"
-          },
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "reviewCount": "42"
-          },
-          "offers": {
-            "@type": "Offer",
-            "url": "https://rohanbuildersekam.com/3-bhk-flats-in-balewadi",
-            "priceCurrency": "INR",
-            "price": "19500000",
-            "priceValidUntil": "2026-12-31",
-            "itemCondition": "https://schema.org/NewCondition",
-            "availability": "https://schema.org/InStock",
-            "seller": {
-              "@id": "https://rohanbuildersekam.com/#agent"
-            }
-          }
-        },
-        {
-          "@type": "Product",
-          "@id": "https://rohanbuildersekam.com/#product-3bhk-t2",
-          "name": "Rohan Ekam 3 BHK Grand Residence (Type 2)",
-          "description": "3 BHK Grand Residence Type 2 at Rohan Ekam Balewadi, Pune. 1,320-1,450 sq ft carpet area with dual cross-ventilation river corridors and grand master suite.",
-          "image": "https://rohanbuildersekam.com/rohan-ekam-logo.png",
-          "sku": "RE-3BHK-T2",
-          "brand": {
-            "@type": "Brand",
-            "name": "Rohan Builders"
-          },
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "reviewCount": "42"
-          },
-          "offers": {
-            "@type": "Offer",
-            "url": "https://rohanbuildersekam.com/3-bhk-flats-in-balewadi",
-            "priceCurrency": "INR",
-            "price": "21500000",
-            "priceValidUntil": "2026-12-31",
-            "itemCondition": "https://schema.org/NewCondition",
-            "availability": "https://schema.org/InStock",
-            "seller": {
-              "@id": "https://rohanbuildersekam.com/#agent"
-            }
-          }
-        },
-        {
-          "@type": "Product",
-          "@id": "https://rohanbuildersekam.com/#product-4bhk",
-          "name": "Rohan Ekam 4 BHK Sky Suite Penthouse",
-          "description": "4 BHK Sky Suite Duplex Penthouse at Rohan Ekam Balewadi, Pune. 1,950-2,300 sq ft carpet area with double-height ceiling, panoramic 360-degree river view, and direct Level 14 Sky Ground access.",
-          "image": "https://rohanbuildersekam.com/rohan-ekam-logo.png",
-          "sku": "RE-4BHK-SKY",
-          "brand": {
-            "@type": "Brand",
-            "name": "Rohan Builders"
-          },
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "reviewCount": "42"
-          },
-          "offers": {
-            "@type": "Offer",
-            "url": "https://rohanbuildersekam.com/4-bhk-flats-in-balewadi",
-            "priceCurrency": "INR",
-            "price": "27500000",
-            "priceValidUntil": "2026-12-31",
-            "itemCondition": "https://schema.org/NewCondition",
-            "availability": "https://schema.org/InStock",
-            "seller": {
-              "@id": "https://rohanbuildersekam.com/#agent"
-            }
-          }
-        },
-        {
-          "@type": "RealEstateListing",
-          "@id": "https://rohanbuildersekam.com/#listing",
-          "name": "2, 3 & 4 BHK Luxury Residences at Rohan Ekam Balewadi",
-          "url": "https://rohanbuildersekam.com/",
-          "datePosted": "2026-01-01",
-          "offers": {
-            "@type": "AggregateOffer",
-            "priceCurrency": "INR",
-            "lowPrice": "14500000",
-            "highPrice": "31000000",
-            "offerCount": "120",
-            "priceValidUntil": "2026-12-31"
-          }
-        },
-        {
-          "@type": "FAQPage",
-          "@id": "https://rohanbuildersekam.com/#faq",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "What is Rohan Ekam Balewadi and who is the developer?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Rohan Ekam is a premium 13-acre riverfront residential sanctuary in Balewadi, Pune developed by Rohan Builders (India) Pvt. Ltd. and designed by acclaimed architect Ar. Sanjay Mohe (Mindspace Architects). It features India's first Ground Floor in the Sky at Level 14 connecting 14-storey residential towers."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Is Rohan Ekam MahaRERA compliant?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes, Rohan Ekam is fully compliant and registered with Maharashtra Real Estate Regulatory Authority under MahaRERA registration number P52100052298 (Phase 1) and PR1261012502532 (Phase 2)."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What is the possession date for Rohan Ekam Balewadi?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "The sanctioned MahaRERA possession date for Rohan Ekam starts from December 2027 onwards with completion scheduled for December 2028."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Where is Rohan Ekam located in Pune?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Rohan Ekam is located along the serene Mula River in Balewadi, Pune 411045, offering close proximity to Balewadi High Street (5 mins), Baner Road (7 mins), and Hinjawadi IT Park Phase 1 & 2 (12-15 mins)."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What configurations and prices are available at Rohan Ekam?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Rohan Ekam offers 2 BHK luxury residences starting at ₹1.45 Cr*, 3 BHK residences (Type 1 & Type 2) starting at ₹1.95 Cr*, and 4 BHK sky suites starting at ₹2.75 Cr* with zero corridor wastage and maximum usable carpet area."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What is unique about 'The Ground Floor in the Sky' at Rohan Ekam?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Designed by Ar. Sanjay Mohe, The Ground Floor in the Sky elevates ground-level community life to Level 14, featuring sky bridges, cascading sloping lawns, yoga pavilions, co-working lounges, and panoramic views of the river."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What is the Rohan PLUS Homes philosophy?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Rohan PLUS stands for Perfect Ventilation, Lively Light, Utmost Privacy, and Smart Space. Homes are engineered with wind-tunnel tested cross-ventilation, expansive natural lighting, zero opposite window intrusion, and 100% usable carpet area."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "How do I schedule a site visit or contact Rohan Ekam sales office?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "You can schedule a private VIP site tour on https://rohanbuildersekam.com or connect directly with our relationship desk via WhatsApp at +91 774409295 or email propsmartrealty@gmail.com."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Who is the architect behind Rohan Ekam?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Rohan Ekam is designed by renowned master architect Ar. Sanjay Mohe and his firm Mindspace Architects (Bengaluru). Ar. Mohe is widely celebrated for his biophilic, climatically responsive architectural philosophy that seamlessly blends natural daylight, continuous river breezes, and elevated green landscapes."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "How does Rohan Ekam compare to other luxury residential projects in Balewadi and Baner?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Unlike land-constrained projects in Baner or dense 100-acre mega-townships in Mahalunge, Rohan Ekam is situated on a low-density 13-acre riverfront estate with only 9 boutique towers and over 80% open greens. It introduces India's first Level 14 Ground Floor in the Sky connecting all towers with a continuous suspended bridge network, plus Rohan's proprietary PLUS homes guaranteeing zero corridor wastage."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What is the distance and travel time from Rohan Ekam to Hinjawadi IT Park and Pune Metro Line 3?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Rohan Ekam is located 1.5 km (4 minutes) from Pune Metro Line 3 Balewadi Station and 1.2 km (4-5 minutes) from Balewadi High Street. Hinjawadi Phase 1 IT Park (Infosys, TCS, Wipro, Barclays) is 6.8 km away, accessible in 12-15 minutes via the direct riverfront bypass road avoiding Baner highway bottlenecks."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What are the stamp duty, GST, and registration charges for buying a flat at Rohan Ekam Pune?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "In Pune, Maharashtra, residential property purchases incur 6% stamp duty (5% standard + 1% metro cess), with a 1% concession for female home buyers (5% total). Maharashtra registration fee is capped at a statutory maximum of ₹30,000 for homes above ₹30 lakh. GST on under-construction luxury residential projects is 5% without input tax credit."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What is the expected rental yield and appreciation for flats in Balewadi Pune?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Balewadi delivers an average residential rental yield of 3.5% to 4.2% per annum, driven by steady demand from corporate executives and tech leadership in Hinjawadi IT Park and Balewadi High Street commercial hubs. Capital appreciation has historically compounded at 8.5% to 11.2% CAGR."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What are the configuration-wise starting prices and cost sheet for Rohan Ekam Balewadi?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Rohan Ekam features 2 BHK luxury flats (850-920 sq.ft. carpet) starting from ₹1.45 Cr*, 3 BHK residences (1,180-1,450 sq.ft. carpet) starting from ₹1.95 Cr*, and 4 BHK Sky Suite Duplexes (1,850-2,200 sq.ft. carpet) starting from ₹2.75 Cr*. An all-inclusive cost sheet with breakdown of base price, floor rise charges, 6% stamp duty, ₹30,000 capped registration, and 5% GST is available upon request."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Why is Baner-Balewadi the most preferred luxury residential market in West Pune?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "The Baner-Balewadi corridor represents Pune's prime luxury micro-market offering world-class social infrastructure including Balewadi High Street dining, premium healthcare (Jupiter Hospital, Manipal Hospital), top international schools (The Orchid School, VIBGYOR High), and superior transit via Mumbai-Bangalore Highway and upcoming Pune Metro Line 3."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Which financial institutions and banks have pre-approved home loans for Rohan Ekam?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Rohan Ekam is pre-approved for priority home loan disbursements by State Bank of India (SBI), HDFC Bank, ICICI Bank, Axis Bank, Tata Capital, and Kotak Mahindra Bank, with competitive interest rates and customized construction-linked milestone payment schedules."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "How does Rohan Ekam compare with other Baner-Balewadi luxury developments?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Unlike crowded township clusters or high-density standalone towers, Rohan Ekam provides 13 acres of pristine riverfront living with a 1.2 km boardwalk along the Mula River, Level 14 Ground Floor in the Sky designed by Ar. Sanjay Mohe, zero corridor wastage via Rohan PLUS homes engineering, and low-density boutique high-rises."
-              }
-            }
-          ]
-        },
-        {
-          "@type": "BreadcrumbList",
-          "@id": "https://rohanbuildersekam.com/#breadcrumb",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "Home",
-              "item": "https://rohanbuildersekam.com/"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "Pune Real Estate",
-              "item": "https://rohanbuildersekam.com/#location"
-            },
-            {
-              "@type": "ListItem",
-              "position": 3,
-              "name": "Balewadi Luxury Flats",
-              "item": "https://rohanbuildersekam.com/#residences"
-            },
-            {
-              "@type": "ListItem",
-              "position": 4,
-              "name": "Rohan Ekam",
-              "item": "https://rohanbuildersekam.com/"
-            }
+          "availableLanguage": [
+            "English",
+            "Hindi"
           ]
         }
       ]
+    },
+    {
+      "@type": "RealEstateAgent",
+      "@id": "https://rohanbuildersekam.com/#agent",
+      "name": "Propsmart Realty",
+      "url": "https://rohanbuildersekam.com/",
+      "telephone": "+91-774409295",
+      "email": "propsmartrealty@gmail.com",
+      "identifier": "A031262401295",
+      "description": "Authorized Channel Partner (MahaRERA Registration No: A031262401295) for Rohan Ekam by Rohan Builders.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pune",
+        "addressRegion": "Maharashtra",
+        "addressCountry": "IN"
+      }
+    },
+    {
+      "@type": "ApartmentComplex",
+      "@id": "https://rohanbuildersekam.com/#apartmentcomplex",
+      "name": "Rohan Ekam",
+      "alternateName": [
+        "Rohan Builders Ekam Balewadi",
+        "Rohan Ekam Pune",
+        "Rohan Ekam Residences",
+        "Rohan Builders Balewadi"
+      ],
+      "description": "Rohan Ekam by Rohan Builders and Ar. Sanjay Mohe is a 13-acre luxury riverfront residential development along the Mula River in Balewadi, Pune featuring India's first Ground Floor in the Sky at Level 14.",
+      "keywords": "Rohan Ekam, Rohan Ekam Balewadi, Rohan Ekam Baner, Rohan Builders Pune, luxury flats in Baner, luxury flats in Balewadi, luxury apartments in Baner Pune, luxury apartments in Balewadi Pune, premium flats in Baner, premium flats in Balewadi, 2 BHK flats in Balewadi, 3 BHK flats in Balewadi, 4 BHK sky suite duplex, luxury penthouses Balewadi, luxury properties West Pune, flats near Balewadi High Street, flats near Hinjawadi IT Park, Pune luxury real estate, Rohan Ekam price, Rohan Ekam cost sheet, Rohan Ekam floor plans, Ground Floor in the Sky, Rohan PLUS homes, Ar. Sanjay Mohe",
+      "url": "https://rohanbuildersekam.com/",
+      "logo": "https://rohanbuildersekam.com/rohan-ekam-logo.png",
+      "image": [
+        "https://rohanbuildersekam.com/rohan-ekam-logo.png",
+        "https://rohanbuildersekam.com/rohan-ekam-logo-colorful.png"
+      ],
+      "telephone": "+91-774409295",
+      "email": "propsmartrealty@gmail.com",
+      "priceRange": "₹1.45 Cr - ₹3.10 Cr",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Mula Riverfront, Behind Balewadi High Street",
+        "addressLocality": "Balewadi",
+        "addressRegion": "Maharashtra",
+        "postalCode": "411045",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 18.5772,
+        "longitude": 73.7661
+      },
+      "hasMap": "https://maps.google.com/?q=18.5772,73.7661",
+      "openingHours": "Mo-Su 09:30-19:00",
+      "currenciesAccepted": "INR",
+      "paymentAccepted": "Cheque, Demand Draft, RTGS, NEFT, Home Loan",
+      "numberOfBedrooms": [
+        2,
+        3,
+        4
+      ],
+      "developer": {
+        "@id": "https://rohanbuildersekam.com/#developer"
+      },
+      "architect": {
+        "@type": "Person",
+        "name": "Ar. Sanjay Mohe",
+        "alternateName": "Sanjay Mohe",
+        "jobTitle": "Master Architect",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Mindspace Architects"
+        }
+      },
+      "areaServed": [
+        {
+          "@type": "Place",
+          "name": "Balewadi, Pune"
+        },
+        {
+          "@type": "Place",
+          "name": "Baner, Pune"
+        },
+        {
+          "@type": "Place",
+          "name": "Baner-Pashan Link Road, Pune"
+        },
+        {
+          "@type": "Place",
+          "name": "Mahalunge, Pune"
+        },
+        {
+          "@type": "Place",
+          "name": "Hinjawadi IT Park, Pune"
+        },
+        {
+          "@type": "Place",
+          "name": "West Pune Luxury Real Estate Market"
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "bestRating": "5",
+        "worstRating": "1",
+        "ratingCount": "148",
+        "reviewCount": "148"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Vikramaditya S."
+          },
+          "datePublished": "2026-08-14",
+          "reviewBody": "Rohan Ekam's Level 14 Ground Floor in the Sky designed by Ar. Sanjay Mohe is a masterclass in modern luxury. The riverfront breeze and zero-corridor layout in our 3 BHK make it stand out in West Pune.",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          }
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Ananya K."
+          },
+          "datePublished": "2026-09-22",
+          "reviewBody": "Best investment in Baner-Balewadi corridor. Proximity to Balewadi High Street, Metro Line 3, and Hinjawadi IT Park while enjoying serene Mula riverfront living.",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          }
+        }
+      ],
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "#main-content h1",
+          "#main-content h2",
+          "#architectNote",
+          "#skyGround",
+          "#plusPhilosophy",
+          "#faq"
+        ]
+      },
+      "amenityFeature": [
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Ground Floor in the Sky at Level 14",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "1.2 km Mula Riverfront Boardwalk",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "50m Olympic-length Lap Pool",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Rohan PLUS Science (Ventilation, Light, Privacy, Space)",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Co-Working Lounges & Sky Pavilions",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "5-Tier Smart Security System",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Indoor Squash Court & Badminton Court",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "EV Charging Stations & Rainwater Harvesting",
+          "value": true
+        }
+      ],
+      "sameAs": [
+        "https://rohanbuilders.com/residential/rohan-ekam/",
+        "https://maharera.mahaonline.gov.in"
+      ],
+      "tourBookingPage": "https://rohanbuildersekam.com/#interested",
+      "video": [
+        {
+          "@id": "https://rohanbuildersekam.com/#video-walkthrough"
+        },
+        {
+          "@id": "https://rohanbuildersekam.com/#video-location"
+        },
+        {
+          "@id": "https://rohanbuildersekam.com/#video-panoramic"
+        },
+        {
+          "@id": "https://rohanbuildersekam.com/#video-design"
+        },
+        {
+          "@id": "https://rohanbuildersekam.com/#video-landscape"
+        },
+        {
+          "@id": "https://rohanbuildersekam.com/#video-architectural"
+        }
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://rohanbuildersekam.com/#product-2bhk",
+      "name": "Rohan Ekam 2 BHK Luxury Riverfront Flat",
+      "description": "2 BHK Luxury Riverfront Apartment at Rohan Ekam Balewadi, Pune. 850-950 sq ft carpet area featuring zero corridor wastage, Rohan PLUS science, and river views.",
+      "image": "https://rohanbuildersekam.com/images/optimized/plan-2bhk.webp",
+      "sku": "RE-2BHK-BAL",
+      "brand": {
+        "@type": "Brand",
+        "name": "Rohan Builders"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "42"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://rohanbuildersekam.com/2-bhk-flats-in-balewadi",
+        "priceCurrency": "INR",
+        "price": "14500000",
+        "priceValidUntil": "2026-12-31",
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@id": "https://rohanbuildersekam.com/#agent"
+        }
+      },
+      "category": "RealEstateListing > Residential Apartments",
+      "floorSize": {
+        "@type": "QuantitativeValue",
+        "value": 850,
+        "unitCode": "FTK"
+      },
+      "numberOfRooms": 2,
+      "numberOfBathroomsTotal": 2,
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Balcony Orientation",
+          "value": "Mula River & Garden Facing"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Ventilation",
+          "value": "Rohan PLUS Wind-Tunnel Cross Ventilation"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Corridor Wastage",
+          "value": "0%"
+        }
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://rohanbuildersekam.com/#product-3bhk-t1",
+      "name": "Rohan Ekam 3 BHK Premium Residence (Type 1)",
+      "description": "3 BHK Premium Residence Type 1 at Rohan Ekam Balewadi, Pune. 1,150-1,280 sq ft carpet area with dedicated private foyer, expansive sky terrace, and Mula river views.",
+      "image": "https://rohanbuildersekam.com/images/optimized/plan-3bhk-1.webp",
+      "sku": "RE-3BHK-T1",
+      "brand": {
+        "@type": "Brand",
+        "name": "Rohan Builders"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "42"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://rohanbuildersekam.com/3-bhk-flats-in-balewadi",
+        "priceCurrency": "INR",
+        "price": "19500000",
+        "priceValidUntil": "2026-12-31",
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@id": "https://rohanbuildersekam.com/#agent"
+        }
+      },
+      "category": "RealEstateListing > Residential Apartments",
+      "floorSize": {
+        "@type": "QuantitativeValue",
+        "value": 1180,
+        "unitCode": "FTK"
+      },
+      "numberOfRooms": 3,
+      "numberOfBathroomsTotal": 3,
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Private Foyer",
+          "value": "Dedicated Entrance Foyer"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Balcony Orientation",
+          "value": "Panoramic Riverfront Decks"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Corridor Wastage",
+          "value": "0%"
+        }
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://rohanbuildersekam.com/#product-3bhk-t2",
+      "name": "Rohan Ekam 3 BHK Grand Residence (Type 2)",
+      "description": "3 BHK Grand Residence Type 2 at Rohan Ekam Balewadi, Pune. 1,320-1,450 sq ft carpet area with dual cross-ventilation river corridors and grand master suite.",
+      "image": "https://rohanbuildersekam.com/images/optimized/plan-3bhk-2.webp",
+      "sku": "RE-3BHK-T2",
+      "brand": {
+        "@type": "Brand",
+        "name": "Rohan Builders"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "42"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://rohanbuildersekam.com/3-bhk-flats-in-balewadi",
+        "priceCurrency": "INR",
+        "price": "21500000",
+        "priceValidUntil": "2026-12-31",
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@id": "https://rohanbuildersekam.com/#agent"
+        }
+      },
+      "category": "RealEstateListing > Residential Apartments",
+      "floorSize": {
+        "@type": "QuantitativeValue",
+        "value": 1350,
+        "unitCode": "FTK"
+      },
+      "numberOfRooms": 3,
+      "numberOfBathroomsTotal": 3,
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Layout Type",
+          "value": "Three-Side Open Grand Residence"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Sky Bridge Access",
+          "value": "Direct Access to Level 14 Sky Ground"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Corridor Wastage",
+          "value": "0%"
+        }
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://rohanbuildersekam.com/#product-4bhk",
+      "name": "Rohan Ekam 4 BHK Sky Suite Penthouse",
+      "description": "4 BHK Sky Suite Duplex Penthouse at Rohan Ekam Balewadi, Pune. 1,950-2,300 sq ft carpet area with double-height ceiling, panoramic 360-degree river view, and direct Level 14 Sky Ground access.",
+      "image": "https://rohanbuildersekam.com/images/optimized/plan-4bhk.webp",
+      "sku": "RE-4BHK-SKY",
+      "brand": {
+        "@type": "Brand",
+        "name": "Rohan Builders"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "42"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://rohanbuildersekam.com/4-bhk-flats-in-balewadi",
+        "priceCurrency": "INR",
+        "price": "27500000",
+        "priceValidUntil": "2026-12-31",
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@id": "https://rohanbuildersekam.com/#agent"
+        }
+      },
+      "category": "RealEstateListing > Residential Apartments",
+      "floorSize": {
+        "@type": "QuantitativeValue",
+        "value": 1950,
+        "unitCode": "FTK"
+      },
+      "numberOfRooms": 4,
+      "numberOfBathroomsTotal": 4,
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Ceiling Height",
+          "value": "Double-Height Grand Living Area"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Panorama",
+          "value": "270° Uninterrupted River Horizon"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Duplex Sky Suite",
+          "value": "Private Upper Level Master Penthouse"
+        }
+      ]
+    },
+    {
+      "@type": "RealEstateListing",
+      "@id": "https://rohanbuildersekam.com/#listing",
+      "name": "2, 3 & 4 BHK Luxury Residences at Rohan Ekam Balewadi",
+      "url": "https://rohanbuildersekam.com/",
+      "datePosted": "2026-01-01",
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "INR",
+        "lowPrice": "14500000",
+        "highPrice": "31000000",
+        "offerCount": "120",
+        "priceValidUntil": "2026-12-31"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://rohanbuildersekam.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Rohan Ekam Balewadi and who is the developer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Rohan Ekam is a premium 13-acre riverfront residential sanctuary in Balewadi, Pune developed by Rohan Builders (India) Pvt. Ltd. and designed by acclaimed architect Ar. Sanjay Mohe (Mindspace Architects). It features India's first Ground Floor in the Sky at Level 14 connecting 14-storey residential towers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Rohan Ekam MahaRERA compliant?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Rohan Ekam is fully compliant and registered with Maharashtra Real Estate Regulatory Authority under MahaRERA registration number P52100052298 (Phase 1) and PR1261012502532 (Phase 2)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the possession date for Rohan Ekam Balewadi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The sanctioned MahaRERA possession date for Rohan Ekam starts from December 2027 onwards with completion scheduled for December 2028."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is Rohan Ekam located in Pune?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Rohan Ekam is located along the serene Mula River in Balewadi, Pune 411045, offering close proximity to Balewadi High Street (5 mins), Baner Road (7 mins), and Hinjawadi IT Park Phase 1 & 2 (12-15 mins)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What configurations and prices are available at Rohan Ekam?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Rohan Ekam offers 2 BHK luxury residences starting at ₹1.45 Cr*, 3 BHK residences (Type 1 & Type 2) starting at ₹1.95 Cr*, and 4 BHK sky suites starting at ₹2.75 Cr* with zero corridor wastage and maximum usable carpet area."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is unique about 'The Ground Floor in the Sky' at Rohan Ekam?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Designed by Ar. Sanjay Mohe, The Ground Floor in the Sky elevates ground-level community life to Level 14, featuring sky bridges, cascading sloping lawns, yoga pavilions, co-working lounges, and panoramic views of the river."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the Rohan PLUS Homes philosophy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Rohan PLUS stands for Perfect Ventilation, Lively Light, Utmost Privacy, and Smart Space. Homes are engineered with wind-tunnel tested cross-ventilation, expansive natural lighting, zero opposite window intrusion, and 100% usable carpet area."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I schedule a site visit or contact Rohan Ekam sales office?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can schedule a private VIP site tour on https://rohanbuildersekam.com or connect directly with our relationship desk via WhatsApp at +91 774409295 or email propsmartrealty@gmail.com."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who is the architect behind Rohan Ekam?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Rohan Ekam is designed by renowned master architect Ar. Sanjay Mohe and his firm Mindspace Architects (Bengaluru). Ar. Mohe is widely celebrated for his biophilic, climatically responsive architectural philosophy that seamlessly blends natural daylight, continuous river breezes, and elevated green landscapes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does Rohan Ekam compare to other luxury residential projects in Balewadi and Baner?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Unlike land-constrained projects in Baner or dense 100-acre mega-townships in Mahalunge, Rohan Ekam is situated on a low-density 13-acre riverfront estate with only 9 boutique towers and over 80% open greens. It introduces India's first Level 14 Ground Floor in the Sky connecting all towers with a continuous suspended bridge network, plus Rohan's proprietary PLUS homes guaranteeing zero corridor wastage."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the distance and travel time from Rohan Ekam to Hinjawadi IT Park and Pune Metro Line 3?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Rohan Ekam is located 1.5 km (4 minutes) from Pune Metro Line 3 Balewadi Station and 1.2 km (4-5 minutes) from Balewadi High Street. Hinjawadi Phase 1 IT Park (Infosys, TCS, Wipro, Barclays) is 6.8 km away, accessible in 12-15 minutes via the direct riverfront bypass road avoiding Baner highway bottlenecks."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the stamp duty, GST, and registration charges for buying a flat at Rohan Ekam Pune?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In Pune, Maharashtra, residential property purchases incur 6% stamp duty (5% standard + 1% metro cess), with a 1% concession for female home buyers (5% total). Maharashtra registration fee is capped at a statutory maximum of ₹30,000 for homes above ₹30 lakh. GST on under-construction luxury residential projects is 5% without input tax credit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the expected rental yield and appreciation for flats in Balewadi Pune?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Balewadi delivers an average residential rental yield of 3.5% to 4.2% per annum, driven by steady demand from corporate executives and tech leadership in Hinjawadi IT Park and Balewadi High Street commercial hubs. Capital appreciation has historically compounded at 8.5% to 11.2% CAGR."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the configuration-wise starting prices and cost sheet for Rohan Ekam Balewadi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Rohan Ekam features 2 BHK luxury flats (850-920 sq.ft. carpet) starting from ₹1.45 Cr*, 3 BHK residences (1,180-1,450 sq.ft. carpet) starting from ₹1.95 Cr*, and 4 BHK Sky Suite Duplexes (1,850-2,200 sq.ft. carpet) starting from ₹2.75 Cr*. An all-inclusive cost sheet with breakdown of base price, floor rise charges, 6% stamp duty, ₹30,000 capped registration, and 5% GST is available upon request."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is Baner-Balewadi the most preferred luxury residential market in West Pune?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Baner-Balewadi corridor represents Pune's prime luxury micro-market offering world-class social infrastructure including Balewadi High Street dining, premium healthcare (Jupiter Hospital, Manipal Hospital), top international schools (The Orchid School, VIBGYOR High), and superior transit via Mumbai-Bangalore Highway and upcoming Pune Metro Line 3."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which financial institutions and banks have pre-approved home loans for Rohan Ekam?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Rohan Ekam is pre-approved for priority home loan disbursements by State Bank of India (SBI), HDFC Bank, ICICI Bank, Axis Bank, Tata Capital, and Kotak Mahindra Bank, with competitive interest rates and customized construction-linked milestone payment schedules."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does Rohan Ekam compare with other Baner-Balewadi luxury developments?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Unlike crowded township clusters or high-density standalone towers, Rohan Ekam provides 13 acres of pristine riverfront living with a 1.2 km boardwalk along the Mula River, Level 14 Ground Floor in the Sky designed by Ar. Sanjay Mohe, zero corridor wastage via Rohan PLUS homes engineering, and low-density boutique high-rises."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://rohanbuildersekam.com/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://rohanbuildersekam.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Pune Real Estate",
+          "item": "https://rohanbuildersekam.com/#location"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Balewadi Luxury Flats",
+          "item": "https://rohanbuildersekam.com/#residences"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Rohan Ekam",
+          "item": "https://rohanbuildersekam.com/"
+        }
+      ]
+    },
+    {
+      "@type": "VideoObject",
+      "@id": "https://rohanbuildersekam.com/#video-walkthrough",
+      "name": "Rohan Ekam Official Project Walkthrough",
+      "description": "Complete architectural walkthrough of Rohan Ekam 13-acre luxury riverfront sanctuary in Balewadi, Pune.",
+      "thumbnailUrl": "https://rohanbuilders.com/wp-content/uploads/2023/09/Rohan-Ekam-Project-walkthrough-2.jpg",
+      "uploadDate": "2023-09-01T00:00:00+05:30",
+      "contentUrl": "https://www.youtube.com/watch?v=UdA6Qm7GVsI",
+      "embedUrl": "https://www.youtube.com/embed/UdA6Qm7GVsI"
+    },
+    {
+      "@type": "VideoObject",
+      "@id": "https://rohanbuildersekam.com/#video-location",
+      "name": "Rohan Ekam Location Highlights & Balewadi Connectivity",
+      "description": "Video overview of Rohan Ekam proximity to Balewadi High Street, Pune Metro Line 3, and Hinjawadi IT Park.",
+      "thumbnailUrl": "https://rohanbuilders.com/wp-content/uploads/2023/09/VIDEO-THUMBNAILS-MASTER-2023-Location-Highlights.jpg",
+      "uploadDate": "2023-09-01T00:00:00+05:30",
+      "contentUrl": "https://www.youtube.com/watch?v=5Z1m4PUAnhM",
+      "embedUrl": "https://www.youtube.com/embed/5Z1m4PUAnhM"
+    },
+    {
+      "@type": "VideoObject",
+      "@id": "https://rohanbuildersekam.com/#video-panoramic",
+      "name": "Rohan Ekam Panoramic River & Sky Floor View",
+      "description": "360-degree panoramic view of Mula River and elevated horizon from the Level 14 Ground Floor in the Sky.",
+      "thumbnailUrl": "https://rohanbuilders.com/wp-content/uploads/2023/09/VIDEO-THUMBNAILS-MASTER-2023-Panoramic-Floor-View.jpg",
+      "uploadDate": "2023-09-01T00:00:00+05:30",
+      "contentUrl": "https://www.youtube.com/watch?v=3HVmzbfTTf0",
+      "embedUrl": "https://www.youtube.com/embed/3HVmzbfTTf0"
+    },
+    {
+      "@type": "VideoObject",
+      "@id": "https://rohanbuildersekam.com/#video-design",
+      "name": "Rohan Ekam Design Concept by Ar. Sanjay Mohe",
+      "description": "Master architect Ar. Sanjay Mohe (Mindspace Architects) discusses the biophilic design philosophy of Rohan Ekam.",
+      "thumbnailUrl": "https://rohanbuilders.com/wp-content/uploads/2023/09/VIDEO-THUMBNAILS-MASTER-2023-Design-Concept.jpg",
+      "uploadDate": "2023-09-01T00:00:00+05:30",
+      "contentUrl": "https://www.youtube.com/watch?v=TMtQ0Jlb5kQ",
+      "embedUrl": "https://www.youtube.com/embed/TMtQ0Jlb5kQ"
+    },
+    {
+      "@type": "VideoObject",
+      "@id": "https://rohanbuildersekam.com/#video-landscape",
+      "name": "Rohan Ekam Landscape Concept & Riverfront Promenade",
+      "description": "1.2 km Mula riverfront boardwalk, cascading sloping lawns, and resort amenities landscape tour.",
+      "thumbnailUrl": "https://rohanbuilders.com/wp-content/uploads/2023/09/VIDEO-THUMBNAILS-MASTER-2023-Landscape-Concept.jpg",
+      "uploadDate": "2023-09-01T00:00:00+05:30",
+      "contentUrl": "https://www.youtube.com/watch?v=7b6zdXHmHJo",
+      "embedUrl": "https://www.youtube.com/embed/7b6zdXHmHJo"
+    },
+    {
+      "@type": "VideoObject",
+      "@id": "https://rohanbuildersekam.com/#video-architectural",
+      "name": "Rohan Ekam Architectural Walkthrough",
+      "description": "Detailed 3D architectural rendering and engineering analysis of Rohan Ekam boutique towers and sky bridge connections.",
+      "thumbnailUrl": "https://rohanbuilders.com/wp-content/uploads/2023/09/VIDEO-THUMBNAILS.jpg",
+      "uploadDate": "2023-09-01T00:00:00+05:30",
+      "contentUrl": "https://www.youtube.com/watch?v=XYEwRvZYwpM",
+      "embedUrl": "https://www.youtube.com/embed/XYEwRvZYwpM"
     }
+  ]
+}
     </script>
   </head>
   <body class="bg-[#F5F2EB] text-stone-900 font-sans antialiased selection:bg-stone-900 selection:text-[#F5F2EB] overflow-x-hidden">

@@ -69,14 +69,14 @@ export default function VIPExperienceModal({ isOpen, onClose, initialConfig = '3
               <div className="flex items-center justify-between gap-2 mb-3">
                 <RohanEkamLogo variant="lockup" />
                 <div className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1 rounded-full glass-panel text-stone-800 text-[10px] font-mono uppercase tracking-widest shadow-xs">
-                  <Sparkles className="w-3 h-3 text-amber-600 animate-pulse" />
+                  <Sparkles className="w-3 h-3 text-amber-800 animate-pulse" />
                   <span>VIP Lounge</span>
                 </div>
               </div>
               <h3 className="font-serif text-2xl sm:text-3xl font-bold text-stone-900">
                 Schedule Your VIP Site Tour
               </h3>
-              <p className="text-xs text-stone-600 mt-1">
+              <p className="text-xs text-stone-700 mt-1">
                 Experience the 14th-floor sky mockups, cascading sloping lawns, and private Mula Riverfront boardwalk in Balewadi.
               </p>
             </div>
@@ -93,7 +93,7 @@ export default function VIPExperienceModal({ isOpen, onClose, initialConfig = '3
                   placeholder="e.g. Vikramaditya Singhania"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="w-full glass-panel border border-white/90 rounded-2xl px-4 py-2.5 text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-stone-900/10 focus:border-stone-800 shadow-xs transition-all"
+                  className="w-full glass-panel border border-white/90 rounded-2xl px-4 py-2.5 text-stone-900 placeholder-stone-600 focus:outline-none focus:ring-2 focus:ring-stone-900/10 focus:border-stone-800 shadow-xs transition-all"
                 />
               </div>
 
@@ -204,11 +204,11 @@ export default function VIPExperienceModal({ isOpen, onClose, initialConfig = '3
                   />
                   <span>
                     I authorize Propsmart Realty &amp; Rohan Builders to contact me via Call/WhatsApp regarding Rohan Ekam in accordance with the{' '}
-                    <a href="/privacy-policy.html" target="_blank" rel="noreferrer" className="text-stone-900 font-semibold underline hover:text-amber-800">
+                    <a href="/privacy-policy" target="_blank" rel="noreferrer" className="text-stone-900 font-semibold underline hover:text-amber-800">
                       Privacy Policy
                     </a>{' '}
                     and{' '}
-                    <a href="/terms.html" target="_blank" rel="noreferrer" className="text-stone-900 font-semibold underline hover:text-amber-800">
+                    <a href="/terms" target="_blank" rel="noreferrer" className="text-stone-900 font-semibold underline hover:text-amber-800">
                       Terms
                     </a>.
                   </span>
