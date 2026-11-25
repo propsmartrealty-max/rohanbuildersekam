@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
 import { sendLeadToRealtor } from '../utils/leadService';
+import { trackConversion } from '../utils/analytics';
 
 export default function OfficialWhatsAppBar() {
   const [mobileNumber, setMobileNumber] = useState('');
@@ -33,6 +34,7 @@ export default function OfficialWhatsAppBar() {
             href="https://wa.me/91774409295?text=Hello%20Rohan%20Builders,%20I%20would%20like%20to%20enquire%20about%20Rohan%20Ekam%20Balewadi."
             target="_blank"
             rel="noreferrer"
+            onClick={() => trackConversion('whatsapp_click', { location: 'Sticky Bottom WhatsApp Bar' })}
             aria-label="Chat on WhatsApp with Rohan Ekam Advisory Desk at +91 774409295"
             className="flex items-center gap-3 group/link hover:opacity-95 transition-opacity min-h-[44px]"
           >

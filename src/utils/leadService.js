@@ -4,6 +4,8 @@
  * with localStorage backup and graceful network handling.
  */
 
+import { trackConversion } from './analytics';
+
 const REALTOR_EMAIL = 'propsmartrealty@gmail.com';
 const DISPATCH_ENDPOINT = `https://formsubmit.co/ajax/${REALTOR_EMAIL}`;
 const STORAGE_KEY = 'propsmart_rohan_ekam_leads';
@@ -34,6 +36,10 @@ function saveLeadLocally(leadData) {
  * @returns {Promise<{success: boolean, message?: string}>}
  */
 export async function sendLeadToRealtor(leadData) {
+  trackConversion('generate_lead', {
+    lead_source: leadData.source || 'Website Lead Capture',
+    unit_config: leadData.config || 'General Inquiry',
+  });
   const timestamp = new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' });
   const leadName = leadData.name || 'New Prospect';
   const leadPhone = leadData.phone || leadData.mobile || 'Not specified';

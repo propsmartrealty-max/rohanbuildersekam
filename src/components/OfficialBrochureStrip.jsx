@@ -1,6 +1,7 @@
 import React from 'react';
 import { Download, FileText, Sparkles } from 'lucide-react';
 import { OFFICIAL_PROJECT_DETAILS } from '../data/projectData';
+import { trackConversion } from '../utils/analytics';
 
 export default function OfficialBrochureStrip() {
   const brochureUrl = OFFICIAL_PROJECT_DETAILS.brochures[0].url;
@@ -23,7 +24,7 @@ export default function OfficialBrochureStrip() {
                   DETAILED BROCHURE
                 </h3>
                 <span className="text-[10px] px-2.5 py-0.5 rounded-full glass-panel border border-stone-300 font-mono text-stone-700">
-                  18.4 MB PDF
+                  Official PDF
                 </span>
               </div>
               <p className="text-xs text-stone-700 mt-0.5 font-medium">
@@ -36,6 +37,7 @@ export default function OfficialBrochureStrip() {
             href={brochureUrl}
             target="_blank"
             rel="noreferrer"
+            onClick={() => trackConversion('file_download', { file_name: 'Rohan-Ekam-Brochure.pdf' })}
             className="px-8 py-3.5 rounded-2xl bg-stone-900 hover:bg-stone-800 text-white font-bold text-xs uppercase tracking-wider flex items-center gap-2.5 transition-all shadow-md shadow-stone-900/10 shrink-0 group active:scale-95 glass-shimmer min-h-[44px]"
           >
             <Download className="w-4 h-4 text-amber-400 group-hover:-translate-y-0.5 transition-transform" />

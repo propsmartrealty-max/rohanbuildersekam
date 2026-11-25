@@ -69,7 +69,7 @@ export default function LegalModal({ isOpen, onClose, initialTab = 'privacy' }) 
               <div className="flex items-center justify-between">
                 <h3 className="font-serif text-xl font-bold text-stone-900">Privacy Policy</h3>
                 <a 
-                  href="/privacy-policy.html" 
+                  href="/privacy-policy" 
                   target="_blank" 
                   rel="noreferrer" 
                   className="text-[11px] font-semibold text-emerald-800 hover:underline inline-flex items-center gap-1"
@@ -115,7 +115,7 @@ export default function LegalModal({ isOpen, onClose, initialTab = 'privacy' }) 
               <div className="flex items-center justify-between">
                 <h3 className="font-serif text-xl font-bold text-stone-900">Terms of Use</h3>
                 <a 
-                  href="/terms.html" 
+                  href="/terms" 
                   target="_blank" 
                   rel="noreferrer" 
                   className="text-[11px] font-semibold text-emerald-800 hover:underline inline-flex items-center gap-1"
@@ -150,7 +150,7 @@ export default function LegalModal({ isOpen, onClose, initialTab = 'privacy' }) 
               <div className="flex items-center justify-between">
                 <h3 className="font-serif text-xl font-bold text-stone-900">MahaRERA &amp; Marketing Disclaimer</h3>
                 <a 
-                  href="/disclaimer.html" 
+                  href="/disclaimer" 
                   target="_blank" 
                   rel="noreferrer" 
                   className="text-[11px] font-semibold text-emerald-800 hover:underline inline-flex items-center gap-1"

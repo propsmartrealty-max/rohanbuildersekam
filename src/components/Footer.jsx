@@ -278,6 +278,7 @@ export default function Footer() {
                 { label: 'Possession, Reviews & RERA', href: '/rohan-ekam-possession-reviews-rera' },
                 { label: 'New Launch Projects Balewadi-Baner', href: '/new-launch-projects-in-balewadi-baner' },
                 { label: 'Flats Near Stadium, Wakad & Aundh', href: '/flats-near-balewadi-stadium-wakad-aundh' },
+                { label: 'Sample Flat, Videos & Updates', href: '/rohan-ekam-videos-sample-flat-updates' },
                 { label: 'Ground Floor in the Sky L14', href: '#skyGround' },
                 { label: 'Rohan PLUS Homes', href: '#plusPhilosophy' },
                 { label: 'Rohan Ekam Brochure PDF', href: OFFICIAL_PROJECT_DETAILS.brochures[0].url },
@@ -335,14 +336,23 @@ export default function Footer() {
               <span>Terms of Use</span>
             </a>
 
-            <button 
-              type="button" 
-              onClick={(e) => openLegal('disclaimer', e)} 
-              aria-label="View MahaRERA statutory disclaimer modal"
+            <a 
+              href="/disclaimer" 
+              target="_blank" 
+              rel="noreferrer" 
               className="hover:text-amber-800 underline flex items-center gap-1.5 py-2 px-2 min-h-[44px]"
             >
               <Scale className="w-3.5 h-3.5 text-stone-700" />
               <span>MahaRERA Disclaimer</span>
+            </a>
+
+            <button 
+              type="button" 
+              onClick={(e) => openLegal('disclaimer', e)} 
+              aria-label="Open interactive compliance disclaimer modal"
+              className="hover:text-amber-800 underline flex items-center gap-1.5 py-2 px-2 min-h-[44px]"
+            >
+              <span>Quick Disclosure</span>
             </button>
 
             <a 

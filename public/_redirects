@@ -1,2 +1,3 @@
-# SPA Catch-all Fallback
-/*    /index.html   200
+# Explicit Cloudflare Pages Redirect Rules (No blanket catch-all to avoid Google Soft-404s)
+# All valid static routes are served cleanly as 200 OK; unknown paths serve 404.html with HTTP 404.
+/home    /    301
