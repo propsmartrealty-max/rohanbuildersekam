@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ArrowRight, Sparkles, Download, Layers, ShieldCheck, FileText, ChevronRight, Waves } from 'lucide-react';
 import { OFFICIAL_PROJECT_DETAILS } from '../data/projectData';
+import { getImageSrcSet } from '../utils/responsiveImage';
 import RohanEkamLogo from './RohanEkamLogo';
 
 export default function Hero({ onOpenVipModal }) {
@@ -15,16 +16,19 @@ export default function Hero({ onOpenVipModal }) {
       <div className="glass-orb w-[420px] h-[420px] bg-[#C8DECE] top-1/3 -right-24 animate-blob [animation-delay:4s]" />
       <div className="glass-orb w-80 h-80 bg-[#DDD4C4] -bottom-10 left-1/3 animate-blob [animation-delay:8s]" />
 
-      {/* Background Hero Banner with Warm Beige Architectural Blends */}
+      {/* Background Hero Banner with Responsive LCP <img> Delivery */}
       <div className="absolute inset-0 z-0">
-        <div
+        <img
           key={currentBanner.url}
-          className="absolute inset-0 transition-opacity duration-1000 opacity-25 scale-100"
-          style={{
-            backgroundImage: `url('${currentBanner.url}')`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
+          src={currentBanner.url}
+          srcSet={getImageSrcSet(currentBanner.url)}
+          sizes="100vw"
+          width="1280"
+          height="564"
+          alt={`${currentBanner.title} — ${currentBanner.subtitle}`}
+          fetchPriority={activeBannerIdx === 0 ? 'high' : 'auto'}
+          decoding={activeBannerIdx === 0 ? 'sync' : 'async'}
+          className="w-full h-full object-cover object-center transition-opacity duration-1000 opacity-25 scale-100"
         />
 
         {/* Soft Warm Vignette Gradients transitioning to Beige */}

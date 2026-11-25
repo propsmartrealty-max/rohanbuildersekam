@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Compass, Quote, Ruler, Maximize2, X, ExternalLink, Sparkles } from 'lucide-react';
 import { OFFICIAL_PROJECT_DETAILS } from '../data/projectData';
+import { getImageSrcSet } from '../utils/responsiveImage';
 
 export default function ArchitecturalVision() {
   const [isMasterPlanOpen, setIsMasterPlanOpen] = useState(false);
@@ -92,9 +93,11 @@ export default function ArchitecturalVision() {
               >
                 <img
                   src={OFFICIAL_PROJECT_DETAILS.masterPlanImage}
+                  srcSet={getImageSrcSet(OFFICIAL_PROJECT_DETAILS.masterPlanImage)}
+                  sizes="(max-width: 1024px) 92vw, 480px"
                   alt="Rohan Ekam Master Plan"
-                  width="600"
-                  height="450"
+                  width="1000"
+                  height="565"
                   loading="lazy"
                   decoding="async"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover/img:scale-105"

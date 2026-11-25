@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Layers, Sparkles, Compass, Eye, Check, ArrowUpRight, Volume2 } from 'lucide-react';
+import { getImageSrcSet } from '../utils/responsiveImage';
 
 export default function SkyGroundExplorer({ onOpenVipModal }) {
   const [activeRealmIndex, setActiveRealmIndex] = useState(0); // 0 is Level 14 Sky Ground
@@ -161,9 +162,11 @@ export default function SkyGroundExplorer({ onOpenVipModal }) {
               <div className="relative aspect-[16/10] w-full overflow-hidden bg-stone-100">
                 <img
                   src={currentRealm.image}
+                  srcSet={getImageSrcSet(currentRealm.image)}
+                  sizes="(max-width: 1024px) 92vw, 680px"
                   alt={currentRealm.name}
-                  width="1200"
-                  height="750"
+                  width="800"
+                  height="352"
                   loading="lazy"
                   decoding="async"
                   className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"

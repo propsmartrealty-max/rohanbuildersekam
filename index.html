@@ -48,12 +48,10 @@
     <meta name="twitter:description" content="Official Rohan Ekam showcase in Balewadi-Baner, Pune. 13-acre Mula riverfront flats with Level 14 Sky Ground. 2, 3 &amp; 4 BHK from ₹1.45 Cr*. View Plans →" />
     <meta name="twitter:image" content="https://rohanbuildersekam.com/rohan-ekam-logo.png" />
 
-    <!-- Google Web Fonts Preconnect & Non-Blocking Optional Display Delivery (0 CLS) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preload" as="image" type="image/webp" href="/images/optimized/hero-riverfront.webp" fetchpriority="high" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=optional" media="print" onload="this.media='all'" />
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=optional" /></noscript>
+    <!-- Self-Hosted Variable WOFF2 Fonts Preload (0 External Font Requests & 0 CLS) -->
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/plus-jakarta-sans-normal-latin.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/cormorant-garamond-normal-latin.woff2" crossorigin />
+    <link rel="preload" as="image" type="image/webp" href="/images/optimized/hero-riverfront-480w.webp" imagesrcset="/images/optimized/hero-riverfront-480w.webp 480w, /images/optimized/hero-riverfront-800w.webp 800w, /images/optimized/hero-riverfront.webp 1280w" imagesizes="100vw" fetchpriority="high" />
     <style>
       #root { min-height: 100vh; display: flex; flex-direction: column; }
     </style>
@@ -87,15 +85,7 @@
       "publisher": {
         "@id": "https://rohanbuildersekam.com/#developer"
       },
-      "inLanguage": "en-IN",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": {
-          "@type": "EntryPoint",
-          "urlTemplate": "https://rohanbuildersekam.com/?s={search_term_string}"
-        },
-        "query-input": "required name=search_term_string"
-      }
+      "inLanguage": "en-IN"
     },
     {
       "@type": "Organization",
@@ -702,42 +692,16 @@
       ]
     },
     {
-      "@type": "BreadcrumbList",
-      "@id": "https://rohanbuildersekam.com/#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://rohanbuildersekam.com/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Pune Real Estate",
-          "item": "https://rohanbuildersekam.com/#location"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Balewadi Luxury Flats",
-          "item": "https://rohanbuildersekam.com/#residences"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Rohan Ekam",
-          "item": "https://rohanbuildersekam.com/"
-        }
-      ]
-    },
-    {
       "@type": "VideoObject",
       "@id": "https://rohanbuildersekam.com/#video-walkthrough",
       "name": "Rohan Ekam Official Project Walkthrough",
       "description": "Complete architectural walkthrough of Rohan Ekam 13-acre luxury riverfront sanctuary in Balewadi, Pune.",
-      "thumbnailUrl": "https://rohanbuilders.com/wp-content/uploads/2023/09/Rohan-Ekam-Project-walkthrough-2.jpg",
-      "uploadDate": "2023-09-01T00:00:00+05:30",
+      "thumbnailUrl": "https://rohanbuildersekam.com/images/optimized/videos/project-walkthrough.webp",
+      "uploadDate": "2026-11-23T12:00:00+05:30",
+      "duration": "PT3M40S",
+      "publisher": {
+        "@id": "https://rohanbuildersekam.com/#developer"
+      },
       "contentUrl": "https://www.youtube.com/watch?v=UdA6Qm7GVsI",
       "embedUrl": "https://www.youtube.com/embed/UdA6Qm7GVsI",
       "hasPart": [
@@ -769,8 +733,12 @@
       "@id": "https://rohanbuildersekam.com/#video-location",
       "name": "Rohan Ekam Location Highlights & Balewadi Connectivity",
       "description": "Video overview of Rohan Ekam proximity to Balewadi High Street, Pune Metro Line 3, and Hinjawadi IT Park.",
-      "thumbnailUrl": "https://rohanbuilders.com/wp-content/uploads/2023/09/VIDEO-THUMBNAILS-MASTER-2023-Location-Highlights.jpg",
-      "uploadDate": "2023-09-01T00:00:00+05:30",
+      "thumbnailUrl": "https://rohanbuildersekam.com/images/optimized/videos/location-highlights.webp",
+      "uploadDate": "2026-11-23T12:00:00+05:30",
+      "duration": "PT2M15S",
+      "publisher": {
+        "@id": "https://rohanbuildersekam.com/#developer"
+      },
       "contentUrl": "https://www.youtube.com/watch?v=5Z1m4PUAnhM",
       "embedUrl": "https://www.youtube.com/embed/5Z1m4PUAnhM",
       "hasPart": [
@@ -795,8 +763,12 @@
       "@id": "https://rohanbuildersekam.com/#video-panoramic",
       "name": "Rohan Ekam Panoramic River & Sky Floor View",
       "description": "360-degree panoramic view of Mula River and elevated horizon from the Level 14 Ground Floor in the Sky.",
-      "thumbnailUrl": "https://rohanbuilders.com/wp-content/uploads/2023/09/VIDEO-THUMBNAILS-MASTER-2023-Panoramic-Floor-View.jpg",
-      "uploadDate": "2023-09-01T00:00:00+05:30",
+      "thumbnailUrl": "https://rohanbuildersekam.com/images/optimized/videos/panoramic-floor.webp",
+      "uploadDate": "2026-11-23T12:00:00+05:30",
+      "duration": "PT1M45S",
+      "publisher": {
+        "@id": "https://rohanbuildersekam.com/#developer"
+      },
       "contentUrl": "https://www.youtube.com/watch?v=3HVmzbfTTf0",
       "embedUrl": "https://www.youtube.com/embed/3HVmzbfTTf0"
     },
@@ -805,8 +777,12 @@
       "@id": "https://rohanbuildersekam.com/#video-design",
       "name": "Rohan Ekam Design Concept by Ar. Sanjay Mohe",
       "description": "Master architect Ar. Sanjay Mohe (Mindspace Architects) discusses the biophilic design philosophy of Rohan Ekam.",
-      "thumbnailUrl": "https://rohanbuilders.com/wp-content/uploads/2023/09/VIDEO-THUMBNAILS-MASTER-2023-Design-Concept.jpg",
-      "uploadDate": "2023-09-01T00:00:00+05:30",
+      "thumbnailUrl": "https://rohanbuildersekam.com/images/optimized/videos/design-concept.webp",
+      "uploadDate": "2026-11-23T12:00:00+05:30",
+      "duration": "PT2M30S",
+      "publisher": {
+        "@id": "https://rohanbuildersekam.com/#developer"
+      },
       "contentUrl": "https://www.youtube.com/watch?v=TMtQ0Jlb5kQ",
       "embedUrl": "https://www.youtube.com/embed/TMtQ0Jlb5kQ",
       "hasPart": [
@@ -831,8 +807,12 @@
       "@id": "https://rohanbuildersekam.com/#video-landscape",
       "name": "Rohan Ekam Landscape Concept & Riverfront Promenade",
       "description": "1.2 km Mula riverfront boardwalk, cascading sloping lawns, and resort amenities landscape tour.",
-      "thumbnailUrl": "https://rohanbuilders.com/wp-content/uploads/2023/09/VIDEO-THUMBNAILS-MASTER-2023-Landscape-Concept.jpg",
-      "uploadDate": "2023-09-01T00:00:00+05:30",
+      "thumbnailUrl": "https://rohanbuildersekam.com/images/optimized/videos/landscape-concept.webp",
+      "uploadDate": "2026-11-23T12:00:00+05:30",
+      "duration": "PT2M05S",
+      "publisher": {
+        "@id": "https://rohanbuildersekam.com/#developer"
+      },
       "contentUrl": "https://www.youtube.com/watch?v=7b6zdXHmHJo",
       "embedUrl": "https://www.youtube.com/embed/7b6zdXHmHJo"
     },
@@ -841,8 +821,12 @@
       "@id": "https://rohanbuildersekam.com/#video-architectural",
       "name": "Rohan Ekam Architectural Walkthrough",
       "description": "Detailed 3D architectural rendering and engineering analysis of Rohan Ekam boutique towers and sky bridge connections.",
-      "thumbnailUrl": "https://rohanbuilders.com/wp-content/uploads/2023/09/VIDEO-THUMBNAILS.jpg",
-      "uploadDate": "2023-09-01T00:00:00+05:30",
+      "thumbnailUrl": "https://rohanbuildersekam.com/images/optimized/videos/architectural-walkthrough.webp",
+      "uploadDate": "2026-11-23T12:00:00+05:30",
+      "duration": "PT2M50S",
+      "publisher": {
+        "@id": "https://rohanbuildersekam.com/#developer"
+      },
       "contentUrl": "https://www.youtube.com/watch?v=XYEwRvZYwpM",
       "embedUrl": "https://www.youtube.com/embed/XYEwRvZYwpM"
     }

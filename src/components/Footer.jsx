@@ -247,26 +247,13 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Quick-Hop Keyword Pills for Instant Anchor Traversal */}
+          {/* Specialized Local Cluster Guides */}
           <div className="mt-8 pt-6 border-t border-stone-200">
             <span className="text-xs font-mono uppercase tracking-wider text-stone-800 font-bold block mb-3">
-              Popular Search Topics for Rohan Ekam Balewadi
+              Balewadi, Baner &amp; West Pune Property Guides
             </span>
             <div className="flex flex-wrap gap-2.5 sm:gap-3">
               {[
-                { label: 'Luxury Flats in Baner Balewadi', href: '/luxury-flats-in-baner-balewadi' },
-                { label: 'Flats in Baner Pune', href: '/flats-in-baner' },
-                { label: 'Pune Luxury Real Estate', href: '/pune-luxury-real-estate' },
-                { label: 'Baner vs Balewadi ROI Monograph', href: '/blog/baner-vs-balewadi-real-estate-investment-comparison' },
-                { label: 'Pune Luxury Market Trends 2026-2027', href: '/blog/pune-luxury-real-estate-market-trends-2026-2027' },
-                { label: 'Sky Villas & Penthouses Baner Balewadi', href: '/blog/luxury-penthouses-sky-villas-baner-balewadi' },
-                { label: 'Real Estate Blog Hub', href: '/blog' },
-                { label: 'Balewadi Luxury Market Monograph', href: '/blog/why-balewadi-is-pune-top-luxury-real-estate-hub' },
-                { label: 'Ground Floor in Sky Monograph', href: '/blog/ground-floor-in-the-sky-architectural-monograph' },
-                { label: 'Rohan PLUS Science Guide', href: '/blog/rohan-plus-homes-design-science-cross-ventilation' },
-                { label: 'NRI Balewadi Investment Guide', href: '/blog/nri-real-estate-investment-guide-pune-balewadi' },
-                { label: 'Metro Line 3 Connectivity', href: '/blog/balewadi-high-street-metro-line-3-connectivity-boom' },
-                { label: '2, 3 & 4 BHK Carpet & Price Comparison', href: '/blog/2-bhk-3-bhk-4-bhk-carpet-area-price-comparison-balewadi' },
                 { label: 'Flats in Balewadi', href: '/flats-in-balewadi' },
                 { label: '2 BHK in Balewadi', href: '/2-bhk-flats-in-balewadi' },
                 { label: '3 BHK in Balewadi', href: '/3-bhk-flats-in-balewadi' },
@@ -278,16 +265,7 @@ export default function Footer() {
                 { label: 'Possession, Reviews & RERA', href: '/rohan-ekam-possession-reviews-rera' },
                 { label: 'New Launch Projects Balewadi-Baner', href: '/new-launch-projects-in-balewadi-baner' },
                 { label: 'Flats Near Stadium, Wakad & Aundh', href: '/flats-near-balewadi-stadium-wakad-aundh' },
-                { label: 'Sample Flat, Videos & Updates', href: '/rohan-ekam-videos-sample-flat-updates' },
-                { label: 'Ground Floor in the Sky L14', href: '#skyGround' },
-                { label: 'Rohan PLUS Homes', href: '#plusPhilosophy' },
-                { label: 'Rohan Ekam Brochure PDF', href: OFFICIAL_PROJECT_DETAILS.brochures[0].url },
-                { label: 'MahaRERA P52100052298', href: '#documents' },
-                { label: 'Rohan Ekam Possession Date', href: '#faq' },
-                { label: 'Apartments along Mula River', href: '#location' },
-                { label: 'Channel Partner RERA A031262401295', href: '#documents' },
-                { label: 'Propsmart Realty Advisory', href: '#interested' },
-                { label: 'Rohan Ekam WhatsApp Desk +91 774409295', href: 'https://wa.me/91774409295' }
+                { label: 'Sample Flat, Videos & Updates', href: '/rohan-ekam-videos-sample-flat-updates' }
               ].map((tag, i) => (
                 <a
                   key={i}

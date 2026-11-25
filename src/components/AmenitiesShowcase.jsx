@@ -5,6 +5,7 @@ import { Sparkles, Search, Layers } from 'lucide-react';
 export default function AmenitiesShowcase({ onOpenVipModal }) {
   const [activeCategory, setActiveCategory] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
+  const [showAllAmenities, setShowAllAmenities] = useState(false);
 
   const categories = ['All', 'Sky Ground', 'Riverfront', 'Clubhouse & Sports', 'Children & Infra'];
 
@@ -13,6 +14,8 @@ export default function AmenitiesShowcase({ onOpenVipModal }) {
     const matchesSearch = searchQuery === '' || item.name.toLowerCase().includes(searchQuery.toLowerCase());
     return matchesCategory && matchesSearch;
   });
+  const isCollapsed = activeCategory === 'All' && searchQuery === '' && !showAllAmenities;
+  const visibleAmenities = isCollapsed ? filteredAmenities.slice(0, 12) : filteredAmenities;
 
   return (
     <section id="amenities" className="py-20 relative overflow-hidden bg-[#F5F2EB] border-t border-b border-stone-300/80">
@@ -80,7 +83,7 @@ export default function AmenitiesShowcase({ onOpenVipModal }) {
 
         {/* Official Amenity Icons Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3.5">
-          {filteredAmenities.map((amenity, idx) => (
+          {visibleAmenities.map((amenity, idx) => (
             <div
               key={idx}
               className="glass-panel glass-card-hover glass-shimmer p-4 rounded-2xl border border-white/90 transition-all duration-300 group flex flex-col items-center text-center justify-between min-h-[145px] shadow-sm hover:border-amber-700/30 hover:bg-white/90"
@@ -109,6 +112,18 @@ export default function AmenitiesShowcase({ onOpenVipModal }) {
             </div>
           ))}
         </div>
+
+        {activeCategory === 'All' && searchQuery === '' && filteredAmenities.length > 12 && (
+          <div className="text-center mt-8">
+            <button
+              onClick={() => setShowAllAmenities(!showAllAmenities)}
+              aria-label={showAllAmenities ? 'Show fewer project amenities' : `View all ${filteredAmenities.length} project amenities`}
+              className="px-6 py-3 rounded-full bg-stone-900 hover:bg-stone-800 text-white text-xs font-bold uppercase tracking-wider transition-all duration-300 shadow-md min-h-[44px]"
+            >
+              {showAllAmenities ? 'Show Featured 12 Amenities' : `Explore All ${filteredAmenities.length} Amenities`}
+            </button>
+          </div>
+        )}
 
         {/* Bottom Callout in Frosted Glass */}
         <div className="mt-12 text-center">

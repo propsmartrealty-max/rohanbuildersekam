@@ -3,21 +3,25 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import OfficialTilesBar from './components/OfficialTilesBar';
 import ArchitecturalVision from './components/ArchitecturalVision';
-import SkyGroundExplorer from './components/SkyGroundExplorer';
-import PlusPhilosophySimulator from './components/PlusPhilosophySimulator';
-import ResidencesFloorPlans from './components/ResidencesFloorPlans';
-import AmenitiesShowcase from './components/AmenitiesShowcase';
-import LocationCompass from './components/LocationCompass';
-import OfficialGallerySection from './components/OfficialGallerySection';
-import OfficialInterestedForm from './components/OfficialInterestedForm';
-import OfficialBrochureStrip from './components/OfficialBrochureStrip';
-import OfficialDocuments from './components/OfficialDocuments';
-import OfficialFAQ from './components/OfficialFAQ';
-import FinancialSuite from './components/FinancialSuite';
-import Footer from './components/Footer';
 import OfficialWhatsAppBar from './components/OfficialWhatsAppBar';
 
+const SkyGroundExplorer = lazy(() => import('./components/SkyGroundExplorer'));
+const PlusPhilosophySimulator = lazy(() => import('./components/PlusPhilosophySimulator'));
+const ResidencesFloorPlans = lazy(() => import('./components/ResidencesFloorPlans'));
+const AmenitiesShowcase = lazy(() => import('./components/AmenitiesShowcase'));
+const LocationCompass = lazy(() => import('./components/LocationCompass'));
+const OfficialGallerySection = lazy(() => import('./components/OfficialGallerySection'));
+const OfficialInterestedForm = lazy(() => import('./components/OfficialInterestedForm'));
+const OfficialBrochureStrip = lazy(() => import('./components/OfficialBrochureStrip'));
+const OfficialDocuments = lazy(() => import('./components/OfficialDocuments'));
+const OfficialFAQ = lazy(() => import('./components/OfficialFAQ'));
+const FinancialSuite = lazy(() => import('./components/FinancialSuite'));
+const Footer = lazy(() => import('./components/Footer'));
 const VIPExperienceModal = lazy(() => import('./components/VIPExperienceModal'));
+
+const SectionPlaceholder = ({ minHeight = 'min-h-[320px]' }) => (
+  <div className={`${minHeight} w-full bg-[#F5F2EB]`} aria-hidden="true" />
+);
 
 export default function App() {
   const [isVipModalOpen, setIsVipModalOpen] = useState(false);
@@ -46,20 +50,12 @@ export default function App() {
         Skip to main content
       </a>
 
-      {/* Global Ambient Glass Refraction Orbs (Living, breathing atmosphere behind frosted surfaces) */}
-      <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
-        <div className="glass-orb w-[650px] h-[650px] bg-[#E8D5C4]/40 -top-40 -left-40 animate-blob" />
-        <div className="glass-orb w-[600px] h-[600px] bg-[#C8DECE]/35 top-[30%] -right-48 animate-blob [animation-delay:4s]" />
-        <div className="glass-orb w-[550px] h-[550px] bg-[#DDD4C4]/40 top-[60%] -left-40 animate-blob [animation-delay:8s]" />
-        <div className="glass-orb w-[600px] h-[600px] bg-[#E8D5C4]/35 top-[85%] -right-40 animate-blob [animation-delay:12s]" />
-      </div>
-
       {/* Top Floating Navbar */}
       <Navbar onOpenVipModal={() => openVipModalWithConfig('3bhk-type1')} />
 
       {/* Main Semantic Landmark Container */}
       <main id="main-content" role="main" tabIndex="-1" className="flex-1 bg-transparent relative z-10 focus:outline-none">
-        {/* 1. Official 4K Hero Carousel */}
+        {/* 1. Official Hero Showcase */}
         <Hero onOpenVipModal={() => openVipModalWithConfig('3bhk-type1')} />
 
         {/* 2. Signature 7 Hover Tiles Bar (Directly beneath Hero) */}
@@ -75,48 +71,72 @@ export default function App() {
 
         {/* 4. The 3-Realm Living & 14th Floor Ground in the Sky */}
         <div id="skyGround">
-          <SkyGroundExplorer onOpenVipModal={() => openVipModalWithConfig('3bhk-type1')} />
+          <Suspense fallback={<SectionPlaceholder minHeight="min-h-[560px]" />}>
+            <SkyGroundExplorer onOpenVipModal={() => openVipModalWithConfig('3bhk-type1')} />
+          </Suspense>
         </div>
 
         {/* 5. Rohan PLUS Science & Physics Lab */}
         <div id="plusPhilosophy">
-          <PlusPhilosophySimulator />
+          <Suspense fallback={<SectionPlaceholder minHeight="min-h-[480px]" />}>
+            <PlusPhilosophySimulator />
+          </Suspense>
         </div>
 
         {/* 6. Official Floor Plans (Typical 2, 3 & 4 BHK with 6 Tabs) */}
         <div id="floorPlan">
-          <ResidencesFloorPlans onOpenVipModal={() => openVipModalWithConfig('3bhk-type1')} />
+          <Suspense fallback={<SectionPlaceholder minHeight="min-h-[560px]" />}>
+            <ResidencesFloorPlans onOpenVipModal={() => openVipModalWithConfig('3bhk-type1')} />
+          </Suspense>
         </div>
 
         {/* 7. Official 36 Amenities with Real Scraped Icons */}
-        <AmenitiesShowcase onOpenVipModal={() => openVipModalWithConfig('3bhk-type1')} />
+        <Suspense fallback={<SectionPlaceholder minHeight="min-h-[520px]" />}>
+          <AmenitiesShowcase onOpenVipModal={() => openVipModalWithConfig('3bhk-type1')} />
+        </Suspense>
 
         {/* 8. Official Location (Schools, Colleges, Hospitals, Malls) */}
-        <LocationCompass />
+        <Suspense fallback={<SectionPlaceholder minHeight="min-h-[480px]" />}>
+          <LocationCompass />
+        </Suspense>
 
         {/* 9. Official Gallery (Sub-Tabs: IMAGES & VIDEOS/360 Walkthroughs) */}
-        <OfficialGallerySection />
+        <Suspense fallback={<SectionPlaceholder minHeight="min-h-[480px]" />}>
+          <OfficialGallerySection />
+        </Suspense>
 
         {/* 10. Official "Interested?" Lead Capture Form */}
-        <OfficialInterestedForm />
+        <Suspense fallback={<SectionPlaceholder minHeight="min-h-[420px]" />}>
+          <OfficialInterestedForm />
+        </Suspense>
 
         {/* 11. Official Detailed Brochure Download Strip */}
-        <OfficialBrochureStrip />
+        <Suspense fallback={<SectionPlaceholder minHeight="min-h-[220px]" />}>
+          <OfficialBrochureStrip />
+        </Suspense>
 
         {/* 12. Legal Documents (EC Copy, Compliance & MahaRERA Phase QR Codes) */}
-        <OfficialDocuments />
+        <Suspense fallback={<SectionPlaceholder minHeight="min-h-[380px]" />}>
+          <OfficialDocuments />
+        </Suspense>
 
         {/* 13. Official FAQ Accordion (8 Categories, 55 Questions) */}
-        <OfficialFAQ />
+        <Suspense fallback={<SectionPlaceholder minHeight="min-h-[520px]" />}>
+          <OfficialFAQ />
+        </Suspense>
 
         {/* 14. Financial & Mortgage Planner Suite */}
         <div id="financialSuite">
-          <FinancialSuite onOpenVipModal={() => openVipModalWithConfig('3bhk-type1')} />
+          <Suspense fallback={<SectionPlaceholder minHeight="min-h-[480px]" />}>
+            <FinancialSuite onOpenVipModal={() => openVipModalWithConfig('3bhk-type1')} />
+          </Suspense>
         </div>
       </main>
 
       {/* Official Footer */}
-      <Footer />
+      <Suspense fallback={<SectionPlaceholder minHeight="min-h-[420px]" />}>
+        <Footer />
+      </Suspense>
 
       {/* Official Sticky WhatsApp Bar (Bottom of Screen) */}
       <OfficialWhatsAppBar />

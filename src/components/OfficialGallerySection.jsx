@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { OFFICIAL_GALLERY_IMAGES, OFFICIAL_VIDEOS } from '../data/projectData';
+import { getImageSrcSet } from '../utils/responsiveImage';
 import { Play, Maximize2, X } from 'lucide-react';
 
 export default function OfficialGallerySection() {
@@ -91,9 +92,11 @@ export default function OfficialGallerySection() {
                     >
                       <img
                         src={imgUrl}
+                        srcSet={getImageSrcSet(imgUrl)}
+                        sizes="(max-width: 640px) 92vw, (max-width: 1024px) 46vw, 310px"
                         alt={`Rohan Ekam Rendering ${idx + 1}`}
-                        width="600"
-                        height="375"
+                        width="800"
+                        height="352"
                         loading="lazy"
                         decoding="async"
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
@@ -183,9 +186,11 @@ export default function OfficialGallerySection() {
             <div className="max-h-[82vh] overflow-hidden rounded-2xl flex items-center justify-center">
               <img
                 src={lightboxImage}
+                srcSet={getImageSrcSet(lightboxImage)}
+                sizes="90vw"
                 alt="Enlarged gallery view"
-                width="1200"
-                height="750"
+                width="800"
+                height="352"
                 decoding="async"
                 className="max-h-[78vh] w-auto object-contain"
               />
